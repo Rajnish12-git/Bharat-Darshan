@@ -9,7 +9,7 @@ export default function Header() {
       <div className="container flex h-16 max-w-screen-2xl items-center">
         <div className="mr-4 flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <span className="font-brand text-3xl font-bold">Bharat Darshan</span>
+            <span className="font-headline text-3xl font-bold">Bharat Darshan</span>
           </Link>
         </div>
         <nav className="flex-1 items-center space-x-4 hidden md:flex">
