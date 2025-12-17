@@ -4,11 +4,18 @@ import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
+import { Poppins } from 'next/font/google';
 
 export const metadata: Metadata = {
   title: 'Bharat Darshan',
   description: 'Explore the rich cultural, historical, and architectural heritage of India.',
 };
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-body',
+});
 
 export default function RootLayout({
   children,
@@ -20,11 +27,12 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,700;1,7..72,400;1,7..72,700&family=Amze&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Amze&display=swap" rel="stylesheet" />
       </head>
       <body
         className={cn(
-          "min-h-screen bg-background font-body antialiased"
+          "min-h-screen bg-background font-body antialiased",
+          poppins.variable
         )}
       >
         <div className="relative flex min-h-dvh flex-col bg-background">

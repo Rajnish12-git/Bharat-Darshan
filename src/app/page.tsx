@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <HeroCarousel />
-      <section id="states" className="container py-12 md:py-24">
+      <section id="states" className="container py-12 md:py-24 scroll-mt-20">
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
           <h2 className="font-headline text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl">
             Explore the States
@@ -17,7 +17,7 @@ export default function Home() {
         </div>
         <StateGrid />
       </section>
-      <section id="timeline" className="bg-secondary/50">
+      <section id="timeline" className="bg-secondary/50 scroll-mt-20">
          <div className="container py-12 md:py-24">
             <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center mb-12">
               <h2 className="font-headline text-3xl font-bold leading-[1.1] sm:text-3xl md:text-5xl">
