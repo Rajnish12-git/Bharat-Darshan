@@ -62,7 +62,7 @@ export default function StateGrid() {
                 <div
                   className={cn(
                     'p-1 transition-all duration-300 ease-in-out',
-                    isSelected ? 'opacity-100' : 'opacity-50 blur-[1px] scale-95'
+                    isSelected ? 'opacity-100' : 'opacity-50 scale-95'
                   )}
                 >
                   <Link
