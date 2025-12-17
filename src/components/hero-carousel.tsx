@@ -98,6 +98,11 @@ export default function HeroCarousel() {
                       {subtitle}
                     </p>
                   </div>
+                  <div className="absolute bottom-0 right-0 p-8 md:p-16 text-white text-right max-w-sm hidden md:block">
+                     <p className="text-sm font-light drop-shadow-md opacity-70">
+                      {description}
+                    </p>
+                  </div>
                 </div>
               </CarouselItem>
             );
