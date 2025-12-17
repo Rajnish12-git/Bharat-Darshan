@@ -34,6 +34,21 @@ const heroImages = [
     title: "Konark Sun Temple",
     subtitle: "Odisha",
   },
+  {
+    id: "hero-kerala-backwaters",
+    title: "Kerala Backwaters",
+    subtitle: "Alleppey, Kerala",
+  },
+  {
+    id: "hero-golden-temple",
+    title: "Golden Temple",
+    subtitle: "Amritsar, Punjab",
+  },
+  {
+    id: "hero-goa-beach",
+    title: "Goa Beaches",
+    subtitle: "Goa",
+  },
 ];
 
 export default function HeroCarousel() {

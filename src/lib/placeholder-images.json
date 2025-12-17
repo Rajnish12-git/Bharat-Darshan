@@ -25,6 +25,24 @@
       "imageHint": "Konark temple"
     },
     {
+      "id": "hero-kerala-backwaters",
+      "description": "Houseboat on Kerala backwaters",
+      "imageUrl": "https://images.unsplash.com/photo-1602216056096-3b404d39d713?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxLZXJhbGElMjBiYWNrd2F0ZXJzfGVufDB8fHx8MTc2Nzk5MzYyMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Kerala backwaters"
+    },
+    {
+      "id": "hero-golden-temple",
+      "description": "The Golden Temple in Amritsar",
+      "imageUrl": "https://images.unsplash.com/photo-1590013916960-b1864e4e93c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxHb2xkZW4lMjBUZW1wbGV8ZW58MHx8fHwxNzY3OTkzNjU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Golden Temple"
+    },
+    {
+      "id": "hero-goa-beach",
+      "description": "Sunset over a beach in Goa",
+      "imageUrl": "https://images.unsplash.com/photo-1590372728956-655f41857993?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxHb2ElMjBiZWFjaHxlbnwwfHx8fDE3Njc5OTM3MDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Goa beach"
+    },
+    {
       "id": "state-uttar-pradesh",
       "description": "A vibrant ghat in Varanasi, Uttar Pradesh",
       "imageUrl": "https://images.unsplash.com/photo-1571536802807-30451e3955d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxWYXJhbmFzaSUyMGdoYXR8ZW58MHx8fHwxNzY1OTgwMzE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
@@ -141,61 +159,61 @@
     {
       "id": "cuisine-pakhala-bhata",
       "description": "A traditional Odia meal, Pakhala Bhata",
-      "imageUrl": "https://images.unsplash.com/photo-1657205937707-940bf77b2602?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxPZGlzaGElMjBmb29kfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1657205937707-940bf77b2602?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxPZGlzaGElMjBmb29kfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "Odisha food"
     },
     {
       "id": "festival-diwali",
       "description": "Lamps lit during the festival of Diwali",
-      "imageUrl": "https://images.unsplash.com/photo-1633368516165-f7b04d6428d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxEaXdhbGklMjBsYW1wc3xlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1633368516165-f7b04d6428d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxEaXdhbGklMjBsYW1wc3xlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Diwali lamps"
     },
     {
       "id": "festival-holi",
       "description": "People celebrating Holi with colored powders",
-      "imageUrl": "https://images.unsplash.com/photo-1595567582054-f2f0a1940235?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxIb2xpJTIwZmVzdGl2YWx8ZW58MHx8fHwxNzY1OTYzMTEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1595567582054-f2f0a1940235?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxIb2xpJTIwZmVzdGl2YWx8ZW58MHx8fHwxNzY1OTYzMTEzfDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Holi festival"
     },
     {
       "id": "festival-pushkar-fair",
       "description": "Decorated camels at the Pushkar Fair",
-      "imageUrl": "https://images.unsplash.com/photo-1599335211332-e93014a608f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxQdXNoa2FyJTIwY2FtZWxzfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1599335211332-e93014a608f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxQdXNoa2FyJTIwY2FtZWxzfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Pushkar camels"
     },
     {
       "id": "festival-dasara",
       "description": "A grand procession during Mysore Dasara",
-      "imageUrl": "https://images.unsplash.com/photo-1656915568032-829591ceadaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxEYXNhcmElMjBwcm9jZXNzaW9ufGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1656915568032-829591ceadaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxEYXNhcmElMjBwcm9jZXNzaW9ufGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Dasara procession"
     },
     {
       "id": "festival-ratha-yatra",
       "description": "The grand chariot festival of Ratha Yatra in Puri",
-      "imageUrl": "https://images.unsplash.com/photo-1577649428176-212243cd0655?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxSYXRoYSUyMFlhdHJhfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1577649428176-212243cd0655?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxSYXRoYSUyMFlhdHJhfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Ratha Yatra"
     },
     {
       "id": "art-chikankari",
       "description": "Delicate Chikankari embroidery on fabric",
-      "imageUrl": "https://images.unsplash.com/photo-1651177585014-2b3a5da68e54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZW1icm9pZGVyeSUyMGZhYnJpY3xlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1651177585014-2b3a5da68e54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZW1icm9pZGVyeSUyMGZhYnJpY3xlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "embroidery fabric"
     },
     {
       "id": "art-blue-pottery",
       "description": "A collection of Jaipur Blue Pottery",
-      "imageUrl": "https://images.unsplash.com/photo-1657395330801-2214c0d02e41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxibHVlJTIwcG90dGVyeXxlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1657395330801-2214c0d02e41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxibHVlJTIwcG90dGVyeXxlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "blue pottery"
     },
     {
       "id": "art-mysore-painting",
       "description": "A traditional Mysore painting with gold leaf",
-      "imageUrl": "https://images.unsplash.com/photo-1731251451227-59cca8bbcb4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0cmFkaXRpb25hbCUyMHBhaW50aW5nfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1731251451227-59cca8bbcb4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0cmFkaXRpb25hbCUyMHBhaW50aW5nfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "traditional painting"
     },
     {
       "id": "art-pattachitra",
       "description": "A vibrant Pattachitra scroll painting",
-      "imageUrl": "https://images.unsplash.com/photo-1762114974502-551aeb189066?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzY3JvbGwlMjBwYWludGluZ3xlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1762114974502-551aeb189066?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzY3JvbGwlMjBwYWludGluZ3xlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "scroll painting"
     }
   ]
