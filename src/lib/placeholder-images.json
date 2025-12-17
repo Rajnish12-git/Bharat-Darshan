@@ -429,7 +429,7 @@
     {
       "id": "state-haryana",
       "description": "Lush green fields in rural Haryana",
-      "imageUrl": "https://images.unsplash.com/photo-1712553483311-a00f2a74f3f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxIYXJ5YW5hJTIwZmllbGRzfGVufDB8fHx8MTc2NTk4MjI5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1712553483311-a00f2a74f3f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxIYXJ5YW5hJTIwZmllbGRzfGVufDB8fHx8MTc2NTk4MjI5OHww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Haryana fields"
     },
     {
@@ -483,7 +483,7 @@
     {
       "id": "art-kangra-painting",
       "description": "A delicate and detailed Kangra painting",
-      "imageUrl": "https://images.unsplash.com/photo-1544409467-62bd3e41ecbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxLYW5ncmElMjBwYWludGluZ3xlbnwwfHx8fDE3NjU5ODIyOTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1544409467-62bd3e41ecbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxLYW5ncmElMjBwYWludGluZ3xlbnwwfHx8fDE3NjU5ODIyOTd8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Kangra painting"
     },
     {
@@ -495,13 +495,13 @@
     {
       "id": "monument-baidyanath",
       "description": "The main shrine of Baidyanath Temple",
-      "imageUrl": "https://images.unsplash.com/photo-1668160747331-4275e35f0713?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxCYWlkeWFuYXRoJTIwVGVtcGxlfGVufDB8fHx8MTc2NTk4MjI5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1668160747331-4275e35f0713?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxCYWlkeWFuYXRoJTIwVGVtcGxlfGVufDB8fHx8MTc2NTk4MjI5N3ww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Baidyanath Temple"
     },
     {
       "id": "cuisine-dhuska",
       "description": "A plate of crispy Dhuska",
-      "imageUrl": "https://images.unsplash.com/photo-1746274394124-141a1d1c5af3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8RGh1c2thJTIwZm9vZHxlbnwwfHx8fDE3NjU5ODIyOTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1746274394124-141a1d1c5af3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8RGh1c2thJTIwZm9vZHxlbnwwfHx8fDE3NjU5ODIyOTd8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Dhuska food"
     },
     {
@@ -609,55 +609,55 @@
     {
       "id": "monument-kangla-fort",
       "description": "The historic Kangla Fort in Imphal",
-      "imageUrl": "https://images.unsplash.com/photo-1695396998446-776f20becfdc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8S2FuZ2xhJTIwRm9ydHxlbnwwfHx8fDE3NjU5ODIyOTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1695396998446-776f20becfdc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8S2FuZ2xhJTIwRm9ydHxlbnwwfHx8fDE3NjU5ODIyOTd8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Kangla Fort"
     },
     {
       "id": "cuisine-eromba",
       "description": "A traditional Manipuri dish, Eromba",
-      "imageUrl": "https://images.unsplash.com/photo-1647998270792-69ac80570183?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8RXJvbWJhJTIwZm9vZHxlbnwwfHx8fDE3NjU5ODIyOTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1647998270792-69ac80570183?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8RXJvbWJhJTIwZm9vZHxlbnwwfHx8fDE3NjU5ODIyOTd8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Eromba food"
     },
     {
       "id": "festival-sangai",
       "description": "Cultural performance at the Sangai Festival",
-      "imageUrl": "https://images.unsplash.com/photo-1676739666280-40d7ed924fc5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxTYW5nYWklMjBGZXN0aXZhbHxlbnwwfHx8fDE3NjU5ODIyOTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1676739666280-40d7ed924fc5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxTYW5nYWklMjBGZXN0aXZhbHxlbnwwfHx8fDE3NjU5ODIyOTd8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Sangai Festival"
     },
     {
       "id": "art-manipuri-dance",
       "description": "A graceful Manipuri classical dancer",
-      "imageUrl": "https://images.unsplash.com/photo-1730811052191-cedf12c23b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxNYW5pcHVyaSUyMGRhbmNlfGVufDB8fHx8MTc2NTk4MjI5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1730811052191-cedf12c23b40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxNYW5pcHVyaSUyMGRhbmNlfGVufDB8fHx8MTc2NTk4MjI5N3ww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Manipuri dance"
     },
     {
       "id": "state-meghalaya",
       "description": "A stunning double-decker living root bridge",
-      "imageUrl": "https://images.unsplash.com/photo-1605284924296-1d33f749a562?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxMaXZpbmclMjByb290JTIwYnJpZGdlfGVufDB8fHx8MTc2OTEwNjY5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1605284924296-1d33f749a562?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxMaXZpbmclMjByb290JTIwYnJpZGdlfGVufDB8fHx8MTc2OTEwNjY5OHww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "living bridge"
     },
     {
       "id": "monument-living-root-bridges",
       "description": "A living root bridge in the jungles of Meghalaya",
-      "imageUrl": "https://images.unsplash.com/photo-1519597759853-20708f326a57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxMaXZpbmclMjByb290JTIwYnJpZGdlfGVufDB8fHx8MTc2OTEwNjY5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1519597759853-20708f326a57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxMaXZpbmclMjByb290JTIwYnJpZGdlfGVufDB8fHx8MTc2OTEwNjY5OHww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "living bridge"
     },
     {
       "id": "cuisine-jadoh",
       "description": "A bowl of Khasi Jadoh rice",
-      "imageUrl": "https://images.unsplash.com/photo-1739630405609-fd438c446f62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxKYWRvaCUyMHJpY2V8ZW58MHx8fHwxNzY1OTgyMjk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1739630405609-fd438c446f62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxKYWRvaCUyMHJpY2V8ZW58MHx8fHwxNzY1OTgyMjk3fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Jadoh rice"
     },
     {
       "id": "festival-wangala",
       "description": "Garo tribe celebrating the Wangala festival with dance",
-      "imageUrl": "https://images.unsplash.com/photo-1659961458982-564970cd9735?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8V2FuZ2FsYSUyMGZlc3RpdmFsfGVufDB8fHx8MTc2NTk4MjI5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1659961458982-564970cd9735?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8V2FuZ2FsYSUyMGZlc3RpdmFsfGVufDB8fHx8MTc2NTk4MjI5N3ww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Wangala festival"
     },
     {
       "id": "art-cane-bamboo",
       "description": "Handcrafted bamboo products from Meghalaya",
-      "imageUrl": "https://images.unsplash.com/photo-1765809785489-1ceaf5a714ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiYW1ib28lMjBjcmFmdHxlbnwwfHx8fDE3NjU5ODIyOTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1765809785489-1ceaf5a714ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiYW1ib28lMjBjcmFmdHxlbnwwfHx8fDE3NjU5ODIyOTd8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "bamboo craft"
     },
     {
@@ -705,7 +705,7 @@
     {
       "id": "cuisine-axone",
       "description": "A dish prepared with Axone (fermented soybean)",
-      "imageUrl": "https://images.unsplash.com/photo-1739272136315-bf045de944bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxBeG9uZSUyMGZvb2R8ZW58MHx8fHwxNzY1OTgyMjk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1739272136315-bf045de944bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxBeG9uZSUyMGZvb2R8ZW58MHx8fHwxNzY1OTgyMjk3fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Axone food"
     },
     {
@@ -717,31 +717,31 @@
     {
       "id": "art-naga-shawls",
       "description": "A colorful, handwoven Naga shawl",
-      "imageUrl": "https://images.unsplash.com/photo-1664375910588-9452047e2d16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxOYWdhJTIwc2hhd2x8ZW58MHx8fHwxNzY1OTgyMjk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1664375910588-9452047e2d16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxOYWdhJTIwc2hhd2x8ZW58MHx8fHwxNzY1OTgyMjk3fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Naga shawl"
     },
     {
       "id": "state-punjab",
       "description": "Golden wheat fields in Punjab",
-      "imageUrl": "https://images.unsplash.com/photo-1618218169113-1c74a3f8b0e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxQdW5qYWIlMjBmaWVsZHN8ZW58MHx8fHwxNzY5MTA3MTQzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1618218169113-1c74a3f8b0e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxQdW5qYWIlMjBmaWVsZHN8ZW58MHx8fHwxNzY5MTA3MTQzfDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Punjab fields"
     },
     {
       "id": "cuisine-makki-roti-saag",
       "description": "Makki di Roti and Sarson da Saag",
-      "imageUrl": "https://images.unsplash.com/photo-1616970451607-89e8776aa904?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxQdW5qYWJpJTIwZm9vZHxlbnwwfHx8fDE3NjU5ODIyOTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1616970451607-89e8776aa904?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxQdW5qYWJpJTIwZm9vZHxlbnwwfHx8fDE3NjU5ODIyOTd8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Punjabi food"
     },
     {
       "id": "festival-baisakhi",
       "description": "People celebrating Baisakhi festival in a field",
-      "imageUrl": "https://images.unsplash.com/photo-1698627152464-8d2627138673?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxCYWlzYWtoaSUyMGZlc3RpdmFsfGVufDB8fHx8MTc2NTk4MjI5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1698627152464-8d2627138673?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxCYWlzYWtoaSUyMGZlc3RpdmFsfGVufDB8fHx8MTc2NTk4MjI5OHww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Baisakhi festival"
     },
     {
       "id": "art-phulkari",
       "description": "Vibrant Phulkari embroidery",
-      "imageUrl": "https://images.unsplash.com/photo-1666707174499-c5395c2481fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxQaHVsa2FyaSUyMGVtYnJvaWRlcnl8ZW58MHx8fHwxNzY1OTgyMjk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1666707174499-c5395c2481fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxQaHVsa2FyaSUyMGVtYnJvaWRlcnl8ZW58MHx8fHwxNzY1OTgyMjk3fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Phulkari embroidery"
     },
     {
@@ -753,25 +753,25 @@
     {
       "id": "monument-rumtek-monastery",
       "description": "The colorful Rumtek Monastery",
-      "imageUrl": "https://images.unsplash.com/photo-1599591436156-f55a1a1f5924?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxSdW10ZWslMjBNb25hc3Rlcnl8ZW58MHx8fHwxNzY5MTA3MjY3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1599591436156-f55a1a1f5924?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxSdW10ZWslMjBNb25hc3Rlcnl8ZW58MHx8fHwxNzY5MTA3MjY3fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Rumtek Monastery"
     },
     {
       "id": "cuisine-momo",
       "description": "A steamer basket full of momos",
-      "imageUrl": "https://images.unsplash.com/photo-1628139343332-9a061b4a66a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxNb21vJTIwZHVtcGxpbmdzfGVufDB8fHx8MTc2OTEwNzI4OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1628139343332-9a061b4a66a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxNb21vJTIwZHVtcGxpbmdzfGVufDB8fHx8MTc2OTEwNzI4OHww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Momo dumplings"
     },
     {
       "id": "festival-saga-dawa",
       "description": "Monks in procession during Saga Dawa",
-      "imageUrl": "https://images.unsplash.com/photo-1696096415886-9f6b73aeb816?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxTYWdhJTIwRGF3YXxlbnwwfHx8fDE3NjU5ODIyOTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1696096415886-9f6b73aeb816?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxTYWdhJTIwRGF3YXxlbnwwfHx8fDE3NjU5ODIyOTd8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Saga Dawa"
     },
     {
       "id": "art-thangka",
       "description": "A detailed Thangka painting",
-      "imageUrl": "https://images.unsplash.com/photo-1608054361605-1bfd5a2b31c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxUaGFuZ2thJTIwcGFpbnRpbmd8ZW58MHx8fHwxNzY1OTgyMjk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1608054361605-1bfd5a2b31c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxUaGFuZ2thJTIwcGFpbnRpbmd8ZW58MHx8fHwxNzY1OTgyMjk3fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Thangka painting"
     },
     {
@@ -783,7 +783,7 @@
     {
       "id": "monument-meenakshi-temple",
       "description": "The colorful Meenakshi Amman Temple in Madurai",
-      "imageUrl": "https://images.unsplash.com/photo-1583334881343-27515a02088a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxNZWVuYWtzaGklMjBUZW1wbGV8ZW58MHx8fHwxNzY5MTA3NDA0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1583334881343-27515a02088a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxNZWVuYWtzaGklMjBUZW1wbGV8ZW58MHx8fHwxNzY5MTA3NDA0fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Meenakshi Temple"
     },
     {
@@ -813,7 +813,7 @@
     {
       "id": "monument-charminar",
       "description": "A close-up of the Charminar monument",
-      "imageUrl": "https://images.unsplash.com/photo-1584323533446-993c1b75a133?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxDaGFybWluYXIlMjBIeWRlcmFiYWR8ZW58MHx8fHwxNzY5MTA3NTQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1584323533446-993c1b75a133?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxDaGFybWluYXIlMjBIeWRlcmFiYWR8ZW58MHx8fHwxNzY5MTA3NTQ2fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Charminar monument"
     },
     {
@@ -825,7 +825,7 @@
     {
       "id": "festival-bathukamma",
       "description": "Women celebrating Bathukamma with floral arrangements",
-      "imageUrl": "https://images.unsplash.com/photo-1718003688432-a8a9a68fe0a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxCYXRodWthbW1hJTIwZmVzdGl2YWx8ZW58MHx8fHwxNzY1OTgyMjk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1718003688432-a8a9a68fe0a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxCYXRodWthbW1hJTIwZmVzdGl2YWx8ZW58MHx8fHwxNzY1OTgyMjk3fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Bathukamma festival"
     },
     {
@@ -849,19 +849,19 @@
     {
       "id": "cuisine-chauk",
       "description": "Traditional Tripuri rice beer, Chauk",
-      "imageUrl": "https://images.unsplash.com/photo-1710372830932-376833778ef4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxDaGF1ayUyMGJlZXJ8ZW58MHx8fHwxNzY1OTgyMjk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1710372830932-376833778ef4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxDaGF1ayUyMGJlZXJ8ZW58MHx8fHwxNzY1OTgyMjk3fDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Chauk beer"
     },
     {
       "id": "festival-kharchi-puja",
       "description": "Rituals being performed during Kharchi Puja",
-      "imageUrl": "https://images.unsplash.com/photo-1720250600509-a310ab222bdc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxLaGFyY2hpJTIwUHVqYXxlbnwwfHx8fDE3NjU5ODIyOTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1720250600509-a310ab222bdc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxLaGFyY2hpJTIwUHVqYXxlbnwwfHx8fDE3NjU5ODIyOTd8MA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Kharchi Puja"
     },
     {
       "id": "art-tripura-bamboo",
       "description": "Intricate crafts made from bamboo in Tripura",
-      "imageUrl": "https://images.unsplash.com/photo-1641754644192-24e09c2b444b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxUcmlwdXJhJTIwYmFtYm9vfGVufDB8fHx8MTc2NTk4MjI5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1641754644192-24e09c2b444b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxUcmlwdXJhJTIwYmFtYm9vfGVufDB8fHx8MTc2NTk4MjI5OHww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Tripura bamboo"
     },
     {
@@ -915,13 +915,13 @@
     {
       "id": "festival-durga-puja",
       "description": "An idol of Goddess Durga during Durga Puja festival",
-      "imageUrl": "https://images.unsplash.com/photo-1568252243228-5026c014e7a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxEdXJnYSUyMFB1amF8ZW58MHx8fHwxNzY5MTA4MDQwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1568252243228-5026c014e7a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxEdXJnYSUyMFB1amF8ZW58MHx8fHwxNzY5MTA4MDQwfDA&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Durga Puja"
     },
     {
       "id": "art-kantha-embroidery",
       "description": "A piece of fabric with Kantha embroidery",
-      "imageUrl": "https://images.unsplash.com/photo-1657470036063-c7e49da31393?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxLYW50aGElMjBlbWJyb2lkZXJ5fGVufDB8fHx8MTc2NTk4MjI5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1657470036063-c7e49da31393?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxLYW50aGElMjBlbWJyb2lkZXJ5fGVufDB8fHx8MTc2NTk4MjI5N3ww&ixlib.rb-4.1.0&q=80&w=1080",
       "imageHint": "Kantha embroidery"
     }
   ]
