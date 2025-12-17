@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from './ui/button';
-import { Search } from 'lucide-react';
+import { Search, User } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export default function Header() {
@@ -39,7 +39,7 @@ export default function Header() {
             )}>Bharat Darshan</span>
           </Link>
         </div>
-        <div className="flex items-center justify-end space-x-6">
+        <div className="flex items-center justify-end space-x-2">
            <nav className="items-center space-x-4 hidden md:flex">
                 <Link href="/#states" className={cn("text-sm font-medium transition-colors hover:text-primary", isScrolled ? "text-muted-foreground" : "text-white/80 hover:text-white")}>
                     Explore
@@ -51,6 +51,11 @@ export default function Header() {
           <Button variant="ghost" size="icon" asChild className={cn("transition-colors", !isScrolled && "text-white/80 hover:text-white hover:bg-white/10")}>
             <Link href="/search" aria-label="Search">
               <Search className="h-5 w-5" />
+            </Link>
+          </Button>
+          <Button variant="ghost" size="icon" asChild className={cn("transition-colors", !isScrolled && "text-white/80 hover:text-white hover:bg-white/10")}>
+            <Link href="/login" aria-label="User Profile">
+              <User className="h-5 w-5" />
             </Link>
           </Button>
         </div>
