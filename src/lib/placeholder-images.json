@@ -3,7 +3,7 @@
     {
       "id": "hero-taj-mahal",
       "description": "An ivory-white marble mausoleum commissioned in 1632 by the Mughal emperor Shah Jahan to house the tomb of his favourite wife, Mumtaz Mahal.",
-      "imageUrl": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1564514650121-7523c94a91a4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Taj Mahal"
     },
     {
@@ -27,31 +27,31 @@
     {
       "id": "hero-kerala-backwaters",
       "description": "A network of serene canals, rivers, and lakes. Houseboats, or 'kettuvallams', are a unique way to experience the tranquil beauty of this ecosystem.",
-      "imageUrl": "https://images.unsplash.com/photo-1623955383358-3c6c066367df?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1603804241743-159c3a37397b?q=80&w=1943&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Kerala backwaters"
     },
     {
       "id": "hero-golden-temple",
       "description": "The holiest Gurdwara of Sikhism, its sanctum is gilded with 750 kg of pure gold. It features a large community kitchen that serves free meals to thousands daily.",
-      "imageUrl": "https://images.unsplash.com/photo-1588122190132-3c14a2b9d99d?q=80&w=1999&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG9טby1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1628288219469-f018d4e93c1f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Golden Temple"
     },
     {
       "id": "hero-goa-beach",
       "description": "Known for its stunning coastline, Goa's beaches are famous for their golden sand, vibrant shacks, and breathtaking sunsets over the Arabian Sea.",
-      "imageUrl": "https://images.unsplash.com/photo-1595166299183-9976b9148b3b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1509529712563-d3d5e565c1cc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Goa beach"
     },
     {
       "id": "state-uttar-pradesh",
       "description": "A vibrant ghat in Varanasi, Uttar Pradesh",
-      "imageUrl": "https://images.unsplash.com/photo-1613399433621-277174577583?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1561361537-d35a0352132d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Varanasi ghat"
     },
     {
       "id": "state-rajasthan",
       "description": "A majestic fort in Rajasthan",
-      "imageUrl": "https://images.unsplash.com/photo-1603290983513-435b55365a6c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%D%3D%D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1603290983513-435b55365a6c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Rajasthan fort"
     },
     {
@@ -63,7 +63,7 @@
     {
       "id": "state-odisha",
       "description": "Puri Jagannath Temple in Odisha",
-      "imageUrl": "https://images.unsplash.com/photo-1601002627447-0e6e7c75b5b2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%C4%9D",
+      "imageUrl": "https://images.unsplash.com/photo-1628289988355-685b8822d5a3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Puri temple"
     },
     {
@@ -81,7 +81,7 @@
     {
       "id": "monument-hawa-mahal",
       "description": "The intricate facade of Hawa Mahal",
-      "imageUrl": "https://images.unsplash.com/photo-1594008741355-d4211ae4a240?q=80&w=1934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1617541334239-a4714f3c7f8b?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Hawa Mahal"
     },
     {
@@ -99,7 +99,7 @@
     {
       "id": "monument-gol-gumbaz",
       "description": "The massive dome of Gol Gumbaz",
-      "imageUrl": "https://images.unsplash.com/photo-1605430018953-f7b53d86574f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1688621430932-61b84f2f4e42?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Gol Gumbaz"
     },
     {
@@ -111,19 +111,19 @@
     {
       "id": "monument-udayagiri-caves",
       "description": "Ancient rock-cut caves of Udayagiri",
-      "imageUrl": "https://images.unsplash.com/photo-1628549322697-31a87b1c3132?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1700463823420-569403b2a2a0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Udayagiri caves"
     },
     {
       "id": "cuisine-bedmi-puri",
       "description": "A plate of Bedmi Puri with aloo sabzi",
-      "imageUrl": "https://images.unsplash.com/photo-1604382354936-07c5d9983d34?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1668665782067-4ff3b6038334?q=80&w=1944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Indian food"
     },
     {
       "id": "cuisine-petha",
       "description": "Sweet candy Petha from Agra",
-      "imageUrl": "https://images.unsplash.com/photo-1583214398801-b841e2578a11?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1605690382213-9a3c1c8c1d5a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Indian sweet"
     },
     {
@@ -141,7 +141,7 @@
     {
       "id": "cuisine-bisi-bele-bath",
       "description": "A bowl of hot and spicy Bisi Bele Bath",
-      "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f39791e8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1653527783933-c9181938a16c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Karnataka food"
     },
     {
@@ -153,25 +153,25 @@
     {
       "id": "cuisine-chenna-poda",
       "description": "A slice of Chenna Poda, a cheese dessert",
-      "imageUrl": "https://images.unsplash.com/photo-1628209219381-31837c353d26?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1598214886806-c87b84b7078b?q=80&w=1938&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Odisha sweet"
     },
     {
       "id": "cuisine-pakhala-bhata",
       "description": "A traditional Odia meal, Pakhala Bhata",
-      "imageUrl": "https://images.unsplash.com/photo-1594705459736-2e86b24a3556?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1541557436854-52c6f1479815?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Odisha food"
     },
     {
       "id": "festival-diwali",
       "description": "Lamps lit during the festival of Diwali",
-      "imageUrl": "https://images.unsplash.com/photo-1574109247921-2c1d3d3a778b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1600122114704-3a55a82357d2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Diwali lamps"
     },
     {
       "id": "festival-holi",
       "description": "People celebrating Holi with colored powders",
-      "imageUrl": "https://images.unsplash.com/photo-1582882894104-5a21396cc810?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1616441398858-48f5241f0a4f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Holi festival"
     },
     {
@@ -207,7 +207,7 @@
     {
       "id": "art-mysore-painting",
       "description": "A traditional Mysore painting with gold leaf",
-      "imageUrl": "https://images.unsplash.com/photo-1629818818549-502a11b671a5?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1695733560796-a979ce83a992?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "traditional painting"
     },
     {
@@ -321,7 +321,7 @@
     {
       "id": "cuisine-litti-chokha",
       "description": "A plate of Litti Chokha",
-      "imageUrl": "https://images.unsplash.com/photo-1604382354936-07c5d9983d34?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1675792943719-3c734e5f1d82?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Litti Chokha"
     },
     {
@@ -411,7 +411,7 @@
     {
       "id": "cuisine-dhokla",
       "description": "A plate of soft and spongy Dhokla",
-      "imageUrl": "https://images.unsplash.com/photo-1589301760014-d929f39791e8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1647498701298-38435882352b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Dhokla food"
     },
     {
@@ -441,7 +441,7 @@
     {
       "id": "cuisine-bajra-khichdi",
       "description": "A healthy bowl of Bajra Khichdi",
-      "imageUrl": "https://images.unsplash.com/photo-1594705459736-2e86b24a3556?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1606491901322-2615dea725f8?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "millet porridge"
     },
     {
@@ -495,7 +495,7 @@
     {
       "id": "monument-baidyanath",
       "description": "The main shrine of Baidyanath Temple",
-      "imageUrl": "https://images.unsplash.com/photo-1628746083838-8924b1f4864f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1698205462214-411a37c95a20?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Baidyanath Temple"
     },
     {
@@ -519,7 +519,7 @@
     {
       "id": "monument-mattancherry-palace",
       "description": "The interior of Mattancherry Palace with murals",
-      "imageUrl": "https://images.unsplash.com/photo-1628746083838-8924b1f4864f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1588265435338-c625a242a9b3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Mattancherry Palace"
     },
     {
@@ -555,7 +555,7 @@
     {
       "id": "cuisine-poha-jalebi",
       "description": "A breakfast plate of Poha and Jalebi",
-      "imageUrl": "https://images.unsplash.com/photo-1604152163996-370d00a89d7a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1647498701298-38435882352b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Poha Jalebi"
     },
     {
@@ -597,7 +597,7 @@
     {
       "id": "art-warli-painting",
       "description": "A traditional Warli painting with stick figures",
-      "imageUrl": "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=1948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1695733560796-a979ce83a992?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Warli painting"
     },
     {
@@ -609,7 +609,7 @@
     {
       "id": "monument-kangla-fort",
       "description": "The historic Kangla Fort in Imphal",
-      "imageUrl": "https://images.unsplash.com/photo-1631589417805-4f3647304192?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1678929462838-335e2365287a?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Kangla Fort"
     },
     {
@@ -639,7 +639,7 @@
     {
       "id": "monument-living-root-bridges",
       "description": "A living root bridge in the jungles of Meghalaya",
-      "imageUrl": "https://images.unsplash.com/photo-1629818818549-502a11b671a5?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1598134469739-1b92c421ac1e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "living bridge"
     },
     {
@@ -663,7 +663,7 @@
     {
       "id": "state-mizoram",
       "description": "Lush green hills of Mizoram",
-      "imageUrl": "https://images.unsplash.com/photo-1617469089745-f09282283a37?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%C4%A3",
+      "imageUrl": "https://images.unsplash.com/photo-1622384218357-1de405391c06?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Mizoram hills"
     },
     {
@@ -699,13 +699,13 @@
     {
       "id": "monument-kohima-cemetery",
       "description": "The Kohima War Cemetery",
-      "imageUrl": "https://images.unsplash.com/photo-1624669850117-7325b5976b00?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1542882894-34865b2f2937?q=80&w=1943&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Kohima Cemetery"
     },
     {
       "id": "cuisine-axone",
       "description": "A dish prepared with Axone (fermented soybean)",
-      "imageUrl": "https://images.unsplash.com/photo-1604382354936-07c5d9983d34?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Axone food"
     },
     {
@@ -783,7 +783,7 @@
     {
       "id": "monument-meenakshi-temple",
       "description": "The colorful Meenakshi Amman Temple in Madurai",
-      "imageUrl": "https://images.unsplash.com/photo-1593642702909-178a0b0ea3d7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1578493836358-f1f3a29b53b8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Meenakshi Temple"
     },
     {
@@ -837,7 +837,7 @@
     {
       "id": "state-tripura",
       "description": "The Neermahal water palace in Tripura",
-      "imageUrl": "https://images.unsplash.com/photo-1628746083838-8924b1f4864f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1662991307525-50e50c4f8263?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Tripura palace"
     },
     {
@@ -933,7 +933,7 @@
     {
       "id": "cuisine-spices",
       "description": "A vibrant assortment of Indian spices.",
-      "imageUrl": "https://images.unsplash.com/photo-1476533980393-d6a97a248657?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1598511757831-37863702434b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "Indian spices"
     }
   ]
