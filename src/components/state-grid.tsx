@@ -49,7 +49,7 @@ export default function StateGrid() {
         }}
         className="w-full"
       >
-        <CarouselContent>
+        <CarouselContent className="-ml-4">
           {indianStates.map((state, index) => {
             const image = PlaceHolderImages.find(
               (img) => img.id === state.imageId
@@ -59,7 +59,7 @@ export default function StateGrid() {
             return (
               <CarouselItem
                 key={state.slug}
-                className="md:basis-1/2 lg:basis-1/3"
+                className="md:basis-1/2 lg:basis-1/3 pl-4"
               >
                 <div
                   className={cn(
@@ -73,7 +73,7 @@ export default function StateGrid() {
                     aria-disabled={!isSelected}
                     tabIndex={isSelected ? 0 : -1}
                   >
-                    <Card className="w-80 overflow-hidden transition-all duration-300 ease-in-out group-hover:shadow-xl group-hover:shadow-primary/20 group-hover:-translate-y-1">
+                    <Card className="overflow-hidden transition-all duration-300 ease-in-out group-hover:shadow-xl group-hover:shadow-primary/20 group-hover:-translate-y-1">
                       <div className="relative h-48 w-full">
                         {image && (
                           <Image
