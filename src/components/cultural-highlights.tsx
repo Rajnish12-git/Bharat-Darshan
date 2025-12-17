@@ -90,7 +90,7 @@ const HighlightItem = ({
     <div
       ref={ref}
       className={cn(
-        'grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-16 overflow-hidden'
+        'grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-12 max-w-5xl mx-auto'
       )}
     >
       <div
@@ -150,7 +150,7 @@ export default function CulturalHighlights() {
             Experience the rich and diverse cultural fabric of India, from its stunning architecture to its vibrant traditions.
           </p>
         </div>
-        <div className="space-y-20 md:space-y-32">
+        <div className="space-y-20 md:space-y-24">
           {highlights.map((item, index) => (
             <HighlightItem item={item} index={index} key={item.title} />
           ))}
