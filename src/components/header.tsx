@@ -26,28 +26,25 @@ export default function Header() {
   return (
     <header 
       className={cn(
-        "sticky top-0 z-50 w-full transition-colors duration-300",
-        isScrolled 
-          ? "border-b border-border/40 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/40"
-          : "bg-transparent"
+        "sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/40 transition-colors duration-300"
       )}
     >
       <div className="container flex h-16 max-w-screen-2xl items-center">
         <div className="mr-4 flex flex-1">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <span className={cn("font-headline text-3xl font-bold", isScrolled ? "text-foreground" : "text-white")}>Bharat Darshan</span>
+            <span className="font-headline text-3xl font-bold text-foreground">Bharat Darshan</span>
           </Link>
         </div>
         <div className="flex items-center justify-end space-x-6">
            <nav className="items-center space-x-4 hidden md:flex">
-                <Link href="/#states" className={cn("text-sm font-medium transition-colors hover:text-primary", isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/80 hover:text-white")}>
+                <Link href="/#states" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
                     Explore
                 </Link>
-                <Link href="/#timeline" className={cn("text-sm font-medium transition-colors hover:text-primary", isScrolled ? "text-muted-foreground hover:text-foreground" : "text-white/80 hover:text-white")}>
+                <Link href="/#timeline" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
                     Timeline
                 </Link>
             </nav>
-          <Button variant="ghost" size="icon" asChild className={cn("hover:bg-white/20", isScrolled ? "text-foreground hover:text-foreground" : "text-white hover:text-white")}>
+          <Button variant="ghost" size="icon" asChild>
             <Link href="/search" aria-label="Search">
               <Search className="h-5 w-5" />
             </Link>
