@@ -93,7 +93,7 @@
     {
       "id": "monument-mysore-palace",
       "description": "The illuminated Mysore Palace at night",
-      "imageUrl": "https://images.unsplash.com/photo-1657856855186-7cf4909a4f78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxNeXNvcmUlMjBQYWxhY2V8ZW58MHx8fHwxNzY1OTgwMzE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1657856855186-7cf4909a4f78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxNeXNvcmUlMjBQYWxhY2V8ZW58MHx8fHwxNzY1OTgwMzE4fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "Mysore Palace"
     },
     {
@@ -183,7 +183,7 @@
     {
       "id": "festival-dasara",
       "description": "A grand procession during Mysore Dasara",
-      "imageUrl": "https://images.unsplash.com/photo-1544094529-002edb772da9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxEYXNhcmElMjBwcm9jZXNzaW9ufGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1544094529-002edb772da9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxEYXNhcmElMjBwcm9jZXNzaW9ufGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Dasara procession"
     },
     {
@@ -213,7 +213,7 @@
     {
       "id": "art-pattachitra",
       "description": "A vibrant Pattachitra scroll painting",
-      "imageUrl": "https://images.unsplash.com/photo-1758092320366-a42aecc7fbcf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzY3JvbGwlMjBwYWludGluZ3xlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1758092320366-a42aecc7fbcf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzY3JvbGwlMjBwYWludGluZ3xlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "scroll painting"
     },
     {
@@ -927,8 +927,14 @@
     {
       "id": "art-sitar",
       "description": "A person playing the sitar",
-      "imageUrl": "https://images.unsplash.com/photo-1599403254189-e1d51a2bca3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzaXRhcnxlbnwwfHx8fDE3NjU5OTg5OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1599403254189-e1d51a2bca3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzaXRhcnxlbnwwfHx8fDE3NjU5OTg5OTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "sitar music"
+    },
+    {
+      "id": "cuisine-spices",
+      "description": "A vibrant assortment of Indian spices.",
+      "imageUrl": "https://images.unsplash.com/photo-1599500366622-857c17772638?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxJbmRpYW4lMjBzcGljZXN8ZW58MHx8fHwxNzY2MDE1MTk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Indian spices"
     }
   ]
 }
