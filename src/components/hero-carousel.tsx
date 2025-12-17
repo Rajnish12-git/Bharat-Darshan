@@ -8,9 +8,10 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  type CarouselApi,
 } from "@/components/ui/carousel";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
-import { Card, CardContent } from "./ui/card";
+import Autoplay from "embla-carousel-autoplay";
 
 const heroImages = [
   {
@@ -36,25 +37,19 @@ const heroImages = [
 ];
 
 export default function HeroCarousel() {
-  const carouselRef = React.useRef<any>(null);
-
-  React.useEffect(() => {
-    const interval = setInterval(() => {
-      if (carouselRef.current) {
-        carouselRef.current.scrollNext();
-      }
-    }, 5000); // Autoplay every 5 seconds
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <section className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden">
       <Carousel
-        ref={carouselRef}
         className="w-full h-full"
         opts={{
           loop: true,
         }}
+        plugins={[
+          Autoplay({
+            delay: 5000,
+            stopOnInteraction: true,
+          }),
+        ]}
       >
         <CarouselContent>
           {heroImages.map(({ id, title, subtitle }) => {
