@@ -109,10 +109,8 @@ export default function HeroCarousel() {
             );
           })}
         </CarouselContent>
-        <div className="absolute bottom-8 right-8 hidden md:flex gap-2">
-            <CarouselPrevious className="static translate-y-0 bg-white/30 text-white border-white/50 hover:bg-white/50"/>
-            <CarouselNext className="static translate-y-0 bg-white/30 text-white border-white/50 hover:bg-white/50"/>
-        </div>
+        <CarouselPrevious className="left-8 h-12 w-12 bg-white/30 text-white border-white/50 hover:bg-white/50"/>
+        <CarouselNext className="right-8 h-12 w-12 bg-white/30 text-white border-white/50 hover:bg-white/50"/>
       </Carousel>
     </section>
   );
