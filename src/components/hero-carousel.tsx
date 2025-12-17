@@ -52,6 +52,14 @@ const heroImages = [
 ];
 
 export default function HeroCarousel() {
+  const images = heroImages.map(heroImage => {
+    const placeholder = PlaceHolderImages.find(p => p.id === heroImage.id);
+    return {
+      ...heroImage,
+      ...placeholder
+    }
+  });
+
   return (
     <section className="relative w-full h-screen overflow-hidden">
       <Carousel
@@ -67,19 +75,18 @@ export default function HeroCarousel() {
         ]}
       >
         <CarouselContent>
-          {heroImages.map(({ id, title, subtitle }) => {
-            const image = PlaceHolderImages.find((img) => img.id === id);
-            if (!image) return null;
+          {images.map(({ id, title, subtitle, imageUrl, description, imageHint }) => {
+            if (!imageUrl) return null;
 
             return (
               <CarouselItem key={id}>
                 <div className="relative w-full h-screen">
                   <Image
-                    src={image.imageUrl}
-                    alt={image.description}
+                    src={imageUrl}
+                    alt={description || title}
                     fill
                     className="object-cover"
-                    data-ai-hint={image.imageHint}
+                    data-ai-hint={imageHint}
                     priority={id === 'hero-taj-mahal'}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
