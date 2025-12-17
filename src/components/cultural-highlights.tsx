@@ -79,12 +79,12 @@ const HighlightItem = ({
     >
       <div
         className={cn(
-          'grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-16'
+          'grid grid-cols-1 md:grid-cols-5 items-center gap-8 md:gap-16'
         )}
       >
         <div
           className={cn(
-            'relative aspect-square rounded-xl overflow-hidden shadow-2xl',
+            'relative aspect-video md:col-span-2 rounded-xl overflow-hidden shadow-2xl',
             index % 2 === 1 && 'md:order-last'
           )}
         >
@@ -95,11 +95,11 @@ const HighlightItem = ({
               fill
               className="object-cover"
               data-ai-hint={image.imageHint}
-              sizes="(max-width: 768px) 100vw, 50vw"
+              sizes="(max-width: 768px) 100vw, 40vw"
             />
           )}
         </div>
-        <div className="flex flex-col items-start text-center md:text-left">
+        <div className="flex flex-col items-start text-center md:text-left md:col-span-3">
           <p className="text-primary font-semibold">{item.subtitle}</p>
           <h3 className="font-headline text-3xl font-bold mt-2">{item.title}</h3>
           <p className="mt-4 text-muted-foreground leading-relaxed">
