@@ -16,39 +16,39 @@ import Autoplay from "embla-carousel-autoplay";
 
 const heroImages = [
   {
-    id: "hero-taj-mahal",
-    title: "Taj Mahal",
-    subtitle: "Agra, Uttar Pradesh",
+    id: 'hero-taj-mahal',
+    title: 'Taj Mahal',
+    subtitle: 'Agra, Uttar Pradesh',
   },
   {
-    id: "hero-qutub-minar",
-    title: "Qutub Minar",
-    subtitle: "Delhi",
+    id: 'hero-qutub-minar',
+    title: 'Qutub Minar',
+    subtitle: 'Delhi',
   },
   {
-    id: "hero-hampi",
-    title: "Hampi",
-    subtitle: "Karnataka",
+    id: 'hero-hampi',
+    title: 'Hampi',
+    subtitle: 'Karnataka',
   },
   {
-    id: "hero-konark-sun-temple",
-    title: "Konark Sun Temple",
-    subtitle: "Odisha",
+    id: 'hero-konark-sun-temple',
+    title: 'Konark Sun Temple',
+    subtitle: 'Odisha',
   },
   {
-    id: "hero-kerala-backwaters",
-    title: "Kerala Backwaters",
-    subtitle: "Alleppey, Kerala",
+    id: 'hero-kerala-backwaters',
+    title: 'Kerala Backwaters',
+    subtitle: 'Alleppey, Kerala',
   },
   {
-    id: "hero-golden-temple",
-    title: "Golden Temple",
-    subtitle: "Amritsar, Punjab",
+    id: 'hero-golden-temple',
+    title: 'Golden Temple',
+    subtitle: 'Amritsar, Punjab',
   },
   {
-    id: "hero-goa-beach",
-    title: "Goa Beaches",
-    subtitle: "Goa",
+    id: 'hero-goa-beach',
+    title: 'Goa Beaches',
+    subtitle: 'Goa',
   },
 ];
 
@@ -100,7 +100,7 @@ export default function HeroCarousel() {
                     </p>
                   </div>
                   <div className="absolute bottom-0 right-0 p-8 md:p-16 text-white text-right max-w-md hidden md:block">
-                     <p className="text-base font-normal drop-shadow-md opacity-80">
+                     <p className="font-semibold text-lg drop-shadow-md opacity-90 max-w-lg">
                       {description}
                     </p>
                   </div>

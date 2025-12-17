@@ -34,8 +34,7 @@ export default function Header() {
         <div className="mr-4 flex flex-1">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <span className={cn(
-              "font-bold text-3xl transition-colors",
-              isScrolled || !isScrolled ? "text-foreground" : "text-white"
+              "font-bold text-3xl transition-colors text-foreground"
             )}>Bharat Darshan</span>
           </Link>
         </div>
