@@ -19,7 +19,7 @@ export default {
       fontFamily: {
         body: ['Literata', 'serif'],
         headline: ['Literata', 'serif'],
-        brand: ['Playball', 'cursive'],
+        brand: ['Amze', 'cursive'],
         code: ['monospace'],
       },
       colors: {

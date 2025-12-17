@@ -38,7 +38,7 @@ const heroImages = [
 
 export default function HeroCarousel() {
   return (
-    <section className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden">
+    <section className="relative w-full h-screen overflow-hidden">
       <Carousel
         className="w-full h-full"
         opts={{
@@ -58,7 +58,7 @@ export default function HeroCarousel() {
 
             return (
               <CarouselItem key={id}>
-                <div className="relative w-full h-[60vh] md:h-[80vh]">
+                <div className="relative w-full h-screen">
                   <Image
                     src={image.imageUrl}
                     alt={image.description}
