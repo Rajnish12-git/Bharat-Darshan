@@ -19,6 +19,7 @@ export default {
       fontFamily: {
         body: ['Literata', 'serif'],
         headline: ['Literata', 'serif'],
+        brand: ['Playball', 'cursive'],
         code: ['monospace'],
       },
       colors: {
