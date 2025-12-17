@@ -3,6 +3,7 @@ import HeroCarousel from '@/components/hero-carousel';
 import StateGrid from '@/components/state-grid';
 import HistoricalTimeline from '@/components/historical-timeline';
 import Footer from '@/components/footer';
+import CulturalHighlights from '@/components/cultural-highlights';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         </div>
         <StateGrid />
       </section>
+      <CulturalHighlights />
       <section id="timeline" className="bg-secondary/50 scroll-mt-20">
          <div className="container py-12 md:py-24">
             <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center mb-12">
