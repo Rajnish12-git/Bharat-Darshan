@@ -105,8 +105,8 @@ export default function StateGrid() {
             );
           })}
         </CarouselContent>
-        <CarouselPrevious className="absolute left-[-50px] top-1/2 -translate-y-1/2 fill-black" />
-        <CarouselNext className="absolute right-[-50px] top-1/2 -translate-y-1/2 fill-black" />
+        <CarouselPrevious className="absolute left-8 top-1/2 -translate-y-1/2 z-10 h-10 w-10 bg-white/50 hover:bg-white/80" />
+        <CarouselNext className="absolute right-8 top-1/2 -translate-y-1/2 z-10 h-10 w-10 bg-white/50 hover:bg-white/80" />
       </Carousel>
     </div>
   );
