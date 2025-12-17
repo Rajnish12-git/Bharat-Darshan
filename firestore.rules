@@ -1,0 +1,108 @@
+/**
+ * @fileoverview Firestore Security Rules for the Heritage of India application.
+ *
+ * @description
+ * This ruleset enforces a strict "Public Read-Only" security model. All data
+ * regarding states, monuments, and historical timeline events is intended for
+ * public consumption. Therefore, any user, authenticated or not, is granted
+ * read access. To ensure data integrity and prevent unauthorized modifications,
+ * all client-side write operations (create, update, delete) are explicitly
+ * forbidden across the entire database. Data is expected to be managed via a
+ * trusted server-side environment using the Firebase Admin SDK.
+ *
+ * Core Philosophy:
+ * The security model is designed for a content-driven application where the
+ * data serves as a public encyclopedia. The primary goal is to make information
+ * universally accessible while completely locking down client-side modifications.
+ *
+ * Data Structure:
+ * The data is organized into three distinct top-level collections:
+ * - /states: Contains documents for each Indian state.
+ * - /monuments: Contains documents for historical monuments.
+ * - /timeline_events: Contains documents for significant historical events.
+ * This flat structure simplifies rules and queries for public data.
+ *
+ * Key Security Decisions:
+ * - All Reads Public: `get` and `list` operations are permitted for everyone
+ *   (`if true;`) on all collections to support the app's public-facing nature.
+ * - All Writes Denied: `create`, `update`, and `delete` operations are explicitly
+ *   denied (`if false;`) to protect the integrity of the dataset from client-side
+ *   changes.
+ * - No User-Specific Data: The data model does not contain any private or
+ *   user-specific information, making a global read-only rule safe and efficient.
+ */
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    //-------------------------------------------------------------------------
+    // Helper Functions
+    //-------------------------------------------------------------------------
+
+    /**
+     * @description Checks if a user is authenticated.
+     * @returns {boolean} True if the user is signed in.
+     */
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    //-------------------------------------------------------------------------
+    // Collection Rules
+    //-------------------------------------------------------------------------
+
+    /**
+     * @description Allows public, read-only access to state information. All
+     *              client-side modifications are blocked.
+     * @path        /states/{stateId}
+     * @allow       (get) Anyone can read a specific state document.
+     * @allow       (list) Anyone can list all state documents.
+     * @deny        (create) A user cannot create a new state document.
+     * @principle   Secures a public dataset by making it strictly read-only
+     *              from the client-side.
+     */
+    match /states/{stateId} {
+      allow get: if true;
+      allow list: if true;
+      allow create: if false;
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    /**
+     * @description Allows public, read-only access to monument information.
+     *              All client-side modifications are blocked.
+     * @path        /monuments/{monumentId}
+     * @allow       (get) Anyone can read a specific monument document.
+     * @allow       (list) Anyone can list all monument documents.
+     * @deny        (update) A user cannot update an existing monument document.
+     * @principle   Secures a public dataset by making it strictly read-only
+     *              from the client-side.
+     */
+    match /monuments/{monumentId} {
+      allow get: if true;
+      allow list: if true;
+      allow create: if false;
+      allow update: if false;
+      allow delete: if false;
+    }
+
+    /**
+     * @description Allows public, read-only access to timeline events. All
+     *              client-side modifications are blocked.
+     * @path        /timeline_events/{timelineEventId}
+     * @allow       (get) Anyone can read a specific timeline event document.
+     * @allow       (list) Anyone can list all timeline event documents.
+     * @deny        (delete) A user cannot delete a timeline event document.
+     * @principle   Secures a public dataset by making it strictly read-only
+     *              from the client-side.
+     */
+    match /timeline_events/{timelineEventId} {
+      allow get: if true;
+      allow list: if true;
+      allow create: if false;
+      allow update: if false;
+      allow delete: if false;
+    }
+  }
+}

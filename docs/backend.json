@@ -1,0 +1,194 @@
+{
+  "entities": {
+    "State": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "State",
+      "type": "object",
+      "description": "Represents a state in India, including its heritage, cuisine, festivals, and art.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the state."
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the state."
+        },
+        "heritageMonuments": {
+          "type": "array",
+          "description": "List of heritage monument ids within the state.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "traditionalCuisine": {
+          "type": "string",
+          "description": "Description of the state's traditional cuisine."
+        },
+        "majorFestivals": {
+          "type": "string",
+          "description": "Description of the state's major festivals."
+        },
+        "localArtForms": {
+          "type": "string",
+          "description": "Description of the state's local art forms."
+        },
+        "description": {
+          "type": "string",
+          "description": "A brief description of the state."
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "heritageMonuments",
+        "traditionalCuisine",
+        "majorFestivals",
+        "localArtForms",
+        "description"
+      ]
+    },
+    "Monument": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Monument",
+      "type": "object",
+      "description": "Represents a historical or cultural monument in India.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the monument."
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the monument."
+        },
+        "stateId": {
+          "type": "string",
+          "description": "Reference to State. (Relationship: State 1:N Monument)"
+        },
+        "description": {
+          "type": "string",
+          "description": "A detailed description of the monument."
+        },
+        "location": {
+          "type": "string",
+          "description": "Location of the monument."
+        },
+        "architecturalStyle": {
+          "type": "string",
+          "description": "The architectural style of the monument."
+        },
+        "builtDate": {
+          "type": "string",
+          "description": "The date the monument was built.",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "stateId",
+        "description",
+        "location",
+        "architecturalStyle",
+        "builtDate"
+      ]
+    },
+    "TimelineEvent": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "TimelineEvent",
+      "type": "object",
+      "description": "Represents a historical event or milestone in Indian civilization.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the timeline event."
+        },
+        "title": {
+          "type": "string",
+          "description": "Title of the timeline event."
+        },
+        "date": {
+          "type": "string",
+          "description": "Date of the timeline event.",
+          "format": "date-time"
+        },
+        "description": {
+          "type": "string",
+          "description": "A detailed description of the event."
+        },
+        "imageUrl": {
+          "type": "string",
+          "description": "URL to an image related to the event.",
+          "format": "uri"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "date",
+        "description",
+        "imageUrl"
+      ]
+    }
+  },
+  "auth": {
+    "providers": [
+      "password",
+      "anonymous"
+    ]
+  },
+  "firestore": {
+    "structure": [
+      {
+        "path": "/states/{stateId}",
+        "definition": {
+          "entityName": "State",
+          "schema": {
+            "$ref": "#/backend/entities/State"
+          },
+          "description": "Collection of states in India. Includes denormalized 'id' for relationship to monuments.",
+          "params": [
+            {
+              "name": "stateId",
+              "description": "Unique identifier for the state."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/monuments/{monumentId}",
+        "definition": {
+          "entityName": "Monument",
+          "schema": {
+            "$ref": "#/backend/entities/Monument"
+          },
+          "description": "Collection of monuments. Includes 'stateId' to easily find monuments related to states.",
+          "params": [
+            {
+              "name": "monumentId",
+              "description": "Unique identifier for the monument."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/timeline_events/{timelineEventId}",
+        "definition": {
+          "entityName": "TimelineEvent",
+          "schema": {
+            "$ref": "#/backend/entities/TimelineEvent"
+          },
+          "description": "Collection of timeline events for Indian civilization.",
+          "params": [
+            {
+              "name": "timelineEventId",
+              "description": "Unique identifier for the timeline event."
+            }
+          ]
+        }
+      }
+    ],
+    "reasoning": "The Firestore data structure is designed to support the \"Heritage of India\" application, focusing on states, monuments, and timeline events. The structure prioritizes Authorization Independence and QAPs. Since all the data is read-only and public, no specific authorization is needed besides preventing unauthorized writes. Data is segregated into separate collections for States, Monuments, and Timeline Events. Each state document contains a list of monument IDs, facilitating easy retrieval of monuments related to a specific state.  QAPs are supported because list operations are secured at the collection level."
+  }
+}
