@@ -1,3 +1,4 @@
+import Header from '@/components/header';
 import HeroCarousel from '@/components/hero-carousel';
 import StateGrid from '@/components/state-grid';
 import HistoricalTimeline from '@/components/historical-timeline';
@@ -5,6 +6,7 @@ import HistoricalTimeline from '@/components/historical-timeline';
 export default function Home() {
   return (
     <div className="flex flex-col">
+      <Header />
       <HeroCarousel />
       <section id="states" className="container py-12 md:py-24 scroll-mt-20">
         <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
