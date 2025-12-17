@@ -26,25 +26,29 @@ export default function Header() {
   return (
     <header 
       className={cn(
-        "sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/40 transition-colors duration-300"
+        "sticky top-0 z-50 w-full border-b border-border/40 transition-colors duration-300",
+        isScrolled ? "bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/40" : "bg-transparent"
       )}
     >
       <div className="container flex h-16 max-w-screen-2xl items-center">
         <div className="mr-4 flex flex-1">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <span className="font-headline text-3xl font-bold text-foreground">Bharat Darshan</span>
+            <span className={cn(
+              "font-brand text-3xl text-foreground",
+              !isScrolled && "text-white"
+            )}>Bharat Darshan</span>
           </Link>
         </div>
         <div className="flex items-center justify-end space-x-6">
            <nav className="items-center space-x-4 hidden md:flex">
-                <Link href="/#states" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
+                <Link href="/#states" className={cn("text-sm font-medium transition-colors hover:text-primary", isScrolled ? "text-muted-foreground" : "text-white/80 hover:text-white")}>
                     Explore
                 </Link>
-                <Link href="/#timeline" className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary">
+                <Link href="/#timeline" className={cn("text-sm font-medium transition-colors hover:text-primary", isScrolled ? "text-muted-foreground" : "text-white/80 hover:text-white")}>
                     Timeline
                 </Link>
             </nav>
-          <Button variant="ghost" size="icon" asChild>
+          <Button variant="ghost" size="icon" asChild className={cn(!isScrolled && "text-white/80 hover:text-white hover:bg-white/10")}>
             <Link href="/search" aria-label="Search">
               <Search className="h-5 w-5" />
             </Link>
