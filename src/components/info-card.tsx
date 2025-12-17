@@ -17,8 +17,9 @@ export default function InfoCard({ item }: InfoCardProps) {
           <Image
             src={image.imageUrl}
             alt={item.name}
-            fill
-            className="object-cover"
+            width={600}
+            height={400}
+            className="object-cover w-full h-full"
             data-ai-hint={image.imageHint}
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />

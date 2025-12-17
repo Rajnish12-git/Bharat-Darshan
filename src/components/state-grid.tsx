@@ -79,10 +79,11 @@ export default function StateGrid() {
                           <Image
                             src={image.imageUrl}
                             alt={state.name}
-                            fill
-                            className="object-cover transition-transform duration-300 group-hover:scale-105"
+                            width={600}
+                            height={400}
+                            className="object-cover w-full h-full"
                             data-ai-hint={image.imageHint}
-                            sizes="320px"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                           />
                         )}
                       </div>
