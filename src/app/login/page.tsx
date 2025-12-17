@@ -1,9 +1,14 @@
 'use client';
 
+import { useState, useTransition, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import { Loader2 } from 'lucide-react';
+import { useToast } from "@/hooks/use-toast";
+import { initiateEmailSignIn, useAuth, useUser } from '@/firebase';
 
 import { Button } from '@/components/ui/button';
 import {
@@ -33,6 +38,12 @@ const formSchema = z.object({
 });
 
 export default function LoginPage() {
+  const [isPending, startTransition] = useTransition();
+  const { toast } = useToast();
+  const auth = useAuth();
+  const { user, isUserLoading } = useUser();
+  const router = useRouter();
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -41,14 +52,43 @@ export default function LoginPage() {
     },
   });
 
+  useEffect(() => {
+    if (!isUserLoading && user) {
+      router.push('/');
+    }
+  }, [user, isUserLoading, router]);
+
   function onSubmit(values: z.infer<typeof formSchema>) {
-    // TODO: Handle login logic
-    console.log(values);
+    startTransition(async () => {
+      try {
+        initiateEmailSignIn(auth, values.email, values.password);
+        toast({
+          title: "Login Successful",
+          description: "You are now being redirected.",
+        });
+        // The onAuthStateChanged listener in the provider will handle the redirect.
+      } catch (error: any) {
+        console.error("Login Error:", error);
+        toast({
+          variant: "destructive",
+          title: "Login Failed",
+          description: error.message || "An unknown error occurred.",
+        });
+      }
+    });
+  }
+
+  if (isUserLoading || user) {
+    return (
+      <div className="flex min-h-[calc(100vh-8rem)] items-center justify-center">
+        <Loader2 className="h-8 w-8 animate-spin text-primary" />
+      </div>
+    );
   }
 
   return (
     <div className="flex min-h-[calc(100vh-8rem)] items-center justify-center py-12">
-      <Card className="mx-auto max-w-sm">
+      <Card className="mx-auto max-w-sm shadow-xl">
         <CardHeader>
           <CardTitle className="text-2xl">Login</CardTitle>
           <CardDescription>
@@ -68,6 +108,7 @@ export default function LoginPage() {
                       <Input
                         placeholder="m@example.com"
                         {...field}
+                        disabled={isPending}
                       />
                     </FormControl>
                     <FormMessage />
@@ -81,13 +122,14 @@ export default function LoginPage() {
                   <FormItem>
                     <FormLabel>Password</FormLabel>
                     <FormControl>
-                      <Input type="password" {...field} />
+                      <Input type="password" {...field} disabled={isPending} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
                 )}
               />
-              <Button type="submit" className="w-full">
+              <Button type="submit" className="w-full" disabled={isPending}>
+                {isPending && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
                 Login
               </Button>
             </form>

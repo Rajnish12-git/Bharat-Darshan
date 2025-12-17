@@ -2,6 +2,7 @@ import Header from '@/components/header';
 import HeroCarousel from '@/components/hero-carousel';
 import StateGrid from '@/components/state-grid';
 import HistoricalTimeline from '@/components/historical-timeline';
+import Footer from '@/components/footer';
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
             <HistoricalTimeline />
           </div>
       </section>
+      <Footer />
     </div>
   );
 }

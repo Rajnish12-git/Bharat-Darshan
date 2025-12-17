@@ -5,9 +5,22 @@ import Link from 'next/link';
 import { Button } from './ui/button';
 import { Search, User } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useUser } from '@/firebase';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu"
+import { getAuth, signOut } from 'firebase/auth';
+
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const { user } = useUser();
+  const auth = getAuth();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,6 +35,10 @@ export default function Header() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const handleSignOut = () => {
+    signOut(auth);
+  };
 
   return (
     <header 
@@ -53,11 +70,29 @@ export default function Header() {
               <Search className="h-5 w-5" />
             </Link>
           </Button>
-          <Button variant="ghost" size="icon" asChild className={cn("transition-colors", isScrolled ? "text-muted-foreground" : "text-white hover:bg-black/10")}>
-            <Link href="/login" aria-label="User Profile">
-              <User className="h-5 w-5" />
-            </Link>
-          </Button>
+
+          {user ? (
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="icon" className={cn("transition-colors rounded-full", isScrolled ? "text-muted-foreground" : "text-white hover:bg-black/10")}>
+                    <User className="h-5 w-5" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end">
+                <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                <DropdownMenuSeparator />
+                <DropdownMenuItem onClick={() => router.push('/profile')}>Profile</DropdownMenuItem>
+                <DropdownMenuItem onClick={handleSignOut}>Sign Out</DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+          ) : (
+            <Button variant="ghost" size="icon" asChild className={cn("transition-colors", isScrolled ? "text-muted-foreground" : "text-white hover:bg-black/10")}>
+              <Link href="/login" aria-label="User Profile">
+                <User className="h-5 w-5" />
+              </Link>
+            </Button>
+          )}
+
         </div>
       </div>
     </header>

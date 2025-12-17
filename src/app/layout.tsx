@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
-import Footer from '@/components/footer';
 import { Poppins } from 'next/font/google';
+import { FirebaseClientProvider } from '@/firebase/client-provider';
 
 export const metadata: Metadata = {
   title: 'Bharat Darshan',
@@ -34,11 +34,12 @@ export default function RootLayout({
           poppins.variable
         )}
       >
-        <div className="relative flex min-h-dvh flex-col bg-background">
-          <main className="flex-1">{children}</main>
-          <Footer />
-        </div>
-        <Toaster />
+        <FirebaseClientProvider>
+          <div className="relative flex min-h-dvh flex-col bg-background">
+            <main className="flex-1">{children}</main>
+          </div>
+          <Toaster />
+        </FirebaseClientProvider>
       </body>
     </html>
   );
