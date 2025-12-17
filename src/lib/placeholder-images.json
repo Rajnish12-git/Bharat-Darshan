@@ -1,3 +1,202 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-taj-mahal",
+      "description": "Taj Mahal at sunrise",
+      "imageUrl": "https://images.unsplash.com/photo-1526711657229-e7e080ed7aa1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxUYWolMjBNYWhhbHxlbnwwfHx8fDE3NjU5NDkxOTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Taj Mahal"
+    },
+    {
+      "id": "hero-qutub-minar",
+      "description": "Qutub Minar against a blue sky",
+      "imageUrl": "https://images.unsplash.com/photo-1663229203856-8a363f07d881?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxRdXR1YiUyME1pbmFyfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Qutub Minar"
+    },
+    {
+      "id": "hero-hampi",
+      "description": "Ancient ruins of Hampi",
+      "imageUrl": "https://images.unsplash.com/photo-1689946727836-78a9f36987c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxIYW1waSUyMHJ1aW5zfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Hampi ruins"
+    },
+    {
+      "id": "hero-konark-sun-temple",
+      "description": "Konark Sun Temple chariot wheel",
+      "imageUrl": "https://images.unsplash.com/photo-1677211352662-30e7775c7ce8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxLb25hcmslMjB0ZW1wbGV8ZW58MHx8fHwxNzY1OTgwMzE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Konark temple"
+    },
+    {
+      "id": "state-uttar-pradesh",
+      "description": "A vibrant ghat in Varanasi, Uttar Pradesh",
+      "imageUrl": "https://images.unsplash.com/photo-1571536802807-30451e3955d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxWYXJhbmFzaSUyMGdoYXR8ZW58MHx8fHwxNzY1OTgwMzE3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Varanasi ghat"
+    },
+    {
+      "id": "state-rajasthan",
+      "description": "A majestic fort in Rajasthan",
+      "imageUrl": "https://images.unsplash.com/photo-1677649117932-4c8abf3e27bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxSYWphc3RoYW4lMjBmb3J0fGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Rajasthan fort"
+    },
+    {
+      "id": "state-karnataka",
+      "description": "The stone chariot at Hampi, Karnataka",
+      "imageUrl": "https://images.unsplash.com/photo-1651569213711-b29d1fc3f995?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxIYW1waSUyMGNoYXJpb3R8ZW58MHx8fHwxNzY1OTgwMzE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Hampi chariot"
+    },
+    {
+      "id": "state-odisha",
+      "description": "Puri Jagannath Temple in Odisha",
+      "imageUrl": "https://images.unsplash.com/photo-1726220063709-982e38610125?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxQdXJpJTIwdGVtcGxlfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Puri temple"
+    },
+    {
+      "id": "monument-agra-fort",
+      "description": "The red sandstone walls of Agra Fort",
+      "imageUrl": "https://images.unsplash.com/photo-1719904119998-052d61b6e3cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxBZ3JhJTIwRm9ydHxlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Agra Fort"
+    },
+    {
+      "id": "monument-fatehpur-sikri",
+      "description": "Panch Mahal at Fatehpur Sikri",
+      "imageUrl": "https://images.unsplash.com/photo-1717761558642-32cbeccbee7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxGYXRlaHB1ciUyMFNpa3JpfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Fatehpur Sikri"
+    },
+    {
+      "id": "monument-hawa-mahal",
+      "description": "The intricate facade of Hawa Mahal",
+      "imageUrl": "https://images.unsplash.com/photo-1705861145876-2efd5e0392a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxIYXdhJTIwTWFoYWx8ZW58MHx8fHwxNzY1OTQ5MTk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Hawa Mahal"
+    },
+    {
+      "id": "monument-amer-fort",
+      "description": "The stunning Amer Fort overlooking Maota Lake",
+      "imageUrl": "https://images.unsplash.com/photo-1705861144929-91df892af5d6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxBbWVyJTIwRm9ydHxlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Amer Fort"
+    },
+    {
+      "id": "monument-mysore-palace",
+      "description": "The illuminated Mysore Palace at night",
+      "imageUrl": "https://images.unsplash.com/photo-1523544545175-92e04b96d26b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxNeXNvcmUlMjBQYWxhY2V8ZW58MHx8fHwxNzY1OTgwMzE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Mysore Palace"
+    },
+    {
+      "id": "monument-gol-gumbaz",
+      "description": "The massive dome of Gol Gumbaz",
+      "imageUrl": "https://picsum.photos/seed/306/600/400",
+      "imageHint": "Gol Gumbaz"
+    },
+    {
+      "id": "monument-lingaraja-temple",
+      "description": "The main tower of Lingaraja Temple",
+      "imageUrl": "https://images.unsplash.com/photo-1660463835177-bc6329055a6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxMaW5nYXJhamElMjBUZW1wbGV8ZW58MHx8fHwxNzY1OTgwMzE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Lingaraja Temple"
+    },
+    {
+      "id": "monument-udayagiri-caves",
+      "description": "Ancient rock-cut caves of Udayagiri",
+      "imageUrl": "https://picsum.photos/seed/308/600/400",
+      "imageHint": "Udayagiri caves"
+    },
+    {
+      "id": "cuisine-bedmi-puri",
+      "description": "A plate of Bedmi Puri with aloo sabzi",
+      "imageUrl": "https://images.unsplash.com/photo-1542367592-8849eb950fd8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxJbmRpYW4lMjBmb29kfGVufDB8fHx8MTc2NTk4MDMxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Indian food"
+    },
+    {
+      "id": "cuisine-petha",
+      "description": "Sweet candy Petha from Agra",
+      "imageUrl": "https://images.unsplash.com/photo-1635952346904-95f2ccfcd029?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxJbmRpYW4lMjBzd2VldHxlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Indian sweet"
+    },
+    {
+      "id": "cuisine-dal-baati-churma",
+      "description": "Traditional Rajasthani dish Dal Baati Churma",
+      "imageUrl": "https://images.unsplash.com/photo-1672477179695-7276b0602fa9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxSYWphc3RoYW5pJTIwZm9vZHxlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Rajasthani food"
+    },
+    {
+      "id": "cuisine-ghevar",
+      "description": "A disc-shaped sweet cake called Ghevar",
+      "imageUrl": "https://images.unsplash.com/photo-1597469713172-318cae054a5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxSYWphc3RoYW5pJTIwc3dlZXR8ZW58MHx8fHwxNzY1OTgwMzE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Rajasthani sweet"
+    },
+    {
+      "id": "cuisine-bisi-bele-bath",
+      "description": "A bowl of hot and spicy Bisi Bele Bath",
+      "imageUrl": "https://images.unsplash.com/photo-1622907741985-7659f25389a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxLYXJuYXRha2ElMjBmb29kfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Karnataka food"
+    },
+    {
+      "id": "cuisine-mysore-pak",
+      "description": "Pieces of the sweet Mysore Pak",
+      "imageUrl": "https://images.unsplash.com/photo-1731243164672-25f17cd9f85e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8S2FybmF0YWthJTIwc3dlZXR8ZW58MHx8fHwxNzY1OTgwMzE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Karnataka sweet"
+    },
+    {
+      "id": "cuisine-chenna-poda",
+      "description": "A slice of Chenna Poda, a cheese dessert",
+      "imageUrl": "https://images.unsplash.com/photo-1579406842270-ea87c39a8a12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxPZGlzaGElMjBzd2VldHxlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Odisha sweet"
+    },
+    {
+      "id": "cuisine-pakhala-bhata",
+      "description": "A traditional Odia meal, Pakhala Bhata",
+      "imageUrl": "https://images.unsplash.com/photo-1657205937707-940bf77b2602?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxPZGlzaGElMjBmb29kfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Odisha food"
+    },
+    {
+      "id": "festival-diwali",
+      "description": "Lamps lit during the festival of Diwali",
+      "imageUrl": "https://images.unsplash.com/photo-1633368516165-f7b04d6428d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxEaXdhbGklMjBsYW1wc3xlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Diwali lamps"
+    },
+    {
+      "id": "festival-holi",
+      "description": "People celebrating Holi with colored powders",
+      "imageUrl": "https://images.unsplash.com/photo-1595567582054-f2f0a1940235?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxIb2xpJTIwZmVzdGl2YWx8ZW58MHx8fHwxNzY1OTYzMTEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Holi festival"
+    },
+    {
+      "id": "festival-pushkar-fair",
+      "description": "Decorated camels at the Pushkar Fair",
+      "imageUrl": "https://images.unsplash.com/photo-1599335211332-e93014a608f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxQdXNoa2FyJTIwY2FtZWxzfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Pushkar camels"
+    },
+    {
+      "id": "festival-dasara",
+      "description": "A grand procession during Mysore Dasara",
+      "imageUrl": "https://images.unsplash.com/photo-1656915568032-829591ceadaf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxEYXNhcmElMjBwcm9jZXNzaW9ufGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Dasara procession"
+    },
+    {
+      "id": "festival-ratha-yatra",
+      "description": "The grand chariot festival of Ratha Yatra in Puri",
+      "imageUrl": "https://images.unsplash.com/photo-1577649428176-212243cd0655?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxSYXRoYSUyMFlhdHJhfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Ratha Yatra"
+    },
+    {
+      "id": "art-chikankari",
+      "description": "Delicate Chikankari embroidery on fabric",
+      "imageUrl": "https://images.unsplash.com/photo-1651177585014-2b3a5da68e54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZW1icm9pZGVyeSUyMGZhYnJpY3xlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "embroidery fabric"
+    },
+    {
+      "id": "art-blue-pottery",
+      "description": "A collection of Jaipur Blue Pottery",
+      "imageUrl": "https://images.unsplash.com/photo-1657395330801-2214c0d02e41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxibHVlJTIwcG90dGVyeXxlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "blue pottery"
+    },
+    {
+      "id": "art-mysore-painting",
+      "description": "A traditional Mysore painting with gold leaf",
+      "imageUrl": "https://images.unsplash.com/photo-1731251451227-59cca8bbcb4a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHx0cmFkaXRpb25hbCUyMHBhaW50aW5nfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "traditional painting"
+    },
+    {
+      "id": "art-pattachitra",
+      "description": "A vibrant Pattachitra scroll painting",
+      "imageUrl": "https://images.unsplash.com/photo-1762114974502-551aeb189066?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzY3JvbGwlMjBwYWludGluZ3xlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "scroll painting"
+    }
+  ]
 }
