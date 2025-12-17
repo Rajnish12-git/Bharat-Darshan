@@ -35,25 +35,25 @@ export default function Header() {
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <span className={cn(
               "font-bold text-3xl transition-colors",
-              isScrolled ? "text-foreground" : "text-white"
+              isScrolled || !isScrolled ? "text-foreground" : "text-white"
             )}>Bharat Darshan</span>
           </Link>
         </div>
         <div className="flex items-center justify-end space-x-2">
            <nav className="items-center space-x-4 hidden md:flex">
-                <Link href="/#states" className={cn("text-sm font-medium transition-colors hover:text-primary", isScrolled ? "text-muted-foreground" : "text-white/80 hover:text-white")}>
+                <Link href="/#states" className={cn("text-sm font-medium transition-colors hover:text-primary", isScrolled ? "text-muted-foreground" : "text-foreground")}>
                     Explore
                 </Link>
-                <Link href="/#timeline" className={cn("text-sm font-medium transition-colors hover:text-primary", isScrolled ? "text-muted-foreground" : "text-white/80 hover:text-white")}>
+                <Link href="/#timeline" className={cn("text-sm font-medium transition-colors hover:text-primary", isScrolled ? "text-muted-foreground" : "text-foreground")}>
                     Timeline
                 </Link>
             </nav>
-          <Button variant="ghost" size="icon" asChild className={cn("transition-colors", !isScrolled && "text-white/80 hover:text-white hover:bg-white/10")}>
+          <Button variant="ghost" size="icon" asChild className={cn("transition-colors", !isScrolled && "text-foreground hover:bg-black/10")}>
             <Link href="/search" aria-label="Search">
               <Search className="h-5 w-5" />
             </Link>
           </Button>
-          <Button variant="ghost" size="icon" asChild className={cn("transition-colors", !isScrolled && "text-white/80 hover:text-white hover:bg-white/10")}>
+          <Button variant="ghost" size="icon" asChild className={cn("transition-colors", !isScrolled && "text-foreground hover:bg-black/10")}>
             <Link href="/login" aria-label="User Profile">
               <User className="h-5 w-5" />
             </Link>
