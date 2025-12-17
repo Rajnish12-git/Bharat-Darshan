@@ -105,8 +105,8 @@ export default function StateGrid() {
             );
           })}
         </CarouselContent>
-        <CarouselPrevious className="absolute left-8 top-1/2 -translate-y-1/2 z-10 h-10 w-10 bg-white/50 hover:bg-white/80" />
-        <CarouselNext className="absolute right-8 top-1/2 -translate-y-1/2 z-10 h-10 w-10 bg-white/50 hover:bg-white/80" />
+        <CarouselPrevious className="absolute left-8 top-1/2 -translate-y-1/2 z-10 h-10 w-10 bg-white/30 backdrop-blur-sm border border-white/50 text-white/80 hover:bg-white/50 hover:text-white" />
+        <CarouselNext className="absolute right-8 top-1/2 -translate-y-1/2 z-10 h-10 w-10 bg-white/30 backdrop-blur-sm border border-white/50 text-white/80 hover:bg-white/50 hover:text-white" />
       </Carousel>
     </div>
   );
