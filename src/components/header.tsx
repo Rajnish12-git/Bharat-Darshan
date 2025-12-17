@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { Button } from './ui/button';
 import { Search, User } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -21,6 +22,7 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const { user } = useUser();
   const auth = getAuth();
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
