@@ -75,7 +75,7 @@
     {
       "id": "monument-fatehpur-sikri",
       "description": "Panch Mahal at Fatehpur Sikri",
-      "imageUrl": "https://images.unsplash.com/photo-1717761558642-32cbeccbee7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxGYXRlaHB1ciUyMFNpa3JpfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1717761558642-32cbeccbee7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxGYXRlaHB1ciUyMFNpa3JpfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "Fatehpur Sikri"
     },
     {
@@ -87,19 +87,19 @@
     {
       "id": "monument-amer-fort",
       "description": "The stunning Amer Fort overlooking Maota Lake",
-      "imageUrl": "https://images.unsplash.com/photo-1631867675167-90a4d05a4f78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxBbWVyJTIwRm9ydHxlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1631867675167-90a4d05a4f78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxBbWVyJTIwRm9ydHxlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "Amer Fort"
     },
     {
       "id": "monument-mysore-palace",
       "description": "The illuminated Mysore Palace at night",
-      "imageUrl": "https://images.unsplash.com/photo-1657856855186-7cf4909a4f78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxNeXNvcmUlMjBQYWxhY2V8ZW58MHx8fHwxNzY1OTgwMzE4fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1657856855186-7cf4909a4f78?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxNeXNvcmUlMjBQYWxhY2V8ZW58MHx8fHwxNzY1OTgwMzE4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Mysore Palace"
     },
     {
       "id": "monument-gol-gumbaz",
       "description": "The massive dome of Gol Gumbaz",
-      "imageUrl": "https://picsum.photos/seed/monument-gol-gumbaz/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1689265293231-97b7921a2082?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxHb2wlMjBHdW1iYXp8ZW58MHx8fHwxNzY2MjQ3MTQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Gol Gumbaz"
     },
     {
@@ -111,7 +111,7 @@
     {
       "id": "monument-udayagiri-caves",
       "description": "Ancient rock-cut caves of Udayagiri",
-      "imageUrl": "https://picsum.photos/seed/monument-udayagiri-caves/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1594738596634-8b5e94c9657b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxVdGFya2hhbmQlMjBjYXZlfGVufDB8fHx8MTc2NjI0NzE3OHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Udayagiri caves"
     },
     {
@@ -159,31 +159,31 @@
     {
       "id": "cuisine-pakhala-bhata",
       "description": "A traditional Odia meal, Pakhala Bhata",
-      "imageUrl": "https://images.unsplash.com/photo-1657205937707-940bf77b2602?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxPZGlzaGElMjBmb29kfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1657205937707-940bf77b2602?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxPZGlzaGElMjBmb29kfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "Odisha food"
     },
     {
       "id": "festival-diwali",
       "description": "Lamps lit during the festival of Diwali",
-      "imageUrl": "https://images.unsplash.com/photo-1761097332824-a80511520bca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxEaXdhbGklMjBsYW1wc3xlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1761097332824-a80511520bca?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxEaXdhbGklMjBsYW1wc3xlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "Diwali lamps"
     },
     {
       "id": "festival-holi",
       "description": "People celebrating Holi with colored powders",
-      "imageUrl": "https://images.unsplash.com/photo-1603228254119-e6a4d095dc59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxIb2xpJTIwZmVzdGl2YWx8ZW58MHx8fHwxNzY1OTYzMTEzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1603228254119-e6a4d095dc59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxIb2xpJTIwZmVzdGl2YWx8ZW58MHx8fHwxNzY1OTYzMTEzfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "Holi festival"
     },
     {
       "id": "festival-pushkar-fair",
       "description": "Decorated camels at the Pushkar Fair",
-      "imageUrl": "https://images.unsplash.com/photo-1596272712869-d6c4fa368187?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxQdXNoa2FyJTIwY2FtZWxzfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1596272712869-d6c4fa368187?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxQdXNoa2FyJTIwY2FtZWxzfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "Pushkar camels"
     },
     {
       "id": "festival-dasara",
       "description": "A grand procession during Mysore Dasara",
-      "imageUrl": "https://images.unsplash.com/photo-1544094529-002edb772da9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxEYXNhcmElMjBwcm9jZXNzaW9ufGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1544094529-002edb772da9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxEYXNhcmElMjBwcm9jZXNzaW9ufGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "Dasara procession"
     },
     {
@@ -195,31 +195,31 @@
     {
       "id": "art-chikankari",
       "description": "Delicate Chikankari embroidery on fabric",
-      "imageUrl": "https://images.unsplash.com/photo-1720982892204-b2d4ee451dbe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxlbWJyb2lkZXJ5JTIwZmFicmljfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1720982892204-b2d4ee451dbe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxlbWJyb2lkZXJ5JTIwZmFicmljfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "embroidery fabric"
     },
     {
       "id": "art-blue-pottery",
       "description": "A collection of Jaipur Blue Pottery",
-      "imageUrl": "https://images.unsplash.com/photo-1566563497584-0c2f8ca4fbf9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxibHVlJTIwcG90dGVyeXxlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1566563497584-0c2f8ca4fbf9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxibHVlJTIwcG90dGVyeXxlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "blue pottery"
     },
     {
       "id": "art-mysore-painting",
       "description": "A traditional Mysore painting with gold leaf",
-      "imageUrl": "https://images.unsplash.com/photo-1765706836044-c8159f89ef3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx0cmFkaXRpb25hbCUyMHBhaW50aW5nfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1765706836044-c8159f89ef3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx0cmFkaXRpb25hbCUyMHBhaW50aW5nfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "traditional painting"
     },
     {
       "id": "art-pattachitra",
       "description": "A vibrant Pattachitra scroll painting",
-      "imageUrl": "https://images.unsplash.com/photo-1758092320366-a42aecc7fbcf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzY3JvbGwlMjBwYWludGluZ3xlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1758092320366-a42aecc7fbcf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzY3JvbGwlMjBwYWludGluZ3xlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "scroll painting"
     },
     {
       "id": "state-andhra-pradesh",
       "description": "The scenic Araku Valley in Andhra Pradesh",
-      "imageUrl": "https://images.unsplash.com/photo-1717585163355-6461aeb2f470?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxBcmFrdSUyMFZhbGxleXxlbnwwfHx8fDE3NjU5OTA5MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1717585163355-6461aeb2f470?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxBcmFrdSUyMFZhbGxleXxlbnwwfHx8fDE3NjU5OTA5MDZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "Araku Valley"
     },
     {
@@ -321,7 +321,7 @@
     {
       "id": "cuisine-litti-chokha",
       "description": "A plate of Litti Chokha",
-      "imageUrl": "https://picsum.photos/seed/cuisine-litti-chokha/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1675883833446-2824a736c449?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxMaXR0aSUyMENob2toYXxlbnwwfHx8fDE3NjYyNDcyNDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Litti Chokha"
     },
     {
@@ -339,13 +339,13 @@
     {
       "id": "state-chhattisgarh",
       "description": "Lush green forests and hills of Chhattisgarh",
-      "imageUrl": "https://images.unsplash.com/photo-1668251357468-709eff795672?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxDaGhhdHRpc2dhcmglMjBsYW5kc2NhcGV8ZW58MHx8fHwxNzY1OTgyMjk3fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1668251357468-709eff795672?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxDaGhhdHRpc2dhcmglMjBsYW5kc2NhcGV8ZW58MHx8fHwxNzY1OTgyMjk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Chhattisgarh landscape"
     },
     {
       "id": "monument-chitrakote-falls",
       "description": "The majestic Chitrakote Falls",
-      "imageUrl": "https://picsum.photos/seed/monument-chitrakote-falls/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1601683935932-a50a1a0397d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxDaGl0cmFrb3RlJTIwRmFsbHN8ZW58MHx8fHwxNzY2MjQ3Mjg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Chitrakote Falls"
     },
     {
@@ -357,13 +357,13 @@
     {
       "id": "festival-bastar-dussehra",
       "description": "Tribal procession during Bastar Dussehra",
-      "imageUrl": "https://picsum.photos/seed/festival-bastar-dussehra/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1634538980838-b7886438515c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYXN0YXIlMjBkdXNzZWhyYXxlbnwwfHx8fDE3NjYyNDczNDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Bastar Dussehra"
     },
     {
       "id": "art-dhokra",
       "description": "An intricate Dhokra art figurine",
-      "imageUrl": "https://picsum.photos/seed/art-dhokra/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1596700543836-54a81d13d789?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkaG9rcmElMjBhcnR8ZW58MHx8fHwxNzY2MjQ3MzYyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Dhokra art"
     },
     {
@@ -375,7 +375,7 @@
     {
       "id": "monument-bom-jesus",
       "description": "The facade of the Basilica of Bom Jesus",
-      "imageUrl": "https://images.unsplash.com/photo-1628418004669-b709c8cd5a6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxCb20lMjBKZXN1c3xlbnwwfHx8fDE3NjU5OTA5MDZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1628418004669-b709c8cd5a6d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxCb20lMjBKZXN1c3xlbnwwfHx8fDE3NjU5OTA5MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Bom Jesus"
     },
     {
@@ -441,19 +441,19 @@
     {
       "id": "cuisine-bajra-khichdi",
       "description": "A healthy bowl of Bajra Khichdi",
-      "imageUrl": "https://picsum.photos/seed/cuisine-bajra-khichdi/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1604329263305-a8d10579e0a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtaWxsZXQlMjBwb3JyaWRnZXxlbnwwfHx8fDE3NjYyNDc1MDB8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Bajra Khichdi"
     },
     {
       "id": "festival-gugga-naumi",
       "description": "A procession during the Gugga Naumi festival",
-      "imageUrl": "https://picsum.photos/seed/festival-gugga-naumi/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1597818439695-5384234057c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxJbmRpYW4lMjByZWxpZ2lvdXMlMjBmZXN0aXZhbHxlbnwwfHx8fDE3NjYyNDc1MzJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Gugga Naumi"
     },
     {
       "id": "art-panja-durries",
       "description": "Colorful Panja Durries being woven",
-      "imageUrl": "https://picsum.photos/seed/art-panja-durries/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1577903274288-7521404a0885?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxJbmRpYW4lMjBoYW5kd292ZW4lMjBydWd8ZW58MHx8fHwxNzY2MjQ3NTUzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Panja Durries"
     },
     {
@@ -513,13 +513,13 @@
     {
       "id": "art-sohrai",
       "description": "A traditional Sohrai wall painting",
-      "imageUrl": "https://picsum.photos/seed/art-sohrai/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1628172935212-3c2333795126?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb2hyYWklMjBhcnR8ZW58MHx8fHwxNzY2MjQ3NzUzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Sohrai art"
     },
     {
       "id": "monument-mattancherry-palace",
       "description": "The interior of Mattancherry Palace with murals",
-      "imageUrl": "https://picsum.photos/seed/monument-mattancherry-palace/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1592429983489-35436631b57d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYXRhbmNoZXJyeSUyMHBsYWNlfGVufDB8fHx8MTc2NjI0Nzc3OXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Mattancherry Palace"
     },
     {
@@ -555,7 +555,7 @@
     {
       "id": "cuisine-poha-jalebi",
       "description": "A breakfast plate of Poha and Jalebi",
-      "imageUrl": "https://picsum.photos/seed/cuisine-poha-jalebi/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1606491104322-86928574b1f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb2hhJTIwamFsZWJpfGVufDB8fHx8MTc2NjI0Nzk2NHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Poha Jalebi"
     },
     {
@@ -669,7 +669,7 @@
     {
       "id": "monument-vantawng-falls",
       "description": "The spectacular Vantawng Falls",
-      "imageUrl": "https://picsum.photos/seed/monument-vantawng-falls/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1662970876646-6086b976d8b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxWYW50YXduZyUyMGZhbGxzfGVufDB8fHx8MTc2NjI0ODA4MHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Vantawng Falls"
     },
     {
@@ -681,7 +681,7 @@
     {
       "id": "festival-chapchar-kut",
       "description": "Mizo people celebrating Chapchar Kut",
-      "imageUrl": "https://picsum.photos/seed/festival-chapchar-kut/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1596548731388-314ab6b5b54b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGFwY2hhciUyMGt1dHxlbnwwfHx8fDE3NjYyNDgxMTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Chapchar Kut"
     },
     {
@@ -837,13 +837,13 @@
     {
       "id": "state-tripura",
       "description": "The Neermahal water palace in Tripura",
-      "imageUrl": "https://picsum.photos/seed/state-tripura/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1662638228309-9391054af618?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuZWVybWFoYWwlMjBwYWxhY2V8ZW58MHx8fHwxNzY2MjQ4MjEwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Tripura palace"
     },
     {
       "id": "monument-ujjayanta-palace",
       "description": "The grand Ujjayanta Palace in Agartala",
-      "imageUrl": "https://picsum.photos/seed/monument-ujjayanta-palace/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1678847823136-292102108a98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx1ampheWFudGElMjBwYWxhY2V8ZW58MHx8fHwxNzY2MjQ4MjMxfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "Ujjayanta Palace"
     },
     {
@@ -891,7 +891,7 @@
     {
       "id": "art-aipan",
       "description": "Traditional Aipan folk art pattern",
-      "imageUrl": "https://picsum.photos/seed/art-aipan/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1635392341995-856633184a60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxtYW5kYWxhJTIwYXJ0fGVufDB8fHx8MTc2NjI0ODMzN3ww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "Aipan art"
     },
     {
@@ -915,7 +915,7 @@
     {
       "id": "festival-durga-puja",
       "description": "An idol of Goddess Durga during Durga Puja festival",
-      "imageUrl": "https://images.unsplash.com/photo-1626094305702-3d81bec477a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxEdXJnYSUyMFB1amF8ZW58MHx8fHwxNzY1OTkwOTA3fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1626094305702-3d81bec477a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxEdXJnYSUyMFB1amF8ZW58MHx8fHwxNzY1OTkwOTA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Durga Puja"
     },
     {
@@ -927,13 +927,13 @@
     {
       "id": "art-sitar",
       "description": "A person playing the sitar",
-      "imageUrl": "https://images.unsplash.com/photo-1599403254189-e1d51a2bca3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzaXRhcnxlbnwwfHx8fDE3NjU5OTg5OTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1599403254189-e1d51a2bca3e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzaXRhcnxlbnwwfHx8fDE3NjU5OTg5OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "sitar music"
     },
     {
       "id": "cuisine-spices",
       "description": "A vibrant assortment of Indian spices.",
-      "imageUrl": "https://images.unsplash.com/photo-1599500366622-857c17772638?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxJbmRpYW4lMjBzcGljZXN8ZW58MHx8fHwxNzY2MDE1MTk4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1599500366622-857c17772638?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxJbmRpYW4lMjBzcGljZXN8ZW58MHx8fHwxNzY2MDE1MTk4fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "Indian spices"
     }
   ]
