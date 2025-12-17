@@ -41,7 +41,7 @@ const refineSearchQuery = ai.defineTool({
     refinedQuery: z.string().describe('The refined search query.'),
     updatedSearchFilters: z.string().describe('Updated search filters based on the conversation history'),
   }),
-  async (input) => {
+  handler: async (input) => {
     // TODO: Implement the logic to refine the search query based on the user message and conversation history.
     // This is a placeholder implementation.
     return {
