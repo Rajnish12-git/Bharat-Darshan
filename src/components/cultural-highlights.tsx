@@ -31,6 +31,22 @@ const highlights = [
     imageId: 'art-kathakali',
     link: '#',
   },
+  {
+    title: 'Festivals of Light & Sound',
+    subtitle: 'Celebrations that unite the nation',
+    description:
+      'Indian festivals are a spectacular display of devotion and joy. Diwali, the festival of lights, illuminates the country with millions of diyas, symbolizing the victory of good over evil. The air is filled with fireworks, feasts, and the warmth of community.',
+    imageId: 'festival-diwali',
+    link: '#',
+  },
+  {
+    title: 'The Sound of Music',
+    subtitle: 'Melodies that echo through centuries',
+    description:
+      "Indian classical music is a deep and spiritual tradition. The resonant strings of the Sitar, accompanied by the complex rhythms of the Tabla, create melodies that can be both meditative and exhilarating, carrying the weight of ancient ragas and improvisational brilliance.",
+    imageId: 'art-sitar',
+    link: '#',
+  },
 ];
 
 const HighlightItem = ({
@@ -42,6 +58,7 @@ const HighlightItem = ({
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
+  const isOdd = index % 2 === 1;
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -52,7 +69,7 @@ const HighlightItem = ({
         }
       },
       {
-        threshold: 0.1,
+        threshold: 0.2,
       }
     );
 
@@ -73,42 +90,49 @@ const HighlightItem = ({
     <div
       ref={ref}
       className={cn(
-        'transition-all duration-1000 ease-in-out',
-        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        'grid grid-cols-1 md:grid-cols-2 items-center gap-8 md:gap-16 overflow-hidden'
       )}
     >
       <div
         className={cn(
-          'grid grid-cols-1 md:grid-cols-5 items-center gap-8 md:gap-16'
+          'relative aspect-[4/3] rounded-xl overflow-hidden shadow-2xl transition-all duration-1000 ease-out',
+          isOdd && 'md:order-last',
+          isVisible
+            ? 'opacity-100 translate-x-0'
+            : isOdd
+              ? 'opacity-0 translate-x-16'
+              : 'opacity-0 -translate-x-16'
         )}
       >
-        <div
-          className={cn(
-            'relative aspect-video md:col-span-2 rounded-xl overflow-hidden shadow-2xl',
-            index % 2 === 1 && 'md:order-last'
-          )}
-        >
-          {image && (
-            <Image
-              src={image.imageUrl}
-              alt={item.title}
-              fill
-              className="object-cover"
-              data-ai-hint={image.imageHint}
-              sizes="(max-width: 768px) 100vw, 40vw"
-            />
-          )}
-        </div>
-        <div className="flex flex-col items-start text-center md:text-left md:col-span-3">
-          <p className="text-primary font-semibold">{item.subtitle}</p>
-          <h3 className="font-headline text-3xl font-bold mt-2">{item.title}</h3>
-          <p className="mt-4 text-muted-foreground leading-relaxed">
-            {item.description}
-          </p>
-          <Button variant="outline" className="mt-6">
-            Learn More
-          </Button>
-        </div>
+        {image && (
+          <Image
+            src={image.imageUrl}
+            alt={item.title}
+            fill
+            className="object-cover"
+            data-ai-hint={image.imageHint}
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        )}
+      </div>
+      <div
+        className={cn(
+          'flex flex-col items-start text-center md:text-left transition-all duration-1000 ease-out',
+          isVisible
+            ? 'opacity-100 translate-x-0'
+            : isOdd
+              ? 'opacity-0 -translate-x-16'
+              : 'opacity-0 translate-x-16'
+        )}
+      >
+        <p className="text-primary font-semibold">{item.subtitle}</p>
+        <h3 className="font-headline text-3xl font-bold mt-2">{item.title}</h3>
+        <p className="mt-4 text-muted-foreground leading-relaxed">
+          {item.description}
+        </p>
+        <Button variant="outline" className="mt-6">
+          Learn More
+        </Button>
       </div>
     </div>
   );
