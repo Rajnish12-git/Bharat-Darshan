@@ -6,6 +6,7 @@ import CulturalHighlights from '@/components/cultural-highlights';
 import StateGrid from '@/components/state-grid';
 import ExploreNearMe from '@/components/explore-near-me';
 import { Separator } from '@/components/ui/separator';
+import { MapProvider } from '@/components/map-provider';
 
 export default function Home() {
   return (
@@ -38,11 +39,13 @@ export default function Home() {
             Discover What's Nearby
           </h2>
           <p className="max-w-prose leading-relaxed text-muted-foreground sm:text-lg">
-            Use your location to find monuments and heritage sites near you.
+            Use your location to find monuments and heritage sites on the map.
           </p>
         </div>
         <div className="mt-12">
-          <ExploreNearMe />
+          <MapProvider>
+            <ExploreNearMe />
+          </MapProvider>
         </div>
       </section>
       
