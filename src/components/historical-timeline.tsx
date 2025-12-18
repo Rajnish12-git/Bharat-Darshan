@@ -1,38 +1,24 @@
-
 'use client';
 
-import { timelineEvents } from '@/lib/timeline-data';
 import { Skeleton } from './ui/skeleton';
 import { useEffect, useState } from 'react';
+import { useCollection, useFirestore, useMemoFirebase } from '@/firebase';
+import { collection, orderBy, query } from 'firebase/firestore';
 
-// A mock version of the TimelineEvent from the original file
 interface TimelineEvent {
     id: string;
     title: string;
     date: string;
     description: string;
     imageUrl: string;
+    era: 'BCE' | 'CE';
+    year: number;
 }
 
 export default function HistoricalTimeline() {
-  const [events, setEvents] = useState<TimelineEvent[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    // Simulate fetching data
-    setTimeout(() => {
-      const sortedEvents = [...timelineEvents].sort((a, b) => {
-        const dateA = parseInt(a.date.replace(' BCE', '').replace(' CE', ''));
-        const dateB = parseInt(b.date.replace(' BCE', '').replace(' CE', ''));
-        const eraA = a.date.includes('BCE') ? -1 : 1;
-        const eraB = b.date.includes('BCE') ? -1 : 1;
-        
-        return (dateA * eraA) - (dateB * eraB);
-      });
-      setEvents(sortedEvents);
-      setIsLoading(false);
-    }, 500);
-  }, []);
+  const firestore = useFirestore();
+  const timelineCollection = useMemoFirebase(() => query(collection(firestore, 'timeline'), orderBy('year')), [firestore]);
+  const { data: events, isLoading } = useCollection<TimelineEvent>(timelineCollection);
 
   if (isLoading) {
     return (
@@ -69,7 +55,7 @@ export default function HistoricalTimeline() {
   return (
     <div className="relative mx-auto max-w-4xl px-4">
       <div className="absolute left-4 top-0 h-full w-0.5 -translate-x-1/2 bg-border md:left-1/2"></div>
-      {events.map((event, index) => (
+      {events?.map((event, index) => (
         <div key={event.id} className="relative mb-8 flex w-full items-center justify-between md:justify-normal">
           {/* Content for mobile (single column) */}
           <div className="md:hidden w-full pl-8">

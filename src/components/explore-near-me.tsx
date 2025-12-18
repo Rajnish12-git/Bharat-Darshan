@@ -1,13 +1,15 @@
 'use client';
 
 import React, { useState, useTransition } from 'react';
-import { monuments as allMonuments } from '@/lib/monuments-data';
 import { getDistance } from '@/lib/utils';
 import { Button } from './ui/button';
 import { Loader2, MapPin, Info } from 'lucide-react';
 import { Map, AdvancedMarker, Pin, InfoWindow } from '@vis.gl/react-google-maps';
+import { useCollection, useFirestore, useMemoFirebase } from '@/firebase';
+import { collection } from 'firebase/firestore';
 
 interface MonumentData {
+    id: string;
     name: string;
     imageId: string;
     description: string;
@@ -23,11 +25,20 @@ export default function ExploreNearMe() {
   const [nearbyMonuments, setNearbyMonuments] = useState<MonumentWithDistance[]>([]);
   const [selectedMonument, setSelectedMonument] = useState<MonumentWithDistance | null>(null);
 
+  const firestore = useFirestore();
+  const monumentsCollection = useMemoFirebase(() => collection(firestore, 'monuments'), [firestore]);
+  const { data: allMonuments } = useCollection<MonumentData>(monumentsCollection);
+
   const handleFindNearby = () => {
     setError(null);
     if (!navigator.geolocation) {
       setError('Geolocation is not supported by your browser.');
       return;
+    }
+
+    if (!allMonuments) {
+        setError('Monuments data is not loaded yet. Please try again in a moment.');
+        return;
     }
 
     startTransition(() => {
@@ -63,7 +74,7 @@ export default function ExploreNearMe() {
   return (
     <div className="w-full max-w-6xl mx-auto">
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-        <Button size="lg" onClick={handleFindNearby} disabled={isLoading} className="shadow-lg w-full sm:w-auto">
+        <Button size="lg" onClick={handleFindNearby} disabled={isLoading || !allMonuments} className="shadow-lg w-full sm:w-auto">
           {isLoading ? <Loader2 className="mr-2 h-5 w-5 animate-spin" /> : <MapPin className="mr-2 h-5 w-5" />}
           Find Monuments Near Me
         </Button>
@@ -81,7 +92,7 @@ export default function ExploreNearMe() {
           >
             {nearbyMonuments.map((monument) => (
               <AdvancedMarker
-                key={monument.imageId}
+                key={monument.id}
                 position={{ lat: monument.latitude, lng: monument.longitude }}
                 onClick={() => setSelectedMonument(monument)}
               >

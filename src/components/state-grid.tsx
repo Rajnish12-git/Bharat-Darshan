@@ -1,11 +1,11 @@
-
 'use client';
 
 import * as React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { indianStates } from '@/lib/states-data';
+import { useCollection, useFirestore, useMemoFirebase } from '@/firebase';
+import { collection } from 'firebase/firestore';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
   Carousel,
@@ -17,16 +17,15 @@ import {
 } from '@/components/ui/carousel';
 import { cn } from '@/lib/utils';
 import { Skeleton } from './ui/skeleton';
+import { StateData } from '@/lib/heritage-data';
 
 export default function StateGrid() {
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
-  const [isLoading, setIsLoading] = React.useState(true);
-
-  React.useEffect(() => {
-    // Simulate loading
-    setTimeout(() => setIsLoading(false), 500);
-  }, []);
+  const firestore = useFirestore();
+  
+  const statesCollection = useMemoFirebase(() => collection(firestore, 'states'), [firestore]);
+  const { data: indianStates, isLoading } = useCollection<StateData>(statesCollection);
 
   React.useEffect(() => {
     if (!api) {
@@ -46,7 +45,7 @@ export default function StateGrid() {
     };
   }, [api]);
 
-  if (isLoading) {
+  if (isLoading || !indianStates) {
     return (
       <div className="relative mt-12">
         <Carousel opts={{ align: 'center', loop: true }} className="w-full">
