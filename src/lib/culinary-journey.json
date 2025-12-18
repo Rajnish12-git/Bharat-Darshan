@@ -1,0 +1,559 @@
+
+[
+  {
+    "dishName": "Hyderabadi Biryani",
+    "imageId": "cuisine-hyderabadi-biryani",
+    "region": "Hyderabad, Telangana",
+    "type": "Non-Vegetarian",
+    "mainIngredients": ["Basmati rice", "Goat meat or Chicken", "Saffron", "Yogurt", "Onions", "Whole spices"],
+    "cookingStyle": "Dum Pukht (Slow Oven Cooking)",
+    "description": "A legendary rice dish from the kitchens of the Nizams of Hyderabad, it is prepared in two main styles: Kacchi (raw meat) and Pakki (cooked meat). The rice and meat are layered and slow-cooked in a sealed handi, allowing the flavors to meld together, resulting in a fragrant and aromatic masterpiece.",
+    "culturalSignificance": "Hyderabadi Biryani is a cornerstone of Hyderabadi cuisine and is synonymous with celebrations and feasts. It represents a beautiful fusion of Mughlai and Telugu culinary traditions.",
+    "occasions": "Weddings, Festivals, Celebrations",
+    "interestingFacts": [
+      "The Kacchi style of biryani, where raw marinated meat is cooked with raw rice, is considered the more traditional and challenging method.",
+      "A true Hyderabadi Biryani is always accompanied by Mirchi ka Salan (chili curry) and Dahi Chutney (yogurt raita)."
+    ]
+  },
+  {
+    "dishName": "Dal Baati Churma",
+    "imageId": "cuisine-dal-baati-churma",
+    "region": "Rajasthan",
+    "type": "Vegetarian",
+    "mainIngredients": ["Lentils (Panchmel Dal)", "Whole wheat flour", "Ghee", "Jaggery/Sugar"],
+    "cookingStyle": "Baking / Roasting",
+    "description": "This is the quintessential Rajasthani thali experience. It consists of three main components: spicy Panchmel Dal (a mix of five lentils), Baati (hard, unleavened wheat bread rolls baked over firewood or in a tandoor), and Churma (a sweet, powdered wheat mixture). The Baati is cracked open and generously doused in ghee before being eaten.",
+    "culturalSignificance": "Originating as a wartime meal due to its long shelf life and minimal water requirement, it has become a symbol of Rajasthani hospitality. The dish is perfectly adapted to the arid desert environment.",
+    "occasions": "Festive meals, Family gatherings",
+    "interestingFacts": [
+      "The Baatis were often left buried in hot sand by soldiers in the morning and were perfectly baked by the time they returned in the evening.",
+      "There are over 20 different variations of Baati, including Masala Baati and Makai (corn) Baati."
+    ]
+  },
+  {
+    "dishName": "Masala Dosa",
+    "imageId": "cuisine-masala-dosa",
+    "region": "Udupi, Karnataka",
+    "type": "Vegetarian",
+    "mainIngredients": ["Fermented rice and lentil batter", "Potatoes", "Onions", "Mustard seeds", "Turmeric"],
+    "cookingStyle": "Pan-frying",
+    "description": "A world-famous South Indian breakfast dish, Masala Dosa is a thin, crispy crepe made from fermented batter, served with a savory filling of spiced mashed potatoes. It is typically accompanied by sambar (a lentil-based vegetable stew) and coconut chutney.",
+    "culturalSignificance": "Originating from the Udupi cuisine of Karnataka, the dosa is a staple food across South India and has gained international acclaim. It showcases the art of fermentation in Indian cooking.",
+    "occasions": "Breakfast, Snack",
+    "interestingFacts": [
+      "CNN Travel listed Masala Dosa as number 4 in its list of 'World's 50 Best Foods'.",
+      "The 'Paper Dosa' is a massive, paper-thin version that can be several feet long."
+    ]
+  },
+  {
+    "dishName": "Rogan Josh",
+    "imageId": "cuisine-rogan-josh",
+    "region": "Kashmir Valley, Jammu & Kashmir",
+    "type": "Non-Vegetarian",
+    "mainIngredients": ["Lamb", "Yogurt", "Ratan Jot (Alkanet root)", "Kashmiri red chilies", "Fennel"],
+    "cookingStyle": "Braising / Slow Cooking",
+    "description": "A signature dish of Kashmiri cuisine (Wazwan), Rogan Josh is an aromatic curried lamb dish. Its vibrant red color comes from the liberal use of dried Kashmiri chilies and the extract of Ratan Jot. It is characterized by its thin, flavourful gravy and tender meat.",
+    "culturalSignificance": "Introduced to Kashmir by the Mughals, the dish was adapted to local tastes. It is a central part of the multi-course Kashmiri feast known as Wazwan. The use of fennel and dried ginger instead of onion and garlic is a hallmark of Kashmiri Pandit style.",
+    "occasions": "Wazwan feasts, Special occasions",
+    "interestingFacts": [
+      "The name 'Rogan Josh' is derived from Persian words, where 'Rogan' means 'oil' or 'ghee' and 'Josh' means 'intense heat' or 'passion'.",
+      "Authentic versions do not use tomatoes for sourness; instead, yogurt is used."
+    ]
+  },
+  {
+    "dishName": "Dhokla",
+    "imageId": "cuisine-dhokla",
+    "region": "Gujarat",
+    "type": "Vegetarian",
+    "mainIngredients": ["Gram flour (Besan) or fermented rice batter", "Yogurt", "Mustard seeds", "Curry leaves", "Green chilies"],
+    "cookingStyle": "Steaming",
+    "description": "A light, spongy, and savory steamed cake from Gujarat. It is made from a fermented batter of gram flour or rice and chickpeas. After steaming, it is tempered with mustard seeds, sesame seeds, and curry leaves, and often garnished with fresh coriander and grated coconut.",
+    "culturalSignificance": "Dhokla is a quintessential Gujarati snack (farsan) and breakfast item, known for being healthy and delicious. It reflects the predominantly vegetarian and innovative nature of Gujarati cuisine.",
+    "occasions": "Breakfast, Snack, Appetizer",
+    "interestingFacts": [
+      "There are many varieties, including Khaman (made from gram flour), Rava Dhokla (from semolina), and Khatta Dhokla (from rice).",
+      "It is a popular street food item across India, far beyond the borders of Gujarat."
+    ]
+  },
+  {
+    "dishName": "Macher Jhol",
+    "imageId": "cuisine-macher-jhol",
+    "region": "West Bengal",
+    "type": "Non-Vegetarian",
+    "mainIngredients": ["Rohu or other freshwater fish", "Potatoes", "Cauliflower", "Panch Phoron (Bengali five-spice blend)", "Mustard oil"],
+    "cookingStyle": "Simmering / Stewing",
+    "description": "The quintessential Bengali fish curry, Macher Jhol is a light yet flavorful stew. The fish is typically fried in mustard oil first and then simmered in a thin gravy with vegetables. The flavour profile is often spicy and pungent, defined by the use of mustard oil and panch phoron.",
+    "culturalSignificance": "Fish is an integral part of Bengali culture and diet, and Macher Jhol is the most common and beloved way of preparing it. It is a staple comfort food in almost every Bengali household.",
+    "occasions": "Daily meal, Family lunches",
+    "interestingFacts": [
+      "The type of fish and vegetables used can change seasonally, making it a very versatile dish.",
+      "Every Bengali family has its own unique recipe for Macher Jhol, passed down through generations."
+    ]
+  },
+  {
+    "dishName": "Litti Chokha",
+    "imageId": "cuisine-litti-chokha",
+    "region": "Bihar, Jharkhand, Uttar Pradesh",
+    "type": "Vegetarian",
+    "mainIngredients": ["Whole wheat flour", "Sattu (roasted gram flour)", "Brinjal (eggplant)", "Potatoes", "Tomatoes"],
+    "cookingStyle": "Roasting / Baking",
+    "description": "A rustic and wholesome dish from the heartland of India. Litti are dough balls stuffed with a savory filling of sattu, which are then roasted over charcoal or cow-dung cakes. They are served with Chokha, a mash of roasted eggplant, tomatoes, and potatoes, and a generous amount of ghee.",
+    "culturalSignificance": "Litti Chokha is a symbol of Bihari cuisine and culture. Its simple preparation and nutritious ingredients made it a staple for farmers and travelers. It is now a popular street food and restaurant delicacy.",
+    "occasions": "Festivals like Makar Sankranti, Social gatherings",
+    "interestingFacts": [
+      "Similar to Rajasthan's Dal Baati, Litti was also a convenient meal for travelers and soldiers due to its long shelf life.",
+      "The smoky flavor from roasting over an open fire is crucial to the authentic taste of the dish."
+    ]
+  },
+  {
+    "dishName": "Poha-Jalebi",
+    "imageId": "cuisine-poha-jalebi",
+    "region": "Indore, Madhya Pradesh",
+    "type": "Vegetarian",
+    "mainIngredients": ["Flattened rice (poha)", "Onions", "Peanuts", "All-purpose flour", "Sugar syrup"],
+    "cookingStyle": "Sautéing & Frying",
+    "description": "This is not a single dish, but a classic breakfast combination from Indore, the street food capital of Madhya Pradesh. Savory, light, and fluffy poha (flattened rice sautéed with onions, potatoes, and spices) is served with hot, crispy, and sweet jalebis. The sweet and savory combination is a local favorite.",
+    "culturalSignificance": "This combination defines the breakfast culture of Indore and the Malwa region. It showcases the local love for sweet and savory flavors together in one meal.",
+    "occasions": "Breakfast",
+    "interestingFacts": [
+      "The poha is often garnished with 'Indori sev' (a spicy chickpea flour noodle) and pomegranate seeds.",
+      "Indore's street food scene, especially at Sarafa Bazaar, is legendary and operates late into the night."
+    ]
+  },
+  {
+    "dishName": "Vada Pav",
+    "imageId": "cuisine-vada-pav",
+    "region": "Mumbai, Maharashtra",
+    "type": "Vegetarian",
+    "mainIngredients": ["Potatoes", "Gram flour", "Pav (soft bread bun)", "Garlic", "Green chilies"],
+    "cookingStyle": "Frying",
+    "description": "The quintessential Mumbai street food, often called the 'Indian burger'. It consists of a deep-fried spiced potato patty (vada) sandwiched in a soft bread bun (pav), often accompanied by spicy and tangy chutneys.",
+    "culturalSignificance": "Vada Pav is the go-to, affordable meal for millions of Mumbaikars. It originated as a quick and cheap food for mill workers in the 1960s and has since become an icon of the city's fast-paced culture.",
+    "occasions": "Snack, Quick lunch",
+    "interestingFacts": [
+      "There are over 20,000 Vada Pav stalls in Mumbai.",
+      "August 23rd is celebrated as World Vada Pav Day."
+    ]
+  },
+  {
+    "dishName": "Goan Fish Curry",
+    "imageId": "cuisine-goan-fish-curry",
+    "region": "Goa",
+    "type": "Non-Vegetarian",
+    "mainIngredients": ["Kingfish or Pomfret", "Coconut", "Kokum", "Red chilies", "Turmeric"],
+    "cookingStyle": "Simmering",
+    "description": "A staple of Goan cuisine, this curry is known for its vibrant orange color and its perfect balance of spicy, tangy, and creamy flavors. The creaminess comes from freshly grated coconut, while the tang is provided by kokum, a sour fruit native to the region. It is typically served with steamed rice.",
+    "culturalSignificance": "The dish reflects the coastal location of Goa and the Portuguese influence on its cuisine, particularly the use of chilies. It's a staple in every Goan home and restaurant.",
+    "occasions": "Daily meal, Celebratory lunches",
+    "interestingFacts": [
+      "The specific blend of spices used is called 'Recheado Masala', which is a hallmark of Goan cooking.",
+      "Using fresh coconut milk is key to achieving the authentic taste and texture."
+    ]
+  },
+  {
+    "dishName": "Appam and Stew",
+    "imageId": "cuisine-appam-stew",
+    "region": "Kerala",
+    "type": "Both",
+    "mainIngredients": ["Fermented rice batter", "Coconut milk", "Vegetables or Chicken/Mutton", "Whole spices"],
+    "cookingStyle": "Pan-frying & Simmering",
+    "description": "A classic breakfast from Kerala, Appam are soft, lacy, bowl-shaped pancakes made from fermented rice batter and coconut milk. They are typically served with a mild, fragrant stew made with coconut milk, vegetables (Ishtu), or meat (chicken or mutton).",
+    "culturalSignificance": "This dish is a staple of the Syrian Christian community in Kerala and is enjoyed by all. The use of coconut in both the pancake and the stew is characteristic of Keralan cuisine.",
+    "occasions": "Breakfast, Easter, Christmas",
+    "interestingFacts": [
+      "A special shallow pan called an 'appachatti' is used to make the unique bowl shape of the appam.",
+      "The stew is intentionally kept mild to complement the subtly sweet flavor of the appam."
+    ]
+  },
+  {
+    "dishName": "Thukpa",
+    "imageId": "cuisine-thukpa",
+    "region": "Arunachal Pradesh, Sikkim, Ladakh",
+    "type": "Both",
+    "mainIngredients": ["Noodles", "Vegetables (cabbage, carrots, onions)", "Meat (optional)", "Ginger", "Garlic"],
+    "cookingStyle": "Boiling / Stewing",
+    "description": "A hearty and warming Himalayan noodle soup with Tibetan origins. It's a one-pot meal that is both nutritious and delicious, perfect for the cold climate of the mountains. It can be made with or without meat.",
+    "culturalSignificance": "Thukpa is a comfort food across the Himalayan region of India. It showcases the Tibetan influence on the local cuisine and is a staple in monasteries and homes alike.",
+    "occasions": "Daily meal, especially in winter",
+    "interestingFacts": [
+      "The word 'Thukpa' literally means 'noodle soup' in Tibetan.",
+      "There are numerous variations of Thukpa, such as Gyathuk, Pathug, and Drethug."
+    ]
+  },
+  {
+    "dishName": "Makki di Roti & Sarson da Saag",
+    "imageId": "cuisine-makki-roti-saag",
+    "region": "Punjab",
+    "type": "Vegetarian",
+    "mainIngredients": ["Mustard leaves (sarson)", "Spinach", "Maize flour (makki atta)", "Ginger", "Garlic"],
+    "cookingStyle": "Simmering & Griddling",
+    "description": "This is the iconic winter dish of Punjab. Sarson da Saag is a creamy, rustic curry made from mustard greens and other leafy vegetables, slow-cooked for hours. It is served with Makki di Roti, a flatbread made from maize flour, and topped with a dollop of white butter or ghee.",
+    "culturalSignificance": "This dish is a celebration of the winter harvest in Punjab. It is a classic example of farm-to-table eating and is deeply ingrained in the rural culture of the state.",
+    "occasions": "Winter meals, Lohri festival",
+    "interestingFacts": [
+      "The saag is traditionally cooked in an earthen pot (handi) for a long time to develop its characteristic flavor and texture.",
+      "Adding a bit of maize flour to the saag while cooking is a traditional technique to thicken it."
+    ]
+  },
+  {
+    "dishName": "Puran Poli",
+    "imageId": "cuisine-puran-poli",
+    "region": "Maharashtra, Gujarat, Karnataka",
+    "type": "Vegetarian",
+    "mainIngredients": ["Chana dal (split chickpeas)", "Jaggery", "Whole wheat flour", "Cardamom", "Nutmeg"],
+    "cookingStyle": "Griddling",
+    "description": "A sweet flatbread that is a festive delicacy in several western and southern states. It's a flatbread stuffed with a sweet, fragrant filling called 'Puran', which is made from cooked and mashed lentils and jaggery.",
+    "culturalSignificance": "Puran Poli is an essential part of festive meals, especially during festivals like Ganesh Chaturthi, Diwali, and Holi in Maharashtra. It symbolizes happiness and prosperity.",
+    "occasions": "Ganesh Chaturthi, Holi, Diwali",
+    "interestingFacts": [
+      "In Marathi, 'Puran' means the sweet filling and 'Poli' means the outer bread.",
+      "The dish is served hot with a generous amount of ghee, and sometimes with a thin, sweet and sour dal called 'Katachi Amti'."
+    ]
+  },
+  {
+    "dishName": "Pulihora",
+    "imageId": "cuisine-pulihora",
+    "region": "Andhra Pradesh, Telangana, Tamil Nadu, Karnataka",
+    "type": "Vegetarian",
+    "mainIngredients": ["Rice", "Tamarind", "Peanuts", "Curry leaves", "Mustard seeds"],
+    "cookingStyle": "Sautéing",
+    "description": "Also known as Tamarind Rice, Pulihora is a tangy and spicy rice preparation. It's a popular dish in South Indian temples where it is offered to deities as 'prasadam' (consecrated food). The balance of sour, spicy, and savory flavors makes it unique.",
+    "culturalSignificance": "Pulihora is a significant temple food and is also prepared during festivals and special occasions. It is easy to prepare and has a good shelf life, making it a popular choice for travel food.",
+    "occasions": "Temple prasadam, Festivals (Ugadi, Sankranti)",
+    "interestingFacts": [
+      "There are variations made with lemon (Nimmakaya Pulihora) and raw mango (Mamidikaya Pulihora).",
+      "The use of asafoetida (hing) is crucial for its distinctive aroma and flavor."
+    ]
+  },
+  {
+    "dishName": "Undhiyu",
+    "imageId": "cuisine-undhiyu",
+    "region": "Surat, Gujarat",
+    "type": "Vegetarian",
+    "mainIngredients": ["Winter vegetables (surti papdi, purple yam, sweet potatoes)", "Fenugreek dumplings (muthiya)", "Plantain", "Spices"],
+    "cookingStyle": "Slow cooking in an earthen pot",
+    "description": "A classic Gujarati winter delicacy, Undhiyu is a mixed vegetable dish that is slow-cooked to perfection. The name comes from the Gujarati word 'undhu', which means 'upside down', referring to the traditional method of cooking the dish underground in sealed earthen pots, fired from above.",
+    "culturalSignificance": "Undhiyu is the star of the Uttarayan (kite festival) celebrations in Gujarat. It's a community dish, often made in large quantities to be shared.",
+    "occasions": "Uttarayan (Makar Sankranti)",
+    "interestingFacts": [
+      "Surti Papdi, a type of flat bean available only in winter, is the key ingredient.",
+      "The modern version is often cooked in a pressure cooker, but the authentic taste comes from slow-cooking in an earthen pot."
+    ]
+  },
+  {
+    "dishName": "Idiyappam",
+    "imageId": "cuisine-idiyappam",
+    "region": "Kerala, Tamil Nadu",
+    "type": "Vegetarian",
+    "mainIngredients": ["Rice flour", "Water", "Salt"],
+    "cookingStyle": "Steaming",
+    "description": "Also known as String Hoppers, Idiyappam is a delicate breakfast noodle made from rice flour. The dough is pressed through a special mould to create fine strands, which are then steamed. It has a soft, light texture and is typically served with a curry or sweetened coconut milk.",
+    "culturalSignificance": "Idiyappam is a popular breakfast dish in South India and parts of Southeast Asia. Its simple, steamed nature makes it a healthy and easily digestible meal.",
+    "occasions": "Breakfast",
+    "interestingFacts": [
+      "The same preparation is known as 'putu mayam' in Malaysia and Singapore.",
+      "It can be served with savory stews or as a sweet dish with coconut milk and sugar."
+    ]
+  },
+  {
+    "dishName": "Bisi Bele Bath",
+    "imageId": "cuisine-bisi-bele-bath",
+    "region": "Karnataka",
+    "type": "Vegetarian",
+    "mainIngredients": ["Rice", "Toor dal (pigeon peas)", "Vegetables", "Tamarind", "Bisi Bele Bath powder"],
+    "cookingStyle": "One-pot cooking",
+    "description": "Meaning 'hot lentil rice dish' in Kannada, this is a wholesome one-pot meal from Karnataka. It's a flavorful medley of rice, lentils, and vegetables, cooked together with a special spice blend and tamarind. It is usually served hot with a dollop of ghee and crispy boondi or potato chips on the side.",
+    "culturalSignificance": "Originating in the Mysore Palace, it is a celebratory dish that is also a comforting everyday meal. The unique spice powder is the heart of the dish.",
+    "occasions": "Lunch, Festivals",
+    "interestingFacts": [
+      "An authentic Bisi Bele Bath uses around 30 different ingredients.",
+      "The dish has a soupy consistency, unlike a typical pulao or biryani."
+    ]
+  },
+  {
+    "dishName": "Kadhi",
+    "imageId": "cuisine-kadhi",
+    "region": "Punjab, Gujarat, Rajasthan (various versions)",
+    "type": "Vegetarian",
+    "mainIngredients": ["Yogurt", "Gram flour (besan)", "Spices", "Pakoras (fritters)"],
+    "cookingStyle": "Simmering",
+    "description": "Kadhi is a yogurt-based curry that is popular across North and West India. Each region has its own version. The Punjabi version is thick and sour, served with soft vegetable pakoras. The Gujarati version is thinner and sweeter, while the Rajasthani version is spicier.",
+    "culturalSignificance": "Kadhi is a quintessential comfort food, often served with steamed rice or roti. It's a clever way to use leftover sour yogurt.",
+    "occasions": "Daily meal",
+    "interestingFacts": [
+      "The name 'Kadhi' comes from the word 'kadhna', which means to slow-cook or simmer for a long time.",
+      "In many households, it is a Sunday lunch tradition to have 'Kadhi-Chawal' (Kadhi with rice)."
+    ]
+  },
+  {
+    "dishName": "Momos",
+    "imageId": "cuisine-momo",
+    "region": "Sikkim, Ladakh, Arunachal Pradesh, Darjeeling",
+    "type": "Both",
+    "mainIngredients": ["All-purpose flour", "Cabbage", "Onions", "Minced meat (optional)", "Ginger", "Garlic"],
+    "cookingStyle": "Steaming / Frying",
+    "description": "A type of South Asian dumpling native to Tibet and Nepal, Momos are extremely popular across the Himalayan regions of India. A simple dough is filled with a savory mixture of vegetables or minced meat, and then either steamed or fried. They are served with a fiery red chili and tomato dip.",
+    "culturalSignificance": "Momos are more than just a snack; they are a cultural phenomenon in these regions. They are a staple street food and a favorite homemade delicacy.",
+    "occasions": "Snack, Appetizer",
+    "interestingFacts": [
+      "The shape of the momo can vary, from round to crescent-shaped.",
+      "Making momos is often a communal activity, with families gathering to fold and fill the dumplings together."
+    ]
+  },
+  {
+    "dishName": "Chole Bhature",
+    "imageId": "cuisine-chole-bhature",
+    "region": "Delhi, Punjab",
+    "type": "Vegetarian",
+    "mainIngredients": ["Chickpeas", "All-purpose flour", "Yogurt", "Onions", "Tomatoes", "Spices"],
+    "cookingStyle": "Simmering & Deep Frying",
+    "description": "A classic North Indian dish, especially popular in Delhi and Punjab. It consists of spicy and tangy chickpea curry (Chole) served with Bhature, a fluffy, deep-fried leavened bread. It's often accompanied by pickled onions and green chilies.",
+    "culturalSignificance": "Chole Bhature is a beloved breakfast and lunch item. It's a rich and indulgent dish, often reserved for weekends or special occasions.",
+    "occasions": "Breakfast, Brunch, Celebrations",
+    "interestingFacts": [
+      "The dark color of the Chole often comes from adding dried amla (Indian gooseberry) or tea bags while boiling the chickpeas.",
+      "The fluffiness of the Bhature comes from fermenting the dough with yogurt or yeast."
+    ]
+  },
+  {
+    "dishName": "Galouti Kebab",
+    "imageId": "cuisine-galouti-kebab",
+    "region": "Lucknow, Uttar Pradesh",
+    "type": "Non-Vegetarian",
+    "mainIngredients": ["Minced lamb meat", "Raw papaya", "Over 100 exotic spices"],
+    "cookingStyle": "Pan-frying",
+    "description": "A melt-in-the-mouth kebab from the city of Lucknow, the heart of Awadhi cuisine. 'Galouti' means 'soft', and these kebabs are so tender they dissolve on the tongue. The minced meat is marinated with raw papaya (a meat tenderizer) and a secret blend of spices before being shallow-fried.",
+    "culturalSignificance": "Legend has it that these kebabs were created for an aging, toothless Nawab (king) of Lucknow who had a passion for food. They represent the refinement and sophistication of royal Awadhi cooking.",
+    "occasions": "Royal feasts, Appetizer",
+    "interestingFacts": [
+      "The original recipe is said to have used over 150 different spices.",
+      "The kebabs are traditionally served on small, soft parathas (flatbreads)."
+    ]
+  },
+  {
+    "dishName": "Puran Poli",
+    "imageId": "cuisine-puran-poli",
+    "region": "Maharashtra, Gujarat, Karnataka",
+    "type": "Vegetarian",
+    "mainIngredients": ["Chana dal (split chickpeas)", "Jaggery", "Whole wheat flour", "Cardamom", "Nutmeg"],
+    "cookingStyle": "Griddling",
+    "description": "A sweet flatbread that is a festive delicacy in several western and southern states. It's a flatbread stuffed with a sweet, fragrant filling called 'Puran', which is made from cooked and mashed lentils and jaggery.",
+    "culturalSignificance": "Puran Poli is an essential part of festive meals, especially during festivals like Ganesh Chaturthi, Diwali, and Holi in Maharashtra. It symbolizes happiness and prosperity.",
+    "occasions": "Ganesh Chaturthi, Holi, Diwali",
+    "interestingFacts": [
+      "In Marathi, 'Puran' means the sweet filling and 'Poli' means the outer bread.",
+      "The dish is served hot with a generous amount of ghee, and sometimes with a thin, sweet and sour dal called 'Katachi Amti'."
+    ]
+  },
+  {
+    "dishName": "Shorshe Ilish",
+    "imageId": "cuisine-shorshe-ilish",
+    "region": "West Bengal, Bangladesh",
+    "type": "Non-Vegetarian",
+    "mainIngredients": ["Hilsa fish (Ilish)", "Mustard paste", "Mustard oil", "Green chilies"],
+    "cookingStyle": "Steaming / Simmering",
+    "description": "The king of all Bengali fish dishes, Shorshe Ilish is a preparation of Hilsa fish in a pungent and spicy mustard gravy. The sharp flavor of the mustard paste is balanced by the rich, oily texture of the Hilsa fish. It can be either steamed (bhapa) or simmered into a curry.",
+    "culturalSignificance": "Ilish মাছ (Ilish fish) is not just food, it's an emotion for Bengalis. The arrival of Hilsa during the monsoons is a celebrated event. This dish is considered the pinnacle of Bengali cuisine.",
+    "occasions": "Monsoon season, Special family meals",
+    "interestingFacts": [
+      "The taste of Hilsa fish varies depending on which river it is caught from, with the fish from the Padma river being the most prized.",
+      "Bengalis use every part of the fish, from head to tail, in various preparations."
+    ]
+  },
+  {
+    "dishName": "Pitha",
+    "imageId": "cuisine-pitha",
+    "region": "Assam, Odisha, West Bengal, Bihar",
+    "type": "Vegetarian",
+    "mainIngredients": ["Rice flour", "Coconut", "Jaggery", "Milk"],
+    "cookingStyle": "Steaming, Frying, or Baking",
+    "description": "Pitha is a category of rice cakes from the eastern and northeastern regions of India. They can be sweet or savory, and the preparation method varies widely. Common examples include steamed Patishapta (thin crepes with coconut filling) and fried Gokul Pitha.",
+    "culturalSignificance": "Pithas are intrinsically linked to harvest festivals, especially Makar Sankranti (also known as Poush Parbon or Bihu). Making Pithas is a community and family activity that celebrates the new rice harvest.",
+    "occasions": "Makar Sankranti, Bihu",
+    "interestingFacts": [
+      "There are hundreds of varieties of Pitha across the different states.",
+      "They are similar to dumplings or pancakes in other cultures but are unique due to the use of rice flour and traditional fillings."
+    ]
+  },
+  {
+    "dishName": "Kakori Kebab",
+    "imageId": "cuisine-kakori-kebab",
+    "region": "Kakori (near Lucknow), Uttar Pradesh",
+    "type": "Non-Vegetarian",
+    "mainIngredients": ["Finely minced lamb", "Spices", "Khoya (milk solids)"],
+    "cookingStyle": "Grilling on skewers",
+    "description": "Even softer than the Galouti Kebab, the Kakori Kebab is a legendary dish from the town of Kakori. These seekh kebabs are made from the finest mince of lamb and a secret blend of spices, resulting in a texture that is exquisitely soft and succulent. They are grilled on skewers over charcoal.",
+    "culturalSignificance": "Created to please a British nobleman who complained about the chewy texture of other kebabs, the Kakori Kebab is a testament to the culinary prowess of Awadhi chefs. It represents the height of refinement in kebab making.",
+    "occasions": "Grand feasts, Culinary competitions",
+    "interestingFacts": [
+      "The meat is minced to a paste-like consistency, which is the secret to its softness.",
+      "The kebabs are so delicate that they require expert handling to grill without breaking."
+    ]
+  },
+  {
+    "dishName": "Chettinad Chicken",
+    "imageId": "cuisine-chettinad-chicken",
+    "region": "Chettinad, Tamil Nadu",
+    "type": "Non-Vegetarian",
+    "mainIngredients": ["Chicken", "Star anise", "Black stone flower (dagad phool)", "Fennel seeds", "Dried red chilies", "Coconut"],
+    "cookingStyle": "Sautéing & Simmering",
+    "description": "A fiery and aromatic chicken curry from the Chettinad region of Tamil Nadu. The cuisine is renowned for its complex spice blends, and this dish is no exception. A freshly roasted and ground spice mix, including unique ingredients like stone flower, gives it a robust and distinctive flavor.",
+    "culturalSignificance": "The Chettiars were a community of prosperous trading merchants, and their travels influenced their cuisine, which is known for using a variety of sun-dried and imported spices.",
+    "occasions": "Special lunches",
+    "interestingFacts": [
+      "Authentic Chettinad masala can contain over 20 different spices.",
+      "The cuisine is considered one of the spiciest and most aromatic in India."
+    ]
+  },
+  {
+    "dishName": "Malai Kofta",
+    "imageId": "cuisine-malai-kofta",
+    "region": "North India (Mughlai cuisine)",
+    "type": "Vegetarian",
+    "mainIngredients": ["Potatoes", "Paneer (Indian cottage cheese)", "Cashews", "Cream (malai)", "Tomatoes"],
+    "cookingStyle": "Frying & Simmering",
+    "description": "A rich and creamy vegetarian dish from the Mughlai culinary tradition. It consists of 'koftas' (deep-fried balls of mashed potatoes, paneer, and nuts) served in a smooth, mildly sweet, and spicy gravy made from tomatoes, onions, and cashew paste.",
+    "culturalSignificance": "This is a celebratory, restaurant-style dish that is a vegetarian counterpart to rich meat curries. It showcases the luxurious and refined cooking techniques of Mughlai food.",
+    "occasions": "Weddings, Parties, Special occasions",
+    "interestingFacts": [
+      "The koftas are often stuffed with a mixture of nuts and raisins for a surprise texture and sweetness.",
+      "'Malai' means cream, which is a key ingredient for the gravy's richness."
+    ]
+  },
+  {
+    "dishName": "Gushtaba",
+    "imageId": "cuisine-gushtaba",
+    "region": "Kashmir Valley, Jammu & Kashmir",
+    "type": "Non-Vegetarian",
+    "mainIngredients": ["Minced mutton", "Yogurt", "Cardamom", "Dried mint"],
+    "cookingStyle": "Pounding & Simmering",
+    "description": "Known as the 'dish of kings', Gushtaba is the final, grand dish served in a traditional Kashmiri Wazwan. It consists of large, soft meatballs made from hand-pounded mutton, cooked in a fragrant and tangy yogurt-based gravy (yakhni).",
+    "culturalSignificance": "Serving Gushtaba signals the end of the Wazwan feast, and it is considered a declaration of honor and respect for the guests. Refusing it can be seen as an insult.",
+    "culturalSignificance": "The preparation is labor-intensive, as the meat has to be pounded with a wooden mallet on a stone slab to achieve the perfect texture.",
+    "occasions": "Wazwan feasts (final course)",
+    "interestingFacts": [
+      "The meatballs are cooked without any red chili powder, giving the gravy a pristine white color.",
+      "The skill of the 'Waza' (master chef) is often judged by the quality of their Gushtaba."
+    ]
+  },
+  {
+    "dishName": "Thekua",
+    "imageId": "cuisine-thekua",
+    "region": "Bihar, Jharkhand",
+    "type": "Vegetarian",
+    "mainIngredients": ["Whole wheat flour", "Jaggery or Sugar", "Fennel seeds", "Ghee"],
+    "cookingStyle": "Deep Frying",
+    "description": "A traditional sweet snack from Bihar, Thekua is a type of cookie or biscuit that is hard, crunchy, and sweet. The dough is often pressed into decorative wooden moulds before being deep-fried in ghee. It has a long shelf life.",
+    "culturalSignificance": "Thekua is the most important 'prasad' (religious offering) made during the Chhath Puja festival. It is offered to the Sun God and then distributed among family and friends.",
+    "occasions": "Chhath Puja",
+    "interestingFacts": [
+      "The patterns on the Thekua are not just for decoration; they help it cook evenly.",
+      "It is also known as 'Khajuria' or 'Thikari'."
+    ]
+  },
+  {
+    "dishName": "Eromba",
+    "imageId": "cuisine-eromba",
+    "region": "Manipur",
+    "type": "Non-Vegetarian",
+    "mainIngredients": ["Vegetables (potatoes, beans)", "Ngari (fermented fish)", "King chili (U-morok)"],
+    "cookingStyle": "Boiling & Mashing",
+    "description": "A signature dish of Manipuri cuisine, Eromba is a simple yet pungent and spicy chutney or stew. It is made by boiling vegetables with 'Ngari', a fermented fish, and then mashing them together with fiery King chilies and salt.",
+    "culturalSignificance": "Ngari (fermented fish) is a cornerstone of Manipuri cuisine, and Eromba showcases its flavor profile perfectly. It's a staple side dish that accompanies a typical Meitei meal.",
+    "occasions": "Daily meal",
+    "interestingFacts": [
+      "The choice of vegetables used in Eromba changes with the seasons.",
+      "'Eromba' is a Meitei word where 'Eru' means to mix and 'Tana Pamba' means to mash."
+    ]
+  },
+  {
+    "dishName": "Jadoh",
+    "imageId": "cuisine-jadoh",
+    "region": "Meghalaya (Khasi tribe)",
+    "type": "Non-Vegetarian",
+    "mainIngredients": ["Red rice", "Pork", "Turmeric", "Ginger"],
+    "cookingStyle": "Sautéing",
+    "description": "A popular dish among the Khasi community of Meghalaya, Jadoh is a flavourful rice and meat (usually pork) pilaf. The name 'Ja-doh' means 'rice-meat'. It is cooked with minimal spices, allowing the flavor of the meat to shine through.",
+    "culturalSignificance": "Jadoh is a celebratory dish as well as a common one. It highlights the importance of pork in Khasi cuisine and culture.",
+    "occasions": "Festivals, Community feasts",
+    "interestingFacts": [
+      "Some versions of Jadoh are cooked with pork blood, which gives the rice a distinct dark color and rich flavor.",
+      "It is often served with 'Tungrymbai', a pungent fermented soybean chutney."
+    ]
+  },
+  {
+    "dishName": "Axone (Akhuni)",
+    "imageId": "cuisine-axone",
+    "region": "Nagaland",
+    "type": "Ingredient / Condiment",
+    "mainIngredients": ["Soybeans"],
+    "cookingStyle": "Fermentation",
+    "description": "Axone, also known as Akhuni, is a fermented soybean product with a strong, pungent aroma and flavor. It is a key ingredient in many Naga dishes. The soybeans are boiled, mashed, and then fermented, either as a paste or as cakes.",
+    "culturalSignificance": "Fermented foods are a vital part of Naga cuisine, and Axone is the most famous of them all. It is used to add a rich, umami flavor to stews, curries, and chutneys, especially those made with pork or smoked meats.",
+    "occasions": "Used in daily cooking",
+    "interestingFacts": [
+      "The smell of Axone is very strong and can be an acquired taste for those not familiar with it.",
+      "A popular Naga dish is 'Smoked Pork with Axone'."
+    ]
+  },
+  {
+    "dishName": "Bhangjeer ki Chutney",
+    "imageId": "cuisine-bhangjeera-chutney",
+    "region": "Uttarakhand",
+    "type": "Vegetarian",
+    "mainIngredients": ["Perilla seeds (Bhangjeera)", "Cumin seeds", "Garlic", "Pomegranate seeds"],
+    "cookingStyle": "Roasting & Grinding",
+    "description": "A unique and nutty chutney from the Kumaon region of Uttarakhand. It is made from roasted perilla seeds, which are then ground with other spices to form a thick, flavorful paste. It has a distinctive toasty and slightly earthy flavor.",
+    "culturalSignificance": "This chutney utilizes local ingredients found in the Himalayan region. It is a staple accompaniment to meals, adding a burst of flavor and nutrition.",
+    "occasions": "Daily meal",
+    "interestingFacts": [
+      "Despite the name 'Bhangjeera', these seeds are from the perilla plant and are not related to cannabis (bhang).",
+      "The chutney is traditionally ground on a 'sil-batta' (stone grinder)."
+    ]
+  },
+  {
+    "dishName": "Pootharekulu",
+    "imageId": "cuisine-pootharekulu",
+    "region": "Andhra Pradesh",
+    "type": "Vegetarian",
+    "mainIngredients": ["Rice starch", "Powdered sugar", "Ghee"],
+    "cookingStyle": "Layering & Rolling",
+    "description": "A delicate and paper-thin sweet from Andhra Pradesh, Pootharekulu translates to 'coated sheets'. A special rice batter is used to create wafer-thin layers, which are then coated with ghee and sugar or jaggery powder, and sometimes nuts, before being folded.",
+    "culturalSignificance": "The art of making Pootharekulu is a traditional cottage industry in the village of Atreyapuram in Andhra Pradesh. It requires immense skill to create the paper-thin sheets.",
+    "occasions": "Festivals, Weddings",
+    "interestingFacts": [
+      "The paper-like film is made by dipping a thin cloth in the rice batter and quickly dabbing it on an inverted, heated earthen pot.",
+      "It has been granted a Geographical Indication (GI) tag."
+    ]
+  },
+  {
+    "dishName": "Dham",
+    "imageId": "cuisine-dham",
+    "region": "Himachal Pradesh",
+    "type": "Vegetarian",
+    "mainIngredients": ["Lentils", "Rajma (kidney beans)", "Yogurt", "Rice"],
+    "cookingStyle": "Slow cooking",
+    "description": "Dham is a traditional festive meal prepared by 'botis' (a community of Brahmin chefs) in Himachal Pradesh. It's a full meal served on leaf plates, featuring a variety of dishes cooked without onion or garlic. The preparations are typically yogurt-based and cooked slowly in copper vessels.",
+    "culturalSignificance": "Dham is an integral part of weddings, festivals, and religious gatherings in Himachal. The recipes are closely guarded secrets passed down through generations of botis.",
+    "occasions": "Weddings, Local festivals",
+    "interestingFacts": [
+      "The meal always starts with rice and a type of rajma dal, and ends with a sweet rice dish called 'Meetha Bhaat'.",
+      "The dishes are cooked over a slow fire, which gives them a unique flavor."
+    ]
+  },
+  {
+    "dishName": "Chhena Poda",
+    "imageId": "cuisine-chenna-poda",
+    "region": "Odisha",
+    "type": "Vegetarian",
+    "mainIngredients": ["Chhena (fresh cottage cheese)", "Sugar", "Semolina", "Cardamom"],
+    "cookingStyle": "Baking",
+    "description": "Meaning 'burnt cheese' in Odia, Chhena Poda is a famous dessert from Odisha. It is made from well-kneaded chhena, sugar, and spices, which is then baked for several hours until it turns a beautiful caramelized brown. It is soft and spongy on the inside with a slightly burnt crust.",
+    "culturalSignificance": "It is believed to have originated in the town of Nayagarh in the early 20th century. It is a favorite sweet of Lord Jagannath and is often offered to him at the Puri Temple.",
+    "occasions": "Festivals, Dessert",
+    "interestingFacts": [
+      "The inventor allegedly left leftover chhena in a hot oven overnight by mistake, resulting in the creation of this delicacy.",
+      "It is often referred to as the 'Indian cheesecake'."
+    ]
+  }
+]

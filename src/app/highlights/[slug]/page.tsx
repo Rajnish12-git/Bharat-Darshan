@@ -8,10 +8,11 @@ import Footer from '@/components/footer';
 import InfoCard from '@/components/info-card';
 
 export async function generateStaticParams() {
-  // Generate params for all highlights, but filter out 'architectural-marvels'
-  // as it has its own dedicated page. This prevents a routing conflict.
+  // Generate params for all highlights, but filter out 'architectural-marvels' and 'culinary-journey'
+  // as they have their own dedicated pages. This prevents a routing conflict.
+  const excludedSlugs = ['architectural-marvels', 'culinary-journey'];
   return highlights
-    .filter((highlight) => highlight.slug !== 'architectural-marvels')
+    .filter((highlight) => !excludedSlugs.includes(highlight.slug))
     .map((highlight) => ({
       slug: highlight.slug,
     }));

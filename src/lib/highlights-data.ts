@@ -25,13 +25,7 @@ export const highlights: Highlight[] = [
     description:
       "Indian cuisine is a vibrant mosaic of flavors, with each region offering its own unique specialties. From the spicy curries of the north to the coconut-infused dishes of the south, the culinary landscape is as diverse as its culture. It's an experience that tantalizes the senses and tells the story of the land.",
     imageId: 'cuisine-spices',
-    slug: 'culinary-journey',
-    details: [
-      { name: 'Hyderabadi Biryani', imageId: 'cuisine-hyderabadi-biryani', description: 'A legendary, aromatic rice dish cooked with meat or vegetables and a blend of rich spices.' },
-      { name: 'Dal Baati Churma', imageId: 'cuisine-dal-baati-churma', description: 'A Rajasthani specialty featuring baked wheat balls served with spicy lentils and a sweet crumble.' },
-      { name: 'Masala Dosa', imageId: 'cuisine-masala-dosa', description: 'A crispy, savory crepe made from fermented rice and lentil batter, filled with spiced potatoes.' },
-      { name: 'Vada Pav', imageId: 'cuisine-vada-pav', description: "Mumbai's iconic street food: a spiced potato fritter tucked inside a soft bread bun." },
-    ]
+    slug: 'culinary-journey'
   },
   {
     title: 'Vibrant Art Forms',
