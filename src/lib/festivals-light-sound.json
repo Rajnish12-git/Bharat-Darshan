@@ -1,0 +1,522 @@
+
+[
+  {
+    "festivalName": "Diwali",
+    "imageId": "festival-diwali",
+    "region": "Pan-India",
+    "community": "Hindu, Jain, Sikh",
+    "timeOfYear": "October-November",
+    "keyElements": ["Diyas (oil lamps)", "Fireworks", "Rangoli", "Puja (prayers)"],
+    "rituals": "Deepavali, the 'Festival of Lights,' is celebrated over five days. Homes are cleaned and decorated with countless 'diyas' and intricate 'rangoli' designs on the floor. Families perform 'Lakshmi Puja' to invite the goddess of wealth, share sweets, and light up the night sky with fireworks.",
+    "culturalSignificance": "It symbolizes the spiritual victory of light over darkness, good over evil, and knowledge over ignorance. For Hindus, it marks the return of Lord Rama to Ayodhya after 14 years of exile. For Sikhs, it commemorates the release of Guru Hargobind from prison.",
+    "uniqueTraditions": [
+      "The bursting of firecrackers is meant to ward off evil spirits and express joy.",
+      "In many parts of India, a game of 'teen patti' (card game) is played, as it is considered auspicious."
+    ]
+  },
+  {
+    "festivalName": "Holi",
+    "imageId": "festival-holi",
+    "region": "Pan-India, especially North India",
+    "community": "Hindu",
+    "timeOfYear": "March",
+    "keyElements": ["Colored powders (gulal)", "Water guns (pichkaris)", "Dhol music", "Bonfire"],
+    "rituals": "The night before Holi, a large bonfire called 'Holika Dahan' is lit, symbolizing the burning of the demoness Holika. The next day is a free-for-all carnival of colors, where people playfully throw colored powders and water at each other. The air is filled with the rhythmic beats of the 'dhol' and joyous music.",
+    "culturalSignificance": "Holi celebrates the arrival of spring, the end of winter, and the victory of good over evil. It is a day to forgive and forget, mend broken relationships, and celebrate with friends and family.",
+    "uniqueTraditions": [
+      "The Lathmar Holi of Barsana and Nandgaon, where women playfully beat men with sticks.",
+      "Consuming 'bhang' (a cannabis-infused drink) is a tradition in some parts of North India."
+    ]
+  },
+  {
+    "festivalName": "Durga Puja",
+    "imageId": "festival-durga-puja",
+    "region": "West Bengal, Assam, Tripura",
+    "community": "Hindu (especially Bengali)",
+    "timeOfYear": "September-October",
+    "keyElements": ["Elaborate idols (pandals)", "Dhak drum beats", "Dhunuchi dance", "Chanting"],
+    "rituals": "This ten-day festival celebrates the victory of the goddess Durga over the demon Mahishasur. Massive, artistically designed temporary structures called 'pandals' are erected to house magnificent idols of the goddess. The atmosphere reverberates with the hypnotic beats of the 'dhak' drum. On the final day, the idols are immersed in the river.",
+    "culturalSignificance": "It is the biggest festival in West Bengal, a grand celebration of art, culture, and devotion. It's a time for family reunions, feasting, and 'pandal-hopping' to admire the creativity.",
+    "uniqueTraditions": [
+      "The 'Dhunuchi Naach', a devotional dance performed holding an earthen pot filled with burning coconut husk and incense.",
+      "'Sindur Khela', where married women apply vermilion on each other on the last day."
+    ]
+  },
+  {
+    "festivalName": "Ganesh Chaturthi",
+    "imageId": "festival-ganesh-chaturthi",
+    "region": "Maharashtra, Goa, Telangana",
+    "community": "Hindu",
+    "timeOfYear": "August-September",
+    "keyElements": ["Clay idols", "Processions", "Loud music", "Dhol-Tasha bands"],
+    "rituals": "The festival marks the birth of the elephant-headed god, Ganesha. Clay idols are brought home or installed in large public pandals and worshipped for up to ten days. The celebration is marked by loud music, chanting, and energetic dancing. The festival culminates with the 'Visarjan', a grand procession where the idols are immersed in the sea or a lake.",
+    "culturalSignificance": "What began as a private festival was popularized by freedom fighter Lokmanya Tilak to unite people against the British. It is now a massive public event, especially in Mumbai, showcasing community spirit and devotion.",
+    "uniqueTraditions": [
+      "The 'Dhol-Tasha' bands, with their powerful and coordinated drumming, are a key feature of the processions.",
+      "Offering 'Modak', a sweet dumpling, which is considered Lord Ganesha's favorite food."
+    ]
+  },
+  {
+    "festivalName": "Kumbh Mela",
+    "imageId": "festival-kumbh-mela",
+    "region": "Haridwar, Prayagraj, Nashik, Ujjain",
+    "community": "Hindu",
+    "timeOfYear": "Rotates every 3 years",
+    "keyElements": ["Mass pilgrimage", "Ritual bathing", "Religious chanting", "Processions of Sadhus"],
+    "rituals": "The largest peaceful gathering in the world, where millions of pilgrims congregate to bathe in a sacred river. It is believed that bathing in the river during the Kumbh Mela cleanses one of their sins. The event is a spectacle of faith, with ascetics (sadhus) and saints leading grand processions called 'Shahi Snan' (royal bath).",
+    "culturalSignificance": "Inscribed on UNESCO's list of Intangible Cultural Heritage, the Kumbh Mela is a profound display of Hindu spirituality and tradition. It is a hub for religious discourse and cultural exchange.",
+    "uniqueTraditions": [
+      "The sight of Naga Sadhus (naked ascetics) marching to the river for their bath is a defining image of the festival.",
+      "The event is determined by the alignment of Jupiter, the Sun, and the Moon."
+    ]
+  },
+  {
+    "festivalName": "Onam",
+    "imageId": "festival-onam",
+    "region": "Kerala",
+    "community": "Hindu (celebrated by all)",
+    "timeOfYear": "August-September",
+    "keyElements": ["Pookalam (floral carpets)", "Snake boat races", "Traditional music", "Onam Sadya feast"],
+    "rituals": "A ten-day harvest festival celebrating the annual homecoming of the mythical King Mahabali. Homes are decorated with intricate floral carpets called 'Pookalam'. The festival is marked by traditional music, dances like Kathakali and Pulikali (tiger dance), and a grand vegetarian feast called the 'Onam Sadya'.",
+    "culturalSignificance": "Onam is the state festival of Kerala and a celebration of prosperity and togetherness, transcending religious boundaries. It showcases the state's rich culture and traditions.",
+    "uniqueTraditions": [
+      "The 'Vallam Kali' (snake boat race), where long snake-like boats with over 100 rowers compete, is a major highlight.",
+      "The 'Onam Sadya', a feast with over 26 dishes, is served on a banana leaf."
+    ]
+  },
+  {
+    "festivalName": "Pushkar Camel Fair",
+    "imageId": "festival-pushkar-fair",
+    "region": "Pushkar, Rajasthan",
+    "community": "Cultural/Trade",
+    "timeOfYear": "October-November",
+    "keyElements": ["Camels and livestock", "Folk music and dance", "Hot air balloons", "Competitions"],
+    "rituals": "One of the world's largest livestock fairs, it is a vibrant spectacle of Rajasthani culture. Thousands of camels, horses, and cattle are traded. The fair is a sensory overload with folk music performances, puppet shows, camel races, and other competitions.",
+    "culturalSignificance": "While it starts as a trade fair, it coincides with the holy Kartik Purnima festival, and pilgrims take a dip in the sacred Pushkar Lake. It's a fascinating blend of commerce and spirituality.",
+    "uniqueTraditions": [
+      "The 'longest mustache' competition is a quirky and popular event.",
+      "Hot air balloon rides at sunrise offer a breathtaking view of the fair."
+    ]
+  },
+  {
+    "festivalName": "Ratha Yatra",
+    "imageId": "festival-ratha-yatra",
+    "region": "Puri, Odisha",
+    "community": "Hindu (Vaishnava)",
+    "timeOfYear": "June-July",
+    "keyElements": ["Massive chariots", "Devotional chanting", "Cymbals and drums", "Procession"],
+    "rituals": "The 'Festival of Chariots' where the deities of Lord Jagannath, his brother Balabhadra, and sister Subhadra are pulled on massive, elaborately decorated chariots. Millions of devotees flock to Puri to pull the chariot ropes, which is considered an act of great merit. The air is filled with the sounds of gongs, cymbals, and devotional kirtan.",
+    "culturalSignificance": "It is one of the oldest and largest religious processions in the world. It symbolizes the journey of Lord Krishna from Gokul to Mathura and is a powerful expression of collective devotion.",
+    "uniqueTraditions": [
+      "The King of Puri sweeps the chariots with a golden broom, symbolizing that everyone is a servant before the Lord.",
+      "The chariots are newly built every year using specific types of wood."
+    ]
+  },
+  {
+    "festivalName": "Thrissur Pooram",
+    "festivalName": "Thrissur Pooram",
+    "imageId": "festival-thrissur-pooram",
+    "region": "Thrissur, Kerala",
+    "community": "Hindu",
+    "timeOfYear": "April-May",
+    "keyElements": ["Caparisoned elephants", "Panchavadyam (orchestra)", "Fireworks", "Chenda Melam (drum ensemble)"],
+    "rituals": "Called the 'festival of all festivals', Thrissur Pooram is the largest and most spectacular temple festival in Kerala. It's a grand assembly of gods, goddesses, and people. The highlight is the procession of two rival temple groups with over 50 caparisoned elephants facing each other. The event is a non-stop percussion symphony, featuring 'Panchavadyam' and 'Chenda Melam'.",
+    "culturalSignificance": "It is a massive cultural and social event that showcases the best of Kerala's temple arts and traditions. The festival is a testament to the community spirit and rivalry between the two temples.",
+    "uniqueTraditions": [
+      "The 'Kudamattom' ceremony, where colorful, ornate umbrellas are exchanged sequentially atop the elephants.",
+      "A massive fireworks display that goes on for hours in the middle of the night."
+    ]
+  },
+  {
+    "festivalName": "Hornbill Festival",
+    "imageId": "festival-hornbill",
+    "region": "Nagaland",
+    "community": "Naga Tribes",
+    "timeOfYear": "December",
+    "keyElements": ["Tribal dances", "Folk songs", "Indigenous music", "War cries"],
+    "rituals": "A 'festival of festivals' that brings together all the major tribes of Nagaland to showcase their rich cultural heritage. The week-long festival is a vibrant display of traditional dances, folk songs, games, and rituals. The air resonates with the sound of log drums, warrior chants, and folk music.",
+    "culturalSignificance": "It aims to preserve and promote the culture of the Naga people. It's a unique opportunity to witness the diverse and colorful traditions of all the Naga tribes in one place.",
+    "uniqueTraditions": [
+      "The 'Naga King Chili Eating Competition' is a fiery challenge for the brave.",
+      "The festival includes demonstrations of traditional Naga skills like archery and wrestling."
+    ]
+  },
+  {
+    "festivalName": "Bihu",
+    "imageId": "festival-bihu",
+    "region": "Assam",
+    "community": "Assamese",
+    "timeOfYear": "April (Bohag Bihu)",
+    "keyElements": ["Bihu dance", "Pepa and Dhol music", "Folk songs"],
+    "rituals": "Bohag Bihu, the most important of the three Bihu festivals, marks the Assamese New Year and the onset of spring. It's a joyous festival celebrated with feasting, music, and dancing. Young men and women perform the energetic Bihu dance in groups, characterized by brisk steps and rapid hand movements, to the tunes of traditional instruments.",
+    "culturalSignificance": "Bihu is a celebration of fertility, nature, and the agricultural cycle. It is a secular festival that unites all people of Assam, irrespective of their religion or background.",
+    "uniqueTraditions": [
+      "The songs, called 'Bihu Geet', often have themes of love and nature.",
+      "The 'Goru Bihu' day is dedicated to cattle, where they are washed, smeared with turmeric, and offered special food."
+    ]
+  },
+  {
+    "festivalName": "Losar Festival",
+    "imageId": "festival-losar",
+    "region": "Ladakh, Arunachal Pradesh, Sikkim",
+    "community": "Buddhist",
+    "timeOfYear": "February-March",
+    "keyElements": ["Cham dance (mask dance)", "Monastery music", "Fire torches", "Chanting"],
+    "rituals": "Losar marks the Tibetan New Year. Celebrations are held in monasteries, which are decorated and illuminated. The highlight is the 'Cham Dance', where monks wear elaborate masks and costumes to enact stories of the victory of good over evil. The music, featuring long horns, drums, and cymbals, is deeply spiritual.",
+    "culturalSignificance": "It is the most important festival in the Tibetan Buddhist calendar. It is a time for family reunions, offering prayers, and celebrating the new beginning.",
+    "uniqueTraditions": [
+      "The 'Metho' ceremony, where people carry flaming torches and chant slogans to chase away evil spirits.",
+      "A special dish called 'Guthuk' is eaten on the eve of Losar."
+    ]
+  },
+  {
+    "festivalName": "Hemis Festival",
+    "imageId": "festival-hemis",
+    "region": "Ladakh",
+    "community": "Buddhist",
+    "timeOfYear": "June-July",
+    "keyElements": ["Cham dance (mask dance)", "Spiritual music", "Colorful silk costumes"],
+    "rituals": "This two-day festival is held at the Hemis Monastery to celebrate the birth anniversary of Guru Padmasambhava, who introduced Tantric Buddhism to Tibet. The main attraction is the mystical masked dance performed by the lamas, symbolizing the triumph of good over evil, accompanied by the sounds of cymbals, drums, and long horns.",
+    "culturalSignificance": "It is one of the most important and famous monastic festivals in Ladakh. It's a time when local people dress in their finest traditional attire and gather at the monastery.",
+    "uniqueTraditions": [
+      "A giant 'thangka' (religious painting) of Guru Padmasambhava is unfurled once every 12 years.",
+      "The head lama of the monastery presides over the entire ceremony."
+    ]
+  },
+  {
+    "festivalName": "Bastar Dussehra",
+    "imageId": "festival-bastar-dussehra",
+    "region": "Chhattisgarh",
+    "community": "Tribal",
+    "timeOfYear": "September-October",
+    "keyElements": ["Chariot procession", "Tribal music and dance", "Ritual sounds"],
+    "rituals": "Unlike Dussehra in other parts of India, this festival is not about celebrating Rama's victory over Ravana. Instead, it is dedicated to the local deity, Goddess Danteshwari. The festival is famous for its unique rituals and a grand procession with a massive, double-deckered chariot pulled by the local tribes.",
+    "culturalSignificance": "Lasting for 75 days, it is one of the longest festivals in the world. It showcases the rich and unique culture of the tribes of the Bastar region.",
+    "uniqueTraditions": [
+      "The chariot is built anew each year by the tribal communities.",
+      "The 'Jogi Bithai' ritual, where a youth sits in meditation in a pit for nine days."
+    ]
+  },
+  {
+    "festivalName": "Kharchi Puja",
+    "imageId": "festival-kharchi-puja",
+    "region": "Tripura",
+    "community": "Tripuri",
+    "timeOfYear": "July",
+    "keyElements": ["Worship of 14 deities", "Drum beats", "Chanting"],
+    "rituals": "A week-long royal puja to worship the 'Chaturdasha Devata', the fourteen gods that are the ancestral deities of the Tripuri people. The festival involves animal sacrifice and is marked by the rhythmic beats of drums and cymbals. Thousands of devotees flock to the temple in Agartala.",
+    "culturalSignificance": "It is one of the most important festivals of Tripura, celebrated by both tribal and non-tribal communities, symbolizing the syncretic culture of the state.",
+    "uniqueTraditions": [
+      "The 14 deities are represented only by their heads.",
+      "The rituals blend Hindu and traditional tribal practices."
+    ]
+  },
+  {
+    "festivalName": "Goa Carnival",
+    "imageId": "festival-goa-carnival",
+    "region": "Goa",
+    "community": "Christian (celebrated by all)",
+    "timeOfYear": "February",
+    "keyElements": ["Parades with floats", "Live music bands", "Street dancing"],
+    "rituals": "A three-day non-stop extravaganza of fun, frolic, and music, held just before the 40 days of Lent. The streets of Goa come alive with colorful parades, elaborate floats, street dancers, and live music. A 'King Momo' is chosen to preside over the carnival.",
+    "culturalSignificance": "Introduced by the Portuguese, the carnival is a unique part of Goa's culture, reflecting its colonial heritage. It's a time for feasting, drinking, and making merry.",
+    "uniqueTraditions": [
+      "The festival kicks off with a grand parade led by King Momo.",
+      "The Red and Black Dance is a popular event held on the final day."
+    ]
+  },
+  {
+    "festivalName": "Theyyam",
+    "imageId": "art-theyyam",
+    "region": "North Kerala",
+    "community": "Hindu",
+    "timeOfYear": "December to April",
+    "keyElements": ["Intense makeup and costumes", "Fire rituals", "Chenda drum beats", "Oracles"],
+    "rituals": "Theyyam is a powerful and ancient ritualistic performance where the artist is believed to transform into a divine being. The performer, adorned with heavy makeup and massive headgear, dances to the hypnotic rhythm of drums, often performing daredevil acts like walking on fire. The 'deity' then gives blessings to the devotees.",
+    "culturalSignificance": "A form of spirit and ancestor worship, Theyyam is a living cult that predates mainstream Hinduism in the region. It is a bridge between the mortal and the divine.",
+    "uniqueTraditions": [
+      "Each of the 450+ Theyyams has a distinct look, story, and set of rituals.",
+      "The performers often come from lower-caste communities, giving them a divine status during the festival."
+    ]
+  },
+  {
+    "festivalName": "Ganga Aarti",
+    "imageId": "festival-ganga-aarti",
+    "region": "Varanasi, Haridwar, Rishikesh",
+    "community": "Hindu",
+    "timeOfYear": "Daily, at dusk",
+    "keyElements": ["Large fire lamps", "Synchronized chanting", "Bells and conches"],
+    "rituals": "A spectacular and deeply spiritual ritual performed every evening on the banks of the sacred River Ganges. Priests in traditional attire perform a synchronized ceremony with large, multi-tiered fire lamps, accompanied by the chanting of mantras, the ringing of bells, and the blowing of conch shells.",
+    "culturalSignificance": "It is a prayer of gratitude to the River Ganga, which is considered a goddess. The ceremony is a powerful sensory experience that attracts thousands of tourists and pilgrims.",
+    "uniqueTraditions": [
+      "Devotees float small diyas with flowers into the river as an offering.",
+      "The entire ritual is choreographed and performed with precision by a group of young priests."
+    ]
+  },
+  {
+    "festivalName": "Kullu Dussehra",
+    "imageId": "festival-kullu-dussehra",
+    "region": "Himachal Pradesh",
+    "community": "Hindu",
+    "timeOfYear": "October",
+    "keyElements": ["Procession of deities", "Trumpets and drums", "Folk music and dance"],
+    "rituals": "This week-long festival begins on the day of Dussehra and continues for seven days. Unlike in other places, no effigy of Ravana is burnt. Instead, village deities from all over the valley are brought to Kullu in palanquins to pay homage to Lord Raghunath (Rama). The valley echoes with the sound of traditional trumpets and drums.",
+    "culturalSignificance": "It is a unique cultural spectacle and an international festival. It showcases the deep-rooted faith and the unique traditions of the hill people.",
+    "uniqueTraditions": [
+      "The festival culminates with the 'Lanka Dahan' ceremony, where a pile of wood and grass is set on fire.",
+      "A temporary market is set up, where people from all over the region come to trade and celebrate."
+    ]
+  },
+  {
+    "festivalName": "Bonalu",
+    "imageId": "festival-bonalu",
+    "region": "Telangana",
+    "community": "Hindu",
+    "timeOfYear": "July-August",
+    "keyElements": ["Offering to goddess", "Pothuraju dance", "Drum beats", "Processions"],
+    "rituals": "A festival dedicated to the Mother Goddess, Mahakali. Women carry 'Bonalu' (an offering of cooked rice, jaggery, and milk in a pot decorated with neem leaves) on their heads to the temple. The festival is marked by vibrant processions, trance-like dances, and the rhythmic beats of drums.",
+    "culturalSignificance": "It is a thanksgiving festival to the goddess for fulfilling vows and protecting the people from diseases. It is the state festival of Telangana.",
+    "uniqueTraditions": [
+      "The 'Pothuraju', the brother of the goddess, dances wildly in the procession, often whipping himself.",
+      "Women in a trance, known as 'Shigam', predict the future for the coming year."
+    ]
+  },
+  {
+    "festivalName": "Jallikattu",
+    "imageId": "festival-jallikattu",
+    "region": "Tamil Nadu",
+    "community": "Tamil",
+    "timeOfYear": "January (during Pongal)",
+    "keyElements": ["Bull taming", "Loud cheering", "Traditional music"],
+    "rituals": "An ancient and controversial sport where participants attempt to embrace a bull and hold on to its hump for a specific distance or time. It is a key part of the Pongal celebrations in rural Tamil Nadu. The event is filled with the roar of the crowd and the sound of traditional music.",
+    "culturalSignificance": "It is seen as a display of bravery and a way to honor the bulls, which are vital for agriculture. It is deeply intertwined with the rural and agrarian identity of the Tamil people.",
+    "uniqueTraditions": [
+      "The bulls are specially bred and trained for the event.",
+      "The winner is often awarded prizes like gold coins or bicycles, which are tied to the bull's horns."
+    ]
+  },
+  {
+    "festivalName": "Desert Festival",
+    "imageId": "festival-desert-festival",
+    "region": "Jaisalmer, Rajasthan",
+    "community": "Cultural",
+    "timeOfYear": "February",
+    "keyElements": ["Folk music", "Kalbelia dance", "Camel races", "Fire dance"],
+    "rituals": "A three-day festival held in the golden sands of the Thar Desert. It is a showcase of Rajasthani folk culture, with performances by renowned folk artists. Events include camel races, turban tying competitions, and puppet shows. The evenings are lit up with cultural programs against the backdrop of the Jaisalmer Fort.",
+    "culturalSignificance": "It aims to promote tourism and preserve the folk traditions of Rajasthan. It brings the desert to life with a riot of color, music, and festivities.",
+    "uniqueTraditions": [
+      "The 'Fire Dance', where performers dance on a bed of burning coals, is a spellbinding performance.",
+      "Camel polo is another unique and popular sport played during the festival."
+    ]
+  },
+  {
+    "festivalName": "Saga Dawa",
+    "imageId": "festival-saga-dawa",
+    "region": "Sikkim",
+    "community": "Buddhist",
+    "timeOfYear": "May-June",
+    "keyElements": ["Monastery prayers", "Lamp offerings", "Processions"],
+    "rituals": "The most important festival for Sikkimese Buddhists, Saga Dawa is a month-long celebration commemorating the birth, enlightenment, and death of Lord Buddha. Monks chant prayers and light butter lamps in monasteries. A grand procession of monks carrying holy scriptures goes around the city of Gangtok.",
+    "culturalSignificance": "It is a time for deep spiritual reflection and performing good deeds. The festival's message is one of peace, compassion, and universal brotherhood.",
+    "uniqueTraditions": [
+      "Devotees avoid eating meat and performing other negative acts during this holy month.",
+      "Lighting butter lamps symbolizes the dispelling of darkness and ignorance."
+    ]
+  },
+  {
+    "festivalName": "Dev Deepawali",
+    "imageId": "festival-dev-deepawali",
+    "region": "Varanasi, Uttar Pradesh",
+    "community": "Hindu",
+    "timeOfYear": "November (15 days after Diwali)",
+    "keyElements": ["Millions of diyas", "Ganga Aarti", "Chanting", "Fireworks"],
+    "rituals": "Known as the 'Diwali of the Gods', this festival is celebrated on the full moon night of Kartik Purnima. It is believed that the gods descend to Earth to bathe in the Ganges on this day. All the ghats and temples of Varanasi are lit up with millions of earthen lamps, creating a breathtaking celestial spectacle on Earth.",
+    "culturalSignificance": "It is a festival of immense beauty and spiritual significance. The grand Ganga Aarti performed on this day is a sight to behold, attracting people from all over the world.",
+    "uniqueTraditions": [
+      "The scale of the lamp lighting is massive, with every step of every ghat being illuminated.",
+      "Martyrs are honored by laying wreaths at Amar Jawan Jyoti at Dashashwamedh Ghat."
+    ]
+  },
+  {
+    "festivalName": "Hola Mohalla",
+    "imageId": "festival-hola-mohalla",
+    "region": "Anandpur Sahib, Punjab",
+    "community": "Sikh",
+    "timeOfYear": "March",
+    "keyElements": ["Mock battles", "Martial arts (Gatka)", "Horse riding displays", "Kirtan"],
+    "rituals": "An annual fair started by the tenth Sikh Guru, Guru Gobind Singh, as a gathering for military exercises and mock battles. The festival showcases the martial skills of the Nihang Sikhs, who perform daring feats of swordsmanship, archery, and horse riding. The air is filled with the sound of kirtan (hymns) and war drums.",
+    "culturalSignificance": "It is a celebration of the Sikh warrior tradition and serves as a reminder of the community's martial lineage. It promotes bravery, discipline, and readiness to defend the faith.",
+    "uniqueTraditions": [
+      "The 'Gatka' performances, a traditional Sikh martial art, are a major highlight.",
+      "The festival concludes with a grand procession led by the Nihangs on horses and elephants."
+    ]
+  },
+  {
+    "festivalName": "Wangala",
+    "imageId": "festival-wangala",
+    "region": "Meghalaya, Assam",
+    "community": "Garo Tribe",
+    "timeOfYear": "November",
+    "keyElements": ["Drumming", "Folk dance", "Horns", "Feasting"],
+    "rituals": "Also known as the 'Festival of 100 Drums', Wangala is a post-harvest thanksgiving festival of the Garo tribe. It is celebrated to honor Misi Saljong, the Sun God of fertility. The festival is marked by energetic dancing and the rhythmic beating of long, oval-shaped drums.",
+    "culturalSignificance": "It is the most important festival of the Garo people, marking the end of the agricultural year and the storage of the new harvest. It is a time for feasting, drinking rice beer, and merrymaking.",
+    "uniqueTraditions": [
+      "The dance of the men and women mimics the movements of eagles and other animals.",
+      "The festival begins with a ritual where the tribal priest offers the first rice and beer to the deity."
+    ]
+  },
+  {
+    "festivalName": "Shigmo",
+    "imageId": "festival-shigmo",
+    "region": "Goa",
+    "community": "Hindu",
+    "timeOfYear": "March",
+    "keyElements": ["Folk dances", "Parades", "Drum beats"],
+    "rituals": "A vibrant spring festival celebrated by the Konkani diaspora of Goa. It is a festival of folk songs and dances, with performers in colorful costumes parading through the streets. The festival is a celebration of the ripening of the winter crop.",
+    "culturalSignificance": "Shigmo is the Goan Hindu counterpart to the Christian Carnival. It's a colorful and energetic display of Goan folk culture, distinct from the Portuguese-influenced Carnival.",
+    "uniqueTraditions": [
+      "Performances of folk dances like 'Ghode Modni' (warrior dance) and 'Fugdi'.",
+      "The festival is celebrated with decorated floats that depict scenes from Hindu mythology."
+    ]
+  },
+  {
+    "festivalName": "Mewar Festival",
+    "imageId": "festival-mewar",
+    "region": "Udaipur, Rajasthan",
+    "community": "Rajasthani",
+    "timeOfYear": "March-April",
+    "keyElements": ["Procession", "Folk music", "Fireworks", "Gangaur idols"],
+    "rituals": "This festival welcomes the arrival of spring. The main event is a procession where women in traditional attire carry idols of the deities Isar and Gangaur to the Gangaur Ghat of Lake Pichola. The festival is filled with folk music, dance performances, and a grand fireworks display.",
+    "culturalSignificance": "It is a celebration of marital fidelity and the bounty of spring. The festival is of great significance for women, who pray for the long life of their husbands.",
+    "uniqueTraditions": [
+      "The procession culminates with the immersion of the idols in the lake.",
+      "A variety of cultural programs are organized in the city during the festival."
+    ]
+  },
+  {
+    "festivalName": "Tarnetar Fair",
+    "imageId": "festival-tarnetar-fair",
+    "region": "Gujarat",
+    "community": "Tribal",
+    "timeOfYear": "August-September",
+    "keyElements": ["Folk dance (Ras)", "Intricate umbrellas", "Matchmaking", "Folk music"],
+    "rituals": "A vibrant fair held at the Trinetreshwar Temple, famous for being a 'swayamvar' (marriage market) for the local tribal youth. Young men and women dress in their finest traditional clothes and look for prospective partners. The fair is known for its energetic 'Ras' dances, where hundreds of people dance in a large circle.",
+    "culturalSignificance": "It is a unique blend of a religious fair and a celebration of tribal culture. It is a great place to see the traditional arts, crafts, and costumes of the region.",
+    "uniqueTraditions": [
+      "The men are known to carry intricately embroidered umbrellas, which are a status symbol and a way to attract attention.",
+      "The 'Hudo' dance, a folk dance that mimics the movements of a sheep, is a highlight."
+    ]
+  },
+  {
+    "festivalName": "Navaratri",
+    "imageId": "festival-navaratri",
+    "region": "Gujarat",
+    "community": "Hindu",
+    "timeOfYear": "September-October",
+    "keyElements": ["Garba and Dandiya Raas", "Live music orchestra", "Devotional songs"],
+    "rituals": "A nine-night festival dedicated to the worship of the goddess Shakti (Durga). Each night, people gather in large open spaces to perform the traditional 'Garba' dance in concentric circles around a central lamp. This is followed by the 'Dandiya Raas', where people dance with small decorated sticks. The nights are filled with the sound of live orchestras playing traditional music.",
+    "culturalSignificance": "It is the longest and most celebrated festival in Gujarat. The circular dance form represents the cyclical nature of time and life.",
+    "uniqueTraditions": [
+      "People fast during the day and feast at night after the dance.",
+      "The energy and participation increase with each passing night, culminating on the eighth or ninth day."
+    ]
+  },
+  {
+    "festivalName": "Bathukamma",
+    "imageId": "festival-bathukamma",
+    "region": "Telangana",
+    "community": "Hindu women",
+    "timeOfYear": "September-October",
+    "keyElements": ["Floral arrangements", "Folk songs", "Group dance"],
+    "rituals": "A colorful flower festival celebrated by the women of Telangana. 'Bathukamma' is a beautiful flower stack, arranged with different seasonal flowers in concentric layers. Women dress in traditional sarees and dance around the Bathukamma, singing folk songs in unison.",
+    "culturalSignificance": "The festival celebrates the beauty of nature and the feminine spirit. It is a prayer for prosperity and a good harvest. The songs are a repository of the region's folklore and oral traditions.",
+    "uniqueTraditions": [
+      "On the last day, the Bathukammas are immersed in a local water body.",
+      "The festival culminates with the sharing of a special sweet made from jaggery."
+    ]
+  },
+  {
+    "festivalName": "Sekrenyi Festival",
+    "imageId": "festival-sekrenyi",
+    "region": "Nagaland",
+    "community": "Angami Naga Tribe",
+    "timeOfYear": "February",
+    "keyElements": ["Purification rituals", "Tribal songs and dance", "Feasting"],
+    "rituals": "A ten-day festival of purification and sanctification of the body and soul. The festival is marked by a series of rituals, including the 'dzuseva' (ritual cleansing). The main attraction is the singing and dancing, where the young people of the village gather to perform traditional songs and dances.",
+    "culturalSignificance": "It is a festival to ensure health and well-being for the entire community. It also marks the beginning of the agricultural season.",
+    "uniqueTraditions": [
+      "Only men who have reached a certain age are allowed to perform the main purification ritual.",
+      "The 'Thekra Hie' is a part of the festival where young people sing and dance together."
+    ]
+  },
+  {
+    "festivalName": "Aoleang Festival",
+    "imageId": "festival-aoleang",
+    "region": "Nagaland",
+    "community": "Konyak Naga Tribe",
+    "timeOfYear": "April",
+    "keyElements": ["Tribal music", "Gunfire", "Feasting", "Dance"],
+    "rituals": "A spring festival celebrated by the Konyak Nagas, who were once famous headhunters. The festival marks the end of the old year and the beginning of the new, and is a time to pray for a good harvest. The festival is marked by feasting, dancing, and the firing of muzzle-loading guns into the air.",
+    "culturalSignificance": "It is the most important festival of the Konyaks. It is a time when the community comes together to celebrate its identity and traditions.",
+    "uniqueTraditions": [
+      "The men wear colorful traditional attire and headgear decorated with feathers and animal horns.",
+      "The festival is a display of the rich oral tradition of the tribe through songs and dances."
+    ]
+  },
+  {
+    "festivalName": "Cheiraoba",
+    "imageId": "festival-cheiraoba",
+    "region": "Manipur",
+    "community": "Meitei",
+    "timeOfYear": "April",
+    "keyElements": ["Feasting", "Hill climbing ritual", "Traditional offerings"],
+    "rituals": "The Meitei New Year festival. On this day, people clean their houses, wear new clothes, and prepare special festive dishes which are offered to the local deity. The main ritual is the climbing of the nearest hilltop in the evening, which symbolizes the rising to a greater height in life.",
+    "culturalSignificance": "It is a festival of new beginnings and strengthening family bonds. It is a time for feasting and seeking blessings for the year ahead.",
+    "uniqueTraditions": [
+      "Gifts are exchanged between family and friends.",
+      "The special feast is cooked and eaten together by the entire family."
+    ]
+  },
+  {
+    "festivalName": "Urs Festival",
+    "imageId": "festival-urs",
+    "region": "Ajmer, Rajasthan",
+    "community": "Sufi (Muslim)",
+    "timeOfYear": "Varies (Islamic calendar)",
+    "keyElements": ["Qawwali music", "Dargah procession", "Mass prayers"],
+    "rituals": "A six-day festival held at the shrine of the Sufi saint Moinuddin Chishti to commemorate his death anniversary. The festival is marked by soulful 'qawwali' performances that go on late into the night. Pilgrims from all over the world come to seek the saint's blessings.",
+    "culturalSignificance": "It is a symbol of communal harmony, as people from all faiths attend the festival. The music and poetry are a key part of the Sufi tradition of expressing devotion.",
+    "uniqueTraditions": [
+      "Massive cauldrons called 'degs' are used to cook sweet rice which is then distributed to the public.",
+      "The festival begins with the hoisting of a flag on the shrine's gate by the Sajjadanashin (successor)."
+    ]
+  },
+  {
+    "festivalName": "Panguni Uthiram",
+    "imageId": "festival-panguni-uthiram",
+    "region": "Tamil Nadu",
+    "community": "Hindu",
+    "timeOfYear": "March-April",
+    "keyElements": ["Temple processions", "Divine marriages", "Devotional music"],
+    "rituals": "A festival celebrating the celestial weddings of various Hindu deities, such as Shiva and Parvati, and Murugan and Deivanai. It is celebrated in temples across Tamil Nadu with elaborate processions, devotional music, and the reenactment of the divine marriages.",
+    "culturalSignificance": "It is a day that celebrates the institution of marriage and the divine bond between deities. Devotees flock to temples to witness the celestial wedding ceremonies.",
+    "uniqueTraditions": [
+      "Many devotees carry 'kavadi' (a decorated wooden structure) on their shoulders as a form of penance.",
+      "It is considered an auspicious day for getting married."
+    ]
+  },
+  {
+    "festivalName": "Chithirai Festival",
+    "imageId": "festival-chithirai",
+    "region": "Madurai, Tamil Nadu",
+    "community": "Hindu",
+    "timeOfYear": "April-May",
+    "keyElements": ["Grand processions", "Chariot festival", "Temple music"],
+    "rituals": "A month-long festival celebrating the coronation of the goddess Meenakshi and her wedding to Lord Sundareswarar. The festival at the Meenakshi Temple in Madurai is a grand affair, with massive processions, a chariot festival, and a reenactment of the divine wedding.",
+    "culturalSignificance": "It is one of the longest and most important festivals in South India, attracting millions of devotees. It is a celebration of the city's patron goddess.",
+    "uniqueTraditions": [
+      "The event of Lord Vishnu journeying to Madurai for his sister's wedding is a major part of the festival.",
+      "The entire city of Madurai becomes a stage for the month-long celebrations."
+    ]
+  }
+]
