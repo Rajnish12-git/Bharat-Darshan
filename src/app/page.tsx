@@ -1,30 +1,17 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import Header from '@/components/header';
 import HeroCarousel from '@/components/hero-carousel';
 import HistoricalTimeline from '@/components/historical-timeline';
 import Footer from '@/components/footer';
 import CulturalHighlights from '@/components/cultural-highlights';
 import StateGrid from '@/components/state-grid';
-import { cn } from '@/lib/utils';
 
 export default function Home() {
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    // Simulate content loading
-    const timer = setTimeout(() => {
-      setIsLoaded(true);
-    }, 500); // Adjust timing as needed
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <div className="flex flex-col">
       <Header />
-      <main className={cn('transition-opacity duration-1000 ease-in', isLoaded ? 'opacity-100' : 'opacity-0')}>
+      <main>
         <HeroCarousel />
         <section id="states" className="container py-16 md:py-28 scroll-mt-20">
           <div className="mx-auto flex max-w-3xl flex-col items-center space-y-4 text-center">
