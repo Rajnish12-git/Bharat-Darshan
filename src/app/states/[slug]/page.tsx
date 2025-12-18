@@ -10,9 +10,10 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Landmark, UtensilsCrossed, CalendarDays, Palette } from 'lucide-react';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
-import { useEffect, useState } from 'react';
+import { use, useEffect, useState } from 'react';
 
-export default function StatePage({ params: { slug } }: { params: { slug: string } }) {
+export default function StatePage({ params }: { params: { slug: string } }) {
+  const { slug } = use(params);
   const [isIntroVisible, setIntroVisible] = useState(false);
   const state = indianStates.find((s) => s.slug === slug);
 
