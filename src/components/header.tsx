@@ -51,10 +51,10 @@ export default function Header() {
 
   const NavLinks = ({ className, onLinkClick }: { className?: string, onLinkClick?: () => void }) => (
     <nav className={cn("items-center space-x-4 md:space-x-6", className)}>
-        <Link href="/#states" onClick={onLinkClick} className={cn("text-sm font-medium transition-colors hover:text-primary", isScrolled || isMobileMenuOpen ? "text-muted-foreground hover:text-foreground" : "text-white")}>
+        <Link href="/#states" onClick={onLinkClick} className={cn("text-sm font-medium transition-colors hover:text-primary", isScrolled || isMobileMenuOpen ? "text-foreground" : "text-white")}>
             Explore
         </Link>
-        <Link href="/#timeline" onClick={onLinkClick} className={cn("text-sm font-medium transition-colors hover:text-primary", isScrolled || isMobileMenuOpen ? "text-muted-foreground hover:text-foreground" : "text-white")}>
+        <Link href="/#timeline" onClick={onLinkClick} className={cn("text-sm font-medium transition-colors hover:text-primary", isScrolled || isMobileMenuOpen ? "text-foreground" : "text-white")}>
             Timeline
         </Link>
     </nav>
@@ -71,7 +71,7 @@ export default function Header() {
         <div className="mr-4 flex flex-1">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <span className={cn(
-              "font-brand text-3xl transition-colors",
+              "font-brand text-3xl font-bold transition-colors",
               isScrolled ? "text-foreground" : "text-white"
             )}>Bharat Darshan</span>
           </Link>
@@ -119,7 +119,7 @@ export default function Header() {
               <SheetContent side="right" className="w-[240px] p-0">
                 <div className="p-6">
                    <Link href="/" className="mr-6 flex items-center space-x-2">
-                      <span className="font-brand text-2xl text-foreground">Bharat Darshan</span>
+                      <span className="font-brand text-2xl font-bold text-foreground">Bharat Darshan</span>
                     </Link>
                   <NavLinks className="flex-col items-start space-x-0 space-y-4 mt-6" onLinkClick={() => setIsMobileMenuOpen(false)} />
                 </div>
