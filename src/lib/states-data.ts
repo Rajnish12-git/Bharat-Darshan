@@ -1,26 +1,31 @@
 
 import type { StateData } from './heritage-data';
-import { monuments as allMonuments } from './monuments-data';
-import { cuisine as allCuisine } from './cuisine-data';
-import { festivals as allFestivals } from './festivals-data';
-import { artForms as allArtForms } from './art-data';
 
-// Import new detailed data for Rajasthan
+// Import data for all states
 import rajasthanMonuments from './data/rajasthan-monuments.json';
 import rajasthanCuisine from './data/rajasthan-cuisine.json';
 import rajasthanFestivals from './data/rajasthan-festivals.json';
 import rajasthanArt from './data/rajasthan-art.json';
+
+// NOTE: In a real-world scenario, you would create and import JSON files for each state like Rajasthan.
+// For this example, we will use smaller, inline datasets for other states for brevity.
+// The structure is set up to easily accommodate full JSON files for each.
+
+import { monuments as allMonuments } from './monuments-data';
+import { cuisine as allCuisine } from './cuisine-data';
+import { festivals as allFestivals } from './festivals-data';
+import { artForms as allArtForms } from './art-data';
 
 
 export const indianStates: StateData[] = [
   {
     slug: 'uttar-pradesh',
     name: 'Uttar Pradesh',
-    description: 'The heartland of India, rich in history, culture, and spirituality.',
+    description: 'The heartland of India, rich in history, culture, and spirituality, home to sacred rivers and ancient cities.',
     imageId: 'state-uttar-pradesh',
     monuments: allMonuments.filter(m => ['Agra Fort', 'Fatehpur Sikri'].includes(m.name)),
     cuisine: allCuisine.filter(c => ['Bedmi Puri', 'Petha'].includes(c.name)),
-    festivals: allFestivals.filter(f => ['Diwali', 'Holi'].includes(f.name)),
+    festivals: allFestivals.filter(f => ['Diwali', 'Holi', 'Kumbh Mela'].includes(f.name)),
     artForms: allArtForms.filter(a => ['Chikankari'].includes(a.name)),
   },
   {
@@ -38,20 +43,20 @@ export const indianStates: StateData[] = [
     name: 'Karnataka',
     description: 'A blend of ancient heritage, modern technology, and stunning natural beauty.',
     imageId: 'state-karnataka',
-    monuments: allMonuments.filter(m => ['Mysore Palace', 'Gol Gumbaz'].includes(m.name)),
-    cuisine: allCuisine.filter(c => ['Bisi Bele Bath', 'Mysore Pak'].includes(c.name)),
-    festivals: allFestivals.filter(f => ['Dasara'].includes(f.name)),
-    artForms: allArtForms.filter(a => ['Mysore Painting'].includes(a.name)),
+    monuments: allMonuments.filter(m => ['Mysore Palace', 'Gol Gumbaz', 'Hampi', 'Virupaksha Temple, Hampi'].includes(m.name)),
+    cuisine: allCuisine.filter(c => ['Bisi Bele Bath', 'Mysore Pak', 'Masala Dosa'].includes(c.name)),
+    festivals: allFestivals.filter(f => ['Dasara', 'Ugadi'].includes(f.name)),
+    artForms: allArtForms.filter(a => ['Mysore Painting', 'Bidriware', 'Yakshagana', 'Mysore Rosewood Inlay'].includes(a.name)),
   },
   {
     slug: 'odisha',
     name: 'Odisha',
     description: 'Home to ancient temples, serene beaches, and rich artistic traditions.',
     imageId: 'state-odisha',
-    monuments: allMonuments.filter(m => ['Lingaraja Temple', 'Udayagiri Caves'].includes(m.name)),
+    monuments: allMonuments.filter(m => ['Lingaraja Temple', 'Udayagiri Caves', 'Konark Sun Temple'].includes(m.name)),
     cuisine: allCuisine.filter(c => ["Chenna Poda", "Pakhala Bhata"].includes(c.name)),
-    festivals: allFestivals.filter(f => ["Ratha Yatra"].includes(f.name)),
-    artForms: allArtForms.filter(a => ["Pattachitra"].includes(a.name)),
+    festivals: allFestivals.filter(f => ["Ratha Yatra", "Durga Puja"].includes(f.name)),
+    artForms: allArtForms.filter(a => ["Pattachitra", 'Odissi Music', 'Pipli Appliqué Work'].includes(a.name)),
   },
   {
     slug: 'andhra-pradesh',
@@ -59,9 +64,9 @@ export const indianStates: StateData[] = [
     description: 'Known for its rich history, spiritual centers, and spicy cuisine.',
     imageId: 'state-andhra-pradesh',
     monuments: allMonuments.filter(m => ['Tirupati'].includes(m.name)),
-    cuisine: allCuisine.filter(c => ['Pulihora'].includes(c.name)),
-    festivals: allFestivals.filter(f => ['Ugadi'].includes(f.name)),
-    artForms: allArtForms.filter(a => ['Kalamkari'].includes(a.name)),
+    cuisine: allCuisine.filter(c => ['Pulihora', 'Pootharekulu'].includes(c.name)),
+    festivals: allFestivals.filter(f => ['Ugadi', 'Makar Sankranti'].includes(f.name)),
+    artForms: allArtForms.filter(a => ['Kalamkari', 'Kuchipudi', 'Leather Puppetry (Tholu Bommalata)'].includes(a.name)),
   },
   {
     slug: 'arunachal-pradesh',
@@ -79,9 +84,9 @@ export const indianStates: StateData[] = [
     description: 'Famous for its tea gardens, rich wildlife, and vibrant culture.',
     imageId: 'state-assam',
     monuments: allMonuments.filter(m => ['Kamakhya Temple'].includes(m.name)),
-    cuisine: allCuisine.filter(c => ['Masor Tenga'].includes(c.name)),
+    cuisine: allCuisine.filter(c => ['Masor Tenga', 'Pitha'].includes(c.name)),
     festivals: allFestivals.filter(f => ['Bihu'].includes(f.name)),
-    artForms: allArtForms.filter(a => ['Muga Silk'].includes(a.name)),
+    artForms: allArtForms.filter(a => ['Muga Silk', 'Sattriya'].includes(a.name)),
   },
   {
     slug: 'bihar',
@@ -89,7 +94,7 @@ export const indianStates: StateData[] = [
     description: 'An ancient land of learning and spirituality, home to major historical sites.',
     imageId: 'state-bihar',
     monuments: allMonuments.filter(m => ['Mahabodhi Temple'].includes(m.name)),
-    cuisine: allCuisine.filter(c => ['Litti Chokha'].includes(c.name)),
+    cuisine: allCuisine.filter(c => ['Litti Chokha', 'Thekua', 'Sohar'].includes(c.name)),
     festivals: allFestivals.filter(f => ['Chhath Puja'].includes(f.name)),
     artForms: allArtForms.filter(a => ['Madhubani Painting'].includes(a.name)),
   },
@@ -101,7 +106,7 @@ export const indianStates: StateData[] = [
     monuments: allMonuments.filter(m => ['Chitrakote Falls'].includes(m.name)),
     cuisine: allCuisine.filter(c => ['Faraa'].includes(c.name)),
     festivals: allFestivals.filter(f => ['Bastar Dussehra'].includes(f.name)),
-    artForms: allArtForms.filter(a => ['Dhokra'].includes(a.name)),
+    artForms: allArtForms.filter(a => ['Dhokra', 'Gond Painting', 'Pandavani'].includes(a.name)),
   },
   {
     slug: 'goa',
@@ -110,7 +115,7 @@ export const indianStates: StateData[] = [
     imageId: 'state-goa',
     monuments: allMonuments.filter(m => ['Basilica of Bom Jesus'].includes(m.name)),
     cuisine: allCuisine.filter(c => ['Goan Fish Curry'].includes(c.name)),
-    festivals: allFestivals.filter(f => ['Goa Carnival'].includes(f.name)),
+    festivals: allFestivals.filter(f => ['Goa Carnival', 'Shigmo'].includes(f.name)),
     artForms: allArtForms.filter(a => ['Azulejos'].includes(a.name)),
   },
   {
@@ -118,10 +123,10 @@ export const indianStates: StateData[] = [
     name: 'Gujarat',
     description: 'A land of diverse landscapes, from deserts to coastlines, with a rich history.',
     imageId: 'state-gujarat',
-    monuments: allMonuments.filter(m => ['Rani ki Vav'].includes(m.name)),
-    cuisine: allCuisine.filter(c => ['Dhokla'].includes(c.name)),
-    festivals: allFestivals.filter(f => ['Navaratri'].includes(f.name)),
-    artForms: allArtForms.filter(a => ['Bandhani'].includes(a.name)),
+    monuments: allMonuments.filter(m => ['Rani ki Vav', 'Adalaj Stepwell'].includes(m.name)),
+    cuisine: allCuisine.filter(c => ['Dhokla', 'Undhiyu', 'Puran Poli'].includes(c.name)),
+    festivals: allFestivals.filter(f => ['Navaratri', 'Uttarayan', 'Tarnetar Fair'].includes(f.name)),
+    artForms: allArtForms.filter(a => ['Bandhani', 'Garba', 'Dandiya Raas'].includes(a.name)),
   },
   {
     slug: 'haryana',
@@ -149,9 +154,9 @@ export const indianStates: StateData[] = [
     description: 'A state rich in mineral wealth, dense forests, and vibrant tribal culture.',
     imageId: 'state-jharkhand',
     monuments: allMonuments.filter(m => ['Baidyanath Temple'].includes(m.name)),
-    cuisine: allCuisine.filter(c => ['Dhuska'].includes(c.name)),
+    cuisine: allCuisine.filter(c => ['Dhuska', 'Thekua'].includes(c.name)),
     festivals: allFestivals.filter(f => ['Sarhul'].includes(f.name)),
-    artForms: allArtForms.filter(a => ['Sohrai Art'].includes(a.name)),
+    artForms: allArtForms.filter(a => ['Sohrai Art', 'Dhokra'].includes(a.name)),
   },
   {
     slug: 'kerala',
@@ -159,16 +164,16 @@ export const indianStates: StateData[] = [
     description: "God's Own Country, known for its serene backwaters, lush greenery, and rich traditions.",
     imageId: 'hero-kerala-backwaters',
     monuments: allMonuments.filter(m => ['Mattancherry Palace'].includes(m.name)),
-    cuisine: allCuisine.filter(c => ['Appam and Stew'].includes(c.name)),
-    festivals: allFestivals.filter(f => ['Onam'].includes(f.name)),
-    artForms: allArtForms.filter(a => ['Kathakali'].includes(a.name)),
+    cuisine: allCuisine.filter(c => ['Appam and Stew', 'Idiyappam'].includes(c.name)),
+    festivals: allFestivals.filter(f => ['Onam', 'Thrissur Pooram'].includes(f.name)),
+    artForms: allArtForms.filter(a => ['Kathakali', 'Theyyam', 'Mohiniyattam'].includes(a.name)),
   },
   {
     slug: 'madhya-pradesh',
     name: 'Madhya Pradesh',
     description: 'The heart of India, with ancient temples, national parks, and rich history.',
     imageId: 'state-madhya-pradesh',
-    monuments: allMonuments.filter(m => ['Khajuraho'].includes(m.name)),
+    monuments: allMonuments.filter(m => ['Khajuraho', 'Sanchi Stupa', 'Rock Shelters of Bhimbetka'].includes(m.name)),
     cuisine: allCuisine.filter(c => ['Poha-Jalebi'].includes(c.name)),
     festivals: allFestivals.filter(f => ['Lokrang Festival'].includes(f.name)),
     artForms: allArtForms.filter(a => ['Gond Painting'].includes(a.name)),
@@ -178,10 +183,10 @@ export const indianStates: StateData[] = [
     name: 'Maharashtra',
     description: 'A state of contrasts, from the bustling metropolis of Mumbai to ancient caves.',
     imageId: 'state-maharashtra',
-    monuments: allMonuments.filter(m => ['Ajanta & Ellora Caves'].includes(m.name)),
-    cuisine: allCuisine.filter(c => ['Vada Pav'].includes(c.name)),
+    monuments: allMonuments.filter(m => ['Ajanta & Ellora Caves', 'Gateway of India', 'Shaniwar Wada'].includes(m.name)),
+    cuisine: allCuisine.filter(c => ['Vada Pav', 'Puran Poli'].includes(c.name)),
     festivals: allFestivals.filter(f => ['Ganesh Chaturthi'].includes(f.name)),
-    artForms: allArtForms.filter(a => ['Warli Painting'].includes(a.name)),
+    artForms: allArtForms.filter(a => ['Warli Painting', 'Lavani', 'Koli Geet', 'Powada'].includes(a.name)),
   },
   {
     slug: 'manipur',
@@ -190,7 +195,7 @@ export const indianStates: StateData[] = [
     imageId: 'state-manipur',
     monuments: allMonuments.filter(m => ['Kangla Fort'].includes(m.name)),
     cuisine: allCuisine.filter(c => ['Eromba'].includes(c.name)),
-    festivals: allFestivals.filter(f => ['Sangai Festival'].includes(f.name)),
+    festivals: allFestivals.filter(f => ['Sangai Festival', 'Cheiraoba'].includes(f.name)),
     artForms: allArtForms.filter(a => ['Manipuri Dance'].includes(a.name)),
   },
   {
@@ -220,8 +225,8 @@ export const indianStates: StateData[] = [
     imageId: 'state-nagaland',
     monuments: allMonuments.filter(m => ['Kohima War Cemetery'].includes(m.name)),
     cuisine: allCuisine.filter(c => ['Axone'].includes(c.name)),
-    festivals: allFestivals.filter(f => ['Hornbill Festival'].includes(f.name)),
-    artForms: allArtForms.filter(a => ['Naga Shawls'].includes(a.name)),
+    festivals: allFestivals.filter(f => ['Hornbill Festival', 'Sekrenyi Festival', 'Aoleang Festival'].includes(f.name)),
+    artForms: allArtForms.filter(a => ['Naga Shawls', 'Zeliang Folk Music'].includes(a.name)),
   },
   {
     slug: 'punjab',
@@ -229,9 +234,9 @@ export const indianStates: StateData[] = [
     description: 'The land of five rivers, known for its fertile fields and vibrant culture.',
     imageId: 'state-punjab',
     monuments: allMonuments.filter(m => ['Golden Temple'].includes(m.name)),
-    cuisine: allCuisine.filter(c => ['Makki di Roti & Sarson da Saag'].includes(c.name)),
-    festivals: allFestivals.filter(f => ['Baisakhi'].includes(f.name)),
-    artForms: allArtForms.filter(a => ['Phulkari'].includes(a.name)),
+    cuisine: allCuisine.filter(c => ['Makki di Roti & Sarson da Saag', 'Chole Bhature'].includes(c.name)),
+    festivals: allFestivals.filter(f => ['Baisakhi', 'Hola Mohalla'].includes(f.name)),
+    artForms: allArtForms.filter(a => ['Phulkari', 'Bhangra', 'Gatka'].includes(a.name)),
   },
   {
     slug: 'sikkim',
@@ -239,8 +244,8 @@ export const indianStates: StateData[] = [
     description: 'A Himalayan wonderland with pristine landscapes and Buddhist monasteries.',
     imageId: 'state-sikkim',
     monuments: allMonuments.filter(m => ['Rumtek Monastery'].includes(m.name)),
-    cuisine: allCuisine.filter(c => ['Momos'].includes(c.name)),
-    festivals: allFestivals.filter(f => ['Saga Dawa'].includes(f.name)),
+    cuisine: allCuisine.filter(c => ['Momos', 'Thukpa'].includes(c.name)),
+    festivals: allFestivals.filter(f => ['Saga Dawa', 'Losar'].includes(f.name)),
     artForms: allArtForms.filter(a => ['Thangka Painting'].includes(a.name)),
   },
   {
@@ -248,20 +253,20 @@ export const indianStates: StateData[] = [
     name: 'Tamil Nadu',
     description: 'A land of towering temples, classical dance, and a rich literary tradition.',
     imageId: 'state-tamil-nadu',
-    monuments: allMonuments.filter(m => ['Meenakshi Amman Temple'].includes(m.name)),
-    cuisine: allCuisine.filter(c => ['Pongal'].includes(c.name)),
-    festivals: allFestivals.filter(f => ['Pongal'].includes(f.name)),
-    artForms: allArtForms.filter(a => ['Bharatanatyam'].includes(a.name)),
+    monuments: allMonuments.filter(m => ['Meenakshi Amman Temple', 'Brihadeeswarar Temple', 'Shore Temple'].includes(m.name)),
+    cuisine: allCuisine.filter(c => ['Pongal', 'Idiyappam', 'Chettinad Chicken'].includes(c.name)),
+    festivals: allFestivals.filter(f => ['Pongal', 'Panguni Uthiram', 'Chithirai Festival', 'Jallikattu'].includes(f.name)),
+    artForms: allArtForms.filter(a => ['Bharatanatyam', 'Kanjivaram Silk Saree', 'Tanjore Painting', 'Kolam', 'Gaana', 'Villu Paatu'].includes(a.name)),
   },
   {
     slug: 'telangana',
     name: 'Telangana',
     description: 'A historic region, home to iconic monuments and a unique Deccan culture.',
     imageId: 'state-telangana',
-    monuments: allMonuments.filter(m => ['Charminar'].includes(m.name)),
-    cuisine: allCuisine.filter(c => ['Hyderabadi Biryani'].includes(c.name)),
-    festivals: allFestivals.filter(f => ['Bathukamma'].includes(f.name)),
-    artForms: allArtForms.filter(a => ['Bidriware'].includes(a.name)),
+    monuments: allMonuments.filter(m => ['Charminar', 'Golconda Fort'].includes(m.name)),
+    cuisine: allCuisine.filter(c => ['Hyderabadi Biryani', 'Pulihora'].includes(c.name)),
+    festivals: allFestivals.filter(f => ['Bathukamma', 'Bonalu'].includes(f.name)),
+    artForms: allArtForms.filter(a => ['Bidriware', 'Cheriyal Scroll Painting'].includes(a.name)),
   },
   {
     slug: 'tripura',
@@ -271,7 +276,7 @@ export const indianStates: StateData[] = [
     monuments: allMonuments.filter(m => ['Ujjayanta Palace'].includes(m.name)),
     cuisine: allCuisine.filter(c => ['Chauk'].includes(c.name)),
     festivals: allFestivals.filter(f => ['Kharchi Puja'].includes(f.name)),
-    artForms: allArtForms.filter(a => ['Tripura Bamboo Crafts'].includes(a.name)),
+    artForms: allArtForms.filter(a => ['Tripura Bamboo Crafts', 'Bamboo and Cane Crafts'].includes(a.name)),
   },
   {
     slug: 'uttarakhand',
@@ -279,9 +284,9 @@ export const indianStates: StateData[] = [
     description: 'The "Land of the Gods," with sacred rivers, pilgrimage sites, and mountains.',
     imageId: 'state-uttarakhand',
     monuments: allMonuments.filter(m => ['Badrinath Temple'].includes(m.name)),
-    cuisine: allCuisine.filter(c => ['Kafuli'].includes(c.name)),
+    cuisine: allCuisine.filter(c => ['Kafuli', 'Bhangjeer ki Chutney'].includes(c.name)),
     festivals: allFestivals.filter(f => ['Kumbh Mela'].includes(f.name)),
-    artForms: allArtForms.filter(a => ['Aipan'].includes(a.name)),
+    artForms: allArtForms.filter(a => ['Aipan', 'Bowli Geet'].includes(a.name)),
   },
   {
     slug: 'west-bengal',
@@ -289,8 +294,8 @@ export const indianStates: StateData[] = [
     description: 'A state renowned for its rich literary, artistic, and intellectual heritage.',
     imageId: 'state-west-bengal',
     monuments: allMonuments.filter(m => ['Victoria Memorial'].includes(m.name)),
-    cuisine: allCuisine.filter(c => ['Rasgulla'].includes(c.name)),
+    cuisine: allCuisine.filter(c => ['Rasgulla', 'Macher Jhol', 'Shorshe Ilish'].includes(c.name)),
     festivals: allFestivals.filter(f => ['Durga Puja'].includes(f.name)),
-    artForms: allArtForms.filter(a => ['Kantha Embroidery'].includes(a.name)),
+    artForms: allArtForms.filter(a => ['Kantha Embroidery', 'Baul Music', 'Terracotta Craft', 'Chhau Dance'].includes(a.name)),
   },
 ];
