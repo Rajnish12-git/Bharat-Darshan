@@ -12,9 +12,9 @@ import Header from '@/components/header';
 import Footer from '@/components/footer';
 import { useEffect, useState } from 'react';
 
-export default function StatePage({ params }: { params: { slug: string } }) {
+export default function StatePage({ params: { slug } }: { params: { slug: string } }) {
   const [isIntroVisible, setIntroVisible] = useState(false);
-  const state = indianStates.find((s) => s.slug === params.slug);
+  const state = indianStates.find((s) => s.slug === slug);
 
   useEffect(() => {
     const timer = setTimeout(() => setIntroVisible(true), 300);
