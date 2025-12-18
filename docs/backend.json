@@ -4,47 +4,52 @@
       "$schema": "http://json-schema.org/draft-07/schema#",
       "title": "State",
       "type": "object",
-      "description": "Represents a state in India, including its heritage, cuisine, festivals, and art.",
+      "description": "Represents a state in India, containing information about its heritage, cuisine, festivals, and culture.",
       "properties": {
         "id": {
           "type": "string",
-          "description": "Unique identifier for the state."
+          "description": "Unique identifier for the State entity."
         },
         "name": {
           "type": "string",
           "description": "Name of the state."
         },
-        "heritageMonuments": {
+        "description": {
+          "type": "string",
+          "description": "A detailed description of the state's history, geography, and culture."
+        },
+        "traditionalCuisine": {
           "type": "array",
-          "description": "List of heritage monument ids within the state.",
+          "description": "List of traditional cuisine dishes from the state.",
           "items": {
             "type": "string"
           }
         },
-        "traditionalCuisine": {
-          "type": "string",
-          "description": "Description of the state's traditional cuisine."
-        },
         "majorFestivals": {
-          "type": "string",
-          "description": "Description of the state's major festivals."
+          "type": "array",
+          "description": "List of major festivals celebrated in the state.",
+          "items": {
+            "type": "string"
+          }
         },
         "localArtForms": {
-          "type": "string",
-          "description": "Description of the state's local art forms."
+          "type": "array",
+          "description": "List of local art forms and cultural practices of the state.",
+          "items": {
+            "type": "string"
+          }
         },
-        "description": {
-          "type": "string",
-          "description": "A brief description of the state."
+        "imageUrls": {
+          "type": "array",
+          "description": "List of URLs for images representing the state.",
+          "items": {
+            "type": "string"
+          }
         }
       },
       "required": [
         "id",
         "name",
-        "heritageMonuments",
-        "traditionalCuisine",
-        "majorFestivals",
-        "localArtForms",
         "description"
       ]
     },
@@ -52,11 +57,11 @@
       "$schema": "http://json-schema.org/draft-07/schema#",
       "title": "Monument",
       "type": "object",
-      "description": "Represents a historical or cultural monument in India.",
+      "description": "Represents a historical or cultural monument located in India.",
       "properties": {
         "id": {
           "type": "string",
-          "description": "Unique identifier for the monument."
+          "description": "Unique identifier for the Monument entity."
         },
         "name": {
           "type": "string",
@@ -68,67 +73,112 @@
         },
         "description": {
           "type": "string",
-          "description": "A detailed description of the monument."
+          "description": "A detailed description of the monument's history, architecture, and significance."
         },
         "location": {
           "type": "string",
-          "description": "Location of the monument."
+          "description": "Geographical location of the monument."
+        },
+        "builtYear": {
+          "type": "number",
+          "description": "Year in which the monument was built."
         },
         "architecturalStyle": {
           "type": "string",
           "description": "The architectural style of the monument."
         },
-        "builtDate": {
-          "type": "string",
-          "description": "The date the monument was built.",
-          "format": "date-time"
+        "imageUrls": {
+          "type": "array",
+          "description": "List of URLs for images representing the monument.",
+          "items": {
+            "type": "string"
+          }
         }
       },
       "required": [
         "id",
         "name",
         "stateId",
-        "description",
-        "location",
-        "architecturalStyle",
-        "builtDate"
+        "description"
       ]
     },
-    "TimelineEvent": {
+    "UserSearchHistory": {
       "$schema": "http://json-schema.org/draft-07/schema#",
-      "title": "TimelineEvent",
+      "title": "UserSearchHistory",
       "type": "object",
-      "description": "Represents a historical event or milestone in Indian civilization.",
+      "description": "Represents a user's search query and the corresponding timestamp.",
       "properties": {
         "id": {
           "type": "string",
-          "description": "Unique identifier for the timeline event."
+          "description": "Unique identifier for the UserSearchHistory entity."
         },
-        "title": {
+        "userId": {
           "type": "string",
-          "description": "Title of the timeline event."
+          "description": "Reference to User. (Relationship: User 1:N UserSearchHistory)"
         },
-        "date": {
+        "searchTerm": {
           "type": "string",
-          "description": "Date of the timeline event.",
+          "description": "The search query entered by the user."
+        },
+        "timestamp": {
+          "type": "string",
+          "description": "Timestamp of when the search was performed.",
           "format": "date-time"
         },
-        "description": {
-          "type": "string",
-          "description": "A detailed description of the event."
-        },
-        "imageUrl": {
-          "type": "string",
-          "description": "URL to an image related to the event.",
-          "format": "uri"
+        "results": {
+          "type": "array",
+          "description": "A list of search results.",
+          "items": {
+            "type": "string"
+          }
         }
       },
       "required": [
         "id",
-        "title",
-        "date",
-        "description",
-        "imageUrl"
+        "userId",
+        "searchTerm",
+        "timestamp"
+      ]
+    },
+    "User": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "User",
+      "type": "object",
+      "description": "Represents a user of the Bharat Darshan website.",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the User entity."
+        },
+        "username": {
+          "type": "string",
+          "description": "User's username."
+        },
+        "email": {
+          "type": "string",
+          "description": "User's email address.",
+          "format": "email"
+        },
+        "firstName": {
+          "type": "string",
+          "description": "User's first name."
+        },
+        "lastName": {
+          "type": "string",
+          "description": "User's last name."
+        },
+        "dateJoined": {
+          "type": "string",
+          "description": "Date when the user joined the platform.",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "id",
+        "username",
+        "email",
+        "firstName",
+        "lastName"
       ]
     }
   },
@@ -147,7 +197,7 @@
           "schema": {
             "$ref": "#/backend/entities/State"
           },
-          "description": "Collection of states in India. Includes denormalized 'id' for relationship to monuments.",
+          "description": "Collection to store information about Indian states.",
           "params": [
             {
               "name": "stateId",
@@ -157,14 +207,18 @@
         }
       },
       {
-        "path": "/monuments/{monumentId}",
+        "path": "/states/{stateId}/monuments/{monumentId}",
         "definition": {
           "entityName": "Monument",
           "schema": {
             "$ref": "#/backend/entities/Monument"
           },
-          "description": "Collection of monuments. Includes 'stateId' to easily find monuments related to states.",
+          "description": "Subcollection to store information about monuments within each state. Includes denormalized 'stateId' to enforce integrity.",
           "params": [
+            {
+              "name": "stateId",
+              "description": "Unique identifier for the state."
+            },
             {
               "name": "monumentId",
               "description": "Unique identifier for the monument."
@@ -173,22 +227,42 @@
         }
       },
       {
-        "path": "/timeline_events/{timelineEventId}",
+        "path": "/users/{userId}",
         "definition": {
-          "entityName": "TimelineEvent",
+          "entityName": "User",
           "schema": {
-            "$ref": "#/backend/entities/TimelineEvent"
+            "$ref": "#/backend/entities/User"
           },
-          "description": "Collection of timeline events for Indian civilization.",
+          "description": "Collection to store user profile information.",
           "params": [
             {
-              "name": "timelineEventId",
-              "description": "Unique identifier for the timeline event."
+              "name": "userId",
+              "description": "Unique identifier for the user."
+            }
+          ]
+        }
+      },
+      {
+        "path": "/users/{userId}/searchHistory/{searchHistoryId}",
+        "definition": {
+          "entityName": "UserSearchHistory",
+          "schema": {
+            "$ref": "#/backend/entities/UserSearchHistory"
+          },
+          "description": "Subcollection to store user search history. Enforces path-based ownership: only the user can access their own history.",
+          "params": [
+            {
+              "name": "userId",
+              "description": "Unique identifier for the user."
+            },
+            {
+              "name": "searchHistoryId",
+              "description": "Unique identifier for the search history entry."
             }
           ]
         }
       }
     ],
-    "reasoning": "The Firestore data structure is designed to support the \"Heritage of India\" application, focusing on states, monuments, and timeline events. The structure prioritizes Authorization Independence and QAPs. Since all the data is read-only and public, no specific authorization is needed besides preventing unauthorized writes. Data is segregated into separate collections for States, Monuments, and Timeline Events. Each state document contains a list of monument IDs, facilitating easy retrieval of monuments related to a specific state.  QAPs are supported because list operations are secured at the collection level."
+    "reasoning": "The Firestore data structure is designed to efficiently store and retrieve information about Indian states, monuments, user search history, and user data. The structure prioritizes Authorization Independence by avoiding hierarchical authorization dependencies (`get()`). User-owned data is stored in hierarchical paths for simple ownership-based security rules. Collaborative data uses membership maps. Segregation is achieved by using different collections for states, monuments, and user data. The design anticipates secure list operations.  Denormalization involves copying state IDs into monument documents. User search history is stored in a user-owned subcollection to allow users to view only their data. This structure facilitates secure and scalable data management."
   }
 }
