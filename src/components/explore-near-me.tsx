@@ -84,7 +84,7 @@ export default function ExploreNearMe() {
             defaultZoom={9}
             gestureHandling={'greedy'}
             disableDefaultUI={true}
-            mapId={process.env.NEXT_PUBLIC_GOOGLE_MAPS_ID || 'DEMO_MAP_ID'}
+            mapId={'DEMO_MAP_ID'}
           >
             {/* User Location Marker */}
             <AdvancedMarker position={userLocation} title={'Your Location'}>
