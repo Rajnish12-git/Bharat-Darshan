@@ -45,6 +45,10 @@ const HighlightItem = ({
   }, []);
 
   const image = PlaceHolderImages.find((img) => img.id === item.imageId);
+  
+  const linkHref = item.slug === 'architectural-marvels'
+    ? '/highlights/architectural-marvels'
+    : `/highlights/${item.slug}`;
 
   return (
     <div
@@ -91,7 +95,7 @@ const HighlightItem = ({
           {item.description}
         </p>
         <Button variant="outline" className="mt-6" asChild>
-          <Link href={`/highlights/${item.slug}`}>Learn More</Link>
+          <Link href={linkHref}>Learn More</Link>
         </Button>
       </div>
     </div>
