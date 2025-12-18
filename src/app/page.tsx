@@ -4,6 +4,8 @@ import HistoricalTimeline from '@/components/historical-timeline';
 import Footer from '@/components/footer';
 import CulturalHighlights from '@/components/cultural-highlights';
 import StateGrid from '@/components/state-grid';
+import ExploreNearMe from '@/components/explore-near-me';
+import { Separator } from '@/components/ui/separator';
 
 export default function Home() {
   return (
@@ -23,6 +25,27 @@ export default function Home() {
           <StateGrid />
         </div>
       </section>
+
+      <section id="explore-near-me" className="container pb-16 md:pb-28">
+        <div className="relative">
+          <Separator />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <span className="bg-background px-4 text-sm text-muted-foreground">OR</span>
+          </div>
+        </div>
+        <div className="mx-auto flex max-w-3xl flex-col items-center space-y-4 text-center mt-16">
+          <h2 className="font-headline text-4xl font-bold leading-[1.1] sm:text-4xl md:text-5xl">
+            Discover What's Nearby
+          </h2>
+          <p className="max-w-prose leading-relaxed text-muted-foreground sm:text-lg">
+            Use your location to find monuments and heritage sites near you.
+          </p>
+        </div>
+        <div className="mt-12">
+          <ExploreNearMe />
+        </div>
+      </section>
+      
       <CulturalHighlights />
       <section id="timeline" className="bg-secondary/50 scroll-mt-20">
          <div className="container py-16 md:py-28">
