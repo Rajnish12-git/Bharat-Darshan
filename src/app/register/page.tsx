@@ -57,7 +57,7 @@ export default function RegisterPage() {
   
   useEffect(() => {
     if (!isUserLoading && user) {
-      router.push('/');
+      router.push('/profile');
     }
   }, [user, isUserLoading, router]);
 

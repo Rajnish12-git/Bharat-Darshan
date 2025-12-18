@@ -60,22 +60,22 @@ export default function StatePage({ params }: { params: { slug: string } }) {
           
           <TabsContent value="monuments" className="mt-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
-              {state.monuments.map((item) => <InfoCard item={item} key={item.name} />)}
+              {state.monuments.map((item) => <InfoCard item={item} category="monuments" key={item.name} />)}
             </div>
           </TabsContent>
           <TabsContent value="cuisine" className="mt-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
-              {state.cuisine.map((item) => <InfoCard item={item} key={item.name} />)}
+              {state.cuisine.map((item) => <InfoCard item={item} category="cuisine" key={item.name} />)}
             </div>
           </TabsContent>
           <TabsContent value="festivals" className="mt-8">
              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
-              {state.festivals.map((item) => <InfoCard item={item} key={item.name} />)}
+              {state.festivals.map((item) => <InfoCard item={item} category="festivals" key={item.name} />)}
             </div>
           </TabsContent>
           <TabsContent value="art" className="mt-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
-              {state.artForms.map((item) => <InfoCard item={item} key={item.name} />)}
+              {state.artForms.map((item) => <InfoCard item={item} category="art" key={item.name} />)}
             </div>
           </TabsContent>
         </Tabs>

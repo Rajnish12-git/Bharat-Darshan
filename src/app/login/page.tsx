@@ -55,7 +55,7 @@ export default function LoginPage() {
 
   useEffect(() => {
     if (!isUserLoading && user) {
-      router.push('/');
+      router.push('/profile');
     }
   }, [user, isUserLoading, router]);
 

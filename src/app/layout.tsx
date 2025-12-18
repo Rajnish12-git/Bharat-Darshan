@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
 import { Literata } from 'next/font/google';
 import { FirebaseClientProvider } from '@/firebase/client-provider';
+import { FavoritesProvider } from '@/context/favorites-context';
 
 export const metadata: Metadata = {
   title: 'Bharat Darshan',
@@ -39,10 +40,12 @@ export default function RootLayout({
         )}
       >
         <FirebaseClientProvider>
-          <div className="relative flex min-h-dvh flex-col bg-background">
-            <main className="flex-1">{children}</main>
-          </div>
-          <Toaster />
+          <FavoritesProvider>
+            <div className="relative flex min-h-dvh flex-col bg-background">
+              <main className="flex-1">{children}</main>
+            </div>
+            <Toaster />
+          </FavoritesProvider>
         </FirebaseClientProvider>
       </body>
     </html>
