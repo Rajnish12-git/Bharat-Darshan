@@ -1,6 +1,6 @@
 
 import Image from 'next/image';
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import { highlights } from '@/lib/highlights-data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Header from '@/components/header';
@@ -9,7 +9,7 @@ import InfoCard from '@/components/info-card';
 
 export async function generateStaticParams() {
   // Generate params for all highlights, but filter out 'architectural-marvels'
-  // as it has its own dedicated page.
+  // as it has its own dedicated page. This prevents a routing conflict.
   return highlights
     .filter((highlight) => highlight.slug !== 'architectural-marvels')
     .map((highlight) => ({
