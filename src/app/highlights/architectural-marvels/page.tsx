@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { architecturalMarvels } from '@/lib/architectural-marvels';
+import architecturalMarvels from '@/lib/architectural-marvels.json';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
