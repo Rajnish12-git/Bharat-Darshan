@@ -1,33 +1,24 @@
 
 import Image from 'next/image';
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import { highlights } from '@/lib/highlights-data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 import InfoCard from '@/components/info-card';
-import Link from 'next/link';
-import { Button } from '@/components/ui/button';
 
 export async function generateStaticParams() {
-  // Filter out architectural-marvels as it has its own page
-  return highlights.filter(h => h.slug !== 'architectural-marvels').map((highlight) => ({
+  // Generate params for all highlights, including architectural-marvels
+  return highlights.map((highlight) => ({
     slug: highlight.slug,
   }));
 }
 
 export default function HighlightPage({ params }: { params: { slug: string } }) {
 
+  // If the slug is for architectural-marvels, redirect to its dedicated page.
   if (params.slug === 'architectural-marvels') {
-    return (
-        <div className="flex flex-col items-center justify-center min-h-screen text-center">
-            <h1 className="text-3xl font-bold mb-4">Redirecting...</h1>
-            <p className="text-lg text-muted-foreground mb-8">This special category has its own dedicated page.</p>
-            <Button asChild>
-                <Link href="/highlights/architectural-marvels">Go to Architectural Marvels</Link>
-            </Button>
-        </div>
-    );
+    redirect('/highlights/architectural-marvels');
   }
 
   const highlight = highlights.find((h) => h.slug === params.slug);
