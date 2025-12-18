@@ -4,7 +4,6 @@
 import * as React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { indianStates } from '@/lib/heritage-data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
@@ -16,10 +15,28 @@ import {
   type CarouselApi,
 } from '@/components/ui/carousel';
 import { cn } from '@/lib/utils';
+import { useCollection, useFirestore, useMemoFirebase } from '@/firebase';
+import { collection } from 'firebase/firestore';
+import { Skeleton } from './ui/skeleton';
+
+interface State {
+  id: string;
+  slug: string;
+  name: string;
+  description: string;
+  imageId: string;
+}
 
 export default function StateGrid() {
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
+  const firestore = useFirestore();
+
+  const statesQuery = useMemoFirebase(
+    () => (firestore ? collection(firestore, 'states') : null),
+    [firestore]
+  );
+  const { data: indianStates, isLoading } = useCollection<State>(statesQuery);
 
   React.useEffect(() => {
     if (!api) {
@@ -39,6 +56,33 @@ export default function StateGrid() {
     };
   }, [api]);
 
+  if (isLoading) {
+    return (
+      <div className="relative mt-12">
+        <Carousel opts={{ align: 'center', loop: true }} className="w-full">
+          <CarouselContent className="-ml-4">
+            {[...Array(3)].map((_, index) => (
+              <CarouselItem
+                key={index}
+                className="md:basis-1/2 lg:basis-1/3 pl-4"
+              >
+                <div className="p-1">
+                  <Card className="overflow-hidden border-none">
+                    <Skeleton className="h-64 w-full" />
+                    <div className="absolute bottom-0 left-0 p-6">
+                      <Skeleton className="h-8 w-32 mb-2" />
+                      <Skeleton className="h-4 w-48" />
+                    </div>
+                  </Card>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
+      </div>
+    );
+  }
+
   return (
     <div className="relative mt-12">
       <Carousel
@@ -50,7 +94,7 @@ export default function StateGrid() {
         className="w-full"
       >
         <CarouselContent className="-ml-4">
-          {indianStates.map((state, index) => {
+          {indianStates?.map((state, index) => {
             const image = PlaceHolderImages.find(
               (img) => img.id === state.imageId
             );
