@@ -1,6 +1,6 @@
 
 import Image from 'next/image';
-import { notFound, redirect } from 'next/navigation';
+import { notFound } from 'next/navigation';
 import { highlights } from '@/lib/highlights-data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Header from '@/components/header';
