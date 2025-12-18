@@ -1,57 +1,67 @@
-const timelineEvents = [
-  {
-    date: "c. 2500-1900 BCE",
-    title: "Indus Valley Civilization",
-    description: "One of the world's earliest urban civilizations, flourishing in the basins of the Indus River.",
-  },
-  {
-    date: "c. 1500-500 BCE",
-    title: "Vedic Period",
-    description: "Composition of the Vedas. Foundation of Hinduism, Sanskrit language development.",
-  },
-  {
-    date: "c. 322-185 BCE",
-    title: "Mauryan Empire",
-    description: "First pan-Indian empire, founded by Chandragupta Maurya. Emperor Ashoka promotes Buddhism.",
-  },
-  {
-    date: "c. 320-550 CE",
-    title: "Gupta Empire",
-    description: "The 'Golden Age of India', marked by extensive inventions and discoveries in science, technology, art, and literature.",
-  },
-  {
-    date: "1206-1526 CE",
-    title: "Delhi Sultanate",
-    description: "A series of five Muslim dynasties that ruled over large parts of the Indian subcontinent for 320 years.",
-  },
-  {
-    date: "1526-1857 CE",
-    title: "Mughal Empire",
-    description: "An empire that ruled most of India and Pakistan. Known for its rich architecture like the Taj Mahal.",
-  },
-  {
-    date: "1858-1947 CE",
-    title: "British Raj",
-    description: "The rule by the British Crown on the Indian subcontinent from 1858 to 1947.",
-  },
-  {
-    date: "1947 CE",
-    title: "Independence",
-    description: "India gains independence from British rule, leading to the partition of the country.",
-  },
-];
+'use client';
+
+import { useCollection, useFirestore, useMemoFirebase } from '@/firebase';
+import { collection } from 'firebase/firestore';
+import { Skeleton } from './ui/skeleton';
+import type { TimelineEvent } from '@/lib/types';
 
 export default function HistoricalTimeline() {
+  const firestore = useFirestore();
+  const timelineEventsQuery = useMemoFirebase(
+    () => (firestore ? collection(firestore, 'timeline_events') : null),
+    [firestore]
+  );
+  const { data: timelineEvents, isLoading } = useCollection<TimelineEvent>(timelineEventsQuery);
+
+  // Sort events by date. A more robust solution would handle different date formats and BCE/CE properly.
+  const sortedEvents = timelineEvents?.sort((a, b) => {
+    // This is a simplified sort, assuming consistent date formats.
+    // A production app would need a more robust date parsing logic.
+    return new Date(a.date).getTime() - new Date(b.date).getTime();
+  });
+
+  if (isLoading) {
+    return (
+      <div className="relative mx-auto max-w-4xl px-4 space-y-8">
+        <div className="absolute left-4 top-0 h-full w-0.5 -translate-x-1/2 bg-border md:left-1/2"></div>
+        {[...Array(4)].map((_, index) => (
+          <div key={index} className="relative flex w-full items-center justify-between md:justify-normal">
+            <div className="md:hidden w-full pl-8">
+              <Skeleton className="w-full h-28 rounded-lg" />
+            </div>
+            {index % 2 === 0 ? (
+              <>
+                <div className="hidden md:block w-[calc(50%-2rem)] pr-8 text-right">
+                  <Skeleton className="w-full h-28 rounded-lg" />
+                </div>
+                <div className="z-10 hidden md:flex h-4 w-4 items-center justify-center rounded-full bg-muted ring-8 ring-background"></div>
+                <div className="hidden md:block w-[calc(50%-2rem)]"></div>
+              </>
+            ) : (
+              <>
+                <div className="hidden md:block w-[calc(50%-2rem)]"></div>
+                <div className="z-10 hidden md:flex h-4 w-4 items-center justify-center rounded-full bg-muted ring-8 ring-background"></div>
+                <div className="hidden md:block w-[calc(50%-2rem)] pl-8 text-left">
+                  <Skeleton className="w-full h-28 rounded-lg" />
+                </div>
+              </>
+            )}
+          </div>
+        ))}
+      </div>
+    );
+  }
+
   return (
     <div className="relative mx-auto max-w-4xl px-4">
       <div className="absolute left-4 top-0 h-full w-0.5 -translate-x-1/2 bg-border md:left-1/2"></div>
-      {timelineEvents.map((event, index) => (
-        <div key={index} className="relative mb-8 flex w-full items-center justify-between md:justify-normal">
+      {sortedEvents?.map((event, index) => (
+        <div key={event.id} className="relative mb-8 flex w-full items-center justify-between md:justify-normal">
           {/* Content for mobile (single column) */}
           <div className="md:hidden w-full pl-8">
              <div className="z-10 absolute -left-1.5 top-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary ring-8 ring-background"></div>
              <div className="p-4 rounded-lg bg-card shadow-md border">
-                <p className="text-sm font-semibold text-primary">{event.date}</p>
+                <p className="text-sm font-semibold text-primary">{new Date(event.date).getFullYear()}</p>
                 <h3 className="font-headline text-lg font-bold mt-1">{event.title}</h3>
                 <p className="text-muted-foreground mt-2 text-sm">{event.description}</p>
               </div>
@@ -62,7 +72,7 @@ export default function HistoricalTimeline() {
             <>
               <div className="hidden md:block w-[calc(50%-2rem)] pr-8 text-right">
                 <div className="p-4 rounded-lg bg-card shadow-md border">
-                  <p className="text-sm font-semibold text-primary">{event.date}</p>
+                  <p className="text-sm font-semibold text-primary">{new Date(event.date).getFullYear()}</p>
                   <h3 className="font-headline text-lg font-bold mt-1">{event.title}</h3>
                   <p className="text-muted-foreground mt-2 text-sm">{event.description}</p>
                 </div>
@@ -76,7 +86,7 @@ export default function HistoricalTimeline() {
               <div className="z-10 hidden md:flex h-4 w-4 items-center justify-center rounded-full bg-primary ring-8 ring-background"></div>
               <div className="hidden md:block w-[calc(50%-2rem)] pl-8 text-left">
                 <div className="p-4 rounded-lg bg-card shadow-md border">
-                  <p className="text-sm font-semibold text-primary">{event.date}</p>
+                  <p className="text-sm font-semibold text-primary">{new Date(event.date).getFullYear()}</p>
                   <h3 className="font-headline text-lg font-bold mt-1">{event.title}</h3>
                   <p className="text-muted-foreground mt-2 text-sm">{event.description}</p>
                 </div>

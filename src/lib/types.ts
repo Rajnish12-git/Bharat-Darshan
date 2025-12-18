@@ -12,3 +12,11 @@ export interface Monument {
     interestingFacts: string[];
     distance?: number;
 }
+
+export interface TimelineEvent {
+    id: string;
+    title: string;
+    date: string;
+    description: string;
+    imageUrl: string;
+}
