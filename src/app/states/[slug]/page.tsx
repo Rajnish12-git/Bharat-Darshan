@@ -2,36 +2,28 @@
 
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
+import { indianStates } from '@/lib/states-data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import InfoCard from '@/components/info-card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Landmark, UtensilsCrossed, CalendarDays, Palette } from 'lucide-react';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
-import { use, useEffect, useState, useMemo } from 'react';
-import { useCollection, useFirestore, useMemoFirebase } from '@/firebase';
-import { collection, query, where } from 'firebase/firestore';
-import type { StateData } from '@/lib/heritage-data';
-import { Skeleton } from '@/components/ui/skeleton';
+import { useEffect, useState } from 'react';
 
-function StatePageContent({ state }: { state: StateData }) {
+export default function StatePage({ params }: { params: { slug: string } }) {
   const [isIntroVisible, setIntroVisible] = useState(false);
-  const firestore = useFirestore();
-
-  const monumentsQuery = useMemoFirebase(() => collection(firestore, `states/${state.id}/monuments`), [firestore, state.id]);
-  const cuisineQuery = useMemoFirebase(() => collection(firestore, `states/${state.id}/cuisine`), [firestore, state.id]);
-  const festivalsQuery = useMemoFirebase(() => collection(firestore, `states/${state.id}/festivals`), [firestore, state.id]);
-  const artFormsQuery = useMemoFirebase(() => collection(firestore, `states/${state.id}/artForms`), [firestore, state.id]);
-
-  const { data: monuments, isLoading: isLoadingMonuments } = useCollection(monumentsQuery);
-  const { data: cuisine, isLoading: isLoadingCuisine } = useCollection(cuisineQuery);
-  const { data: festivals, isLoading: isLoadingFestivals } = useCollection(festivalsQuery);
-  const { data: artForms, isLoading: isLoadingArt } = useCollection(artFormsQuery);
+  const { slug } = params;
+  const state = indianStates.find((s) => s.slug === slug);
 
   useEffect(() => {
     const timer = setTimeout(() => setIntroVisible(true), 300);
     return () => clearTimeout(timer);
   }, []);
+
+  if (!state) {
+    notFound();
+  }
 
   const stateImage = PlaceHolderImages.find((img) => img.id === state.imageId);
 
@@ -50,24 +42,6 @@ function StatePageContent({ state }: { state: StateData }) {
     }
   };
   
-  const renderContent = (data: any[] | null, isLoading: boolean, category: string) => {
-    if (isLoading) {
-      return (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
-          {[...Array(8)].map((_, i) => <Skeleton key={i} className="h-64 w-full" />)}
-        </div>
-      );
-    }
-    if (!data || data.length === 0) {
-      return <p className="text-center text-muted-foreground">No {category} found for this state.</p>
-    }
-    return (
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
-        {data.map((item) => <InfoCard item={item} category={category} key={item.id || item.name} />)}
-      </div>
-    )
-  }
-
   return (
     <>
       <Header />
@@ -110,19 +84,27 @@ function StatePageContent({ state }: { state: StateData }) {
           <div className="container py-12 md:py-16">
             <TabsContent value="monuments">
                <p className={`max-w-2xl mx-auto text-center text-muted-foreground mb-12 transition-opacity duration-500 ${isIntroVisible ? 'opacity-100' : 'opacity-0'}`}>{getIntroText('monuments')}</p>
-              {renderContent(monuments, isLoadingMonuments, 'monuments')}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
+                {state.monuments.map((item) => <InfoCard item={item} category="monuments" key={item.name} />)}
+              </div>
             </TabsContent>
             <TabsContent value="cuisine">
               <p className={`max-w-2xl mx-auto text-center text-muted-foreground mb-12 transition-opacity duration-500 ${isIntroVisible ? 'opacity-100' : 'opacity-0'}`}>{getIntroText('cuisine')}</p>
-              {renderContent(cuisine, isLoadingCuisine, 'cuisine')}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
+                {state.cuisine.map((item) => <InfoCard item={item} category="cuisine" key={item.name} />)}
+              </div>
             </TabsContent>
             <TabsContent value="festivals">
               <p className={`max-w-2xl mx-auto text-center text-muted-foreground mb-12 transition-opacity duration-500 ${isIntroVisible ? 'opacity-100' : 'opacity-0'}`}>{getIntroText('festivals')}</p>
-               {renderContent(festivals, isLoadingFestivals, 'festivals')}
+               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
+                {state.festivals.map((item) => <InfoCard item={item} category="festivals" key={item.name} />)}
+              </div>
             </TabsContent>
             <TabsContent value="art">
               <p className={`max-w-2xl mx-auto text-center text-muted-foreground mb-12 transition-opacity duration-500 ${isIntroVisible ? 'opacity-100' : 'opacity-0'}`}>{getIntroText('art')}</p>
-              {renderContent(artForms, isLoadingArt, 'art')}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
+                {state.artForms.map((item) => <InfoCard item={item} category="art" key={item.name} />)}
+              </div>
             </TabsContent>
           </div>
         </Tabs>
@@ -130,36 +112,4 @@ function StatePageContent({ state }: { state: StateData }) {
       <Footer />
     </>
   );
-}
-
-export default function StatePage({ params }: { params: { slug: string } }) {
-  const { slug } = use(params);
-  const firestore = useFirestore();
-
-  const stateQuery = useMemoFirebase(() => {
-    if (!firestore) return null;
-    return query(collection(firestore, 'states'), where('slug', '==', slug));
-  }, [firestore, slug]);
-  
-  const { data: stateData, isLoading, error } = useCollection<StateData>(stateQuery);
-
-  if (isLoading) {
-    return (
-      <div className="container py-12">
-        <Skeleton className="h-96 w-full mb-8" />
-        <Skeleton className="h-12 w-full mb-8" />
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
-          {[...Array(8)].map((_, i) => <Skeleton key={i} className="h-64 w-full" />)}
-        </div>
-      </div>
-    );
-  }
-
-  if (!stateData || stateData.length === 0) {
-    notFound();
-  }
-
-  const state = stateData[0];
-
-  return <StatePageContent state={state} />;
 }

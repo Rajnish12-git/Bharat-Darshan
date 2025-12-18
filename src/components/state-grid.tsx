@@ -3,29 +3,11 @@
 import * as React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { indianStates } from '@/lib/states-data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { useCollection, useFirestore, useMemoFirebase } from '@/firebase';
-import { collection } from 'firebase/firestore';
 import { Card, CardHeader, CardTitle } from '@/components/ui/card';
-import { cn } from '@/lib/utils';
-import { Skeleton } from './ui/skeleton';
-import type { StateData } from '@/lib/heritage-data';
 
 export default function StateGrid() {
-  const firestore = useFirestore();
-  const statesCollection = useMemoFirebase(() => collection(firestore, 'states'), [firestore]);
-  const { data: indianStates, isLoading } = useCollection<StateData>(statesCollection);
-
-  if (isLoading || !indianStates) {
-    return (
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
-        {[...Array(8)].map((_, index) => (
-          <Skeleton key={index} className="h-64 w-full" />
-        ))}
-      </div>
-    );
-  }
-
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
       {indianStates.map((state) => {

@@ -1,4 +1,3 @@
-
 'use client';
 
 import React, { createContext, useContext, useState, useEffect, ReactNode, useCallback } from 'react';
@@ -29,7 +28,6 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
       }
     } catch (error) {
       console.error("Could not load favorites from localStorage:", error);
-      // If parsing fails, start with an empty array
       setFavorites([]);
     } finally {
         setIsLoaded(true);

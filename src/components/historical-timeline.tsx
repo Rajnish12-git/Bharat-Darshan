@@ -1,56 +1,23 @@
 'use client';
 
-import { Skeleton } from './ui/skeleton';
-import { useEffect, useState } from 'react';
-import { useCollection, useFirestore, useMemoFirebase } from '@/firebase';
-import { collection, orderBy, query } from 'firebase/firestore';
+import { timelineEvents } from '@/lib/timeline-data';
 
 interface TimelineEvent {
     id: string;
     title: string;
     date: string;
     description: string;
-    imageUrl: string;
     era: 'BCE' | 'CE';
     year: number;
 }
 
-export default function HistoricalTimeline() {
-  const firestore = useFirestore();
-  const timelineCollection = useMemoFirebase(() => query(collection(firestore, 'timeline'), orderBy('year')), [firestore]);
-  const { data: events, isLoading } = useCollection<TimelineEvent>(timelineCollection);
 
-  if (isLoading) {
-    return (
-      <div className="relative mx-auto max-w-4xl px-4 space-y-8">
-        <div className="absolute left-4 top-0 h-full w-0.5 -translate-x-1/2 bg-border md:left-1/2"></div>
-        {[...Array(4)].map((_, index) => (
-          <div key={index} className="relative flex w-full items-center justify-between md:justify-normal">
-            <div className="md:hidden w-full pl-8">
-              <Skeleton className="w-full h-28 rounded-lg" />
-            </div>
-            {index % 2 === 0 ? (
-              <>
-                <div className="hidden md:block w-[calc(50%-2rem)] pr-8 text-right">
-                  <Skeleton className="w-full h-28 rounded-lg" />
-                </div>
-                <div className="z-10 hidden md:flex h-4 w-4 items-center justify-center rounded-full bg-muted ring-8 ring-background"></div>
-                <div className="hidden md:block w-[calc(50%-2rem)]"></div>
-              </>
-            ) : (
-              <>
-                <div className="hidden md:block w-[calc(50%-2rem)]"></div>
-                <div className="z-10 hidden md:flex h-4 w-4 items-center justify-center rounded-full bg-muted ring-8 ring-background"></div>
-                <div className="hidden md:block w-[calc(50%-2rem)] pl-8 text-left">
-                  <Skeleton className="w-full h-28 rounded-lg" />
-                </div>
-              </>
-            )}
-          </div>
-        ))}
-      </div>
-    );
-  }
+export default function HistoricalTimeline() {
+  const events = timelineEvents.sort((a, b) => {
+    const yearA = a.era === 'BCE' ? -a.year : a.year;
+    const yearB = b.era === 'BCE' ? -b.year : b.year;
+    return yearA - yearB;
+  });
 
   return (
     <div className="relative mx-auto max-w-4xl px-4">
