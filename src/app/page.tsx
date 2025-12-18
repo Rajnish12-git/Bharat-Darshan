@@ -6,7 +6,6 @@ import CulturalHighlights from '@/components/cultural-highlights';
 import StateGrid from '@/components/state-grid';
 import ExploreNearMe from '@/components/explore-near-me';
 import { Separator } from '@/components/ui/separator';
-import { MapProvider } from '@/components/map-provider';
 
 export default function Home() {
   return (
@@ -43,9 +42,7 @@ export default function Home() {
           </p>
         </div>
         <div className="mt-12">
-          <MapProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}>
-            <ExploreNearMe />
-          </MapProvider>
+          <ExploreNearMe />
         </div>
       </section>
       
