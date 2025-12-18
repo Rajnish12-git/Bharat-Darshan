@@ -18,10 +18,10 @@ export default function ExploreNearMe() {
     lat: number;
     lng: number;
   } | null>(null);
-  const [nearbyMonuments, setNearbyMonuments] = useState<Monument[]>([]);
   const [radius, setRadius] = useState('100');
   const [error, setError] = useState<string | null>(null);
   const [locationDenied, setLocationDenied] = useState(false);
+  const [isSearching, setIsSearching] = useState(false);
 
   const firestore = useFirestore();
   const monumentsCollection = useMemoFirebase(() => {
@@ -29,47 +29,51 @@ export default function ExploreNearMe() {
     return collection(firestore, 'monuments');
   }, [firestore]);
 
-  const { data: monuments, isLoading: isLoadingMonuments } = useCollection<Monument>(monumentsCollection);
+  const { data: allMonuments, isLoading: isLoadingMonuments } = useCollection<Monument>(monumentsCollection);
+  
+  const nearbyMonuments = useMemo(() => {
+    if (!userLocation || !allMonuments) return [];
+
+    const monumentsWithDistance = allMonuments.map((monument) => ({
+      ...monument,
+      distance: getDistance(
+        userLocation.lat,
+        userLocation.lng,
+        monument.latitude,
+        monument.longitude
+      ),
+    }));
+
+    const filtered = monumentsWithDistance.filter(
+      (monument) => monument.distance <= parseInt(radius)
+    );
+
+    return filtered.sort((a, b) => a.distance - b.distance);
+  }, [userLocation, allMonuments, radius]);
 
   const handleFindNearby = () => {
     setError(null);
     setLocationDenied(false);
-    if (!monuments) {
-      setError('Monuments data is not available yet. Please try again in a moment.');
+    setUserLocation(null);
+    setIsSearching(true);
+    
+    if (!navigator.geolocation) {
+      setError('Geolocation is not supported by your browser.');
+      setIsSearching(false);
       return;
     }
-    startTransition(() => {
-      if (!navigator.geolocation) {
-        setError('Geolocation is not supported by your browser.');
-        return;
-      }
 
+    startTransition(() => {
       navigator.geolocation.getCurrentPosition(
         (position) => {
           const { latitude, longitude } = position.coords;
-          const userLoc = { lat: latitude, lng: longitude };
-          setUserLocation(userLoc);
-
-          const monumentsWithDistance = monuments.map((monument) => ({
-            ...monument,
-            distance: getDistance(
-              userLoc.lat,
-              userLoc.lng,
-              monument.latitude,
-              monument.longitude
-            ),
-          }));
-
-          const filteredMonuments = monumentsWithDistance.filter(
-            (monument) => monument.distance <= parseInt(radius)
-          );
-
-          filteredMonuments.sort((a, b) => a.distance - b.distance);
-          setNearbyMonuments(filteredMonuments as Monument[]);
+          setUserLocation({ lat: latitude, lng: longitude });
+          setIsSearching(false);
         },
         () => {
-          setError('Unable to retrieve your location. Please enable location permissions.');
+          setError('Unable to retrieve your location. Please enable location permissions in your browser settings.');
           setLocationDenied(true);
+          setIsSearching(false);
         }
       );
     });
@@ -89,16 +93,18 @@ export default function ExploreNearMe() {
     }));
   }, [nearbyMonuments]);
 
+  const isButtonDisabled = isPending || isLoadingMonuments || isSearching;
+
   return (
     <div className="w-full max-w-6xl mx-auto">
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
         <Button
           size="lg"
           onClick={handleFindNearby}
-          disabled={isPending || isLoadingMonuments}
+          disabled={isButtonDisabled}
           className="shadow-lg"
         >
-          {isPending || isLoadingMonuments ? (
+          {isButtonDisabled ? (
             <Loader2 className="mr-2 h-5 w-5 animate-spin" />
           ) : (
             <MapPin className="mr-2 h-5 w-5" />
@@ -109,6 +115,7 @@ export default function ExploreNearMe() {
           defaultValue="100"
           onValueChange={setRadius}
           className="flex items-center gap-4"
+          disabled={isButtonDisabled}
         >
           <div className="flex items-center space-x-2">
             <RadioGroupItem value="50" id="r1" />
@@ -136,19 +143,20 @@ export default function ExploreNearMe() {
         </div>
       )}
 
-      {!userLocation && !error && !isPending && (
+      {!userLocation && !error && !isSearching && (
         <div className="text-center text-muted-foreground p-8 border-2 border-dashed rounded-lg">
           <p>Click the button to discover heritage sites near your location.</p>
         </div>
       )}
       
-      {(isPending || isLoadingMonuments) && !error &&(
+      {isSearching && (
          <div className="flex justify-center items-center p-8">
             <Loader2 className="h-8 w-8 animate-spin text-primary"/>
+            <p className="ml-4 text-muted-foreground">Getting your location...</p>
          </div>
       )}
 
-      {!isPending && userLocation && nearbyMonuments.length > 0 && (
+      {!isSearching && userLocation && nearbyMonuments.length > 0 && (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
             {monumentsToDisplay.map(monument => (
                  <InfoCard 
@@ -160,7 +168,7 @@ export default function ExploreNearMe() {
         </div>
       )}
 
-      {!isPending && userLocation && nearbyMonuments.length === 0 && !error && (
+      {!isSearching && userLocation && nearbyMonuments.length === 0 && !error && (
         <div className="text-center text-muted-foreground p-8 border-2 border-dashed rounded-lg">
           <p>No monuments found within {radius} km of your location. Try increasing the radius.</p>
         </div>
