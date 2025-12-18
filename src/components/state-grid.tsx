@@ -5,6 +5,7 @@ import * as React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { indianStates } from '@/lib/states-data';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import {
   Carousel,
@@ -15,28 +16,17 @@ import {
   type CarouselApi,
 } from '@/components/ui/carousel';
 import { cn } from '@/lib/utils';
-import { useCollection, useFirestore, useMemoFirebase } from '@/firebase';
-import { collection } from 'firebase/firestore';
 import { Skeleton } from './ui/skeleton';
-
-interface State {
-  id: string;
-  slug: string;
-  name: string;
-  description: string;
-  imageId: string;
-}
 
 export default function StateGrid() {
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
-  const firestore = useFirestore();
+  const [isLoading, setIsLoading] = React.useState(true);
 
-  const statesQuery = useMemoFirebase(
-    () => (firestore ? collection(firestore, 'states') : null),
-    [firestore]
-  );
-  const { data: indianStates, isLoading } = useCollection<State>(statesQuery);
+  React.useEffect(() => {
+    // Simulate loading
+    setTimeout(() => setIsLoading(false), 500);
+  }, []);
 
   React.useEffect(() => {
     if (!api) {
@@ -94,7 +84,7 @@ export default function StateGrid() {
         className="w-full"
       >
         <CarouselContent className="-ml-4">
-          {indianStates?.map((state, index) => {
+          {indianStates.map((state, index) => {
             const image = PlaceHolderImages.find(
               (img) => img.id === state.imageId
             );

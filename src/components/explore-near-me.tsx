@@ -1,31 +1,28 @@
+
 'use client';
 
 import React, { useState, useMemo, useTransition } from 'react';
-import { useCollection, useFirestore, useMemoFirebase } from '@/firebase';
-import { collection } from 'firebase/firestore';
-import type { Monument } from '@/lib/types';
+import { monuments as allMonuments } from '@/lib/monuments-data';
+import type { DetailItem } from '@/lib/heritage-data';
 import { getDistance } from '@/lib/utils';
 import { Button } from './ui/button';
 import { Loader2, MapPin } from 'lucide-react';
 import InfoCard from './info-card';
 
 // Define the structure of a monument with an added distance property
-type MonumentWithDistance = Monument & { distance: number };
+interface MonumentData {
+    name: string;
+    imageId: string;
+    description: string;
+    latitude: number;
+    longitude: number;
+}
+type MonumentWithDistance = MonumentData & { distance: number };
 
 export default function ExploreNearMe() {
   const [isPending, startTransition] = useTransition();
   const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
   const [error, setError] = useState<string | null>(null);
-  
-  const firestore = useFirestore();
-
-  // Memoize the Firestore collection query to prevent re-renders
-  const monumentsCollection = useMemoFirebase(() => {
-    if (!firestore) return null;
-    return collection(firestore, 'monuments');
-  }, [firestore]);
-
-  const { data: allMonuments, isLoading: isLoadingMonuments } = useCollection<Monument>(monumentsCollection);
 
   const handleFindNearby = () => {
     setError(null);
@@ -66,9 +63,9 @@ export default function ExploreNearMe() {
       .sort((a, b) => a.distance - b.distance);
       
     return monumentsWithDistance;
-  }, [userLocation, allMonuments]);
+  }, [userLocation]);
 
-  const isLoading = isPending || isLoadingMonuments;
+  const isLoading = isPending;
 
   return (
     <div className="w-full max-w-6xl mx-auto">
@@ -90,17 +87,16 @@ export default function ExploreNearMe() {
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
                 {nearbyMonuments.map((monument) => {
-                   const item = {
+                   const item: DetailItem = {
                     name: monument.name,
-                    // The monument ID from firestore is used as imageId
-                    imageId: monument.id,
+                    imageId: monument.imageId,
                     description: `${monument.description.substring(0, 100)}... (${monument.distance.toFixed(2)} km away)`,
                   };
                   return (
                     <InfoCard
                       item={item}
                       category="monuments"
-                      key={monument.id}
+                      key={monument.imageId}
                     />
                   );
                 })}

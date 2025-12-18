@@ -1,3 +1,5 @@
+
+
 export interface DetailItem {
   name: string;
   imageId: string;
