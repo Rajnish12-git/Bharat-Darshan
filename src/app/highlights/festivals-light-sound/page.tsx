@@ -19,7 +19,7 @@ export default function FestivalsPage() {
   const highlight = {
     title: 'Festivals of Light & Sound',
     subtitle: 'Where India Comes Alive',
-    description: "India's festivals are a magnificent explosion of the senses, a vibrant tapestry woven with threads of light, sound, and devotion. From the million glowing lamps of Diwali to the thunderous drumbeats of Durga Puja, these celebrations are the heartbeat of the nation. They are a time when communities unite, ancient rituals are reborn, and the air itself crackles with energy, music, and a profound sense of joy.",
+    description': "India's festivals are a magnificent explosion of the senses, a vibrant tapestry woven with threads of light, sound, and devotion. From the million glowing lamps of Diwali to the thunderous drumbeats of Durga Puja, these celebrations are the heartbeat of the nation. They are a time when communities unite, ancient rituals are reborn, and the air itself crackles with energy, music, and a profound sense of joy.",
     imageId: 'festival-diwali',
   };
 
