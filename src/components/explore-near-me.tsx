@@ -11,7 +11,6 @@ import { useCollection, useFirestore, useMemoFirebase } from '@/firebase';
 import { collection } from 'firebase/firestore';
 import type { Monument } from '@/lib/types';
 
-
 export default function ExploreNearMe() {
   const [isPending, startTransition] = useTransition();
   const [userLocation, setUserLocation] = useState<{
@@ -85,14 +84,6 @@ export default function ExploreNearMe() {
     alert('Manual state selection feature coming soon!');
   };
 
-  const monumentsToDisplay = useMemo(() => {
-    return nearbyMonuments.map(monument => ({
-        name: monument.name,
-        imageId: monument.imageId,
-        description: `${monument.location} - ${monument.distance?.toFixed(1)} km away`
-    }));
-  }, [nearbyMonuments]);
-
   const isButtonDisabled = isPending || isLoadingMonuments || isSearching;
 
   return (
@@ -158,13 +149,20 @@ export default function ExploreNearMe() {
 
       {!isSearching && userLocation && nearbyMonuments.length > 0 && (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
-            {monumentsToDisplay.map(monument => (
+            {nearbyMonuments.map(monument => {
+                const item = {
+                    name: monument.name,
+                    imageId: monument.id, // Map the document ID to imageId for the card
+                    description: `${monument.location} - ${monument.distance?.toFixed(1)} km away`
+                }
+                return (
                  <InfoCard 
-                    key={monument.name}
-                    item={monument} 
+                    key={monument.id}
+                    item={item} 
                     category="monuments"
                  />
-            ))}
+                )
+            })}
         </div>
       )}
 
