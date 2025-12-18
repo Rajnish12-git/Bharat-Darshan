@@ -45,9 +45,9 @@ export const highlights: Highlight[] = [
     title: 'Festivals of Light & Sound',
     subtitle: 'Celebrations that unite the nation',
     description:
-      'Indian festivals are a spectacular display of devotion and joy. Diwali, the festival of lights, illuminates the country with millions of diyas, symbolizing the victory of good over evil. The air is filled with fireworks, feasts, and the warmth of community.',
-    imageId: 'festival-diwali',
-    slug: 'festivals-of-light-sound',
+      'Indian festivals are a spectacular display of devotion and joy. The air is filled with fireworks, feasts, and the warmth of community, symbolizing the victory of good over evil across a thousand different traditions.',
+    imageId: 'festival-dev-deepawali',
+    slug: 'festivals-light-sound',
     details: [
       { name: 'Holi', imageId: 'festival-holi', description: 'The festival of colors, a joyous celebration marking the arrival of spring.' },
       { name: 'Durga Puja', imageId: 'festival-durga-puja', description: 'A ten-day festival in West Bengal honoring the goddess Durga with elaborate idols and cultural events.' },
