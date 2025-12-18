@@ -331,21 +331,6 @@
     ]
   },
   {
-    "dishName": "Puran Poli",
-    "imageId": "cuisine-puran-poli",
-    "region": "Maharashtra, Gujarat, Karnataka",
-    "type": "Vegetarian",
-    "mainIngredients": ["Chana dal (split chickpeas)", "Jaggery", "Whole wheat flour", "Cardamom", "Nutmeg"],
-    "cookingStyle": "Griddling",
-    "description": "A sweet flatbread that is a festive delicacy in several western and southern states. It's a flatbread stuffed with a sweet, fragrant filling called 'Puran', which is made from cooked and mashed lentils and jaggery.",
-    "culturalSignificance": "Puran Poli is an essential part of festive meals, especially during festivals like Ganesh Chaturthi, Diwali, and Holi in Maharashtra. It symbolizes happiness and prosperity.",
-    "occasions": "Ganesh Chaturthi, Holi, Diwali",
-    "interestingFacts": [
-      "In Marathi, 'Puran' means the sweet filling and 'Poli' means the outer bread.",
-      "The dish is served hot with a generous amount of ghee, and sometimes with a thin, sweet and sour dal called 'Katachi Amti'."
-    ]
-  },
-  {
     "dishName": "Shorshe Ilish",
     "imageId": "cuisine-shorshe-ilish",
     "region": "West Bengal, Bangladesh",
