@@ -43,7 +43,7 @@ export default function Home() {
           </p>
         </div>
         <div className="mt-12">
-          <MapProvider>
+          <MapProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}>
             <ExploreNearMe />
           </MapProvider>
         </div>

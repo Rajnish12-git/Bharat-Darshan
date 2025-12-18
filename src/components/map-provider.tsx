@@ -3,9 +3,9 @@
 import { APIProvider } from '@vis.gl/react-google-maps';
 import React from 'react';
 
-export function MapProvider({ children }: { children: React.ReactNode }) {
+export function MapProvider({ children, apiKey }: { children: React.ReactNode, apiKey?: string | null }) {
   return (
-    <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY!}>
+    <APIProvider apiKey={apiKey ?? undefined}>
       {children}
     </APIProvider>
   );
