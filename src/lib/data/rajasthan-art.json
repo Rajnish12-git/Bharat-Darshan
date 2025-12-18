@@ -1,0 +1,108 @@
+
+[
+  {
+    "artFormName": "Miniature Painting",
+    "region": "Mewar, Marwar, Bundi, Kota, Jaipur",
+    "category": "Classical Painting",
+    "materialsOrMedium": "Handmade paper (vasli), natural mineral and vegetable pigments, gold leaf, squirrel-hair brushes",
+    "culturalSignificance": "A highly sophisticated art form that flourished in royal courts, depicting mythological scenes (Gita Govinda, Ramayana), courtly life, and portraits. Each school has a distinct style, color palette, and character depiction."
+  },
+  {
+    "artFormName": "Blue Pottery",
+    "region": "Jaipur",
+    "category": "Craft",
+    "materialsOrMedium": "Quartz powder, glass, fuller's earth (multani mitti), gum (no clay)",
+    "culturalSignificance": "A Turco-Persian art form that was revived in Jaipur in the 19th century. Known for its vibrant blue and turquoise colors, it is used to create decorative items, tiles, and utensils, and is a signature craft of the city."
+  },
+  {
+    "artFormName": "Bandhani (Bandhej)",
+    "region": "Jaipur, Sikar, Jodhpur, Kutch (Gujarat)",
+    "category": "Craft",
+    "materialsOrMedium": "Fine cotton or silk cloth, threads, natural and chemical dyes",
+    "culturalSignificance": "An ancient and highly skilled tie-dye technique where the cloth is plucked and tied into thousands of tiny bindings to form intricate patterns. Bandhani sarees and turbans are considered auspicious for weddings and festivals."
+  },
+  {
+    "artFormName": "Kathputli (Puppetry)",
+    "region": "Throughout Rajasthan",
+    "category": "Folk Performance",
+    "materialsOrMedium": "Mango wood, cloth, strings",
+    "culturalSignificance": "A traditional string puppetry art form used by the Bhat community to narrate stories of kings, heroes, and local legends. The high-pitched, squeaky voice of the puppets, produced using a bamboo reed, is a characteristic feature."
+  },
+  {
+    "artFormName": "Kalbelia Dance",
+    "region": "Thar Desert region",
+    "category": "Folk Dance",
+    "materialsOrMedium": "Black swirling skirts with mirror work, ornate costumes",
+    "culturalSignificance": "Performed by the Kalbelia community of snake charmers, this sensuous and energetic dance mimics the movements of a serpent. It's a UNESCO Intangible Cultural Heritage, celebrating the community's identity."
+  },
+  {
+    "artFormName": "Ghoomar Dance",
+    "region": "Mewar and Marwar regions",
+    "category": "Folk Dance",
+    "materialsOrMedium": "Ghagra (long, swirling skirt)",
+    "culturalSignificance": "A traditional folk dance performed by women on auspicious occasions. The dancers spin in circles, creating a stunning display of their flowing ghagras. It is a symbol of womanhood and grace."
+  },
+  {
+    "artFormName": "Meenakari Jewellery",
+    "region": "Jaipur",
+    "category": "Craft",
+    "materialsOrMedium": "Gold, silver, enamel (meena)",
+    "culturalSignificance": "The art of enameling or decorating metal surfaces with vibrant colors. Jaipur is a major center for this craft, known for its intricate floral and bird motifs on gold and silver jewellery."
+  },
+  {
+    "artFormName": "Thewa Jewellery",
+    "region": "Pratapgarh",
+    "category": "Craft",
+    "materialsOrMedium": "Molten glass, 23k gold foil",
+    "culturalSignificance": "A unique and secret art of fusing intricately worked-out gold foil onto molten glass. Practiced by only a few families, this craft creates stunning jewellery pieces depicting mythological or royal scenes."
+  },
+  {
+    "artFormName": "Block Printing",
+    "region": "Sanganer, Bagru",
+    "category": "Craft",
+    "materialsOrMedium": "Cotton fabric, wooden blocks, natural dyes (vegetable and mineral)",
+    "culturalSignificance": "An ancient technique for printing patterns on textiles. Sanganer is known for its fine lines and floral patterns on a white background, while Bagru is famous for its bold geometric prints using natural indigo and red dyes on a darker base."
+  },
+  {
+    "artFormName": "Leatherwork (Mojari)",
+    "region": "Jodhpur, Jaipur",
+    "category": "Craft",
+    "materialsOrMedium": "Camel leather, embroidery threads, mirrors",
+    "culturalSignificance": "The craft of making Mojaris or Juttis, a type of traditional embroidered footwear. Made from camel leather, they are known for their comfort, durability, and intricate embroidery, often adorned with mirrors and beads."
+  },
+  {
+    "artFormName": "Pichwai Painting",
+    "region": "Nathdwara",
+    "category": "Ritual Art",
+    "materialsOrMedium": "Cloth, natural pigments",
+    "culturalSignificance": "Large, devotional paintings on cloth that serve as backdrops for the idol of Shrinathji (a form of Krishna) in the Nathdwara temple. They depict episodes from Krishna's life, especially his childhood lilas (divine play)."
+  },
+  {
+    "artFormName": "Phad Painting",
+    "region": "Bhilwara",
+    "category": "Folk Painting",
+    "materialsOrMedium": "Long scroll of cloth, natural colors",
+    "culturalSignificance": "A narrative scroll painting tradition where Bhopas (priest-singers) narrate the folk epic of the local hero-deity, Pabuji. The Phad serves as a portable temple and visual aid for the all-night performance."
+  },
+  {
+    "artFormName": "Kundan Jewellery",
+    "region": "Jaipur",
+    "category": "Craft",
+    "materialsOrMedium": "Gold foil, uncut diamonds (polki), precious and semi-precious gemstones",
+    "culturalSignificance": "A traditional form of gemstone jewellery where highly refined gold foil is used to set uncut diamonds and other gems. It is a hallmark of royal Rajasthani and Mughal jewellery."
+  },
+  {
+    "artFormName": "Mandana Painting",
+    "region": "Rural areas across Rajasthan",
+    "category": "Ritual Folk Art",
+    "materialsOrMedium": "Chalk or rice paste on floors and walls treated with cow dung and red clay",
+    "culturalSignificance": "Auspicious diagrams and patterns drawn by women on the floors and walls of their homes to mark festivals and religious occasions. They are meant to welcome gods and ward off evil."
+  },
+  {
+    "artFormName": "Terah Taali Dance",
+    "region": "Pali, Jaisalmer",
+    "category": "Folk Dance",
+    "materialsOrMedium": "Manjeeras (small metal cymbals)",
+    "culturalSignificance": "A devotional dance performed by women of the Kamad tribe in honor of the folk hero Baba Ramdev. The dancers sit on the floor and tie thirteen cymbals to various parts of their body, which they strike with the ones in their hands, creating a complex rhythm."
+  }
+]

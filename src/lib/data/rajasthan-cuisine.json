@@ -1,0 +1,123 @@
+
+[
+  {
+    "dishName": "Dal Baati Churma",
+    "region": "Throughout Rajasthan",
+    "type": "Veg",
+    "mainIngredients": "Lentils, whole wheat flour, ghee, jaggery",
+    "cookingStyle": "Baking, Frying, Simmering",
+    "culturalImportance": "The quintessential Rajasthani dish, it was a wartime meal for soldiers due to its long shelf life. The baati (baked wheat ball) is crushed, drenched in ghee, and eaten with spicy dal (lentil curry) and sweet churma (powdered wheat)."
+  },
+  {
+    "dishName": "Laal Maas",
+    "region": "Marwar (Jodhpur)",
+    "type": "Non-Veg",
+    "mainIngredients": "Mutton, Mathania red chilies, yogurt, garlic",
+    "cookingStyle": "Slow-cooking",
+    "culturalImportance": "A fiery and iconic meat curry, its vibrant red color comes from the special Mathania chilies. Traditionally a royal dish prepared after hunting expeditions, it is known for its intense heat and robust flavors."
+  },
+  {
+    "dishName": "Gatte ki Sabzi",
+    "region": "Throughout Rajasthan",
+    "type": "Veg",
+    "mainIngredients": "Gram flour (besan), yogurt, tomatoes, spices",
+    "cookingStyle": "Boiling, Simmering",
+    "culturalImportance": "A staple dish adapted for the arid climate where fresh vegetables are scarce. It consists of steamed and spiced gram flour dumplings (gatte) simmered in a tangy yogurt-based gravy."
+  },
+  {
+    "dishName": "Ker Sangri",
+    "region": "Marwar, Shekhawati",
+    "type": "Veg",
+    "mainIngredients": "Ker (desert berry), Sangri (desert bean), dried mango, spices",
+    "cookingStyle": "Sautéing",
+    "culturalImportance": "A unique dish made from dried berries and beans found in the Thar Desert. It's a flavorful and tangy preparation that can be stored for days, showcasing the resourcefulness of Rajasthani cuisine."
+  },
+  {
+    "dishName": "Ghevar",
+    "region": "Jaipur, Marwar",
+    "type": "Veg",
+    "mainIngredients": "All-purpose flour, ghee, sugar syrup, milk",
+    "cookingStyle": "Deep-frying",
+    "culturalImportance": "A disc-shaped sweet cake with a porous, honeycomb-like texture. It is specially prepared for the Teej and Raksha Bandhan festivals and is often garnished with nuts and silver leaf."
+  },
+  {
+    "dishName": "Pyaaz ki Kachori",
+    "region": "Jodhpur, Jaipur",
+    "type": "Veg",
+    "mainIngredients": "All-purpose flour, onions, potatoes, spices",
+    "cookingStyle": "Deep-frying",
+    "culturalImportance": "A popular breakfast and snack item, this is a flaky, deep-fried pastry filled with a spicy onion and potato mixture. It's a beloved street food, best enjoyed hot with tamarind chutney."
+  },
+  {
+    "dishName": "Mohan Maas",
+    "region": "Mewar (Udaipur)",
+    "type": "Non-Veg",
+    "mainIngredients": "Mutton, milk, yogurt, lemon, cardamom",
+    "cookingStyle": "Slow-cooking",
+    "culturalImportance": "A milder, yet equally royal, alternative to Laal Maas. This is a white meat curry where the mutton is cooked in a rich and creamy gravy of milk and yogurt, flavored with mild spices like cardamom."
+  },
+  {
+    "dishName": "Mawa Kachori",
+    "region": "Jodhpur",
+    "type": "Veg",
+    "mainIngredients": "All-purpose flour, mawa (milk solids), nuts, sugar syrup",
+    "cookingStyle": "Deep-frying",
+    "culturalImportance": "A decadent dessert, this kachori is stuffed with a sweet mixture of mawa and nuts, deep-fried, and then soaked in sugar syrup. It's a festive treat that originated in Jodhpur."
+  },
+  {
+    "dishName": "Bajre ki Roti with Lehsun Chutney",
+    "region": "Rural Rajasthan",
+    "type": "Veg",
+    "mainIngredients": "Pearl millet flour (bajra), garlic, red chilies",
+    "cookingStyle": "Griddling, Grinding",
+    "culturalImportance": "A rustic and nutritious meal of the common people. The flatbread made from pearl millet is served with a fiery chutney made from garlic and red chilies, perfectly suited for the winter months."
+  },
+  {
+    "dishName": "Kadhi",
+    "region": "Throughout Rajasthan",
+    "type": "Veg",
+    "mainIngredients": "Yogurt, gram flour (besan), spices",
+    "cookingStyle": "Simmering",
+    "culturalImportance": "The Rajasthani version of Kadhi is spicier and thinner than its Punjabi or Gujarati counterparts. It's a quick and easy curry that is a staple in most households, often served with rice or roti."
+  },
+  {
+    "dishName": "Malpua",
+    "region": "Pushkar",
+    "type": "Veg",
+    "mainIngredients": "Flour, milk, sugar syrup",
+    "cookingStyle": "Deep-frying",
+    "culturalImportance": "Small, sweet pancakes made from a fermented batter, which are deep-fried and then soaked in sugar syrup. They are especially popular in Pushkar and are often served with rabri (thickened sweet milk)."
+  },
+  {
+    "dishName": "Safed Maas",
+    "region": "Mewar (Udaipur)",
+    "type": "Non-Veg",
+    "mainIngredients": "Mutton, cashews, almonds, yogurt, white pepper",
+    "cookingStyle": "Slow-cooking",
+    "culturalImportance": "Another royal white meat curry, 'Safed Maas' gets its rich, creamy texture and color from a paste of cashews and almonds. It is delicately flavored and represents the luxurious cuisine of the Rajput courts."
+  },
+  {
+    "dishName": "Mirchi Bada",
+    "region": "Jodhpur",
+    "type": "Veg",
+    "mainIngredients": "Large green chilies, potatoes, gram flour batter",
+    "cookingStyle": "Deep-frying",
+    "culturalImportance": "A popular street food snack where large, mild green chilies are stuffed with a spicy potato filling, coated in gram flour batter, and deep-fried. It's the perfect savory treat for a rainy day."
+  },
+  {
+    "dishName": "Balushahi",
+    "region": "Throughout North India, popular in Rajasthan",
+    "type": "Veg",
+    "mainIngredients": "All-purpose flour, ghee, yogurt, sugar syrup",
+    "cookingStyle": "Deep-frying",
+    "culturalImportance": "A traditional dessert similar to a glazed doughnut, but with a flaky, melt-in-your-mouth texture. It's prepared for festive occasions and weddings."
+  },
+  {
+    "dishName": "Raab",
+    "region": "Rural Rajasthan",
+    "type": "Veg",
+    "mainIngredients": "Millet flour (bajra) or cornmeal, buttermilk, ginger",
+    "cookingStyle": "Simmering",
+    "culturalImportance": "A healthy and warming soup or porridge made from millet flour and buttermilk. It's a traditional remedy for colds and coughs and provides energy during the harsh winters."
+  }
+]

@@ -1,0 +1,108 @@
+
+[
+  {
+    "festivalName": "Pushkar Camel Fair",
+    "month": "October / November (Kartik Purnima)",
+    "community": "All",
+    "keyRituals": "Livestock trading (especially camels), pilgrimage to Pushkar Lake, cultural performances, hot air ballooning.",
+    "culturalSignificance": "One of the world's largest livestock fairs, it's a vibrant spectacle of Rajasthani culture, trade, and spirituality, attracting thousands of tourists and pilgrims."
+  },
+  {
+    "festivalName": "Teej Festival",
+    "month": "July / August (Monsoon)",
+    "community": "Women (Hindu)",
+    "keyRituals": "Swinging on decorated swings (ghevar), applying henna, dressing in green attire, prayers to Goddess Parvati.",
+    "culturalSignificance": "A festival celebrating the monsoon and marital bliss. Women pray for the well-being of their husbands and celebrate the union of Shiva and Parvati."
+  },
+  {
+    "festivalName": "Gangaur Festival",
+    "month": "March / April",
+    "community": "Women (Hindu)",
+    "keyRituals": "Processions with idols of Isar and Gauri, prayers for marital bliss, folk dances.",
+    "culturalSignificance": "A major festival dedicated to Goddess Gauri (Parvati), celebrating spring, harvest, and marital fidelity. It is especially significant for unmarried girls seeking a good husband."
+  },
+  {
+    "festivalName": "Jaipur Literature Festival",
+    "month": "January",
+    "community": "All (Literary)",
+    "keyRituals": "Panel discussions, book readings, author signings, musical evenings.",
+    "culturalSignificance": "The world's largest free literary festival, it brings together some of the greatest writers, thinkers, and humanitarians, creating a vibrant platform for ideas and dialogue."
+  },
+  {
+    "festivalName": "Desert Festival",
+    "month": "February",
+    "community": "All",
+    "keyRituals": "Camel races, turban tying competitions, folk music and dance (Kalbelia), puppet shows.",
+    "culturalSignificance": "Held in Jaisalmer, this festival brings the Thar Desert to life with a vibrant showcase of Rajasthani folk culture, arts, and traditions against the backdrop of the golden fort."
+  },
+  {
+    "festivalName": "Marwar Festival",
+    "month": "September / October",
+    "community": "All",
+    "keyRituals": "Folk music and dance dedicated to Rajasthan's heroes, polo matches, cultural performances at Mehrangarh Fort.",
+    "culturalSignificance": "Celebrated in Jodhpur, this festival is dedicated to the memory of the medieval heroes of Rajasthan. It's a celebration of the Marwar region's music, dance, and martial traditions."
+  },
+  {
+    "festivalName": "Mewar Festival",
+    "month": "March / April",
+    "community": "All",
+    "keyRituals": "Gangaur procession to Lake Pichola, folk performances, fireworks.",
+    "culturalSignificance": "Celebrated in Udaipur to welcome the arrival of spring, it coincides with the Gangaur festival, making it a vibrant cultural spectacle of music, dance, and color."
+  },
+  {
+    "festivalName": "Urs Festival",
+    "month": "Varies (Islamic lunar calendar)",
+    "community": "Sufi (Muslim), all faiths welcome",
+    "keyRituals": "Qawwali performances, mass prayers, offering of 'chadar' at the Dargah.",
+    "culturalSignificance": "Commemorating the death anniversary of the Sufi saint Moinuddin Chishti in Ajmer, this festival is a symbol of communal harmony, attracting pilgrims from all over the world."
+  },
+  {
+    "festivalName": "Braj Holi",
+    "month": "March",
+    "community": "Hindu",
+    "keyRituals": "Rasleela dance, singing of Holi songs, showering of flower petals.",
+    "culturalSignificance": "Celebrated in the Braj region (Bharatpur, Deeg), this festival celebrates the divine love of Radha and Krishna with music, dance, and devotion, a few days before the main Holi festival."
+  },
+  {
+    "festivalName": "Nagaur Fair",
+    "month": "January / February",
+    "community": "All (Trade)",
+    "keyRituals": "Trading of cattle, camels, and horses; folk performances; spices and craft market.",
+    "culturalSignificance": "India's second-largest cattle fair, it's primarily a trade event but also a cultural spectacle with lots of folk music, dance, and fun competitions."
+  },
+  {
+    "festivalName": "Kota Adventure Festival",
+    "month": "October",
+    "community": "All (Adventure sports)",
+    "keyRituals": "Parasailing, rock climbing, rafting, angling, windsurfing.",
+    "culturalSignificance": "An annual event organized by the tourism department in Kota to promote adventure sports. It attracts thrill-seekers from across the country."
+  },
+  {
+    "festivalName": "Baneshwar Fair",
+    "month": "January / February",
+    "community": "Tribal (Bhils)",
+    "keyRituals": "Ritual bathing at the river confluence, folk dances, magic shows, animal shows.",
+    "culturalSignificance": "A major tribal fair held at the delta formed by the Som and Mahi rivers. It is a religious festival where the Bhil tribe gathers to pay homage to Lord Shiva."
+  },
+  {
+    "festivalName": "Sheetla Mata Fair",
+    "month": "March / April",
+    "community": "Hindu",
+    "keyRituals": "Prayers to Sheetla Mata for protection from diseases (especially smallpox), offerings of food.",
+    "culturalSignificance": "A large fair held in Chaksu (near Jaipur) dedicated to the goddess of smallpox. It has a vibrant atmosphere with a cattle fair, market, and cultural programs."
+  },
+  {
+    "festivalName": "Elephant Festival",
+    "month": "March (on the day of Holi)",
+    "community": "All",
+    "keyRituals": "Elephant processions, elephant polo, elephant tug-of-war, elephant beauty contests.",
+    "culturalSignificance": "A unique festival celebrated in Jaipur, where elephants are groomed, painted, and decorated to participate in various events. It celebrates the importance of the elephant in Rajput culture."
+  },
+  {
+    "festivalName": "Kaila Devi Fair",
+    "month": "March / April",
+    "community": "Hindu",
+    "keyRituals": "Pilgrimage to Kaila Devi temple, ritual of 'Kanak-Dandoti' where devotees cover the distance to the temple by prostrating.",
+    "culturalSignificance": "A fortnight-long fair in Karauli district dedicated to the guardian deity of the region, Kaila Devi. It attracts lakhs of devotees who come to seek blessings."
+  }
+]
