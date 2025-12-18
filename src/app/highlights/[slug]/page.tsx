@@ -6,14 +6,30 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 import InfoCard from '@/components/info-card';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
 
 export async function generateStaticParams() {
-  return highlights.map((highlight) => ({
+  // Filter out architectural-marvels as it has its own page
+  return highlights.filter(h => h.slug !== 'architectural-marvels').map((highlight) => ({
     slug: highlight.slug,
   }));
 }
 
 export default function HighlightPage({ params }: { params: { slug: string } }) {
+
+  if (params.slug === 'architectural-marvels') {
+    return (
+        <div className="flex flex-col items-center justify-center min-h-screen text-center">
+            <h1 className="text-3xl font-bold mb-4">Redirecting...</h1>
+            <p className="text-lg text-muted-foreground mb-8">This special category has its own dedicated page.</p>
+            <Button asChild>
+                <Link href="/highlights/architectural-marvels">Go to Architectural Marvels</Link>
+            </Button>
+        </div>
+    );
+  }
+
   const highlight = highlights.find((h) => h.slug === params.slug);
 
   if (!highlight) {

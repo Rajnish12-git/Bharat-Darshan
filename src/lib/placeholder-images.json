@@ -959,6 +959,300 @@
       "description": "A classical Sarod instrument.",
       "imageUrl": "https://images.unsplash.com/photo-1642940141270-ab08508c9c15?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzYXJvZCUyMGluc3RydW1lbnR8ZW58MHx8fHwxNzY2MDUwNDM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "sarod instrument"
+    },
+    {
+      "id": "marvel-taj-mahal",
+      "description": "The iconic Taj Mahal mausoleum",
+      "imageUrl": "https://images.unsplash.com/photo-1585135497273-1a86b09fe70e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxUYWolMjBNYWhhbHxlbnwwfHx8fDE3NjYwNTA0Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Taj Mahal"
+    },
+    {
+      "id": "marvel-qutub-minar",
+      "description": "The tall Qutub Minar tower",
+      "imageUrl": "https://images.unsplash.com/photo-1632426237957-5ea14aae7100?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxRdXR1YiUyME1pbmFyfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Qutub Minar"
+    },
+    {
+      "id": "marvel-hawa-mahal",
+      "description": "The facade of Hawa Mahal",
+      "imageUrl": "https://images.unsplash.com/photo-1706961121783-4ae6c933983a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8SGF3YSUyME1haGFsfGVufDB8fHx8MTc2NjA1MDQzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Hawa Mahal"
+    },
+    {
+      "id": "marvel-konark-sun-temple",
+      "description": "The chariot wheel of Konark Sun Temple",
+      "imageUrl": "https://images.unsplash.com/photo-1601815264039-67c8ba1a7f98?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxLb25hcmslMjBUZW1wbGV8ZW58MHx8fHwxNzY2MDUyOTIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Konark Temple"
+    },
+    {
+      "id": "marvel-ajanta-ellora",
+      "description": "Rock-cut sculptures at Ellora Caves",
+      "imageUrl": "https://images.unsplash.com/photo-1631102006950-64c80c08681e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxFbGxvcmElMjBDYXZlc3xlbnwwfHx8fDE3NjYwNTI5MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Ellora Caves"
+    },
+    {
+      "id": "marvel-khajuraho",
+      "description": "Intricate sculptures at Khajuraho",
+      "imageUrl": "https://images.unsplash.com/photo-1752604033245-ebdcfc182e2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxLaGFqdXJhaG8lMjBzY3VscHR1cmVzfGVufDB8fHx8MTc2NjA1MjkyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Khajuraho sculptures"
+    },
+    {
+      "id": "marvel-hampi",
+      "description": "Ruins of the Vijayanagara Empire at Hampi",
+      "imageUrl": "https://images.unsplash.com/photo-1616671832048-a8becc25bb13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxIYW1waSUyMHJ1aW5zfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Hampi ruins"
+    },
+    {
+      "id": "marvel-brihadeeswarar-temple",
+      "description": "The main tower of Brihadeeswarar Temple",
+      "imageUrl": "https://images.unsplash.com/photo-1603766806347-54cdf3745953?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8VGhhbmphdnVyJTIwVGVtcGxlfGVufDB8fHx8MTc2NjA1MjkyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Thanjavur Temple"
+    },
+    {
+      "id": "marvel-victoria-memorial",
+      "description": "The Victoria Memorial building in Kolkata",
+      "imageUrl": "https://images.unsplash.com/photo-1692202183476-a0bd1cefa1f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxWaWN0b3JpYSUyME1lbW9yaWFsfGVufDB8fHx8MTc2NTk5MDkwN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Victoria Memorial"
+    },
+    {
+      "id": "marvel-sanchi-stupa",
+      "description": "The Great Stupa at Sanchi",
+      "imageUrl": "https://images.unsplash.com/photo-1699988194923-50f944f92d9a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxTYW5jaGklMjBTdHVwYXxlbnwwfHx8fDE3NjYwNTI5MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Sanchi Stupa"
+    },
+    {
+      "id": "marvel-mehrangarh-fort",
+      "description": "Mehrangarh Fort overlooking Jodhpur",
+      "imageUrl": "https://images.unsplash.com/photo-1714893520131-4fb6dd335e83?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxNZWhyYW5nYXJoJTIwRm9ydHxlbnwwfHx8fDE3NjYwNTI5MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Mehrangarh Fort"
+    },
+    {
+      "id": "marvel-cst",
+      "description": "Chhatrapati Shivaji Terminus railway station",
+      "imageUrl": "https://images.unsplash.com/photo-1601116577580-b4f6b3232a89?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8TXVtYmFpJTIwU3RhdGlvbnxlbnwwfHx8fDE3NjYwNTI5MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Mumbai Station"
+    },
+    {
+      "id": "marvel-golden-temple",
+      "description": "The Golden Temple in Amritsar",
+      "imageUrl": "https://images.unsplash.com/photo-1587899765642-3f8e3ea67852?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxHb2xkZW4lMjBUZW1wbGV8ZW58MHx8fHwxNzY1OTQ5MTk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Golden Temple"
+    },
+    {
+      "id": "marvel-gateway-of-india",
+      "description": "The Gateway of India monument",
+      "imageUrl": "https://images.unsplash.com/photo-1625731226721-b4d51ae70e20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxHYXRld2F5JTIwSW5kaWF8ZW58MHx8fHwxNzY1OTQ5MTk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Gateway India"
+    },
+    {
+      "id": "marvel-amer-fort",
+      "description": "The entrance of Amer Fort",
+      "imageUrl": "https://images.unsplash.com/photo-1649073868642-bcbbd06239d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxBbWVyJTIwRm9ydHxlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Amer Fort"
+    },
+    {
+      "id": "marvel-mahabodhi-temple",
+      "description": "The Mahabodhi Temple at Bodh Gaya",
+      "imageUrl": "https://images.unsplash.com/photo-1725951602381-3e759a5ce430?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxNYWhhYm9kaGklMjBUZW1wbGV8ZW58MHx8fHwxNzY1OTkwOTA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Mahabodhi Temple"
+    },
+    {
+      "id": "marvel-meenakshi-amman-temple",
+      "description": "Colorful towers of Meenakshi Temple",
+      "imageUrl": "https://images.unsplash.com/photo-1732883247945-896e63ee644a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxNZWVuYWtzaGklMjBUZW1wbGV8ZW58MHx8fHwxNzY1OTkwOTA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Meenakshi Temple"
+    },
+    {
+      "id": "marvel-mysore-palace",
+      "description": "The illuminated Mysore Palace",
+      "imageUrl": "https://images.unsplash.com/photo-1665376620694-fc0c4bab7294?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8TXlzb3JlJTIwUGFsYWNlfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Mysore Palace"
+    },
+    {
+      "id": "marvel-cellular-jail",
+      "description": "The Cellular Jail in Andaman",
+      "imageUrl": "https://images.unsplash.com/photo-1649014681581-4b25f6050f39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Q2VsbHVsYXIlMjBKYWlsfGVufDB8fHx8MTc2NjA1MjkyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Cellular Jail"
+    },
+    {
+      "id": "marvel-gwalior-fort",
+      "description": "The massive Gwalior Fort",
+      "imageUrl": "https://images.unsplash.com/photo-1694796776423-96dba3575c57?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxHd2FsaW9yJTIwRm9ydHxlbnwwfHx8fDE3NjYwNTI5MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Gwalior Fort"
+    },
+    {
+      "id": "marvel-rani-ki-vav",
+      "description": "The intricate stepwell of Rani Ki Vav",
+      "imageUrl": "https://images.unsplash.com/photo-1668240913376-6637485b9736?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxSYW5pJTIwS2klMjBWYXZ8ZW58MHx8fHwxNzY2MDUyOTIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Rani Ki Vav"
+    },
+    {
+      "id": "marvel-charminar",
+      "description": "The Charminar monument in Hyderabad",
+      "imageUrl": "https://images.unsplash.com/photo-1763472051872-30debc184bb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxDaGFybWluYXIlMjBtb251bWVudHxlbnwwfHx8fDE3NjU5OTA5MDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Charminar monument"
+    },
+    {
+      "id": "marvel-victoria-memorial-kolkata",
+      "description": "Victoria Memorial in Kolkata",
+      "imageUrl": "https://images.unsplash.com/photo-1697817665440-f988c6d5080f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8VmljdG9yaWElMjBNZW1vcmlhbHxlbnwwfHx8fDE3NjU5OTA5MDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Victoria Memorial"
+    },
+    {
+      "id": "marvel-bom-jesus",
+      "description": "Basilica of Bom Jesus in Goa",
+      "imageUrl": "https://images.unsplash.com/photo-1714203101116-b5e56a8f03aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxHb2ElMjBjaHVyY2h8ZW58MHx8fHwxNzY1OTg2MDI5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Goa church"
+    },
+    {
+      "id": "marvel-jaisalmer-fort",
+      "description": "The Golden Fort of Jaisalmer",
+      "imageUrl": "https://images.unsplash.com/photo-1732022648903-737e66c18b08?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxKYWlzYWxtZXIlMjBGb3J0fGVufDB8fHx8MTc2NjA1MjkyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Jaisalmer Fort"
+    },
+    {
+      "id": "marvel-fatehpur-sikri",
+      "description": "The abandoned city of Fatehpur Sikri",
+      "imageUrl": "https://images.unsplash.com/photo-1719904121044-c6f77feaa63f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxGYXRlaHB1ciUyMFNpa3JpfGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Fatehpur Sikri"
+    },
+    {
+      "id": "marvel-bhimbetka",
+      "description": "Prehistoric rock paintings at Bhimbetka",
+      "imageUrl": "https://images.unsplash.com/photo-1665251912389-cd4260f68500?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxCaGltYmV0a2ElMjBjYXZlc3xlbnwwfHx8fDE3NjYwNTI5MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Bhimbetka caves"
+    },
+    {
+      "id": "marvel-india-gate",
+      "description": "The India Gate war memorial",
+      "imageUrl": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8SW5kaWElMjBHYXRlfGVufDB8fHx8MTc2NjA1MjkyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "India Gate"
+    },
+    {
+      "id": "marvel-humayuns-tomb",
+      "description": "Humayun's Tomb in Delhi",
+      "imageUrl": "https://images.unsplash.com/photo-1624361899662-3ce9c0f44817?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxIdW1heXVuJTIwVG9tYnxlbnwwfHx8fDE3NjYwNTI5MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Humayun Tomb"
+    },
+    {
+      "id": "marvel-golconda-fort",
+      "description": "The Golconda Fort in Hyderabad",
+      "imageUrl": "https://images.unsplash.com/photo-1706216710829-2bf395dcbbea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxHb2xjb25kYSUyMEZvcnR8ZW58MHx8fHwxNzY2MDUyOTIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Golconda Fort"
+    },
+    {
+      "id": "marvel-shore-temple",
+      "description": "The Shore Temple at Mahabalipuram",
+      "imageUrl": "https://images.unsplash.com/photo-1623170309256-6050c5f13bda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxTaG9yZSUyMFRlbXBsZXxlbnwwfHx8fDE3NjYwNTI5MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Shore Temple"
+    },
+    {
+      "id": "marvel-umaid-bhawan",
+      "description": "The Umaid Bhawan Palace in Jodhpur",
+      "imageUrl": "https://images.unsplash.com/photo-1631911950144-5d6d45a73665?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxVbWFpZCUyMEJoYXdhbnxlbnwwfHx8fDE3NjYwNTI5MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Umaid Bhawan"
+    },
+    {
+      "id": "marvel-jantar-mantar",
+      "description": "The astronomical instruments at Jantar Mantar",
+      "imageUrl": "https://images.unsplash.com/photo-1567238005747-90da3035269f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxKYW50YXIlMjBNYW50YXJ8ZW58MHx8fHwxNzY2MDUyOTIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Jantar Mantar"
+    },
+    {
+      "id": "marvel-lotus-temple",
+      "description": "The Lotus Temple in Delhi",
+      "imageUrl": "https://images.unsplash.com/photo-1582450724147-0ee17201a14c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxMb3R1cyUyMFRlbXBsZXxlbnwwfHx8fDE3NjU5NDkxOTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Lotus Temple"
+    },
+    {
+      "id": "marvel-kailasa-temple",
+      "description": "The monolithic Kailasa Temple at Ellora",
+      "imageUrl": "https://images.unsplash.com/photo-1724600460105-c9103ed8e05e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxLYWlsYXNhJTIwVGVtcGxlfGVufDB8fHx8MTc2NjA1MjkyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Kailasa Temple"
+    },
+    {
+      "id": "marvel-virupaksha-temple",
+      "description": "The Virupaksha Temple at Hampi",
+      "imageUrl": "https://images.unsplash.com/photo-1725552509042-14e2b42be062?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxWaXJ1cGFrc2hhJTIwVGVtcGxlfGVufDB8fHx8MTc2NjA1MjkyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Virupaksha Temple"
+    },
+    {
+      "id": "marvel-tawang-monastery",
+      "description": "The Tawang Monastery in Arunachal Pradesh",
+      "imageUrl": "https://images.unsplash.com/photo-1684474124686-919e981ca8a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8VGF3YW5nJTIwTW9uYXN0ZXJ5fGVufDB8fHx8MTc2NTk5MDkwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Tawang Monastery"
+    },
+    {
+      "id": "marvel-rumtek-monastery",
+      "description": "The Rumtek Monastery in Sikkim",
+      "imageUrl": "https://images.unsplash.com/photo-1665730808817-c8711d695278?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxSdW10ZWslMjBNb25hc3Rlcnl8ZW58MHx8fHwxNzY1OTkwOTA3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Rumtek Monastery"
+    },
+    {
+      "id": "marvel-kangla-fort",
+      "description": "The Kangla Fort in Imphal",
+      "imageUrl": "https://images.unsplash.com/photo-1708604405798-a051ac681eae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxLYW5nbGElMjBGb3J0fGVufDB8fHx8MTc2NTk4MjI5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Kangla Fort"
+    },
+    {
+      "id": "marvel-ujjayanta-palace",
+      "description": "The Ujjayanta Palace in Agartala",
+      "imageUrl": "https://picsum.photos/seed/marvel-ujjayanta-palace/160/120",
+      "imageHint": "Ujjayanta Palace"
+    },
+    {
+      "id": "marvel-mattancherry-palace",
+      "description": "The Mattancherry Palace in Kochi",
+      "imageUrl": "https://picsum.photos/seed/marvel-mattancherry-palace/160/120",
+      "imageHint": "Mattancherry Palace"
+    },
+    {
+      "id": "marvel-shaniwar-wada",
+      "description": "The ruins of Shaniwar Wada in Pune",
+      "imageUrl": "https://images.unsplash.com/photo-1715678710159-ee67d5bdba85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxTaGFuaXdhciUyMFdhZGF8ZW58MHx8fHwxNzY2MDUyOTIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Shaniwar Wada"
+    },
+    {
+      "id": "marvel-leh-palace",
+      "description": "The Leh Palace in Ladakh",
+      "imageUrl": "https://images.unsplash.com/photo-1697364243186-8379720c17a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxMZWglMjBQYWxhY2V8ZW58MHx8fHwxNzY2MDUyOTIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Leh Palace"
+    },
+    {
+      "id": "marvel-adalaj-stepwell",
+      "description": "The Adalaj Stepwell in Gujarat",
+      "imageUrl": "https://images.unsplash.com/photo-1701796784170-60980a4745f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxBZGFsYWolMjBTdGVwd2VsbHxlbnwwfHx8fDE3NjYwNTI5MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Adalaj Stepwell"
+    },
+    {
+      "id": "marvel-modhera-sun-temple",
+      "description": "The Sun Temple at Modhera",
+      "imageUrl": "https://images.unsplash.com/photo-1700981755743-ea712db8796b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8TW9kaGVyYSUyMFRlbXBsZXxlbnwwfHx8fDE3NjYwNTI5MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Modhera Temple"
+    },
+    {
+      "id": "marvel-rock-garden",
+      "description": "Sculptures at the Rock Garden of Chandigarh",
+      "imageUrl": "https://images.unsplash.com/photo-1551241090-67de81d3541c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxSb2NrJTIwR2FyZGVufGVufDB8fHx8MTc2NjA1MjkyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Rock Garden"
+    },
+    {
+      "id": "marvel-jagannath-temple-puri",
+      "description": "The Jagannath Temple in Puri",
+      "imageUrl": "https://images.unsplash.com/photo-1726220063709-982e38610125?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxQdXJpJTIwVGVtcGxlfGVufDB8fHx8MTc2NjA1MjkyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Puri Temple"
+    },
+    {
+      "id": "marvel-vaishno-devi",
+      "description": "The entrance to the Vaishno Devi shrine",
+      "imageUrl": "https://images.unsplash.com/photo-1719377678477-0fb3638ec482?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxWYWlzaG5vJTIwRGV2aXxlbnwwfHx8fDE3NjYwNTI5MjB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Vaishno Devi"
+    },
+    {
+      "id": "marvel-cellular-jail-andaman",
+      "description": "The Cellular Jail in the Andaman Islands",
+      "imageUrl": "https://images.unsplash.com/photo-1650451846800-b384c1ca0b25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxDZWxsdWxhciUyMEphaWx8ZW58MHx8fHwxNzY2MDUyOTIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Cellular Jail"
     }
   ]
 }

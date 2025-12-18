@@ -17,13 +17,7 @@ export const highlights: Highlight[] = [
     description:
       "From the ivory-white splendor of the Taj Mahal to the imposing red sandstone of Agra Fort, India's monuments are a testament to its rich history and architectural genius. These structures are not just stone and mortar; they are the chronicles of empires, the canvas of artisans, and the heart of a nation's identity.",
     imageId: 'hero-taj-mahal',
-    slug: 'architectural-marvels',
-    details: [
-      { name: 'Taj Mahal', imageId: 'hero-taj-mahal', description: 'An ivory-white marble mausoleum, a universal symbol of love.' },
-      { name: 'Qutub Minar', imageId: 'hero-qutub-minar', description: 'A towering victory minaret with intricate carvings, a UNESCO World Heritage Site.' },
-      { name: 'Hawa Mahal', imageId: 'monument-hawa-mahal', description: 'The "Palace of Winds" with its iconic honeycomb-like facade of 953 windows.' },
-      { name: 'Konark Sun Temple', imageId: 'hero-konark-sun-temple', description: 'A colossal 13th-century temple designed as a chariot for the sun god, Surya.' },
-    ],
+    slug: 'architectural-marvels'
   },
   {
     title: 'A Culinary Journey',
@@ -36,7 +30,7 @@ export const highlights: Highlight[] = [
       { name: 'Hyderabadi Biryani', imageId: 'cuisine-hyderabadi-biryani', description: 'A legendary, aromatic rice dish cooked with meat or vegetables and a blend of rich spices.' },
       { name: 'Dal Baati Churma', imageId: 'cuisine-dal-baati-churma', description: 'A Rajasthani specialty featuring baked wheat balls served with spicy lentils and a sweet crumble.' },
       { name: 'Masala Dosa', imageId: 'cuisine-masala-dosa', description: 'A crispy, savory crepe made from fermented rice and lentil batter, filled with spiced potatoes.' },
-      { name: 'Vada Pav', imageId: 'cuisine-vada-pav', description: 'Mumbai\'s iconic street food: a spiced potato fritter tucked inside a soft bread bun.' },
+      { name: 'Vada Pav', imageId: 'cuisine-vada-pav', description: "Mumbai's iconic street food: a spiced potato fritter tucked inside a soft bread bun." },
     ]
   },
   {
@@ -63,7 +57,7 @@ export const highlights: Highlight[] = [
     details: [
       { name: 'Holi', imageId: 'festival-holi', description: 'The festival of colors, a joyous celebration marking the arrival of spring.' },
       { name: 'Durga Puja', imageId: 'festival-durga-puja', description: 'A ten-day festival in West Bengal honoring the goddess Durga with elaborate idols and cultural events.' },
-      { name: 'Pushkar Fair', imageId: 'festival-pushkar-fair', description: 'One of the world\'s largest camel fairs, a vibrant spectacle of culture, trade, and contests.' },
+      { name: 'Pushkar Fair', imageId: 'festival-pushkar-fair', description: "One of the world's largest camel fairs, a vibrant spectacle of culture, trade, and contests." },
       { name: 'Onam', imageId: 'festival-onam', description: 'A harvest festival in Kerala celebrated with floral carpets, grand feasts, and snake boat races.' },
     ]
   },

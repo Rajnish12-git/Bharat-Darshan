@@ -1,0 +1,640 @@
+
+[
+  {
+    "name": "Taj Mahal",
+    "imageId": "marvel-taj-mahal",
+    "location": "Agra, Uttar Pradesh",
+    "era": "Mughal Empire, 1632–1653",
+    "architecture": "Mughal",
+    "description": "An ivory-white marble mausoleum commissioned by Mughal emperor Shah Jahan for his beloved wife Mumtaz Mahal. It represents the pinnacle of Mughal artistic and architectural achievement, combining elements from Islamic, Persian, Ottoman Turkish and Indian architectural styles.",
+    "culturalSignificance": "A UNESCO World Heritage site and a universal symbol of eternal love. It attracts millions of visitors annually and is celebrated as 'the jewel of Muslim art in India and one of the universally admired masterpieces of the world's heritage.'",
+    "interestingFacts": [
+      "The entire structure is perfectly symmetrical, except for the cenotaphs of Shah Jahan and Mumtaz Mahal.",
+      "It appears to change color depending on the time of day and whether there is a moon at night."
+    ]
+  },
+  {
+    "name": "Qutub Minar",
+    "imageId": "marvel-qutub-minar",
+    "location": "Delhi",
+    "era": "Delhi Sultanate, 1199 onwards",
+    "architecture": "Indo-Islamic",
+    "description": "The tallest brick minaret in the world, this 73-meter-high tower of victory was initiated by Qutb-ud-din Aibak. Its five stories are adorned with intricate carvings and verses from the Quran.",
+    "culturalSignificance": "It symbolizes the beginning of Muslim rule in India and is a prominent example of early Indo-Islamic architecture. The surrounding complex contains several other significant historical monuments.",
+    "interestingFacts": [
+      "The Iron Pillar in the complex has stood for over 1600 years without rusting.",
+      "The minaret has a spiral staircase of 379 steps."
+    ]
+  },
+  {
+    "name": "Hawa Mahal",
+    "imageId": "marvel-hawa-mahal",
+    "location": "Jaipur, Rajasthan",
+    "era": "Kachwaha Rajput Dynasty, 1799",
+    "architecture": "Rajput",
+    "description": "Known as the 'Palace of Winds,' this five-story pyramidal palace is made of red and pink sandstone. Its unique facade features 953 small windows called 'jharokhas' decorated with intricate latticework.",
+    "culturalSignificance": "It was built to allow the royal women to observe everyday life and festivals on the street below without being seen, adhering to the strict 'purdah' system.",
+    "interestingFacts": [
+      "Despite its grand facade, the structure is little more than a screen, with most rooms being only a single room deep.",
+      "The latticework was designed to create a cooling effect as air passed through the windows."
+    ]
+  },
+  {
+    "name": "Konark Sun Temple",
+    "imageId": "marvel-konark-sun-temple",
+    "location": "Konark, Odisha",
+    "era": "Eastern Ganga Dynasty, 13th Century",
+    "architecture": "Kalinga Architecture",
+    "description": "A monumental representation of the sun god Surya's chariot, this temple is a masterpiece of architectural grandeur. Its 24 intricately carved stone wheels are allegorical, representing the hours of the day.",
+    "culturalSignificance": "A UNESCO World Heritage site, it is a magnificent example of ancient Indian temple architecture and a center for art, culture, and spirituality in Eastern India.",
+    "interestingFacts": [
+      "The temple was designed so that the dawn's first rays would strike the main sanctum.",
+      "A massive lodestone was once placed at the peak of the temple that was powerful enough to disturb naval compasses."
+    ]
+  },
+  {
+    "name": "Ajanta & Ellora Caves",
+    "imageId": "marvel-ajanta-ellora",
+    "location": "Aurangabad, Maharashtra",
+    "era": "2nd Century BCE to 11th Century CE",
+    "architecture": "Rock-Cut Architecture",
+    "description": "These UNESCO World Heritage sites consist of 34 (Ellora) and 29 (Ajanta) rock-cut caves. Ajanta is famous for its exquisite paintings and sculptures depicting Buddhist religious art, while Ellora is a unique blend of Hindu, Buddhist, and Jain rock-cut temples.",
+    "culturalSignificance": "They are masterpieces of religious art, showcasing the harmony between different faiths in ancient India. The Kailasa Temple at Ellora (Cave 16) is the world's largest monolithic sculpture, carved from a single rock.",
+    "interestingFacts": [
+      "The Ajanta caves were hidden in a dense forest for centuries and were accidentally rediscovered by a British officer in 1819.",
+      "The Kailasa Temple at Ellora involved the removal of an estimated 200,000 tonnes of rock."
+    ]
+  },
+  {
+    "name": "Khajuraho Group of Monuments",
+    "imageId": "marvel-khajuraho",
+    "location": "Chhatarpur, Madhya Pradesh",
+    "era": "Chandela Dynasty, 950-1050 CE",
+    "architecture": "Nagara Style",
+    "description": "A group of Hindu and Jain temples known for their intricate sculptures and nagara-style architectural symbolism. The temples are famous for their explicitly erotic sculptures, which represent a celebration of life and creation.",
+    "culturalSignificance": "These temples are a testament to the artistic and cultural zenith of the Chandela dynasty. They showcase a perfect balance between architecture and sculpture.",
+    "interestingFacts": [
+      "Only about 10% of the carvings on the temples are erotic; the rest depict everyday life, mythological stories, and various secular scenes.",
+      "Originally there were 85 temples, but only about 25 have survived."
+    ]
+  },
+  {
+    "name": "Hampi",
+    "imageId": "marvel-hampi",
+    "location": "Hampi, Karnataka",
+    "era": "Vijayanagara Empire, 14th-16th Century",
+    "architecture": "Dravidian Architecture",
+    "description": "The former capital of the mighty Vijayanagara Empire, Hampi is a vast, open-air museum of ruins. The landscape is dotted with over 1,600 surviving remains, including temples, palaces, and marketplaces.",
+    "culturalSignificance": "A UNESCO World Heritage Site, Hampi's ruins tell the story of one of South India's greatest empires. The Virupaksha Temple remains an active Hindu pilgrimage site.",
+    "interestingFacts": [
+      "The famous stone chariot in the Vittala Temple complex is actually a shrine, and its wheels can rotate.",
+      "The musical pillars in the Ranga Mantapa of the Vittala Temple produce musical notes when tapped gently."
+    ]
+  },
+  {
+    "name": "Brihadeeswarar Temple",
+    "imageId": "marvel-brihadeeswarar-temple",
+    "location": "Thanjavur, Tamil Nadu",
+    "era": "Chola Dynasty, 1010 CE",
+    "architecture": "Dravidian Architecture",
+    "description": "Dedicated to Lord Shiva, this temple is a masterpiece of Chola architecture. It is one of the largest temples in India and is renowned for its towering Vimana (temple tower) and a massive Nandi statue.",
+    "culturalSignificance": "Part of the 'Great Living Chola Temples' UNESCO World Heritage site, it represents the zenith of Chola artistic and architectural prowess. It was a center for dance, music, and religious ceremonies.",
+    "interestingFacts": [
+      "The Vimana, at 216 feet high, is among the tallest in the world and is built in such a way that its shadow never falls on the ground at noon.",
+      "The capstone (Kumbam) on top of the Vimana weighs about 80 tons."
+    ]
+  },
+  {
+    "name": "Victoria Memorial",
+    "imageId": "marvel-victoria-memorial",
+    "location": "Kolkata, West Bengal",
+    "era": "British Raj, 1906–1921",
+    "architecture": "Indo-Saracenic Revival",
+    "description": "A large marble monument dedicated to the memory of Queen Victoria. The design blends British and Mughal elements with Venetian, Egyptian, and Deccani architectural influences.",
+    "culturalSignificance": "It stands as a prominent landmark and symbol of British colonial rule in India. Today, it is a museum and a popular tourist destination, housing a collection of colonial-era artifacts.",
+    "interestingFacts": [
+      "The 'Angel of Victory' on top of the central dome rotates with the wind.",
+      "It was funded by contributions from Indian states, individuals, and the British government in London."
+    ]
+  },
+  {
+    "name": "Sanchi Stupa",
+    "imageId": "marvel-sanchi-stupa",
+    "location": "Sanchi, Madhya Pradesh",
+    "era": "Mauryan Empire, 3rd Century BCE",
+    "architecture": "Buddhist",
+    "description": "One of the oldest stone structures in India, the Great Stupa at Sanchi was originally commissioned by Emperor Ashoka. It is a large hemispherical dome containing relics of the Buddha.",
+    "culturalSignificance": "It is a major center for Buddhist pilgrimage and a UNESCO World Heritage site. The four ornate gateways (Toranas) depict scenes from the life of the Buddha and Jataka tales.",
+    "interestingFacts": [
+      "The stupa was not meant to be entered; it is an object of veneration.",
+      "Sanchi was an active center of Buddhism in India for over 1,300 years."
+    ]
+  },
+  {
+    "name": "Mehrangarh Fort",
+    "imageId": "marvel-mehrangarh-fort",
+    "location": "Jodhpur, Rajasthan",
+    "era": "Rathore Rajput Dynasty, 1459",
+    "architecture": "Rajput",
+    "description": "One of the largest forts in India, Mehrangarh Fort stands on a perpendicular cliff, 410 feet above the skyline of Jodhpur. Its massive walls enclose a complex of palaces and courtyards known for their intricate carvings and expansive courtyards.",
+    "culturalSignificance": "The fort is a symbol of Rathore power and valor. The museum within the fort is one of the most well-stocked in Rajasthan, showcasing a rich collection of royal artifacts, paintings, and weaponry.",
+    "interestingFacts": [
+      "The handprints of satis (royal women who committed self-immolation) can still be seen at the Loha Pol (Iron Gate).",
+      "Rudyard Kipling called it 'the work of giants'."
+    ]
+  },
+  {
+    "name": "Chhatrapati Shivaji Terminus",
+    "imageId": "marvel-cst",
+    "location": "Mumbai, Maharashtra",
+    "era": "British Raj, 1887",
+    "architecture": "Victorian Gothic Revival",
+    "description": "Formerly known as Victoria Terminus, this historic railway station is a bustling hub of Mumbai's local train network. Its architecture is a stunning blend of Victorian Gothic and traditional Indian styles.",
+    "culturalSignificance": "A UNESCO World Heritage site, it is an outstanding example of late 19th-century railway architecture in the British Commonwealth. It symbolizes Mumbai's identity as a major mercantile port city.",
+    "interestingFacts": [
+      "It is one of the busiest railway stations in India, serving millions of commuters daily.",
+      "The station was featured in the 2008 film 'Slumdog Millionaire'."
+    ]
+  },
+  {
+    "name": "Golden Temple (Harmandir Sahib)",
+    "imageId": "marvel-golden-temple",
+    "location": "Amritsar, Punjab",
+    "era": "Sikh Gurus, 1604",
+    "architecture": "Sikh",
+    "description": "The holiest shrine in Sikhism, the Golden Temple is an awe-inspiring structure with a sanctum covered in 750 kg of pure gold. It is surrounded by the Amrit Sarovar, a holy tank of water.",
+    "culturalSignificance": "It is the spiritual and cultural center for Sikhs worldwide. Its four entrances symbolize the Sikh belief in equality and that people from all walks of life are welcome.",
+    "interestingFacts": [
+      "The Langar (community kitchen) serves free vegetarian meals to over 100,000 people a day, regardless of faith or background.",
+      "The foundation stone was laid by a Muslim saint, Mian Mir, at the request of the Sikh Guru."
+    ]
+  },
+  {
+    "name": "Gateway of India",
+    "imageId": "marvel-gateway-of-india",
+    "location": "Mumbai, Maharashtra",
+    "era": "British Raj, 1924",
+    "architecture": "Indo-Saracenic",
+    "description": "An arch-monument built to commemorate the landing of King George V and Queen Mary at Apollo Bunder. It is a grand basalt arch that stands overlooking the Arabian Sea.",
+    "culturalSignificance": "Ironically, this symbol of British grandeur later became the exit point for the last British troops to leave India in 1948. It is often referred to as the 'Taj Mahal of Mumbai'.",
+    "interestingFacts": [
+      "The construction was completed 13 years after the royal visit it was meant to celebrate.",
+      "It served as a ceremonial entrance for Viceroys and Governors of Bombay."
+    ]
+  },
+  {
+    "name": "Amer Fort",
+    "imageId": "marvel-amer-fort",
+    "location": "Amer, Rajasthan",
+    "era": "Kachwaha Rajput Dynasty, 1592",
+    "architecture": "Rajput & Mughal Fusion",
+    "description": "Situated on a hilltop overlooking Maota Lake, Amer Fort is known for its artistic Hindu style elements. With its large ramparts and series of gates and cobbled paths, the fort is a magnificent example of Rajput military architecture.",
+    "culturalSignificance": "The fort was the residence of the Rajput Maharajas and their families. The Sheesh Mahal (Mirror Palace) within the fort is world-renowned for its intricate mirror work.",
+    "interestingFacts": [
+      "A single candle lit in the Sheesh Mahal can illuminate the entire hall.",
+      "The fort is connected to the Jaigarh Fort through a subterranean passage, which served as an escape route."
+    ]
+  },
+  {
+    "name": "Mahabodhi Temple",
+    "imageId": "marvel-mahabodhi-temple",
+    "location": "Bodh Gaya, Bihar",
+    "era": "Gupta Period, 5th-6th Century CE",
+    "architecture": "Indian Temple Architecture",
+    "description": "This UNESCO World Heritage Site is one of the four holy sites related to the life of the Lord Buddha. It is the place where Siddhartha Gautama is said to have attained Enlightenment.",
+    "culturalSignificance": "It is the most sacred site in Buddhism and a major pilgrimage destination for Buddhists from all over the world. The Bodhi Tree next to the temple is believed to be a descendant of the original tree under which the Buddha meditated.",
+    "interestingFacts": [
+      "The temple has been rebuilt several times over the centuries.",
+      "The architectural style of the temple has influenced Buddhist temples in other countries like Thailand and Myanmar."
+    ]
+  },
+  {
+    "name": "Meenakshi Amman Temple",
+    "imageId": "marvel-meenakshi-amman-temple",
+    "location": "Madurai, Tamil Nadu",
+    "era": "Pandyan Dynasty, Rebuilt in 16th-17th Century",
+    "architecture": "Dravidian",
+    "description": "A historic Hindu temple dedicated to Meenakshi (a form of Parvati) and her consort, Sundareshwarar (a form of Shiva). The temple complex is renowned for its 14 towering gopurams (gateway towers) covered in thousands of colorful stone figures.",
+    "culturalSignificance": "It is the cultural and religious heart of Madurai. The temple is a major pilgrimage destination and is famed for its vibrant festivals and daily rituals.",
+    "interestingFacts": [
+      "The temple has an estimated 33,000 sculptures.",
+      "It was a nominee for the 'New Seven Wonders of the World'."
+    ]
+  },
+  {
+    "name": "Mysore Palace",
+    "imageId": "marvel-mysore-palace",
+    "location": "Mysuru, Karnataka",
+    "era": "Wodeyar Dynasty, 1912",
+    "architecture": "Indo-Saracenic",
+    "description": "The official residence of the Wadiyar dynasty, Mysore Palace is a magnificent edifice that blends Hindu, Mughal, Rajput, and Gothic styles. It is known for its grand Durbar Hall and intricate paintings.",
+    "culturalSignificance": "The palace is the center of the famous Mysore Dasara festival, during which it is illuminated with nearly 100,000 bulbs, creating a breathtaking spectacle.",
+    "interestingFacts": [
+      "The original palace was made of wood and was completely destroyed by fire in 1896.",
+      "The golden throne, assembled only during the Dasara festival, is a key attraction."
+    ]
+  },
+  {
+    "name": "Cellular Jail",
+    "imageId": "marvel-cellular-jail",
+    "location": "Port Blair, Andaman & Nicobar Islands",
+    "era": "British Raj, 1906",
+    "architecture": "Colonial Prison Architecture",
+    "description": "Also known as Kālā Pānī (Black Water), this colonial prison was used by the British to exile political prisoners. Its design consisted of seven wings radiating from a central tower, allowing a single guard to watch all the prisoners.",
+    "culturalSignificance": "It is a national memorial and a solemn reminder of the sacrifices made by Indian freedom fighters. The jail is a symbol of the dark colonial past and the struggle for independence.",
+    "interestingFacts": [
+      "Many notable freedom fighters, including Batukeshwar Dutt and Veer Savarkar, were imprisoned here.",
+      "Only three of the original seven wings remain today."
+    ]
+  },
+  {
+    "name": "Gwalior Fort",
+    "imageId": "marvel-gwalior-fort",
+    "location": "Gwalior, Madhya Pradesh",
+    "era": "Various Dynasties, 6th Century onwards",
+    "architecture": "Hill Fort",
+    "description": "Perched on a steep hill, Gwalior Fort is one of the most formidable forts in India. It has witnessed the rule of several dynasties and contains historic temples and palaces within its walls.",
+    "culturalSignificance": "The fort has been a site of significant historical events. The 'zero' numeral in its modern form was found in a small temple inside the fort, dating back to the 9th century.",
+    "interestingFacts": [
+      "The Mughal emperor Babur described it as 'the pearl amongst the fortresses of Hind'.",
+      "The fort houses the Saas-Bahu temples, which are intricately carved and dedicated to Vishnu."
+    ]
+  },
+  {
+    "name": "Rani Ki Vav",
+    "imageId": "marvel-rani-ki-vav",
+    "location": "Patan, Gujarat",
+    "era": "Chaulukya Dynasty, 11th Century",
+    "architecture": "Maru-Gurjara (Stepwell)",
+    "description": "An exceptionally preserved stepwell, built as a memorial to a king. It is designed as an inverted temple, highlighting the sanctity of water, and is divided into seven levels of stairs with sculptural panels.",
+    "culturalSignificance": "A UNESCO World Heritage Site, it is considered the finest and one of the largest examples of stepwell architecture in Gujarat. The sculptures depict mythological and secular themes.",
+    "interestingFacts": [
+      "It was flooded by the nearby Saraswati River and silted over until it was excavated in the 1980s.",
+      "The stepwell features over 500 principal sculptures and over a thousand minor ones."
+    ]
+  },
+  {
+    "name": "Charminar",
+    "imageId": "marvel-charminar",
+    "location": "Hyderabad, Telangana",
+    "era": "Qutb Shahi Dynasty, 1591",
+    "architecture": "Indo-Islamic",
+    "description": "A monument and mosque that has become a global icon of Hyderabad. It is a square structure with four grand arches and four 56-meter-high minarets.",
+    "culturalSignificance": "It was built by Muhammad Quli Qutb Shah to celebrate the end of a deadly plague. The bustling market of Laad Bazaar is located around it.",
+    "interestingFacts": [
+      "A mosque is located at the western end of the open roof on the second floor.",
+      "There is a legend of a secret tunnel connecting Charminar to Golconda Fort."
+    ]
+  },
+  {
+    "name": "Victoria Memorial, Kolkata",
+    "imageId": "marvel-victoria-memorial-kolkata",
+    "location": "Kolkata, West Bengal",
+    "era": "British Raj, 1921",
+    "architecture": "Indo-Saracenic Revival",
+    "description": "A large marble building dedicated to the memory of Queen Victoria. The design blends British and Mughal elements, and it is now a museum and a major tourist attraction.",
+    "culturalSignificance": "It serves as a reminder of the British colonial era in India and houses an extensive collection of paintings, artifacts, and manuscripts from that period.",
+    "interestingFacts": [
+      "The Angel of Victory on top of the dome acts as a weather vane.",
+      "The memorial is made of the same Makrana marble as the Taj Mahal."
+    ]
+  },
+  {
+    "name": "Basilica of Bom Jesus",
+    "imageId": "marvel-bom-jesus",
+    "location": "Old Goa, Goa",
+    "era": "Portuguese Colonial Period, 1605",
+    "architecture": "Baroque",
+    "description": "A UNESCO World Heritage Site, this basilica is a landmark example of Baroque architecture in India. It is famous for holding the mortal remains of St. Francis Xavier.",
+    "culturalSignificance": "It is one of the most important Christian pilgrimage sites in India. The public viewing of the saint's body happens once every ten years.",
+    "interestingFacts": [
+      "The church is called 'Bom Jesus', meaning 'Good Jesus' or 'Infant Jesus'.",
+      "It is the only church in Old Goa not plastered on the outside, showcasing its laterite stone structure."
+    ]
+  },
+  {
+    "name": "Jaisalmer Fort",
+    "imageId": "marvel-jaisalmer-fort",
+    "location": "Jaisalmer, Rajasthan",
+    "era": "Bhati Rajput Dynasty, 1156 CE",
+    "architecture": "Hill Fort",
+    "description": "Known as Sonar Quila (Golden Fort), it is a massive fort made of yellow sandstone that seems to rise from the desert. It is one of the very few 'living forts' in the world, with a significant portion of the city's population residing within its walls.",
+    "culturalSignificance": "A UNESCO World Heritage site, it is a magnificent example of a desert fortress. The fort houses several ornate Jain temples and havelis.",
+    "interestingFacts": [
+      "The fort appears golden at sunset, earning it the name 'Golden Fort'.",
+      "It has been the setting for several films, including one by the renowned director Satyajit Ray."
+    ]
+  },
+  {
+    "name": "Fatehpur Sikri",
+    "imageId": "marvel-fatehpur-sikri",
+    "location": "Agra District, Uttar Pradesh",
+    "era": "Mughal Empire, 1571–1585",
+    "architecture": "Mughal",
+    "description": "A fortified city that served as the capital of the Mughal Empire under Emperor Akbar for a short period. The complex is a harmonious blend of Indian, Persian, and Islamic architectural styles, built primarily with red sandstone.",
+    "culturalSignificance": "A UNESCO World Heritage site, it is a well-preserved example of a Mughal royal city. Key structures include the Buland Darwaza, Diwan-i-Khas, and the Tomb of Salim Chishti.",
+    "interestingFacts": [
+      "The city was abandoned just 14 years after its construction, likely due to a shortage of water.",
+      "The Diwan-i-Khas features a central pillar with a circular platform for Akbar, connected to four corners of the hall."
+    ]
+  },
+  {
+    "name": "Rock Shelters of Bhimbetka",
+    "imageId": "marvel-bhimbetka",
+    "location": "Raisen, Madhya Pradesh",
+    "era": "Prehistoric, Paleolithic to Mesolithic",
+    "architecture": "Rock Art",
+    "description": "A UNESCO World Heritage site, Bhimbetka features over 750 rock shelters with some of the earliest traces of human life in India. The cave paintings date back approximately 30,000 years.",
+    "culturalSignificance": "These paintings provide a rare glimpse into the lives of our prehistoric ancestors, depicting scenes of hunting, dancing, and daily activities. They show the evolution of human creativity over thousands of years.",
+    "interestingFacts": [
+      "Some of the paintings are from the Mesolithic period and show the earliest evidence of dance.",
+      "The colors used were derived from natural minerals like manganese, hematite, and charcoal."
+    ]
+  },
+  {
+    "name": "India Gate",
+    "imageId": "marvel-india-gate",
+    "location": "Delhi",
+    "era": "British Raj, 1931",
+    "architecture": "Triumphal Arch",
+    "description": "A war memorial located astride the Rajpath. It is a memorial to 84,000 soldiers of the British Indian Army who died in the period 1914–21 in the First World War.",
+    "culturalSignificance": "It is a symbol of national pride and sacrifice. The Amar Jawan Jyoti (Flame of the Immortal Soldier) beneath the archway serves as India's tomb of the unknown soldier.",
+    "interestingFacts": [
+      "The names of over 13,000 soldiers are inscribed on the monument.",
+      "It was designed by Sir Edwin Lutyens, the chief architect of New Delhi."
+    ]
+  },
+  {
+    "name": "Humayun's Tomb",
+    "imageId": "marvel-humayuns-tomb",
+    "location": "Delhi",
+    "era": "Mughal Empire, 1572",
+    "architecture": "Mughal",
+    "description": "The tomb of the Mughal Emperor Humayun, commissioned by his first wife. It was the first garden-tomb on the Indian subcontinent and is a precursor to the Taj Mahal.",
+    "culturalSignificance": "A UNESCO World Heritage site, it set a new precedent for Mughal architecture. The Charbagh (four-quadrant garden) style was introduced here on a grand scale.",
+    "interestingFacts": [
+      "It is the first structure to use red sandstone at such a large scale.",
+      "The complex houses the graves of over 150 Mughal family members."
+    ]
+  },
+  {
+    "name": "Golconda Fort",
+    "imageId": "marvel-golconda-fort",
+    "location": "Hyderabad, Telangana",
+    "era": "Qutb Shahi Dynasty, 16th Century",
+    "architecture": "Fortress",
+    "description": "A fortified citadel and an early capital city of the Qutb Shahi dynasty. The region is renowned for the mines that have produced some of the world's most famous gems, including the Koh-i-Noor.",
+    "culturalSignificance": "The fort is famous for its advanced acoustic system. A hand clap at a certain point below the dome can be heard at the highest point of the citadel, almost a kilometer away.",
+    "interestingFacts": [
+      "The fort was once a famous diamond market.",
+      "It had an ingenious water supply system."
+    ]
+  },
+  {
+    "name": "Shore Temple",
+    "imageId": "marvel-shore-temple",
+    "location": "Mahabalipuram, Tamil Nadu",
+    "era": "Pallava Dynasty, 8th Century CE",
+    "architecture": "Dravidian",
+    "description": "Overlooking the shore of the Bay of Bengal, this temple complex consists of two shrines dedicated to Shiva and one to Vishnu. It is one of the oldest structural stone temples in South India.",
+    "culturalSignificance": "A UNESCO World Heritage site, it is part of the 'Group of Monuments at Mahabalipuram'. It represents the culmination of Pallava architectural innovation.",
+    "interestingFacts": [
+      "It is named 'Shore Temple' because it overlooks the sea.",
+      "The 2004 tsunami briefly exposed submerged elements of the temple complex that were previously unknown."
+    ]
+  },
+  {
+    "name": "Umaid Bhawan Palace",
+    "imageId": "marvel-umaid-bhawan",
+    "location": "Jodhpur, Rajasthan",
+    "era": "Rathore Dynasty, 1943",
+    "architecture": "Art Deco / Indo-Deco",
+    "description": "One of the world's largest private residences, this palace is a blend of Indian and Western architectural influences. A part of the palace is managed by Taj Hotels, while another section houses a museum.",
+    "culturalSignificance": "It is the principal residence of the former Jodhpur royal family. The palace was commissioned during a famine to provide employment to the people of the region.",
+    "interestingFacts": [
+      "The palace took 15 years to complete.",
+      "It is one of the last great palaces built in India."
+    ]
+  },
+  {
+    "name": "Jantar Mantar",
+    "imageId": "marvel-jantar-mantar",
+    "location": "Jaipur, Rajasthan",
+    "era": "Rajput Kingdom, 18th Century",
+    "architecture": "Astronomical Observatory",
+    "description": "A collection of nineteen architectural astronomical instruments, built by the Rajput king Sawai Jai Singh II. It features the world's largest stone sundial.",
+    "culturalSignificance": "A UNESCO World Heritage site, it is a testament to the astronomical skills and cosmological concepts of the court of a scholarly prince at the end of the Mughal period.",
+    "interestingFacts": [
+      "The instruments allow the observation of astronomical positions with the naked eye.",
+      "The Samrat Yantra (sundial) can measure time with an accuracy of about two seconds."
+    ]
+  },
+  {
+    "name": "Lotus Temple",
+    "imageId": "marvel-lotus-temple",
+    "location": "Delhi",
+    "era": "Completed 1986",
+    "architecture": "Expressionist",
+    "description": "A Baháʼí House of Worship notable for its flowerlike shape. It has become a prominent attraction in Delhi, open to all, regardless of religion.",
+    "culturalSignificance": "The temple serves as the Mother Temple of the Indian subcontinent and has won numerous architectural awards for its design. It emphasizes the unity of all religions.",
+    "interestingFacts": [
+      "It is composed of 27 free-standing marble-clad 'petals' arranged in clusters of three to form nine sides.",
+      "The temple has no idols, religious pictures, or outward rituals, promoting silent prayer and meditation."
+    ]
+  },
+  {
+    "name": "Kailasa Temple, Ellora",
+    "imageId": "marvel-kailasa-temple",
+    "location": "Ellora, Maharashtra",
+    "era": "Rashtrakuta Dynasty, 8th Century CE",
+    "architecture": "Rock-Cut",
+    "description": "An unparalleled architectural feat, the Kailasa Temple is the world's largest monolithic structure, carved entirely out of a single rock cliff. It is dedicated to Lord Shiva.",
+    "culturalSignificance": "Part of the Ellora Caves UNESCO World Heritage site, it represents the epitome of Indian rock-cut architecture. The sheer scale and intricate detail of the carving are considered a marvel of engineering and artistry.",
+    "interestingFacts": [
+      "It is estimated that about 400,000 tons of rock were scooped out to create the structure.",
+      "The temple was carved from the top down, a highly unusual and difficult method."
+    ]
+  },
+  {
+    "name": "Virupaksha Temple, Hampi",
+    "imageId": "marvel-virupaksha-temple",
+    "location": "Hampi, Karnataka",
+    "era": "Vijayanagara Empire, 7th Century onwards",
+    "architecture": "Dravidian",
+    "description": "Located in the Hampi bazaar, this is the main center of pilgrimage at Hampi. Dedicated to Virupaksha, a form of Shiva, it has been a functioning temple uninterruptedly ever since its inception in the 7th century AD.",
+    "culturalSignificance": "It is the most sacred and oldest functioning temple in Hampi. The temple's annual chariot festival is a major cultural event.",
+    "interestingFacts": [
+      "The temple has a pinhole camera effect where an inverted shadow of the main tower falls on a wall inside the temple.",
+      "An elephant named Lakshmi is the temple elephant and blesses visitors."
+    ]
+  },
+  {
+    "name": "Tawang Monastery",
+    "imageId": "marvel-tawang-monastery",
+    "location": "Tawang, Arunachal Pradesh",
+    "era": "Founded 1681",
+    "architecture": "Tibetan Buddhist",
+    "description": "The largest monastery in India and the second largest in the world, Tawang Monastery is perched at an altitude of 10,000 feet. It is a major holy site for Tibetan Buddhists.",
+    "culturalSignificance": "It is an important center for Gelugpa school of Buddhism. The monastery houses a large collection of ancient scriptures, thangkas, and a magnificent 8-meter high statue of Lord Buddha.",
+    "interestingFacts": [
+      "The monastery's name means 'Horse Chosen'.",
+      "It has a residential building for the monks, a library, a museum, and a printing press for religious books."
+    ]
+  },
+  {
+    "name": "Rumtek Monastery",
+    "imageId": "marvel-rumtek-monastery",
+    "location": "Gangtok, Sikkim",
+    "era": "Mid-18th Century, Rebuilt 1966",
+    "architecture": "Tibetan Buddhist",
+    "description": "Also called the Dharmachakra Centre, it is a vibrant monastery that serves as the seat of the Karmapa, the head of the Karma Kagyu lineage of Tibetan Buddhism.",
+    "culturalSignificance": "It is one of the most significant monasteries in Sikkim, modeled after the original Kagyu headquarters in Tibet. It houses some of the world's most unique and rare Buddhist religious art objects.",
+    "interestingFacts": [
+      "The monastery contains a golden stupa which contains the relics of the 16th Karmapa.",
+      "It is a focal point for the Tibetan diaspora and the preservation of their culture."
+    ]
+  },
+  {
+    "name": "Kangla Fort",
+    "imageId": "marvel-kangla-fort",
+    "location": "Imphal, Manipur",
+    "era": "Meitei Rulers, since 33 CE",
+    "architecture": "Traditional Meitei",
+    "description": "The ancient fortified palace and traditional seat of power for the Meitei rulers of Manipur. The name 'Kangla' means 'dry land' in the Meitei language.",
+    "culturalSignificance": "Kangla is the most important historical and archaeological site of Manipur. It is a symbol of Manipuri pride and is considered a sacred place for the Meitei people.",
+    "interestingFacts": [
+      "The fort is surrounded by a large moat on three sides and the Imphal River on the fourth.",
+      "The fort contains several temples and shrines, including one dedicated to the serpentine deity Pakhangba."
+    ]
+  },
+  {
+    "name": "Ujjayanta Palace",
+    "imageId": "marvel-ujjayanta-palace",
+    "location": "Agartala, Tripura",
+    "era": "Tripura Kingdom, 1901",
+    "architecture": "Indo-Saracenic",
+    "description": "A former royal palace of the Tripura kingdom, this magnificent white palace stands in the heart of Agartala. It now serves as the Tripura State Museum.",
+    "culturalSignificance": "The palace is a symbol of Tripura's royal heritage. Its museum showcases the art, culture, and history of the people of Northeast India.",
+    "interestingFacts": [
+      "The name 'Ujjayanta Palace' was given by Rabindranath Tagore.",
+      "The palace is set in a large Mughal-style garden with two artificial lakes."
+    ]
+  },
+  {
+    "name": "Mattancherry Palace",
+    "imageId": "marvel-mattancherry-palace",
+    "location": "Kochi, Kerala",
+    "era": "Portuguese, 1555 (later renovated by Dutch)",
+    "architecture": "Kerala-Portuguese Fusion",
+    "description": "Popularly known as the Dutch Palace, it was actually gifted by the Portuguese to the Raja of Kochi. It is famous for its stunning collection of murals depicting scenes from the Hindu epics Ramayana and Mahabharata.",
+    "culturalSignificance": "The palace is a treasure trove of Kerala's artistic heritage. The murals are some of the finest examples of the Kerala mural tradition.",
+    "interestingFacts": [
+      "The palace is built in the traditional Kerala nālukettu style with a courtyard in the middle.",
+      "It contains portraits of the Cochin Rajas and exhibits of their regalia."
+    ]
+  },
+  {
+    "name": "Shaniwar Wada",
+    "imageId": "marvel-shaniwar-wada",
+    "location": "Pune, Maharashtra",
+    "era": "Maratha Empire, 1732",
+    "architecture": "Maratha",
+    "description": "A historical fortification that was the seat of the Peshwas of the Maratha Empire until 1818. It was a grand seven-storied structure, but was largely destroyed by a fire in 1828.",
+    "culturalSignificance": "It was the center of Indian politics in the 18th century. The surviving stone base, gates, and ramparts hint at its former grandeur.",
+    "interestingFacts": [
+      "The palace is said to be haunted by the ghost of a young prince who was brutally assassinated within its walls.",
+      "The main gate, Dilli Darwaza, is large enough for an elephant to pass through."
+    ]
+  },
+  {
+    "name": "Leh Palace",
+    "imageId": "marvel-leh-palace",
+    "location": "Leh, Ladakh",
+    "era": "Namgyal Dynasty, 17th Century",
+    "architecture": "Tibetan",
+    "description": "A former royal palace overlooking the city of Leh. It is a nine-story-high structure built in the traditional Tibetan style.",
+    "culturalSignificance": "The palace offers panoramic views of Leh and the surrounding mountains. It houses a museum with a collection of thangkas, jewelry, and ceremonial dresses.",
+    "interestingFacts": [
+      "It is modeled on the Potala Palace in Lhasa, Tibet.",
+      "Much of the palace is now in a ruined state, but it is undergoing restoration by the Archaeological Survey of India."
+    ]
+  },
+  {
+    "name": "Adalaj Stepwell",
+    "imageId": "marvel-adalaj-stepwell",
+    "location": "Adalaj, Gujarat",
+    "era": "Vaghela Dynasty, 1498",
+    "architecture": "Indo-Islamic (Stepwell)",
+    "description": "A magnificent five-story deep stepwell, intricately carved and a fine example of Indo-Islamic architecture. It was built to provide access to groundwater and serve as a cool resting place.",
+    "culturalSignificance": "Stepwells were important centers for social and religious life. The carvings in Adalaj depict scenes of daily life, mythological events, and intricate floral and geometric patterns.",
+    "interestingFacts": [
+      "The temperature inside the stepwell is several degrees cooler than the outside.",
+      "Legend says it was built by Queen Rudabai in memory of her husband."
+    ]
+  },
+  {
+    "name": "Sun Temple, Modhera",
+    "imageId": "marvel-modhera-sun-temple",
+    "location": "Modhera, Gujarat",
+    "era": "Chaulukya Dynasty, 1026 CE",
+    "architecture": "Maru-Gurjara",
+    "description": "A temple dedicated to the Hindu Sun-God, Surya. Though no worship is offered now, it is a magnificent example of temple architecture with its main shrine, assembly hall (Sabha Mandap), and a large rectangular stepped tank (Surya Kund).",
+    "culturalSignificance": "The temple is an architectural marvel. The Sabha Mandap has 52 intricately carved pillars, representing the 52 weeks of the year.",
+    "interestingFacts": [
+      "The temple was designed so that the first rays of the rising sun would illuminate the image of Surya during the equinoxes.",
+      "The annual Modhera Dance Festival is held against the backdrop of the temple."
+    ]
+  },
+  {
+    "name": "Rock Garden of Chandigarh",
+    "imageId": "marvel-rock-garden",
+    "location": "Chandigarh",
+    "era": "Started 1957",
+    "architecture": "Outsider Art",
+    "description": "A unique sculpture garden created by a self-taught artist, Nek Chand. It is completely built from industrial and home waste and thrown-away items.",
+    "culturalSignificance": "It is a world-renowned example of art created from recycled materials. The garden is a testament to one man's vision and creativity and is a major tourist attraction.",
+    "interestingFacts": [
+      "Nek Chand worked on the garden secretly in his spare time for 18 years before it was discovered by the authorities.",
+      "The garden is spread over an area of 40 acres."
+    ]
+  },
+  {
+    "name": "Jagannath Temple, Puri",
+    "imageId": "marvel-jagannath-temple-puri",
+    "location": "Puri, Odisha",
+    "era": "Ganga Dynasty, 12th Century CE",
+    "architecture": "Kalinga",
+    "description": "An important Hindu temple dedicated to Jagannath, a form of Vishnu. It is one of the four great 'Char Dham' pilgrimage sites.",
+    "culturalSignificance": "The temple is famous for its annual Ratha Yatra, or chariot festival, where the three main deities are pulled on huge, elaborately decorated temple cars.",
+    "interestingFacts": [
+      "The idols of the deities are made of wood and are ceremoniously replaced every 12 or 19 years.",
+      "The temple's kitchen is one of the largest in the world, capable of feeding thousands of devotees daily."
+    ]
+  },
+  {
+    "name": "Vaishno Devi Temple",
+    "imageId": "marvel-vaishno-devi",
+    "location": "Katra, Jammu & Kashmir",
+    "era": "Ancient",
+    "architecture": "Cave Temple",
+    "description": "One of the most revered Hindu pilgrimage sites, this temple is located in a holy cave in the Trikuta Mountains. It is dedicated to the goddess Vaishno Devi.",
+    "culturalSignificance": "Millions of devotees undertake the arduous trek to the cave shrine every year to seek the blessings of the goddess.",
+    "interestingFacts": [
+      "The shrine is in the form of three naturally formed rock heads, called the Pindies.",
+      "The trek to the shrine is about 13 kilometers from the base camp at Katra."
+    ]
+  },
+  {
+    "name": "Cellular Jail National Memorial",
+    "imageId": "marvel-cellular-jail-andaman",
+    "location": "Port Blair, Andaman & Nicobar",
+    "era": "British Raj, 1896-1906",
+    "architecture": "Colonial Prison",
+    "description": "A colonial prison used by the British to exile political prisoners. Its unique design with seven wings radiating from a central tower was intended for solitary confinement and complete isolation of inmates.",
+    "culturalSignificance": "Known as 'Kala Pani' (Black Water), it is a solemn monument to the Indian freedom struggle, honoring the many freedom fighters who were imprisoned and tortured here.",
+    "interestingFacts": [
+      "Each cell was designed so that the prisoner could only see the back of the cell in the opposite wing.",
+      "A light and sound show held in the evening narrates the harrowing story of the jail and its prisoners."
+    ]
+  }
+]
