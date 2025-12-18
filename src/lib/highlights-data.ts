@@ -1,5 +1,16 @@
 
-export const highlights = [
+import type { DetailItem } from './heritage-data';
+
+export interface Highlight {
+  title: string;
+  subtitle: string;
+  description: string;
+  imageId: string;
+  slug: string;
+  details?: DetailItem[];
+}
+
+export const highlights: Highlight[] = [
   {
     title: 'Architectural Marvels',
     subtitle: 'Monuments that tell tales of time',
@@ -7,6 +18,12 @@ export const highlights = [
       "From the ivory-white splendor of the Taj Mahal to the imposing red sandstone of Agra Fort, India's monuments are a testament to its rich history and architectural genius. These structures are not just stone and mortar; they are the chronicles of empires, the canvas of artisans, and the heart of a nation's identity.",
     imageId: 'hero-taj-mahal',
     slug: 'architectural-marvels',
+    details: [
+      { name: 'Taj Mahal', imageId: 'hero-taj-mahal', description: 'An ivory-white marble mausoleum, a universal symbol of love.' },
+      { name: 'Qutub Minar', imageId: 'hero-qutub-minar', description: 'A towering victory minaret with intricate carvings, a UNESCO World Heritage Site.' },
+      { name: 'Hawa Mahal', imageId: 'monument-hawa-mahal', description: 'The "Palace of Winds" with its iconic honeycomb-like facade of 953 windows.' },
+      { name: 'Konark Sun Temple', imageId: 'hero-konark-sun-temple', description: 'A colossal 13th-century temple designed as a chariot for the sun god, Surya.' },
+    ],
   },
   {
     title: 'A Culinary Journey',
@@ -15,6 +32,12 @@ export const highlights = [
       "Indian cuisine is a vibrant mosaic of flavors, with each region offering its own unique specialties. From the spicy curries of the north to the coconut-infused dishes of the south, the culinary landscape is as diverse as its culture. It's an experience that tantalizes the senses and tells the story of the land.",
     imageId: 'cuisine-spices',
     slug: 'culinary-journey',
+    details: [
+      { name: 'Hyderabadi Biryani', imageId: 'cuisine-hyderabadi-biryani', description: 'A legendary, aromatic rice dish cooked with meat or vegetables and a blend of rich spices.' },
+      { name: 'Dal Baati Churma', imageId: 'cuisine-dal-baati-churma', description: 'A Rajasthani specialty featuring baked wheat balls served with spicy lentils and a sweet crumble.' },
+      { name: 'Masala Dosa', imageId: 'cuisine-masala-dosa', description: 'A crispy, savory crepe made from fermented rice and lentil batter, filled with spiced potatoes.' },
+      { name: 'Vada Pav', imageId: 'cuisine-vada-pav', description: 'Mumbai\'s iconic street food: a spiced potato fritter tucked inside a soft bread bun.' },
+    ]
   },
   {
     title: 'Vibrant Art Forms',
@@ -23,6 +46,12 @@ export const highlights = [
       "India's artistic traditions are a riot of color, rhythm, and expression. From the intricate hand-painting of Kalamkari textiles to the graceful storytelling of Bharatanatyam dance, these art forms are a living heritage, passed down through generations, each telling a story of devotion, celebration, and life itself.",
     imageId: 'art-kalamkari',
     slug: 'vibrant-art-forms',
+    details: [
+       { name: 'Kathakali', imageId: 'art-kathakali', description: 'A classical dance-drama from Kerala known for its elaborate makeup and costumes.' },
+       { name: 'Madhubani Painting', imageId: 'art-madhubani', description: 'A style of folk painting from Bihar characterized by its intricate geometric patterns.' },
+       { name: 'Blue Pottery', imageId: 'art-blue-pottery', description: 'A traditional craft of Jaipur using a quartz-based paste for a vibrant blue glaze.' },
+       { name: 'Warli Painting', imageId: 'art-warli-painting', description: 'Tribal art from Maharashtra that uses geometric shapes to depict scenes of daily life.' },
+    ]
   },
   {
     title: 'Festivals of Light & Sound',
@@ -31,6 +60,12 @@ export const highlights = [
       'Indian festivals are a spectacular display of devotion and joy. Diwali, the festival of lights, illuminates the country with millions of diyas, symbolizing the victory of good over evil. The air is filled with fireworks, feasts, and the warmth of community.',
     imageId: 'festival-diwali',
     slug: 'festivals-of-light-sound',
+    details: [
+      { name: 'Holi', imageId: 'festival-holi', description: 'The festival of colors, a joyous celebration marking the arrival of spring.' },
+      { name: 'Durga Puja', imageId: 'festival-durga-puja', description: 'A ten-day festival in West Bengal honoring the goddess Durga with elaborate idols and cultural events.' },
+      { name: 'Pushkar Fair', imageId: 'festival-pushkar-fair', description: 'One of the world\'s largest camel fairs, a vibrant spectacle of culture, trade, and contests.' },
+      { name: 'Onam', imageId: 'festival-onam', description: 'A harvest festival in Kerala celebrated with floral carpets, grand feasts, and snake boat races.' },
+    ]
   },
   {
     title: 'The Sound of Music',
@@ -39,5 +74,11 @@ export const highlights = [
       "Indian classical music is a deep and spiritual tradition. The resonant strings of the Sitar, accompanied by the complex rhythms of the Tabla, create melodies that can be both meditative and exhilarating, carrying the weight of ancient ragas and improvisational brilliance.",
     imageId: 'art-sitar',
     slug: 'the-sound-of-music',
+    details: [
+       { name: 'Sitar', imageId: 'art-sitar', description: 'A plucked stringed instrument with a long neck and a gourd resonating chamber, central to Hindustani classical music.' },
+       { name: 'Tabla', imageId: 'art-tabla', description: 'A pair of small hand drums that form the rhythmic foundation of North Indian classical music.' },
+       { name: 'Flute (Bansuri)', imageId: 'art-flute', description: 'A side-blown flute made from a single shaft of bamboo, known for its soulful and evocative melodies.' },
+       { name: 'Sarod', imageId: 'art-sarod', description: 'A fretless stringed instrument known for its deep, weighty, and introspective sound.' },
+    ]
   },
 ];

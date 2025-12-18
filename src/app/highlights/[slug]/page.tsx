@@ -5,6 +5,7 @@ import { highlights } from '@/lib/highlights-data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
+import InfoCard from '@/components/info-card';
 
 export async function generateStaticParams() {
   return highlights.map((highlight) => ({
@@ -49,9 +50,16 @@ export default function HighlightPage({ params }: { params: { slug: string } }) 
         
         <div className="container py-12 md:py-16">
           <div className="max-w-4xl mx-auto">
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="text-lg text-muted-foreground leading-relaxed mb-12">
               {highlight.description}
             </p>
+            {highlight.details && highlight.details.length > 0 && (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                {highlight.details.map((item) => (
+                  <InfoCard item={item} key={item.name} />
+                ))}
+              </div>
+            )}
           </div>
         </div>
       </article>
