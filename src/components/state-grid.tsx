@@ -64,7 +64,7 @@ export default function StateGrid() {
             {[...Array(3)].map((_, index) => (
               <CarouselItem
                 key={index}
-                className="md:basis-1/2 lg:basis-1/3 pl-4"
+                className="basis-full md:basis-1/2 lg:basis-1/3 pl-4"
               >
                 <div className="p-1">
                   <Card className="overflow-hidden border-none">
@@ -103,7 +103,7 @@ export default function StateGrid() {
             return (
               <CarouselItem
                 key={state.slug}
-                className="md:basis-1/2 lg:basis-1/3 pl-4"
+                className="basis-full md:basis-1/2 lg:basis-1/3 pl-4"
               >
                 <div
                   className={cn(
