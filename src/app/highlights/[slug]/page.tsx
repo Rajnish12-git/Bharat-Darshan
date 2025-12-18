@@ -1,18 +1,19 @@
+
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { culturalHighlightsData } from '@/components/cultural-highlights';
+import { highlights } from '@/lib/highlights-data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 
 export async function generateStaticParams() {
-  return culturalHighlightsData.map((highlight) => ({
+  return highlights.map((highlight) => ({
     slug: highlight.slug,
   }));
 }
 
 export default function HighlightPage({ params }: { params: { slug: string } }) {
-  const highlight = culturalHighlightsData.find((h) => h.slug === params.slug);
+  const highlight = highlights.find((h) => h.slug === params.slug);
 
   if (!highlight) {
     notFound();
