@@ -1,6 +1,6 @@
 
 import Image from 'next/image';
-import { notFound, redirect } from 'next/navigation';
+import { notFound } from 'next/navigation';
 import { highlights } from '@/lib/highlights-data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Header from '@/components/header';
@@ -8,19 +8,16 @@ import Footer from '@/components/footer';
 import InfoCard from '@/components/info-card';
 
 export async function generateStaticParams() {
-  // Generate params for all highlights, including architectural-marvels
-  return highlights.map((highlight) => ({
-    slug: highlight.slug,
-  }));
+  // Generate params for all highlights, but filter out 'architectural-marvels'
+  // as it has its own dedicated page.
+  return highlights
+    .filter((highlight) => highlight.slug !== 'architectural-marvels')
+    .map((highlight) => ({
+      slug: highlight.slug,
+    }));
 }
 
 export default function HighlightPage({ params }: { params: { slug: string } }) {
-
-  // If the slug is for architectural-marvels, redirect to its dedicated page.
-  if (params.slug === 'architectural-marvels') {
-    redirect('/highlights/architectural-marvels');
-  }
-
   const highlight = highlights.find((h) => h.slug === params.slug);
 
   if (!highlight) {
