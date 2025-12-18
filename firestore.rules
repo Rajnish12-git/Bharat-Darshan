@@ -12,8 +12,8 @@
  * ownership rules.
  *
  * Key Security Decisions:
- * - Public Data is Read-Only: The `/states` and `/states/{stateId}/monuments`
- *   collections are world-readable to provide the app's core information. All client
+ * - Public Data is Read-Only: The `/states`, `/monuments`, `/timeline` and all subcollections
+ *   are world-readable to provide the app's core information. All client
  *   write operations (`create`, `update`, `delete`) are disabled to protect data
  *   integrity, assuming this data is populated by a trusted admin backend.
  * - Strict User Privacy: The `/users` collection cannot be listed, preventing any
@@ -60,38 +60,17 @@ service cloud.firestore {
     }
 
     // ------------------------------------------------------------------------
-    // Collection Rules
+    // Public Read-Only Collections
     // ------------------------------------------------------------------------
 
-    /**
-     * @description Manages access to the public information about Indian states.
-     * This data is intended to be read-only for all clients.
-     * @path /states/{stateId}
-     * @allow (get) Anyone, including unauthenticated users, can read a state's details.
-     * @deny (create) No client, authenticated or not, can create a new state document.
-     * @principle Public read with locked-down writes to ensure data integrity.
-     */
-    match /states/{stateId} {
+    match /{collection=**} {
       allow get, list: if true;
-      allow create: if false;
-      allow update: if false;
-      allow delete: if false;
-
-      /**
-       * @description Manages access to the public monuments subcollection within a state.
-       * This data is also intended to be read-only for all clients.
-       * @path /states/{stateId}/monuments/{monumentId}
-       * @allow (list) Anyone can retrieve a list of monuments for a given state.
-       * @deny (update) No client can modify an existing monument document.
-       * @principle Inherits the public read-only model from its parent collection.
-       */
-      match /monuments/{monumentId} {
-        allow get, list: if true;
-        allow create: if false;
-        allow update: if false;
-        allow delete: if false;
-      }
+      allow write: if false;
     }
+
+    // ------------------------------------------------------------------------
+    // User-Specific Collections (Stricter Rules)
+    // ------------------------------------------------------------------------
 
     /**
      * @description Secures user profile documents. Each user can create their own
@@ -123,6 +102,26 @@ service cloud.firestore {
         allow create: if isOwner(userId) && request.resource.data.userId == userId;
         allow update: if isExistingOwner(userId) && request.resource.data.userId == resource.data.userId;
         allow delete: if isExistingOwner(userId);
+      }
+
+      /**
+       * @description Secures a user's private favorites.
+       */
+      match /favorites/{favoriteId} {
+         allow get, list: if isOwner(userId);
+         allow create: if isOwner(userId) && request.resource.data.userId == userId;
+         allow update: if isExistingOwner(userId) && request.resource.data.userId == resource.data.userId;
+         allow delete: if isExistingOwner(userId);
+      }
+
+      /**
+       * @description Secures a user's private browsing history.
+       */
+      match /browsingHistory/{historyId} {
+         allow get, list: if isOwner(userId);
+         allow create: if isOwner(userId) && request.resource.data.userId == userId;
+         allow update: if isExistingOwner(userId) && request.resource.data.userId == resource.data.userId;
+         allow delete: if isExistingOwner(userId);
       }
     }
   }
