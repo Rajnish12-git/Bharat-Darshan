@@ -30,6 +30,11 @@ export default function Header() {
   const { user } = useUser();
   const auth = getAuth();
   const router = useRouter();
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -109,6 +114,7 @@ export default function Header() {
           )}
 
           <div className="md:hidden">
+           {isClient && (
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon" className={cn("transition-colors", isScrolled ? "text-muted-foreground" : "text-white hover:bg-black/10")}>
@@ -125,6 +131,7 @@ export default function Header() {
                 </div>
               </SheetContent>
             </Sheet>
+           )}
           </div>
         </div>
       </div>
