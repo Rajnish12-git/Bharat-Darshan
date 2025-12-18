@@ -111,7 +111,7 @@ export default function HeroCarousel() {
                     alt={description || title}
                     fill
                     className={cn(
-                      "object-cover transition-transform ease-in-out duration-[6000ms]",
+                      "object-cover transition-transform duration-1000",
                       isActive ? "scale-110" : "scale-100"
                     )}
                     data-ai-hint={imageHint}
