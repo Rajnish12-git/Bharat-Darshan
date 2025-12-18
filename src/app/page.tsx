@@ -6,7 +6,6 @@ import HistoricalTimeline from '@/components/historical-timeline';
 import Footer from '@/components/footer';
 import CulturalHighlights from '@/components/cultural-highlights';
 import StateGrid from '@/components/state-grid';
-import { Separator } from '@/components/ui/separator';
 import Preloader from '@/components/preloader';
 import { cn } from '@/lib/utils';
 
