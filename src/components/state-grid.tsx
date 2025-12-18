@@ -1,48 +1,81 @@
+"use client";
+
 import * as React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { indianStates } from '@/lib/states-data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardTitle, CardDescription } from '@/components/ui/card';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
+import Autoplay from 'embla-carousel-autoplay';
 
 export default function StateGrid() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-      {indianStates.map((state) => {
-        const image = PlaceHolderImages.find(
-          (img) => img.id === state.imageId
-        );
+    <Carousel
+      opts={{
+        align: 'start',
+        loop: true,
+      }}
+      plugins={[
+        Autoplay({
+          delay: 5000,
+          stopOnInteraction: true,
+        }),
+      ]}
+      className="w-full"
+    >
+      <CarouselContent>
+        {indianStates.map((state) => {
+          const image = PlaceHolderImages.find(
+            (img) => img.id === state.imageId
+          );
 
-        return (
-          <Link
-            key={state.slug}
-            href={`/states/${state.slug}`}
-            className="group block"
-          >
-            <Card className="overflow-hidden transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1">
-              <div className="relative h-48 w-full">
-                {image && (
-                  <Image
-                    src={image.imageUrl}
-                    alt={state.name}
-                    fill
-                    className="object-cover w-full h-full"
-                    data-ai-hint={image.imageHint}
-                  />
-                )}
+          return (
+            <CarouselItem
+              key={state.slug}
+              className="md:basis-1/2 lg:basis-1/3"
+            >
+              <div className="p-1">
+                <Link
+                  href={`/states/${state.slug}`}
+                  className="group block"
+                >
+                  <Card className="overflow-hidden relative h-64">
+                    <div className="relative w-full h-full">
+                      {image && (
+                        <Image
+                          src={image.imageUrl}
+                          alt={state.name}
+                          fill
+                          className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-105"
+                          data-ai-hint={image.imageHint}
+                        />
+                      )}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                    </div>
+                    <div className="absolute bottom-0 left-0 p-6 text-white">
+                      <CardTitle className="font-headline text-2xl drop-shadow-md">
+                        {state.name}
+                      </CardTitle>
+                      <CardDescription className="mt-1 line-clamp-2 text-white/90 drop-shadow-sm">
+                        {state.description}
+                      </CardDescription>
+                    </div>
+                  </Card>
+                </Link>
               </div>
-              <div className="p-4">
-                <CardTitle className="font-headline text-xl">
-                  {state.name}
-                </CardTitle>
-                <CardDescription className="mt-1 line-clamp-2">
-                  {state.description}
-                </CardDescription>
-              </div>
-            </Card>
-          </Link>
-        );
-      })}
-    </div>
+            </CarouselItem>
+          );
+        })}
+      </CarouselContent>
+      <CarouselPrevious className="absolute left-[-1.5rem] top-1/2 -translate-y-1/2 h-10 w-10 bg-background/80 text-foreground border-border hover:bg-background" />
+      <CarouselNext className="absolute right-[-1.5rem] top-1/2 -translate-y-1/2 h-10 w-10 bg-background/80 text-foreground border-border hover:bg-background" />
+    </Carousel>
   );
 }
