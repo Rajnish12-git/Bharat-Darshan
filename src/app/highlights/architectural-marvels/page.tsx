@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import architecturalMarvels from '@/lib/architectural-marvels.json';
@@ -16,9 +17,9 @@ import { Separator } from '@/components/ui/separator';
 export default function ArchitecturalMarvelsPage() {
   const highlight = {
     title: 'Architectural Marvels',
-    subtitle: 'Monuments that tell tales of time',
-    description: "From the ivory-white splendor of the Taj Mahal to the imposing red sandstone of Agra Fort, India's monuments are a testament to its rich history and architectural genius. These structures are not just stone and mortar; they are the chronicles of empires, the canvas of artisans, and the heart of a nation's identity.",
-    imageId: 'hero-taj-mahal',
+    subtitle: 'A Testament to Millennia of Engineering & Artistry',
+    description: "India's architectural heritage is a breathtaking chronicle of its millennia-old history, showcasing unparalleled engineering prowess and artistic vision. From colossal rock-cut temples carved from single stones to the intricate marble latticework of grand tombs, these structures are enduring symbols of devotion, power, and a sophisticated understanding of science that has captivated the world for centuries.",
+    imageId: 'marvel-hampi',
   };
 
   if (!architecturalMarvels) {
