@@ -64,3 +64,55 @@
       @apply leading-relaxed;
   }
 }
+
+/* 3D Loader styles */
+.scene {
+  perspective: 800px;
+}
+
+.cube {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotate-cube 20s infinite linear;
+}
+
+.cube-face {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+  box-shadow: 0 0 10px hsl(var(--primary) / 0.5);
+  border: 1px solid hsl(var(--primary) / 0.3);
+}
+
+.cube-face-front {
+  transform: rotateY(0deg) translateZ(60px);
+}
+.cube-face-back {
+  transform: rotateY(180deg) translateZ(60px);
+}
+.cube-face-right {
+  transform: rotateY(90deg) translateZ(60px);
+}
+.cube-face-left {
+  transform: rotateY(-90deg) translateZ(60px);
+}
+.cube-face-top {
+  transform: rotateX(90deg) translateZ(60px);
+}
+.cube-face-bottom {
+  transform: rotateX(-90deg) translateZ(60px);
+}
+
+@keyframes rotate-cube {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}
