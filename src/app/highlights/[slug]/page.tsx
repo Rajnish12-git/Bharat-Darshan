@@ -10,7 +10,7 @@ import InfoCard from '@/components/info-card';
 export async function generateStaticParams() {
   // Generate params for all highlights, but filter out 'architectural-marvels' and 'culinary-journey'
   // as they have their own dedicated pages. This prevents a routing conflict.
-  const excludedSlugs = ['architectural-marvels', 'culinary-journey'];
+  const excludedSlugs = ['architectural-marvels', 'culinary-journey', 'vibrant-art-forms'];
   return highlights
     .filter((highlight) => !excludedSlugs.includes(highlight.slug))
     .map((highlight) => ({

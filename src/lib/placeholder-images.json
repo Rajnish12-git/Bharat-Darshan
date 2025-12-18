@@ -51,7 +51,7 @@
     {
       "id": "state-rajasthan",
       "description": "A majestic fort in Rajasthan",
-      "imageUrl": "https://images.unsplash.com/photo-1651516725197-9ed18b572abe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxSYWphc3RoYW4lMjBmb3J0fGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1651516725197-9ed18b572abe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxSYWphc3RoYW4lMjBmb3J0fGVufDB8fHx8MTc2NTk4MDMxOHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "Rajasthan fort"
     },
     {
@@ -117,7 +117,7 @@
     {
       "id": "cuisine-bedmi-puri",
       "description": "A plate of Bedmi Puri with aloo sabzi",
-      "imageUrl": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxJbmRpYW4lMjBmb29kfGVufDB8fHx8MTc2NTk4MDMxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxJbmRpYW4lMjBmb29kfGVufDB8fHx8MTc2NTk4MDMxN3ww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "Indian food"
     },
     {
@@ -147,7 +147,7 @@
     {
       "id": "cuisine-mysore-pak",
       "description": "Pieces of the sweet Mysore Pak",
-      "imageUrl": "https://images.unsplash.com/photo-1669360171252-a85748818226?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxLYXJuYXRha2ElMjBzd2VldHxlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1669360171252-a8748818226?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxLYXJuYXRha2ElMjBzd2VldHxlbnwwfHx8fDE3NjU5ODAzMTh8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "Karnataka sweet"
     },
     {
@@ -819,7 +819,7 @@
     {
       "id": "cuisine-hyderabadi-biryani",
       "description": "A flavorful pot of Hyderabadi Biryani",
-      "imageUrl": "https://images.unsplash.com/photo-1691170979035-27e5ec943205?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxIeWRlcmFiYWRpJTIwQmlyeWFuaXxlbnwwfHx8fDE3NjU5OTA5MDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1691170979035-27e5ec943205?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxIeWRlcmFiYWRpJTIwQmlyeWFuaXxlbnwwfHx8fDE3NjU5OTA5MDd8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "Hyderabadi Biryani"
     },
     {
@@ -933,7 +933,7 @@
     {
       "id": "cuisine-masala-dosa",
       "description": "A crispy Masala Dosa.",
-      "imageUrl": "https://images.unsplash.com/photo-1694849789325-914b71ab4075?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYXNhbGElMjBkb3NhfGVufDB8fHx8MTc2NTk5Njk5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1694849789325-914b71ab4075?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYXNhbGElMjBkb3NhfGVufDB8fHx8MTc2NTk5Njk5OHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "masala dosa"
     },
     {
@@ -1263,92 +1263,236 @@
     {
       "id": "cuisine-macher-jhol",
       "description": "A comforting bowl of Bengali fish curry.",
-      "imageUrl": "https://images.unsplash.com/photo-1761314036936-966ba07ae14b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmaXNoJTIwY3Vycnl8ZW58MHx8fHwxNzY2MDQzNzA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "fish curry"
+      "imageUrl": "https://images.unsplash.com/photo-1761314036936-966ba07ae14b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiZW5nYWxpJTIwZmlzaHxlbnwwfHx8fDE3NjYwNDM3MDh8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "bengali fish"
     },
     {
       "id": "cuisine-undhiyu",
       "description": "A mix of winter vegetables in Undhiyu.",
-      "imageUrl": "https://images.unsplash.com/photo-1761314025701-34795be5f737?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtaXhlZCUyMHZlZ2V0YWJsZXN8ZW58MHx8fHwxNzY2MDU1ODk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1761314025701-34795be5f737?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtaXhlZCUyMHZlZ2V0YWJsZXN8ZW58MHx8fHwxNzY2MDU1ODk3fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "mixed vegetables"
     },
     {
       "id": "cuisine-idiyappam",
       "description": "Soft and delicate string hoppers.",
-      "imageUrl": "https://images.unsplash.com/photo-1641946621962-94c97f344a54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdHJpbmclMjBob3BwZXJzfGVufDB8fHx8MTc2NjA1NTg5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1641946621962-94c97f344a54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdHJpbmclMjBob3BwZXJzfGVufDB8fHx8MTc2NjA1NTg5N3ww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "string hoppers"
     },
     {
       "id": "cuisine-kadhi",
       "description": "A bowl of tangy yogurt curry.",
-      "imageUrl": "https://images.unsplash.com/photo-1642517788054-57d0bc2d2e26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx5b2d1cnQlMjBjdXJyeXxlbnwwfHx8fDE3NjYwNTU4OTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1642517788054-57d0bc2d2e26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx5b2d1cnQlMjBjdXJyeXxlbnwwfHx8fDE3NjYwNTU4OTd8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "yogurt curry"
     },
     {
       "id": "cuisine-chole-bhature",
       "description": "Fluffy bhature with spicy chole.",
-      "imageUrl": "https://images.unsplash.com/photo-1569656048753-1ece52ee0eb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmcmllZCUyMGJyZWFkfGVufDB8fHx8MTc2NjA1NTg5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1569656048753-1ece52ee0eb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmcmllZCUyMGJyZWFkfGVufDB8fHx8MTc2NjA1NTg5N3ww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "fried bread"
     },
     {
       "id": "cuisine-galouti-kebab",
       "description": "Melt-in-the-mouth Galouti Kebabs.",
-      "imageUrl": "https://images.unsplash.com/photo-1583665354191-634609954d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtaW5jZWQlMjBrZWJhYnxlbnwwfHx8fDE3NjYwNTU4OTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1583665354191-634609954d54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtaW5jZWQlMjBrZWJhYnxlbnwwfHx8fDE3NjYwNTU4OTd8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "minced kebab"
     },
     {
       "id": "cuisine-shorshe-ilish",
       "description": "Hilsa fish in pungent mustard gravy.",
-      "imageUrl": "https://images.unsplash.com/photo-1518189930180-c90bca0afcb2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtdXN0YXJkJTIwZmlzaHxlbnwwfHx8fDE3NjYwNTU4OTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1518189930180-c90bca0afcb2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtdXN0YXJkJTIwZmlzaHxlbnwwfHx8fDE3NjYwNTU4OTd8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "mustard fish"
     },
     {
       "id": "cuisine-pitha",
       "description": "Assorted traditional rice cakes.",
-      "imageUrl": "https://images.unsplash.com/photo-1620040330510-09a8ef1e5334?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cmljZSUyMGNha2VzfGVufDB8fHx8MTc2NjA1NTg5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1620040330510-09a8ef1e5334?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cmljZSUyMGNha2VzfGVufDB8fHx8MTc2NjA1NTg5N3ww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "rice cakes"
     },
     {
       "id": "cuisine-kakori-kebab",
       "description": "Soft and succulent Kakori Kebabs.",
-      "imageUrl": "https://images.unsplash.com/photo-1639775464726-1cdf62997893?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzb2Z0JTIwa2ViYWJ8ZW58MHx8fHwxNzY2MDU1ODk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1639775464726-1cdf62997893?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxzb2Z0JTIwa2ViYWJ8ZW58MHx8fHwxNzY2MDU1ODk3fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "soft kebab"
     },
     {
       "id": "cuisine-chettinad-chicken",
       "description": "A fiery Chettinad chicken curry.",
-      "imageUrl": "https://images.unsplash.com/photo-1764304733301-3a9f335f0c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzcGljeSUyMGNoaWNrZW58ZW58MHx8fHwxNzY2MDU1ODk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1764304733301-3a9f335f0c67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzcGljeSUyMGNoaWNrZW58ZW58MHx8fHwxNzY2MDU1ODk3fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "spicy chicken"
     },
     {
       "id": "cuisine-malai-kofta",
       "description": "Creamy Malai Kofta curry.",
-      "imageUrl": "https://images.unsplash.com/photo-1736752346246-61f4daedfde0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y3JlYW15JTIwY3Vycnl8ZW58MHx8fHwxNzY2MDU1ODk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1736752346246-61f4daedfde0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y3JlYW15JTIwY3Vycnl8ZW58MHx8fHwxNzY2MDU1ODk3fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "creamy curry"
     },
     {
       "id": "cuisine-gushtaba",
       "description": "Royal Kashmiri Gushtaba.",
-      "imageUrl": "https://images.unsplash.com/photo-1581982926282-9d13c943cf86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx5b2d1cnQlMjBtZWF0YmFsbHN8ZW58MHx8fHwxNzY2MDU1ODk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1581982926282-9d13c943cf86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx5b2d1cnQlMjBtZWF0YmFsbHN8ZW58MHx8fHwxNzY2MDU1ODk3fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "yogurt meatballs"
     },
     {
       "id": "cuisine-thekua",
       "description": "Traditional sweet Thekua.",
-      "imageUrl": "https://images.unsplash.com/photo-1612388307727-afe00578ca21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzd2VldCUyMGJpc2N1aXR8ZW58MHx8fHwxNzY2MDU1ODk3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1612388307727-afe00578ca21?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzd2VldCUyMGJpc2N1aXR8ZW58MHx8fHwxNzY2MDU1ODk3fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "sweet biscuit"
     },
     {
       "id": "cuisine-bhangjeera-chutney",
       "description": "Nutty chutney made from perilla seeds.",
-      "imageUrl": "https://images.unsplash.com/photo-1668019177202-dcc0008beeb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzZWVkJTIwY2h1dG5leXxlbnwwfHx8fDE3NjYwNTU4OTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1668019177202-dcc0008beeb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxzZWVkJTIwY2h1dG5leXxlbnwwfHx8fDE3NjYwNTU4OTd8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "seed chutney"
     },
     {
       "id": "cuisine-pootharekulu",
       "description": "Paper-thin Pootharekulu sweets.",
-      "imageUrl": "https://images.unsplash.com/photo-1735020496153-eac65a2ee1fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwYXBlciUyMHN3ZWV0fGVufDB8fHx8MTc2NjA1NTg5N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1735020496153-eac65a2ee1fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwYXBlciUyMHN3ZWV0fGVufDB8fHx8MTc2NjA1NTg5N3ww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "paper sweet"
+    },
+    {
+      "id": "art-odissi",
+      "description": "An Odissi dancer in a graceful pose.",
+      "imageUrl": "https://images.unsplash.com/photo-1595424307919-b8335ccd9630?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8T2Rpc3NpJTIwZGFuY2V8ZW58MHx8fHwxNzY2MDU2NzkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Odissi dance"
+    },
+    {
+      "id": "art-cheriyal-scroll",
+      "description": "A vibrant Cheriyal scroll painting.",
+      "imageUrl": "https://images.unsplash.com/photo-1562447141-5ab151b2638f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxDaGVyaXlhbCUyMHBhaW50aW5nfGVufDB8fHx8MTc2NjA1Njc5MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Cheriyal painting"
+    },
+    {
+      "id": "art-kuchipudi",
+      "description": "A Kuchipudi dancer performing on a brass plate.",
+      "imageUrl": "https://images.unsplash.com/photo-1559118383-ab4c5ae182a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxLdWNoaXB1ZGklMjBkYW5jZXxlbnwwfHx8fDE3NjYwNTY3OTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Kuchipudi dance"
+    },
+    {
+      "id": "art-theyyam",
+      "description": "A Theyyam performer in full costume.",
+      "imageUrl": "https://images.unsplash.com/photo-1723879867060-71f585cdba32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxUaGV5eWFtJTIwcGVyZm9ybWFuY2V8ZW58MHx8fHwxNzY2MDU2NzkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Theyyam performance"
+    },
+    {
+      "id": "art-tanjore",
+      "description": "A detailed Tanjore painting with gold foil.",
+      "imageUrl": "https://images.unsplash.com/photo-1708791577320-6e1e8eee68d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxUYW5qb3JlJTIwcGFpbnRpbmd8ZW58MHx8fHwxNzY2MDU2NzkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Tanjore painting"
+    },
+    {
+      "id": "art-kathputli",
+      "description": "Colorful Rajasthani string puppets.",
+      "imageUrl": "https://images.unsplash.com/photo-1755946684287-a3c19b383a0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8UmFqYXN0aGFuJTIwcHVwcGV0c3xlbnwwfHx8fDE3NjYwNTY3OTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Rajasthan puppets"
+    },
+    {
+      "id": "art-kalbelia",
+      "description": "A Kalbelia dancer in a swirling black skirt.",
+      "imageUrl": "https://images.unsplash.com/photo-1757748594542-f80a2239dbbb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxLYWxiZWxpYSUyMGRhbmNlfGVufDB8fHx8MTc2NjA1Njc5MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Kalbelia dance"
+    },
+    {
+      "id": "art-lavani",
+      "description": "A Lavani dancer performing energetically.",
+      "imageUrl": "https://images.unsplash.com/photo-1712192682756-ae5b3a8e7508?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxMYXZhbmklMjBkYW5jZXxlbnwwfHx8fDE3NjYwNTY3OTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Lavani dance"
+    },
+    {
+      "id": "art-bihu",
+      "description": "A group performing the Bihu dance.",
+      "imageUrl": "https://images.unsplash.com/photo-1643283162742-40c6f4751676?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxCaWh1JTIwZGFuY2V8ZW58MHx8fHwxNzY1OTkwOTA2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Bihu dance"
+    },
+    {
+      "id": "art-bhangra",
+      "description": "A Bhangra dancer in a dynamic pose.",
+      "imageUrl": "https://images.unsplash.com/photo-1759738102510-ec524f666274?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxCaGFuZ3JhJTIwZGFuY2V8ZW58MHx8fHwxNzY2MDU2NzkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Bhangra dance"
+    },
+    {
+      "id": "art-garba",
+      "description": "Dancers performing Garba in a circle.",
+      "imageUrl": "https://images.unsplash.com/photo-1603646315289-df77246f1694?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxHYXJiYSUyMGRhbmNlfGVufDB8fHx8MTc2NjA1Njc5MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Garba dance"
+    },
+    {
+      "id": "art-yakshagana",
+      "description": "A Yakshagana performer in elaborate costume.",
+      "imageUrl": "https://images.unsplash.com/photo-1760638262558-f6c1e89ae3aa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxZYWtzaGFnYW5hJTIwcGVyZm9ybWFuY2V8ZW58MHx8fHwxNzY2MDU2NzkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Yakshagana performance"
+    },
+    {
+      "id": "art-pipli",
+      "description": "Colorful Pipli appliqué work.",
+      "imageUrl": "https://picsum.photos/seed/art-pipli/160/120",
+      "imageHint": "Pipli applique"
+    },
+    {
+      "id": "art-mysore-inlay",
+      "description": "Intricate rosewood inlay work from Mysore.",
+      "imageUrl": "https://images.unsplash.com/photo-1653279593874-d97da4522e76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxNeXNvcmUlMjBpbmxheXxlbnwwfHx8fDE3NjYwNTY3OTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Mysore inlay"
+    },
+    {
+      "id": "art-kanjivaram",
+      "description": "A lustrous Kanjivaram silk saree.",
+      "imageUrl": "https://images.unsplash.com/photo-1757620761808-d5062cfc6a25?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxLYW5qaXZhcmFtJTIwc2FyZWV8ZW58MHx8fHwxNzY2MDU2NzkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Kanjivaram saree"
+    },
+    {
+      "id": "art-pashmina",
+      "description": "A soft and luxurious Pashmina shawl.",
+      "imageUrl": "https://images.unsplash.com/photo-1520012410130-4d5ad71c9b66?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxQYXNobWluYSUyMHNoYXdsfGVufDB8fHx8MTc2NjA1Njc5MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Pashmina shawl"
+    },
+    {
+      "id": "art-terracotta",
+      "description": "A terracotta horse from Bankura.",
+      "imageUrl": "https://images.unsplash.com/photo-1648479153487-a8a70f66cba1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxUZXJyYWNvdHRhJTIwaG9yc2V8ZW58MHx8fHwxNzY2MDU2NzkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Terracotta horse"
+    },
+    {
+      "id": "art-mohiniyattam",
+      "description": "A graceful Mohiniyattam dancer.",
+      "imageUrl": "https://images.unsplash.com/photo-1683504864300-d6ea7306bb40?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxNb2hpbml5YXR0YW0lMjBkYW5jZXxlbnwwfHx8fDE3NjYwNTY3OTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Mohiniyattam dance"
+    },
+    {
+      "id": "art-sattriya",
+      "description": "A Sattriya dancer in a classic pose.",
+      "imageUrl": "https://images.unsplash.com/photo-1682830819991-3e100a80aa2e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8U2F0dHJpeWElMjBkYW5jZXxlbnwwfHx8fDE3NjYwNTY3OTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Sattriya dance"
+    },
+    {
+      "id": "art-bamboo-cane",
+      "description": "Intricate crafts made from bamboo.",
+      "imageUrl": "https://images.unsplash.com/photo-1759001613836-e7c0a0da890b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxCYW1ib28lMjBjcmFmdHN8ZW58MHx8fHwxNzY2MDU2NzkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Bamboo crafts"
+    },
+    {
+      "id": "art-leather-puppetry",
+      "description": "A colorful leather shadow puppet.",
+      "imageUrl": "https://images.unsplash.com/photo-1620742064387-bf4b661ec218?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxMZWF0aGVyJTIwcHVwcGV0fGVufDB8fHx8MTc2NjA1Njc5MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Leather puppet"
+    },
+    {
+      "id": "art-thewa",
+      "description": "A piece of Thewa jewellery with gold on glass.",
+      "imageUrl": "https://picsum.photos/seed/art-thewa/160/120",
+      "imageHint": "Thewa jewellery"
+    },
+    {
+      "id": "art-kolam",
+      "description": "An intricate Kolam drawing made with rice flour.",
+      "imageUrl": "https://images.unsplash.com/photo-1716714607603-8aa6a2f16d84?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxLb2xhbSUyMGFydHxlbnwwfHx8fDE3NjYwNTY3OTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Kolam art"
+    },
+    {
+      "id": "art-chhau",
+      "description": "A Chhau dancer with a dramatic mask.",
+      "imageUrl": "https://images.unsplash.com/photo-1633338718293-785082123de7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxDaGhhdSUyMGRhbmNlfGVufDB8fHx8MTc2NjA1Njc5MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Chhau dance"
     }
   ]
 }

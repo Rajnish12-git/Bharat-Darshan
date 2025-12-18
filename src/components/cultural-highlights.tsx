@@ -46,9 +46,7 @@ const HighlightItem = ({
 
   const image = PlaceHolderImages.find((img) => img.id === item.imageId);
   
-  const linkHref = item.slug === 'architectural-marvels' || item.slug === 'culinary-journey'
-    ? `/highlights/${item.slug}`
-    : `/highlights/${item.slug}`;
+  const linkHref = `/highlights/${item.slug}`;
 
   return (
     <div
