@@ -1,3 +1,4 @@
+
 'use client';
 
 import React, { createContext, useContext, useState, useEffect, ReactNode, useCallback } from 'react';
@@ -18,6 +19,7 @@ const FavoritesContext = createContext<FavoritesContextType | undefined>(undefin
 
 export function FavoritesProvider({ children }: { children: ReactNode }) {
   const [favorites, setFavorites] = useState<FavoriteItem[]>([]);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     try {
@@ -29,6 +31,8 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
       console.error("Could not load favorites from localStorage:", error);
       // If parsing fails, start with an empty array
       setFavorites([]);
+    } finally {
+        setIsLoaded(true);
     }
   }, []);
 
@@ -53,8 +57,9 @@ export function FavoritesProvider({ children }: { children: ReactNode }) {
   };
 
   const isFavorite = useCallback((itemId: string) => {
+    if(!isLoaded) return false;
     return favorites.some(fav => fav.imageId === itemId);
-  }, [favorites]);
+  }, [favorites, isLoaded]);
   
 
   return (
