@@ -2,29 +2,22 @@
 
 import React, { useState, useTransition, useMemo } from 'react';
 import { Button } from './ui/button';
-import { Loader2, MapPin } from 'lucide-react';
+import { Loader2, MapPin, X } from 'lucide-react';
 import { useCollection, useFirestore, useMemoFirebase } from '@/firebase';
 import { collection } from 'firebase/firestore';
 import type { Monument } from '@/lib/types';
 import { getDistance } from '@/lib/utils';
-import InfoCard from './info-card';
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select"
+import { APIProvider, Map, AdvancedMarker, InfoWindow } from '@vis.gl/react-google-maps';
 
 export default function ExploreNearMe() {
   const [isPending, startTransition] = useTransition();
   const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [isSearching, setIsSearching] = useState(false);
-  const [searchRadius, setSearchRadius] = useState(100); // Default radius in km
-
-  const firestore = useFirestore();
+  const [selectedMonument, setSelectedMonument] = useState<Monument | null>(null);
   
+  const firestore = useFirestore();
+
   const monumentsCollection = useMemoFirebase(() => {
     if (!firestore) return null;
     return collection(firestore, 'monuments');
@@ -36,6 +29,7 @@ export default function ExploreNearMe() {
     setError(null);
     setUserLocation(null);
     setIsSearching(true);
+    setSelectedMonument(null);
 
     if (!navigator.geolocation) {
       setError('Geolocation is not supported by your browser.');
@@ -62,17 +56,20 @@ export default function ExploreNearMe() {
     if (!userLocation || !allMonuments) {
       return [];
     }
-
-    return allMonuments
-      .map((monument) => ({
-        ...monument,
-        distance: getDistance(userLocation.lat, userLocation.lng, monument.latitude, monument.longitude),
-      }))
-      .filter((monument) => monument.distance <= searchRadius)
-      .sort((a, b) => a.distance - b.distance);
-  }, [userLocation, allMonuments, searchRadius]);
+    // For the map, we show all monuments and let the user explore
+    return allMonuments.map(m => ({...m, position: {lat: m.latitude, lng: m.longitude}}));
+  }, [userLocation, allMonuments]);
 
   const isButtonDisabled = isPending || isLoadingMonuments || isSearching;
+  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+
+  if (!apiKey) {
+    return (
+      <div className="text-center text-destructive p-8 border-2 border-dashed rounded-lg">
+        <p>Google Maps API key is missing. Please add it to your .env file.</p>
+      </div>
+    );
+  }
 
   return (
     <div className="w-full max-w-6xl mx-auto">
@@ -81,24 +78,6 @@ export default function ExploreNearMe() {
           {isButtonDisabled ? <Loader2 className="mr-2 h-5 w-5 animate-spin" /> : <MapPin className="mr-2 h-5 w-5" />}
           Find Monuments Near Me
         </Button>
-        <div className="flex items-center gap-2 w-full sm:w-auto">
-            <label htmlFor="radius" className="text-sm font-medium text-muted-foreground">Radius:</label>
-            <Select 
-              value={String(searchRadius)} 
-              onValueChange={(value) => setSearchRadius(Number(value))}
-              disabled={!userLocation}
-            >
-              <SelectTrigger className="w-full sm:w-[180px]">
-                <SelectValue placeholder="Select radius" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="50">50 km</SelectItem>
-                <SelectItem value="100">100 km</SelectItem>
-                <SelectItem value="200">200 km</SelectItem>
-                <SelectItem value="500">500 km</SelectItem>
-              </SelectContent>
-            </Select>
-        </div>
       </div>
 
       {error && (
@@ -107,37 +86,46 @@ export default function ExploreNearMe() {
         </div>
       )}
 
-      {!userLocation && !error && !isSearching && (
-         <div className="text-center text-muted-foreground p-8 border-2 border-dashed rounded-lg">
-          <p>Click the button to discover heritage sites near your location.</p>
-        </div>
-      )}
-      
-      {isSearching && (
-        <div className="flex justify-center items-center p-8">
-          <Loader2 className="h-8 w-8 animate-spin text-primary" />
-          <p className="ml-4 text-muted-foreground">Getting your location...</p>
-        </div>
-      )}
-
-      {userLocation && !isSearching && nearbyMonuments.length > 0 && (
-         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
-            {nearbyMonuments.map((monument) => {
-              const item = {
-                name: monument.name,
-                description: `${monument.description.substring(0, 100)}... (${monument.distance.toFixed(1)} km away)`,
-                imageId: monument.id, // Assuming monument.id maps to an imageId
-              };
-              return <InfoCard item={item} category="monuments" key={monument.id} />;
-            })}
-        </div>
-      )}
-
-      {userLocation && !isSearching && nearbyMonuments.length === 0 && !error && (
-         <div className="text-center text-muted-foreground p-8 border-2 border-dashed rounded-lg">
-          <p>No monuments found within {searchRadius}km. Try increasing the search radius.</p>
-        </div>
-      )}
+      <div className="w-full h-[60vh] rounded-lg overflow-hidden border shadow-lg mt-4 relative">
+        {(isSearching || isLoadingMonuments) && (
+            <div className="absolute inset-0 bg-background/80 flex items-center justify-center z-10">
+                <Loader2 className="h-8 w-8 animate-spin text-primary" />
+                <p className="ml-4 text-muted-foreground">{isLoadingMonuments ? 'Loading monuments...' : 'Getting your location...'}</p>
+            </div>
+        )}
+        <APIProvider apiKey={apiKey}>
+          <Map
+            defaultCenter={{ lat: 20.5937, lng: 78.9629 }} // Default center of India
+            defaultZoom={5}
+            center={userLocation || undefined}
+            zoom={userLocation ? 12 : 5}
+            gestureHandling={'greedy'}
+            disableDefaultUI={true}
+            mapId="DEMO_MAP_ID"
+          >
+            {userLocation && <AdvancedMarker position={userLocation} title="Your Location" />}
+            {nearbyMonuments.map((monument) => (
+              <AdvancedMarker
+                key={monument.id}
+                position={monument.position}
+                title={monument.name}
+                onClick={() => setSelectedMonument(monument)}
+              />
+            ))}
+             {selectedMonument && (
+              <InfoWindow
+                position={selectedMonument.position}
+                onCloseClick={() => setSelectedMonument(null)}
+              >
+                <div className="p-2">
+                  <h3 className="font-bold text-md">{selectedMonument.name}</h3>
+                  <p className="text-sm text-muted-foreground">{selectedMonument.location}</p>
+                </div>
+              </InfoWindow>
+            )}
+          </Map>
+        </APIProvider>
+      </div>
     </div>
   );
 }
