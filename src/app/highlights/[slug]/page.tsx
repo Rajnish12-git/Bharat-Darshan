@@ -43,9 +43,9 @@ export default function HighlightPage({ params }: { params: { slug: string } }) 
             />
           )}
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
-          <div className="absolute bottom-0 left-0 p-4 md:p-8 lg:p-16">
-            <p className="text-primary font-semibold">{highlight.subtitle}</p>
-            <h1 className="text-4xl md:text-7xl font-bold font-headline text-white drop-shadow-lg">
+          <div className="absolute bottom-0 left-0 p-4 md:p-8 lg:p-16 max-w-4xl">
+            <p className="text-primary font-semibold animate-slide-up-fade [animation-delay:200ms]">{highlight.subtitle}</p>
+            <h1 className="text-4xl md:text-7xl font-bold font-headline text-white drop-shadow-lg animate-slide-up-fade">
               {highlight.title}
             </h1>
           </div>

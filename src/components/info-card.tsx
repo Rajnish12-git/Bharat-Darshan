@@ -50,7 +50,7 @@ export default function InfoCard({ item, category }: InfoCardProps) {
     <div
       ref={cardRef}
       className={cn(
-        'group relative flex flex-col overflow-hidden rounded-xl shadow-md transition-all duration-500 ease-in-out',
+        'group relative flex flex-col overflow-hidden rounded-2xl shadow-lg border border-border/10 transition-all duration-500 ease-in-out hover:shadow-primary/20 hover:-translate-y-2',
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
       )}
     >
@@ -58,40 +58,38 @@ export default function InfoCard({ item, category }: InfoCardProps) {
         <FavoriteButton item={item} category={category} />
       </div>
 
-      <div className="relative aspect-video w-full">
+      <div className="relative aspect-[4/3] w-full overflow-hidden">
         {image ? (
           <Image
             src={image.imageUrl}
             alt={item.name}
             fill
-            className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-105"
+            className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
             data-ai-hint={image.imageHint}
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
         ) : (
           <div className="bg-muted h-full w-full" />
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent" />
       </div>
 
-      <div className="absolute bottom-0 left-0 w-full p-4 text-white">
-        <h3 className="font-headline text-lg font-bold">{item.name}</h3>
-        <p className="text-sm text-white/80 line-clamp-2 transition-all duration-300 ease-in-out h-10 group-hover:h-0 group-hover:opacity-0 group-hover:mt-[-1rem]">
-          {item.description}
-        </p>
-      </div>
-
-      <div className="absolute inset-0 flex flex-col justify-end bg-black/80 p-4 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
-        <h3 className="font-headline text-lg font-bold text-white">{item.name}</h3>
-        <p className="mt-1 text-sm text-white/80 line-clamp-3">
-            {item.description}
-        </p>
-        <Button
-            variant="link"
-            className="text-white p-0 h-auto self-start mt-4"
-        >
-            Learn More <ArrowRight className="ml-2 h-4 w-4" />
-        </Button>
+      <div className="absolute bottom-0 left-0 w-full p-4 text-white flex flex-col justify-end h-full">
+        <div className="transition-transform duration-300 ease-in-out group-hover:-translate-y-12">
+            <h3 className="font-headline text-lg font-bold drop-shadow-md">{item.name}</h3>
+            <p className="text-sm text-white/80 line-clamp-2 mt-1">
+                {item.description}
+            </p>
+        </div>
+        
+        <div className="absolute bottom-4 left-4 right-4 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+            <Button
+                variant="link"
+                className="text-white p-0 h-auto self-start"
+            >
+                Learn More <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+        </div>
       </div>
     </div>
   );

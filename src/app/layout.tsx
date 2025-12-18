@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
 import { Literata } from 'next/font/google';
 import { Providers } from '@/components/providers';
+import ScrollProgress from '@/components/scroll-progress';
 
 export const metadata: Metadata = {
   title: 'Bharat Darshan',
@@ -39,6 +40,7 @@ export default function RootLayout({
         )}
       >
         <Providers>
+          <ScrollProgress />
           <div className="relative flex min-h-dvh flex-col bg-background">
             {children}
           </div>

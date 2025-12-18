@@ -79,15 +79,15 @@ const HighlightItem = ({
       </div>
       <div
         className={cn(
-          'flex flex-col items-start text-center md:text-left transition-all duration-1000 ease-in-out',
+          'flex flex-col items-center md:items-start text-center md:text-left transition-all duration-1000 ease-in-out',
            isVisible
             ? 'opacity-100 translate-y-0'
             : 'opacity-0 translate-y-10'
         )}
       >
-        <p className="text-primary font-semibold tracking-wide">{item.subtitle}</p>
+        <p className="text-primary font-semibold tracking-wide uppercase text-sm">{item.subtitle}</p>
         <h3 className="font-headline text-4xl font-bold mt-2">{item.title}</h3>
-        <p className="mt-4 text-muted-foreground text-lg leading-relaxed">
+        <p className="mt-4 text-muted-foreground text-lg leading-relaxed max-w-prose">
           {item.description}
         </p>
         <Button variant="outline" size="lg" className="mt-8 group" asChild>
@@ -103,14 +103,14 @@ const HighlightItem = ({
 
 export default function CulturalHighlights() {
   return (
-    <section className="bg-background py-16 md:py-28">
+    <section id="highlights" className="bg-background py-16 md:py-28 scroll-mt-20">
       <div className="container">
-        <div className="mx-auto flex max-w-2xl flex-col items-center space-y-4 text-center mb-16 md:mb-24">
+        <div className="mx-auto flex max-w-3xl flex-col items-center space-y-4 text-center mb-16 md:mb-24">
           <h2 className="font-headline text-4xl font-bold leading-[1.1] sm:text-4xl md:text-5xl">
             Glimpses of Heritage
           </h2>
           <p className="max-w-prose leading-relaxed text-muted-foreground sm:text-lg">
-            Experience the rich and diverse cultural fabric of India, from its stunning architecture to its vibrant traditions.
+            Experience the rich and diverse cultural fabric of India, from its stunning architecture to its vibrant traditions and timeless art forms.
           </p>
         </div>
         <div className="space-y-24 md:space-y-32">

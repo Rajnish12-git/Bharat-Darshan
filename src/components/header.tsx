@@ -18,10 +18,13 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+      const heroSection = document.querySelector('section');
+      const heroHeight = heroSection ? heroSection.offsetHeight - 80 : 0;
+      setIsScrolled(window.scrollY > heroHeight);
     };
 
     window.addEventListener('scroll', handleScroll);
+    handleScroll(); 
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
@@ -29,10 +32,10 @@ export default function Header() {
 
   const NavLinks = ({ className, onLinkClick }: { className?: string, onLinkClick?: () => void }) => (
     <nav className={cn("items-center space-x-4 lg:space-x-6", className)}>
-        <Link href="/#states" onClick={onLinkClick} className={cn("text-sm font-medium transition-colors hover:text-primary", isScrolled || isMobileMenuOpen ? "text-foreground" : "text-white")}>
+        <Link href="/#states" onClick={onLinkClick} className={cn("text-sm font-medium transition-colors hover:text-primary", isScrolled || isMobileMenuOpen ? "text-foreground" : "text-white/80 hover:text-white")}>
             States
         </Link>
-        <Link href="/#timeline" onClick={onLinkClick} className={cn("text-sm font-medium transition-colors hover:text-primary", isScrolled || isMobileMenuOpen ? "text-foreground" : "text-white")}>
+        <Link href="/#timeline" onClick={onLinkClick} className={cn("text-sm font-medium transition-colors hover:text-primary", isScrolled || isMobileMenuOpen ? "text-foreground" : "text-white/80 hover:text-white")}>
             Timeline
         </Link>
     </nav>
@@ -41,15 +44,15 @@ export default function Header() {
   return (
     <header 
       className={cn(
-        "fixed top-0 z-50 w-full transition-colors duration-300",
-        isScrolled ? "bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/40 border-b border-border/40" : "bg-transparent"
+        "fixed top-0 z-50 w-full transition-all duration-300",
+        isScrolled ? "bg-background/80 backdrop-blur-lg border-b" : "bg-transparent border-b border-transparent"
       )}
     >
       <div className="container flex h-16 max-w-screen-2xl items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <span className={cn(
-              "text-3xl font-bold transition-colors",
+              "text-2xl font-bold transition-colors font-headline",
               isScrolled ? "text-foreground" : "text-white"
             )}>Bharat Darshan</span>
           </Link>
@@ -59,7 +62,7 @@ export default function Header() {
         <div className="md:hidden">
           <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className={cn("transition-colors", isScrolled ? "text-muted-foreground" : "text-white hover:bg-black/10")}>
+              <Button variant="ghost" size="icon" className={cn("transition-colors", isScrolled ? "text-muted-foreground" : "text-white hover:bg-black/20")}>
                 <Menu className="h-5 w-5" />
                 <span className="sr-only">Open menu</span>
               </Button>
@@ -67,7 +70,7 @@ export default function Header() {
             <SheetContent side="left" className="w-[240px] p-0">
               <div className="p-6">
                  <Link href="/" className="mr-6 flex items-center space-x-2">
-                    <span className="font-bold text-2xl text-foreground">Bharat Darshan</span>
+                    <span className="font-bold text-2xl text-foreground font-headline">Bharat Darshan</span>
                   </Link>
                 <NavLinks className="flex-col items-start space-x-0 space-y-4 mt-6" onLinkClick={() => setIsMobileMenuOpen(false)} />
               </div>
@@ -75,14 +78,14 @@ export default function Header() {
           </Sheet>
         </div>
 
-        <div className="flex flex-1 items-center justify-end space-x-2">
-          <Button variant="ghost" size="icon" asChild className={cn("transition-colors", isScrolled ? "text-muted-foreground" : "text-white hover:bg-black/10")}>
+        <div className="flex flex-1 items-center justify-end space-x-1">
+          <Button variant="ghost" size="icon" asChild className={cn("transition-colors", isScrolled ? "text-muted-foreground" : "text-white/80 hover:text-white hover:bg-black/20")}>
             <Link href="/search" aria-label="Search">
               <Search className="h-5 w-5" />
             </Link>
           </Button>
 
-          <Button variant="ghost" size="icon" asChild className={cn("transition-colors", isScrolled ? "text-muted-foreground" : "text-white hover:bg-black/10")}>
+          <Button variant="ghost" size="icon" asChild className={cn("transition-colors", isScrolled ? "text-muted-foreground" : "text-white/80 hover:text-white hover:bg-black/20")}>
             <Link href="/login" aria-label="User Profile">
               <User className="h-5 w-5" />
             </Link>
