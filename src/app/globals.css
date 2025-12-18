@@ -52,34 +52,7 @@
   * {
     @apply border-border;
   }
-  html {
-    @apply scroll-smooth;
-  }
   body {
     @apply bg-background text-foreground;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
   }
-  p {
-      @apply leading-relaxed;
-  }
-
-  p, ul, ol {
-    max-width: 70ch;
-  }
-}
-
-@keyframes slide-up-fade {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-slide-up-fade {
-  animation: slide-up-fade 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
 }
