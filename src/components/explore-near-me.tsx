@@ -55,7 +55,7 @@ export default function ExploreNearMe() {
   if (!apiKey) {
     return (
       <div className="text-center text-destructive p-8 border-2 border-dashed rounded-lg">
-        <p>Google Maps API key is missing. Please add it to your .env file.</p>
+        <p>Google Maps API key is missing. Please add it to your .env file to enable map features.</p>
         <p className="text-sm text-muted-foreground">NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=YOUR_API_KEY_HERE</p>
       </div>
     );
@@ -97,7 +97,7 @@ export default function ExploreNearMe() {
               defaultZoom={11}
               gestureHandling={'greedy'}
               disableDefaultUI={true}
-              mapId="bf545ce13a92b834"
+              mapId={apiKey ? 'bf545ce13a92b834' : undefined}
             >
               <AdvancedMarker position={userLocation} title={'Your Location'}>
                  <div className="w-4 h-4 rounded-full bg-primary border-2 border-white shadow-md"></div>
