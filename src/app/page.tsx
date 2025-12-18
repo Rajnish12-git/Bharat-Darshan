@@ -3,8 +3,7 @@ import HeroCarousel from '@/components/hero-carousel';
 import HistoricalTimeline from '@/components/historical-timeline';
 import Footer from '@/components/footer';
 import CulturalHighlights from '@/components/cultural-highlights';
-import ExploreNearMe from '@/components/explore-near-me';
-import InteractiveMap from '@/components/interactive-map';
+import StateGrid from '@/components/state-grid';
 
 export default function Home() {
   return (
@@ -17,14 +16,11 @@ export default function Home() {
             Explore the States
           </h2>
           <p className="max-w-prose leading-relaxed text-muted-foreground sm:text-lg">
-            Discover the unique cultural tapestry of each Indian state. Find monuments near you or click on a state to begin your journey.
+            Discover the unique cultural tapestry of each Indian state.
           </p>
         </div>
-        <div className="mt-12 space-y-16">
-          <ExploreNearMe />
-          <div className="relative w-full aspect-[16/10] bg-secondary/30 rounded-2xl border overflow-hidden shadow-lg">
-              <InteractiveMap />
-          </div>
+        <div className="mt-12">
+          <StateGrid />
         </div>
       </section>
       <CulturalHighlights />
