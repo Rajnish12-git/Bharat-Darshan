@@ -3,8 +3,7 @@ import './globals.css';
 import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
 import { Literata } from 'next/font/google';
-import { FirebaseClientProvider } from '@/firebase/client-provider';
-import { FavoritesProvider } from '@/context/favorites-context';
+import { Providers } from '@/components/providers';
 
 export const metadata: Metadata = {
   title: 'Bharat Darshan',
@@ -39,14 +38,12 @@ export default function RootLayout({
           literataHeadline.variable
         )}
       >
-        <FirebaseClientProvider>
-          <FavoritesProvider>
-            <div className="relative flex min-h-dvh flex-col bg-background">
-              <main className="flex-1">{children}</main>
-            </div>
-            <Toaster />
-          </FavoritesProvider>
-        </FirebaseClientProvider>
+        <Providers>
+          <div className="relative flex min-h-dvh flex-col bg-background">
+            <main className="flex-1">{children}</main>
+          </div>
+          <Toaster />
+        </Providers>
       </body>
     </html>
   );

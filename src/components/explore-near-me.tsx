@@ -1,15 +1,12 @@
-
 'use client';
 
-import React, { useState, useMemo, useTransition } from 'react';
+import React, { useState, useTransition } from 'react';
 import { monuments as allMonuments } from '@/lib/monuments-data';
-import type { DetailItem } from '@/lib/heritage-data';
 import { getDistance } from '@/lib/utils';
 import { Button } from './ui/button';
-import { Loader2, MapPin } from 'lucide-react';
-import InfoCard from './info-card';
+import { Loader2, MapPin, Info } from 'lucide-react';
+import { Map, AdvancedMarker, Pin, InfoWindow } from '@vis.gl/react-google-maps';
 
-// Define the structure of a monument with an added distance property
 interface MonumentData {
     name: string;
     imageId: string;
@@ -23,6 +20,8 @@ export default function ExploreNearMe() {
   const [isPending, startTransition] = useTransition();
   const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [nearbyMonuments, setNearbyMonuments] = useState<MonumentWithDistance[]>([]);
+  const [selectedMonument, setSelectedMonument] = useState<MonumentWithDistance | null>(null);
 
   const handleFindNearby = () => {
     setError(null);
@@ -35,7 +34,22 @@ export default function ExploreNearMe() {
       navigator.geolocation.getCurrentPosition(
         (position) => {
           const { latitude, longitude } = position.coords;
-          setUserLocation({ lat: latitude, lng: longitude });
+          const location = { lat: latitude, lng: longitude };
+          setUserLocation(location);
+
+          const monumentsWithDistance: MonumentWithDistance[] = allMonuments
+            .map((monument) => {
+              const distance = getDistance(
+                location.lat,
+                location.lng,
+                monument.latitude,
+                monument.longitude
+              );
+              return { ...monument, distance };
+            })
+            .sort((a, b) => a.distance - b.distance);
+          
+          setNearbyMonuments(monumentsWithDistance);
         },
         () => {
           setError('Unable to retrieve your location. Please enable location permissions.');
@@ -43,27 +57,6 @@ export default function ExploreNearMe() {
       );
     });
   };
-
-  const nearbyMonuments = useMemo(() => {
-    if (!userLocation || !allMonuments) {
-      return [];
-    }
-
-    // Calculate distance for each monument and sort them
-    const monumentsWithDistance: MonumentWithDistance[] = allMonuments
-      .map((monument) => {
-        const distance = getDistance(
-          userLocation.lat,
-          userLocation.lng,
-          monument.latitude,
-          monument.longitude
-        );
-        return { ...monument, distance };
-      })
-      .sort((a, b) => a.distance - b.distance);
-      
-    return monumentsWithDistance;
-  }, [userLocation]);
 
   const isLoading = isPending;
 
@@ -79,32 +72,39 @@ export default function ExploreNearMe() {
       {error && <p className="text-center text-destructive">{error}</p>}
 
       {userLocation && !isLoading && (
-        <div className="mt-8">
-          {nearbyMonuments.length > 0 ? (
-            <>
-              <h3 className="text-2xl font-bold font-headline mb-6 text-center">
-                Monuments Near You
-              </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
-                {nearbyMonuments.map((monument) => {
-                   const item: DetailItem = {
-                    name: monument.name,
-                    imageId: monument.imageId,
-                    description: `${monument.description.substring(0, 100)}... (${monument.distance.toFixed(2)} km away)`,
-                  };
-                  return (
-                    <InfoCard
-                      item={item}
-                      category="monuments"
-                      key={monument.imageId}
-                    />
-                  );
-                })}
-              </div>
-            </>
-          ) : (
-            <p className="text-center text-muted-foreground">No monuments found in the database.</p>
-          )}
+        <div className="mt-8 rounded-lg overflow-hidden shadow-2xl" style={{ height: '60vh' }}>
+          <Map
+            defaultCenter={userLocation}
+            defaultZoom={11}
+            mapId={process.env.NEXT_PUBLIC_GOOGLE_MAPS_MAP_ID}
+            gestureHandling={'greedy'}
+          >
+            {nearbyMonuments.map((monument) => (
+              <AdvancedMarker
+                key={monument.imageId}
+                position={{ lat: monument.latitude, lng: monument.longitude }}
+                onClick={() => setSelectedMonument(monument)}
+              >
+                <Pin
+                  background={'#FB923C'}
+                  borderColor={'#EA580C'}
+                  glyphColor={'#fff'}
+                />
+              </AdvancedMarker>
+            ))}
+
+            {selectedMonument && (
+              <InfoWindow
+                position={{ lat: selectedMonument.latitude, lng: selectedMonument.longitude }}
+                onCloseClick={() => setSelectedMonument(null)}
+              >
+                <div className="p-2">
+                  <h3 className="font-bold font-headline">{selectedMonument.name}</h3>
+                  <p className="text-sm text-muted-foreground">{selectedMonument.distance.toFixed(2)} km away</p>
+                </div>
+              </InfoWindow>
+            )}
+          </Map>
         </div>
       )}
     </div>
