@@ -38,13 +38,11 @@ export default function HighlightPage({ params }: { params: { slug: string } }) 
             />
           )}
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
-          <div className="absolute bottom-0 left-0 p-8 md:p-16">
+          <div className="absolute bottom-0 left-0 p-4 md:p-8 lg:p-16">
+            <p className="text-primary font-semibold">{highlight.subtitle}</p>
             <h1 className="text-4xl md:text-7xl font-bold font-headline text-white drop-shadow-lg">
               {highlight.title}
             </h1>
-            <p className="mt-2 max-w-3xl text-lg text-white/90 drop-shadow-md">
-              {highlight.subtitle}
-            </p>
           </div>
         </header>
         
@@ -54,7 +52,7 @@ export default function HighlightPage({ params }: { params: { slug: string } }) 
               {highlight.description}
             </p>
             {highlight.details && highlight.details.length > 0 && (
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
                 {highlight.details.map((item) => (
                   <InfoCard item={item} key={item.name} />
                 ))}

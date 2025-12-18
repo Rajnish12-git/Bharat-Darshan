@@ -91,7 +91,7 @@ export default function HeroCarousel() {
                     priority={id === 'hero-taj-mahal'}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-                  <div className="absolute bottom-0 left-0 p-8 md:p-16 text-white">
+                  <div className="absolute bottom-0 left-0 p-8 md:p-16 text-white w-full md:w-auto">
                     <h1 className="text-4xl md:text-7xl font-bold font-headline drop-shadow-lg">
                       {title}
                     </h1>
@@ -109,8 +109,8 @@ export default function HeroCarousel() {
             );
           })}
         </CarouselContent>
-        <CarouselPrevious className="left-8 h-12 w-12 bg-white/30 text-white border-white/50 hover:bg-white/50"/>
-        <CarouselNext className="right-8 h-12 w-12 bg-white/30 text-white border-white/50 hover:bg-white/50"/>
+        <CarouselPrevious className="absolute left-4 md:left-8 h-10 w-10 md:h-12 md:w-12 bg-white/30 text-white border-white/50 hover:bg-white/50"/>
+        <CarouselNext className="absolute right-4 md:right-8 h-10 w-10 md:h-12 md:w-12 bg-white/30 text-white border-white/50 hover:bg-white/50"/>
       </Carousel>
     </section>
   );
