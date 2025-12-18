@@ -56,7 +56,7 @@ export default function Header() {
 
   const NavLinks = ({ className, onLinkClick }: { className?: string, onLinkClick?: () => void }) => (
     <nav className={cn("items-center space-x-4 md:space-x-6", className)}>
-        <Link href="/#states" onClick={onLinkClick} className={cn("text-sm font-medium transition-colors hover:text-primary", isScrolled || isMobileMenuOpen ? "text-foreground" : "text-white")}>
+        <Link href="/explore" onClick={onLinkClick} className={cn("text-sm font-medium transition-colors hover:text-primary", isScrolled || isMobileMenuOpen ? "text-foreground" : "text-white")}>
             Explore
         </Link>
         <Link href="/#timeline" onClick={onLinkClick} className={cn("text-sm font-medium transition-colors hover:text-primary", isScrolled || isMobileMenuOpen ? "text-foreground" : "text-white")}>

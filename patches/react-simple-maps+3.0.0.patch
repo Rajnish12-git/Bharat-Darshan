@@ -1,0 +1,14 @@
+diff --git a/node_modules/react-simple-maps/package.json b/node_modules/react-simple-maps/package.json
+index 3e62fec..7e489e0 100644
+--- a/node_modules/react-simple-maps/package.json
++++ b/node_modules/react-simple-maps/package.json
+@@ -62,6 +62,6 @@
+     "react-dom": "^16.8.0 || 17.x || 18.x"
+   },
+   "peerDependencies": {
+-    "react": "^16.8.0 || 17.x || 18.x",
+-    "react-dom": "^16.8.0 || 17.x || 18.x"
++    "react": "^16.8.0 || 17.x || 18.x || 19.x",
++    "react-dom": "^16.8.0 || 17.x || 18.x || 19.x"
+   }
+ }

@@ -16,7 +16,7 @@ export default function Home() {
             Explore the States
           </h2>
           <p className="max-w-prose leading-relaxed text-muted-foreground sm:text-lg">
-            Discover the unique cultural tapestry of each Indian state. Click on a state to begin your journey.
+            Discover the unique cultural tapestry of each Indian state. Click on a state to begin your journey, or use our interactive map.
           </p>
         </div>
         <StateGrid />
