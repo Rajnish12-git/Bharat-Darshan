@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
-import { Poppins } from 'next/font/google';
+import { Literata } from 'next/font/google';
 import { FirebaseClientProvider } from '@/firebase/client-provider';
 
 export const metadata: Metadata = {
@@ -10,10 +10,17 @@ export const metadata: Metadata = {
   description: 'Explore the rich cultural, historical, and architectural heritage of India.',
 };
 
-const poppins = Poppins({
+const literata = Literata({
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['300', '400', '500', '600', '700', '900'],
+  style: ['normal', 'italic'],
   variable: '--font-body',
+});
+
+const literataHeadline = Literata({
+  subsets: ['latin'],
+  weight: ['700', '900'],
+  variable: '--font-headline',
 });
 
 export default function RootLayout({
@@ -27,7 +34,8 @@ export default function RootLayout({
       <body
         className={cn(
           "min-h-screen bg-background font-body antialiased",
-          poppins.variable
+          literata.variable,
+          literataHeadline.variable
         )}
       >
         <FirebaseClientProvider>

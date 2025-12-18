@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/carousel";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import Autoplay from "embla-carousel-autoplay";
+import { cn } from "@/lib/utils";
 
 const heroImages = [
   {
@@ -60,10 +61,32 @@ export default function HeroCarousel() {
       ...placeholder
     }
   });
+  
+  const [api, setApi] = React.useState<CarouselApi>()
+  const [current, setCurrent] = React.useState(0)
+ 
+  React.useEffect(() => {
+    if (!api) {
+      return
+    }
+ 
+    setCurrent(api.selectedScrollSnap())
+ 
+    const onSelect = (api: CarouselApi) => {
+      setCurrent(api.selectedScrollSnap())
+    }
+ 
+    api.on("select", onSelect)
+ 
+    return () => {
+      api.off("select", onSelect)
+    }
+  }, [api])
 
   return (
     <section className="relative w-full h-screen overflow-hidden">
       <Carousel
+        setApi={setApi}
         className="w-full h-full"
         opts={{
           loop: true,
@@ -76,8 +99,9 @@ export default function HeroCarousel() {
         ]}
       >
         <CarouselContent>
-          {images.map(({ id, title, subtitle, imageUrl, description, imageHint }) => {
+          {images.map(({ id, title, subtitle, imageUrl, description, imageHint }, index) => {
             if (!imageUrl) return null;
+            const isActive = index === current;
 
             return (
               <CarouselItem key={id}>
@@ -86,11 +110,14 @@ export default function HeroCarousel() {
                     src={imageUrl}
                     alt={description || title}
                     fill
-                    className="object-cover"
+                    className={cn(
+                      "object-cover transition-transform duration-[6000ms] ease-in-out",
+                      isActive ? "scale-110" : "scale-100"
+                    )}
                     data-ai-hint={imageHint}
                     priority={id === 'hero-taj-mahal'}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
                   <div className="absolute bottom-0 left-0 p-8 md:p-16 text-white w-full md:w-auto">
                     <h1 className="text-4xl md:text-7xl font-bold font-headline drop-shadow-lg">
                       {title}
@@ -109,8 +136,8 @@ export default function HeroCarousel() {
             );
           })}
         </CarouselContent>
-        <CarouselPrevious className="absolute left-4 md:left-8 h-10 w-10 md:h-12 md:w-12 bg-white/30 text-white border-white/50 hover:bg-white/50"/>
-        <CarouselNext className="absolute right-4 md:right-8 h-10 w-10 md:h-12 md:w-12 bg-white/30 text-white border-white/50 hover:bg-white/50"/>
+        <CarouselPrevious className="absolute left-4 md:left-8 h-10 w-10 md:h-12 md:w-12 bg-white/20 text-white border-white/40 hover:bg-white/40"/>
+        <CarouselNext className="absolute right-4 md:right-8 h-10 w-10 md:h-12 md:w-12 bg-white/20 text-white border-white/40 hover:bg-white/40"/>
       </Carousel>
     </section>
   );

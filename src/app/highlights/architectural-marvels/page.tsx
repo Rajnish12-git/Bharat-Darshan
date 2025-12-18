@@ -81,18 +81,18 @@ export default function ArchitecturalMarvelsPage() {
                            <Badge variant="secondary">Era: {marvel.era}</Badge>
                            <Badge variant="secondary">Style: {marvel.architecture}</Badge>
                         </div>
-                        <Separator />
+                        <Separator className="my-4"/>
                         <div>
-                          <h4 className="font-semibold mb-2">Historical Significance</h4>
-                          <p className="text-sm text-muted-foreground">{marvel.description}</p>
+                          <h4 className="font-semibold mb-2 text-md">Historical Significance</h4>
+                          <p className="text-sm text-muted-foreground leading-relaxed">{marvel.description}</p>
                         </div>
-                        <div>
-                          <h4 className="font-semibold mb-2">Cultural Importance</h4>
-                          <p className="text-sm text-muted-foreground">{marvel.culturalSignificance}</p>
+                        <div className='pt-2'>
+                          <h4 className="font-semibold mb-2 text-md">Cultural Importance</h4>
+                          <p className="text-sm text-muted-foreground leading-relaxed">{marvel.culturalSignificance}</p>
                         </div>
-                        <div>
-                          <h4 className="font-semibold mb-2">Interesting Facts</h4>
-                          <ul className="list-disc pl-5 text-sm text-muted-foreground space-y-1">
+                        <div className='pt-2'>
+                          <h4 className="font-semibold mb-2 text-md">Interesting Facts</h4>
+                          <ul className="list-disc pl-5 text-sm text-muted-foreground space-y-1.5 leading-relaxed">
                             {marvel.interestingFacts.map((fact, index) => (
                               <li key={index}>{fact}</li>
                             ))}

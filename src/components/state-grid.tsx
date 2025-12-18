@@ -64,7 +64,7 @@ export default function StateGrid() {
                 <div
                   className={cn(
                     'p-1 transition-all duration-300 ease-in-out',
-                    isSelected ? 'opacity-100 scale-105' : 'opacity-50 scale-95'
+                    isSelected ? 'opacity-100 scale-100' : 'opacity-50 scale-95'
                   )}
                 >
                   <Link
@@ -73,28 +73,28 @@ export default function StateGrid() {
                     aria-disabled={!isSelected}
                     tabIndex={isSelected ? 0 : -1}
                   >
-                    <Card className="overflow-hidden transition-all duration-300 ease-in-out group-hover:shadow-xl group-hover:shadow-primary/20 group-hover:-translate-y-1">
-                      <div className="relative h-48 w-full">
+                    <Card className="overflow-hidden transition-all duration-300 ease-in-out group-hover:shadow-2xl group-hover:shadow-primary/20 group-hover:-translate-y-2 border-none">
+                      <div className="relative h-64 w-full">
                         {image && (
                           <Image
                             src={image.imageUrl}
                             alt={state.name}
-                            width={600}
-                            height={400}
-                            className="object-cover w-full h-full"
+                            fill
+                            className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500"
                             data-ai-hint={image.imageHint}
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                           />
                         )}
+                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                       </div>
-                      <div className="p-4">
+                      <div className="absolute bottom-0 left-0 p-6">
                         <CardHeader className="p-0">
-                          <CardTitle className="font-headline text-xl">
+                          <CardTitle className="font-headline text-2xl text-white">
                             {state.name}
                           </CardTitle>
                         </CardHeader>
                         <CardContent className="p-0 mt-2">
-                          <p className="text-muted-foreground text-sm line-clamp-2">
+                          <p className="text-white/80 text-sm line-clamp-2">
                             {state.description}
                           </p>
                         </CardContent>
@@ -106,8 +106,8 @@ export default function StateGrid() {
             );
           })}
         </CarouselContent>
-        <CarouselPrevious className="absolute left-8 top-1/2 -translate-y-1/2 z-10 h-12 w-12 bg-white/30 backdrop-blur-sm border border-white/50 text-black/80 hover:bg-white/50 hover:text-black" />
-        <CarouselNext className="absolute right-8 top-1/2 -translate-y-1/2 z-10 h-12 w-12 bg-white/30 backdrop-blur-sm border border-white/50 text-black/80 hover:bg-white/50 hover:text-black" />
+        <CarouselPrevious className="absolute left-[-1.5rem] md:left-[-2.5rem] top-1/2 -translate-y-1/2 z-10 h-12 w-12 bg-background/50 backdrop-blur-sm hover:bg-background/80" />
+        <CarouselNext className="absolute right-[-1.5rem] md:right-[-2.5rem] top-1/2 -translate-y-1/2 z-10 h-12 w-12 bg-background/50 backdrop-blur-sm hover:bg-background/80" />
       </Carousel>
     </div>
   );

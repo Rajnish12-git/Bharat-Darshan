@@ -10,12 +10,12 @@ export default function Home() {
     <div className="flex flex-col">
       <Header />
       <HeroCarousel />
-      <section id="states" className="container py-12 md:py-24 scroll-mt-20">
-        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
-          <h2 className="font-headline text-3xl font-bold leading-[1.1] sm:text-4xl md:text-5xl">
+      <section id="states" className="container py-16 md:py-28 scroll-mt-20">
+        <div className="mx-auto flex max-w-2xl flex-col items-center space-y-4 text-center">
+          <h2 className="font-headline text-4xl font-bold leading-[1.1] sm:text-4xl md:text-5xl">
             Explore the States
           </h2>
-          <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+          <p className="max-w-prose leading-relaxed text-muted-foreground sm:text-lg">
             Discover the unique cultural tapestry of each Indian state. Click on a state to begin your journey.
           </p>
         </div>
@@ -23,12 +23,12 @@ export default function Home() {
       </section>
       <CulturalHighlights />
       <section id="timeline" className="bg-secondary/50 scroll-mt-20">
-         <div className="container py-12 md:py-24">
-            <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center mb-12">
-              <h2 className="font-headline text-3xl font-bold leading-[1.1] sm:text-4xl md:text-5xl">
+         <div className="container py-16 md:py-28">
+            <div className="mx-auto flex max-w-2xl flex-col items-center space-y-4 text-center mb-16">
+              <h2 className="font-headline text-4xl font-bold leading-[1.1] sm:text-4xl md:text-5xl">
                 A Journey Through Time
               </h2>
-              <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
+              <p className="max-w-prose leading-relaxed text-muted-foreground sm:text-lg">
                 Witness the evolution of Indian civilization through its major historical milestones.
               </p>
             </div>
