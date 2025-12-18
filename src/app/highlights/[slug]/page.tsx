@@ -1,0 +1,60 @@
+import Image from 'next/image';
+import { notFound } from 'next/navigation';
+import { culturalHighlightsData } from '@/components/cultural-highlights';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+import Header from '@/components/header';
+import Footer from '@/components/footer';
+
+export async function generateStaticParams() {
+  return culturalHighlightsData.map((highlight) => ({
+    slug: highlight.slug,
+  }));
+}
+
+export default function HighlightPage({ params }: { params: { slug: string } }) {
+  const highlight = culturalHighlightsData.find((h) => h.slug === params.slug);
+
+  if (!highlight) {
+    notFound();
+  }
+
+  const highlightImage = PlaceHolderImages.find((img) => img.id === highlight.imageId);
+
+  return (
+    <>
+      <Header />
+      <article>
+        <header className="relative h-[60vh] w-full">
+          {highlightImage && (
+            <Image
+              src={highlightImage.imageUrl}
+              alt={highlight.title}
+              fill
+              className="object-cover"
+              data-ai-hint={highlightImage.imageHint}
+              priority
+            />
+          )}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+          <div className="absolute bottom-0 left-0 p-8 md:p-16">
+            <h1 className="text-4xl md:text-7xl font-bold font-headline text-white drop-shadow-lg">
+              {highlight.title}
+            </h1>
+            <p className="mt-2 max-w-3xl text-lg text-white/90 drop-shadow-md">
+              {highlight.subtitle}
+            </p>
+          </div>
+        </header>
+        
+        <div className="container py-12 md:py-16">
+          <div className="max-w-4xl mx-auto">
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              {highlight.description}
+            </p>
+          </div>
+        </div>
+      </article>
+      <Footer />
+    </>
+  );
+}
