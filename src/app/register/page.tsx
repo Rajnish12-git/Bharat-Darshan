@@ -8,7 +8,8 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Loader2, Eye, EyeOff } from 'lucide-react';
 import { useToast } from "@/hooks/use-toast";
-import { initiateEmailSignUp, useAuth, useUser } from '@/firebase';
+import { initiateEmailSignUp, useAuth, useUser, setDocumentNonBlocking } from '@/firebase';
+import { doc, getFirestore } from 'firebase/firestore';
 
 import { Button } from '@/components/ui/button';
 import {
@@ -57,6 +58,20 @@ export default function RegisterPage() {
   
   useEffect(() => {
     if (!isUserLoading && user) {
+        // Create user profile in Firestore
+        const db = getFirestore();
+        const userRef = doc(db, 'users', user.uid);
+        const [firstName, ...lastName] = values.name.split(' ');
+
+        setDocumentNonBlocking(userRef, {
+            id: user.uid,
+            username: values.email.split('@')[0],
+            email: values.email,
+            firstName: firstName,
+            lastName: lastName.join(' '),
+            dateJoined: new Date().toISOString(),
+        }, { merge: true });
+
       router.push('/profile');
     }
   }, [user, isUserLoading, router]);
