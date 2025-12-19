@@ -114,7 +114,7 @@ export default function ExploreNearMe() {
 
           {locationState === 'loading' && (
              <div className="w-full h-full bg-muted flex items-center justify-center">
-              <p className="text-muted-foreground">Loading map...</p>
+              <p className="text-muted-foreground">Loading map and location...</p>
             </div>
           )}
 
