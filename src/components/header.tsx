@@ -21,12 +21,57 @@ const navLinks = [
 function HeaderActions() {
   const isMobile = useIsMobile();
   const { user } = useUser();
+  const pathname = usePathname();
+  const isLandingPage = pathname === '/';
+  const [isScrolled, setIsScrolled] = useState(!isLandingPage);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+
+    if (isLandingPage) {
+      window.addEventListener('scroll', handleScroll);
+      // Set initial state
+      handleScroll();
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    } else {
+      setIsScrolled(true);
+    }
+  }, [pathname, isLandingPage]);
+  
+
+  const navTextClasses = cn(
+      'transition-colors',
+      (isScrolled || !isLandingPage) ? 'text-foreground' : 'text-white'
+  )
 
   const UserIcon = () => (
     <User
       className={cn(
-        'h-5 w-5 text-foreground/60 hover:text-foreground'
+        'h-5 w-5',
+        (isScrolled || !isLandingPage) ? 'text-foreground/60 hover:text-foreground' : 'text-white hover:text-white/80'
       )}
+    />
+  );
+
+  const SearchIcon = () => (
+     <Search
+        className={cn(
+            'h-5 w-5',
+            (isScrolled || !isLandingPage) ? 'text-foreground/60 hover:text-foreground' : 'text-white hover:text-white/80'
+        )}
+    />
+  );
+  
+  const MenuIcon = () => (
+    <Menu 
+        className={cn(
+            'h-5 w-5',
+            (isScrolled || !isLandingPage) ? 'text-foreground' : 'text-white'
+        )}
     />
   );
 
@@ -54,18 +99,10 @@ function HeaderActions() {
         <div className="flex flex-1 items-center justify-end space-x-2">
             <Button variant="ghost" size="icon" asChild>
               <Link href="/search" aria-label="Search">
-                <Search
-                  className={cn(
-                    'h-5 w-5'
-                  )}
-                />
+                <SearchIcon />
               </Link>
             </Button>
-             <LoginModal>
-                <button className="text-lg text-left text-muted-foreground hover:text-foreground">
-                    <UserIcon />
-                </button>
-            </LoginModal>
+            <UserButton />
             <Sheet>
               <SheetTrigger asChild>
                 <Button
@@ -73,7 +110,7 @@ function HeaderActions() {
                   size="icon"
                   aria-label="Open menu"
                 >
-                  <Menu className="h-5 w-5" />
+                  <MenuIcon />
                 </Button>
               </SheetTrigger>
               <SheetContent side="right">
@@ -113,7 +150,8 @@ function HeaderActions() {
               key={link.href}
               href={link.href}
               className={cn(
-                'transition-colors text-foreground/60 hover:text-foreground/80'
+                'transition-colors',
+                (isScrolled || !isLandingPage) ? 'text-foreground/60 hover:text-foreground/80' : 'text-white/80 hover:text-white'
               )}
             >
               {link.label}
@@ -123,18 +161,13 @@ function HeaderActions() {
         <div className="flex items-center space-x-2">
           <Button variant="ghost" size="icon" asChild>
             <Link href="/search" aria-label="Search">
-              <Search
-                className={cn(
-                  'h-5 w-5 text-foreground/60 hover:text-foreground'
-                )}
-              />
+              <SearchIcon />
             </Link>
           </Button>
           <UserButton />
         </div>
       </div>
   );
-
 }
 
 export default function Header() {
@@ -152,7 +185,6 @@ export default function Header() {
 
     if (isLandingPage) {
       window.addEventListener('scroll', handleScroll);
-      // Set initial state
       handleScroll();
       return () => {
         window.removeEventListener('scroll', handleScroll);
@@ -164,14 +196,14 @@ export default function Header() {
   
   const headerClasses = cn(
     'fixed top-0 z-50 w-full transition-all duration-300',
-    (isScrolled)
+    (isScrolled || !isLandingPage)
       ? 'border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'
       : 'bg-transparent'
   );
   
   const navTextClasses = cn(
       'transition-colors',
-      (isScrolled) ? 'text-foreground' : 'text-white'
+      (isScrolled || !isLandingPage) ? 'text-foreground' : 'text-white'
   )
 
   return (
