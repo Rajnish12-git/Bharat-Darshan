@@ -12,25 +12,20 @@
  * users and does not associate bookings with a specific user account.
  *
  * Key Security Decisions:
- * - Write-Once, Read-Never: Users can create bookings, but cannot read them back,
- *   update them, or delete them. This is the most secure posture for a collection
- *   containing PII from multiple unauthenticated users.
+ * - Write-Once, Read-Limited: Users can create bookings, but can only read back their
+ *   own bookings. They cannot update or delete them.
  * - Anonymous Access: The rules explicitly allow anonymous users to create bookings
  *   to support the core feature requirements.
  * - Minimal Data Validation: To prevent spam or abuse, a new booking must contain
  *   a few essential fields (userName, monumentName, visitors). However, in the spirit
- *   of prototyping, the rules do not enforce the full data schema.
- * - No Listing Allowed: Listing documents in the /bookings collection is strictly
- *   forbidden to prevent exposure of all users' booking information. Any features
- *   requiring a user to see their own booking history would require a different
- *   data model (e.g., storing bookings under a user-specific path and enforcing
- *   user ownership).
+ * of prototyping, the rules do not enforce the full data schema.
+ * - Secure Listing: Listing documents is only allowed when the query explicitly
+ *   filters for the user's own `userId`. This prevents any user from ever seeing
+ *   another user's booking information in a list view.
  *
  * Denormalization for Authorization:
- * Denormalization is not required for this data structure. Since there is no concept
- * of user ownership or shared access, all authorization decisions are made based on
- * the operation type (i.e., allowing create, denying all else) and minimal data
- * validation on the incoming document.
+ * The `userId` is stored on each booking document. This denormalization is crucial
+ * for writing security rules that grant read access based on ownership.
  *
  * Structural Segregation:
  * This principle is not applicable as there is only one type of data (private bookings)
@@ -72,12 +67,12 @@ service cloud.firestore {
      * @path /bookings/{bookingId}
      * @allow create - Any user can submit a booking with minimal valid data and matching userId.
      * @allow get - A user can only read their own specific booking.
-     * @allow list - A user can only query for their own bookings.
+     * @allow list - A user can only query for their own bookings by filtering on their userId.
      * @deny update, delete - No user can update or delete bookings.
      */
     match /bookings/{bookingId} {
       allow get: if isOwner(resource.data.userId);
-      allow list: if request.auth.uid != null;
+      allow list: if isOwner(request.query.filters.userId);
       allow create: if hasMinimumBookingData() && isOwner(request.resource.data.userId);
       allow update, delete: if false;
     }
