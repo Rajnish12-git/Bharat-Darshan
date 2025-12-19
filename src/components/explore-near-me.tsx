@@ -17,7 +17,7 @@ import { Button } from './ui/button';
 import { ScrollArea } from './ui/scroll-area';
 import { Badge } from './ui/badge';
 import { Separator } from './ui/separator';
-import { MapPin, AlertCircle } from 'lucide-react';
+import { MapPin, AlertCircle, Loader2 } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 
 export default function ExploreNearMe() {
@@ -45,15 +45,14 @@ export default function ExploreNearMe() {
         },
         (error) => {
           console.error('Error getting user location:', error);
-          // Fallback to a default location if permission is denied
-          setUserLocation({ lat: 28.6139, lng: 77.209 });
+          setUserLocation({ lat: 28.6139, lng: 77.209 }); // Fallback to Delhi
           setLocationState('denied');
         }
       );
     } else {
-        // Geolocation not supported
-        setUserLocation({ lat: 28.6139, lng: 77.209 });
-        setLocationState('denied');
+      // Geolocation not supported
+      setUserLocation({ lat: 28.6139, lng: 77.209 });
+      setLocationState('denied');
     }
   };
 
@@ -76,55 +75,44 @@ export default function ExploreNearMe() {
       setNearbyMonuments(monumentsWithDistance);
     }
   }, [userLocation]);
+  
+  const mapCenter = userLocation || { lat: 28.6139, lng: 77.209 };
 
-  const mapCenter = useMemo(() => {
-    if (userLocation) {
-      return { lat: userLocation.lat, lng: userLocation.lng };
-    }
-    return { lat: 28.6139, lng: 77.209 }; // Default to Delhi
-  }, [userLocation]);
-
-  return (
-    <section id="explore-near-me" className="pb-16 bg-secondary/30">
-      <div className="container">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold font-headline">Explore Near You</h2>
-          <p className="text-lg text-muted-foreground mt-2 max-w-2xl mx-auto">
-            Discover historical marvels within a 1000km radius of your
-            location.
-          </p>
-        </div>
-        <div className="relative h-[60vh] w-full rounded-lg overflow-hidden shadow-lg">
-          {locationState === 'prompt' && (
-            <Card className="w-full h-full flex flex-col items-center justify-center bg-muted">
-              <CardContent className="text-center">
-                <MapPin className="mx-auto h-12 w-12 text-muted-foreground mb-4" />
-                <h3 className="text-xl font-semibold mb-2">
-                  Discover Heritage Sites Near You
-                </h3>
-                <p className="text-muted-foreground mb-6">
-                  Share your location to see historical monuments on the map.
-                </p>
-                <Button onClick={handleLocationRequest}>
-                  Allow Location Access
-                </Button>
-              </CardContent>
-            </Card>
-          )}
-
-          {locationState === 'loading' && (
-             <div className="w-full h-full bg-muted flex items-center justify-center">
-              <p className="text-muted-foreground">Loading map and location...</p>
-            </div>
-          )}
-
-          {(locationState === 'granted' || locationState === 'denied') && userLocation && (
-            <>
+  const renderContent = () => {
+    switch (locationState) {
+      case 'prompt':
+        return (
+          <Card className="w-full h-full flex flex-col items-center justify-center bg-muted">
+            <CardContent className="text-center p-6">
+              <MapPin className="mx-auto h-12 w-12 text-muted-foreground mb-4" />
+              <h3 className="text-xl font-semibold mb-2">
+                Discover Heritage Sites Near You
+              </h3>
+              <p className="text-muted-foreground mb-6">
+                Share your location to see historical monuments on the map.
+              </p>
+              <Button onClick={handleLocationRequest}>
+                Allow Location Access
+              </Button>
+            </CardContent>
+          </Card>
+        );
+      case 'loading':
+        return (
+          <div className="w-full h-full bg-muted flex flex-col items-center justify-center">
+            <Loader2 className="h-8 w-8 animate-spin text-muted-foreground mb-4" />
+            <p className="text-muted-foreground">Getting your location...</p>
+          </div>
+        );
+      case 'granted':
+      case 'denied':
+        return (
+          <>
             {locationState === 'denied' && (
-                <div className="absolute top-4 left-1/2 -translate-x-1/2 z-10 bg-background/80 backdrop-blur-sm text-foreground p-3 rounded-lg shadow-lg flex items-center gap-2 text-sm">
-                    <AlertCircle className="h-4 w-4 text-amber-500" />
-                    <p>Location access denied. Showing results near Delhi.</p>
-                </div>
+              <div className="absolute top-4 left-1/2 -translate-x-1/2 z-10 bg-background/80 backdrop-blur-sm text-foreground p-3 rounded-lg shadow-lg flex items-center gap-2 text-sm">
+                <AlertCircle className="h-4 w-4 text-amber-500" />
+                <p>Location access denied. Showing results near Delhi.</p>
+              </div>
             )}
             <Map
               center={mapCenter}
@@ -135,9 +123,9 @@ export default function ExploreNearMe() {
               className="w-full h-full"
             >
               {userLocation && locationState === 'granted' && (
-                  <AdvancedMarker position={userLocation}>
-                    <div className="h-4 w-4 rounded-full bg-blue-500 border-2 border-white" />
-                  </AdvancedMarker>
+                <AdvancedMarker position={userLocation}>
+                  <div className="h-4 w-4 rounded-full bg-blue-500 border-2 border-white shadow-md" />
+                </AdvancedMarker>
               )}
               {nearbyMonuments.map((monument, index) => (
                 <AdvancedMarker
@@ -153,8 +141,22 @@ export default function ExploreNearMe() {
                 </AdvancedMarker>
               ))}
             </Map>
-            </>
-          )}
+          </>
+        );
+    }
+  };
+
+  return (
+    <section id="explore-near-me" className="pb-16 bg-secondary/30">
+      <div className="container">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold font-headline">Explore Near You</h2>
+          <p className="text-lg text-muted-foreground mt-2 max-w-2xl mx-auto">
+            Discover historical marvels within a 1000km radius.
+          </p>
+        </div>
+        <div className="relative h-[60vh] w-full rounded-lg overflow-hidden shadow-lg border">
+          {renderContent()}
         </div>
       </div>
 
