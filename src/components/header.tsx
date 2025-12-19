@@ -152,6 +152,8 @@ export default function Header() {
 
     if (isLandingPage) {
       window.addEventListener('scroll', handleScroll);
+      // Set initial state
+      handleScroll();
       return () => {
         window.removeEventListener('scroll', handleScroll);
       };
@@ -162,10 +164,15 @@ export default function Header() {
   
   const headerClasses = cn(
     'fixed top-0 z-50 w-full transition-all duration-300',
-    (isScrolled || !isLandingPage)
+    (isScrolled)
       ? 'border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'
       : 'bg-transparent'
   );
+  
+  const navTextClasses = cn(
+      'transition-colors',
+      (isScrolled) ? 'text-foreground' : 'text-white'
+  )
 
   return (
     <header className={headerClasses}>
@@ -173,8 +180,8 @@ export default function Header() {
         <Link
           href="/"
           className={cn(
-            'mr-6 flex items-center space-x-2 transition-colors',
-            (isScrolled || !isLandingPage) ? 'text-foreground' : 'text-white'
+            'mr-6 flex items-center space-x-2',
+            navTextClasses,
           )}
         >
           <span className="font-bold font-headline text-xl">Bharat Darshan</span>
