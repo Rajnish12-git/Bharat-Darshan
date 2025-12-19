@@ -30,7 +30,7 @@ export default function StateGrid() {
       ]}
       className="w-full"
     >
-      <CarouselContent>
+      <CarouselContent className="-ml-4">
         {indianStates.map((state) => {
           const image = PlaceHolderImages.find(
             (img) => img.id === state.imageId
@@ -39,7 +39,7 @@ export default function StateGrid() {
           return (
             <CarouselItem
               key={state.slug}
-              className="md:basis-1/2 lg:basis-1/3"
+              className="pl-4 md:basis-1/2 lg:basis-1/3"
             >
               <div className="p-1">
                 <Link
