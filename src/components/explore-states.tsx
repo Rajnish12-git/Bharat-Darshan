@@ -1,8 +1,9 @@
+
 import StateGrid from './state-grid';
 
 export default function ExploreStates() {
   return (
-    <section className="py-16 bg-secondary/30">
+    <section id="explore-states" className="py-16 bg-secondary/30">
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold font-headline">

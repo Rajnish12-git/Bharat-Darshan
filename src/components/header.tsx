@@ -35,6 +35,13 @@ function HeaderActions() {
     );
   };
 
+  const navLinks = [
+    { href: '/', label: 'Home' },
+    { href: '/#explore-states', label: 'Explore' },
+    { href: '/#glimpses', label: 'Glimpses' },
+    { href: '/#timeline', label: 'Timeline' },
+  ];
+
   const MobileMenu = () => (
     <Sheet>
       <SheetTrigger asChild>
@@ -68,13 +75,6 @@ function HeaderActions() {
       </SheetContent>
     </Sheet>
   );
-
-  const navLinks = [
-    { href: '/', label: 'Home' },
-    { href: '/explore', label: 'Explore' },
-    { href: '/#glimpses', label: 'Glimpses' },
-    { href: '/#timeline', label: 'Timeline' },
-  ];
 
   if (useIsMobile()) {
     return (
@@ -163,5 +163,3 @@ export default function Header() {
     </header>
   );
 }
-
-    
