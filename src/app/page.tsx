@@ -13,8 +13,8 @@ export default function Home() {
       <main>
         <HeroCarousel />
         <ExploreStates />
-        <CulturalHighlights />
         <ExploreNearMe />
+        <CulturalHighlights />
         <HistoricalTimeline />
       </main>
       <Footer />
