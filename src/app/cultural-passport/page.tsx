@@ -17,18 +17,18 @@ import { Separator } from '@/components/ui/separator';
 function BookingCard({ booking }: { booking: any }) {
   return (
     <Card className="shadow-md transition-all hover:shadow-lg">
-      <CardHeader className='flex-row items-start justify-between gap-4'>
+      <CardHeader className='flex-col sm:flex-row items-start justify-between gap-2 sm:gap-4'>
         <div>
           <CardTitle className="text-2xl font-headline">{booking.monumentName}</CardTitle>
           <CardDescription className="text-md">
             Booking ID: <span className='font-mono text-xs'>{booking.id}</span>
           </CardDescription>
         </div>
-        <Badge variant={booking.status === 'pending' ? 'secondary' : 'default'} className="capitalize">
+        <Badge variant={booking.status === 'pending' ? 'secondary' : 'default'} className="capitalize self-start">
           {booking.status}
         </Badge>
       </CardHeader>
-      <CardContent className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
+      <CardContent className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
         <div className="flex items-center gap-2 text-muted-foreground">
           <Calendar className="h-4 w-4" />
           <span>{format(new Date(booking.visitDate), 'PPP')}</span>
@@ -109,7 +109,7 @@ export default function CulturalPassportPage() {
                         </h1>
                         <p className="text-muted-foreground">{user?.isAnonymous ? 'Sign up to save your bookings.' : user?.email}</p>
                     </div>
-                     <Button variant="outline" onClick={handleSignOut} disabled={userLoading}>
+                     <Button variant="outline" onClick={handleSignOut} disabled={userLoading} className="w-full sm:w-auto">
                         <LogOut className="mr-2 h-4 w-4" />
                         Sign Out
                     </Button>
@@ -140,7 +140,7 @@ export default function CulturalPassportPage() {
                 <section>
                     <div className="flex items-center gap-3 mb-8">
                         <Star className="h-7 w-7 text-primary"/>
-                        <h2 className="text-3xl font-bold font-headline">Upcoming Bookings</h2>
+                        <h2 className="text-2xl md:text-3xl font-bold font-headline">Upcoming Bookings</h2>
                     </div>
                     {upcomingBookings.length > 0 ? (
                         <div className="space-y-6">
@@ -163,7 +163,7 @@ export default function CulturalPassportPage() {
                 <section>
                     <div className="flex items-center gap-3 mb-8">
                         <History className="h-7 w-7 text-primary"/>
-                        <h2 className="text-3xl font-bold font-headline">Booking History</h2>
+                        <h2 className="text-2xl md:text-3xl font-bold font-headline">Booking History</h2>
                     </div>
                      {pastBookings.length > 0 ? (
                         <div className="space-y-6 opacity-70">
