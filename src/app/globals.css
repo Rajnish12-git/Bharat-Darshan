@@ -67,3 +67,13 @@
     @apply font-headline;
   }
 }
+
+@layer utilities {
+  header[data-landing="true"] {
+    @apply bg-transparent text-white;
+  }
+
+  header[data-landing="true"][data-scrolled="true"] {
+    @apply border-b border-border/40 bg-background/95 text-foreground backdrop-blur supports-[backdrop-filter]:bg-background/60;
+  }
+}
