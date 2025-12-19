@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from './ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import StateGrid from './state-grid';
 
 export default function CulturalHighlights() {
   const highlight = {
