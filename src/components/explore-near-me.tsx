@@ -71,7 +71,7 @@ export default function ExploreNearMe() {
   }, [userLocation]);
 
   return (
-    <section id="explore-near-me" className="py-20 bg-secondary/30">
+    <section id="explore-near-me" className="pb-16 bg-secondary/30">
       <div className="container">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold font-headline">Explore Near You</h2>
