@@ -10,6 +10,7 @@ import { useIsMobile } from '@/hooks/use-mobile';
 import { useEffect, useState } from 'react';
 import { useUser } from '@/firebase';
 import LoginModal from './login-modal';
+import { usePathname } from 'next/navigation';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -21,17 +22,6 @@ const navLinks = [
 function HeaderActions() {
   const isMobile = useIsMobile();
   const { user } = useUser();
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 10;
-      setScrolled(isScrolled);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const UserIcon = () => (
     <User
@@ -150,22 +140,45 @@ function HeaderActions() {
 
 export default function Header() {
   const [isClient, setIsClient] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const isHomePage = pathname === '/';
 
   useEffect(() => {
     setIsClient(true);
-  }, []);
+    
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 10;
+      setScrolled(isScrolled);
+    };
+
+    if (isHomePage) {
+      window.addEventListener('scroll', handleScroll);
+      handleScroll(); // Check on initial render
+    }
+
+    return () => {
+      if (isHomePage) {
+        window.removeEventListener('scroll', handleScroll);
+      }
+    };
+  }, [isHomePage]);
+  
+  const headerClasses = cn(
+    'sticky top-0 z-50 w-full transition-colors duration-300',
+    (isHomePage && !scrolled)
+      ? 'bg-transparent border-b border-transparent'
+      : 'border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'
+  );
 
   return (
-    <header
-      className={cn(
-        'sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'
-      )}
-    >
+    <header className={headerClasses}>
       <div className="container flex h-16 max-w-screen-2xl items-center">
         <Link
           href="/"
           className={cn(
-            'mr-6 flex items-center space-x-2 transition-colors text-foreground'
+            'mr-6 flex items-center space-x-2 transition-colors',
+             (isHomePage && !scrolled) ? 'text-white' : 'text-foreground'
           )}
         >
           <span className="font-bold font-headline text-xl">Bharat Darshan</span>
