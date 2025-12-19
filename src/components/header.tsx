@@ -6,6 +6,7 @@ import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
 import { Menu, Mountain, Search, User } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useIsMobile } from '@/hooks/use-mobile';
+import { useEffect, useState } from 'react';
 
 const navLinks = [
   { href: '/explore', label: 'Explore' },
@@ -15,11 +16,35 @@ const navLinks = [
 
 export default function Header() {
   const isMobile = useIsMobile();
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 10;
+      setScrolled(isScrolled);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <header className="fixed top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header
+      className={cn(
+        'fixed top-0 z-50 w-full transition-all duration-300',
+        scrolled
+          ? 'border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'
+          : 'bg-transparent border-transparent'
+      )}
+    >
       <div className="container flex h-16 max-w-screen-2xl items-center">
-        <Link href="/" className="mr-6 flex items-center space-x-2">
+        <Link
+          href="/"
+          className={cn(
+            'mr-6 flex items-center space-x-2',
+            !scrolled && 'text-white'
+          )}
+        >
           <Mountain className="h-6 w-6" />
           <span className="font-bold font-headline text-xl">Bharat Darshan</span>
         </Link>
@@ -28,12 +53,22 @@ export default function Header() {
           <div className="flex flex-1 items-center justify-end space-x-2">
             <Button variant="ghost" size="icon" asChild>
               <Link href="/search" aria-label="Search">
-                <Search className="h-5 w-5" />
+                <Search
+                  className={cn(
+                    'h-5 w-5',
+                    !scrolled && 'text-white hover:text-white/80'
+                  )}
+                />
               </Link>
             </Button>
             <Sheet>
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" aria-label="Open menu">
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  aria-label="Open menu"
+                  className={cn(!scrolled && 'text-white hover:bg-white/20 hover:text-white')}
+                >
                   <Menu className="h-5 w-5" />
                 </Button>
               </SheetTrigger>
@@ -48,7 +83,7 @@ export default function Header() {
                       {link.label}
                     </Link>
                   ))}
-                   <Link href="/login" className="text-muted-foreground hover:text-foreground">
+                  <Link href="/login" className="text-muted-foreground hover:text-foreground">
                     Profile
                   </Link>
                 </nav>
@@ -62,7 +97,12 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="transition-colors hover:text-foreground/80 text-foreground/60"
+                  className={cn(
+                    'transition-colors',
+                    scrolled
+                      ? 'text-foreground/60 hover:text-foreground/80'
+                      : 'text-white/80 hover:text-white'
+                  )}
                 >
                   {link.label}
                 </Link>
@@ -71,12 +111,22 @@ export default function Header() {
             <div className="flex items-center space-x-2">
               <Button variant="ghost" size="icon" asChild>
                 <Link href="/search" aria-label="Search">
-                  <Search className="h-5 w-5 text-foreground/60" />
+                  <Search
+                    className={cn(
+                      'h-5 w-5',
+                      scrolled ? 'text-foreground/60' : 'text-white/80'
+                    )}
+                  />
                 </Link>
               </Button>
               <Button variant="ghost" size="icon" asChild>
                 <Link href="/login" aria-label="User Profile">
-                  <User className="h-5 w-5 text-foreground/60" />
+                  <User
+                    className={cn(
+                      'h-5 w-5',
+                      scrolled ? 'text-foreground/60' : 'text-white/80'
+                    )}
+                  />
                 </Link>
               </Button>
             </div>

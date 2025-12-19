@@ -4,6 +4,7 @@ import './globals.css';
 import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
 import { Providers } from '@/components/providers';
+import ScrollProgress from '@/components/scroll-progress';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={cn('min-h-screen bg-background font-sans antialiased', inter.className)}>
         <Providers>
+          <ScrollProgress />
           <div className="relative flex min-h-dvh flex-col bg-background">
             {children}
           </div>
