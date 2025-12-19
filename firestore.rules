@@ -46,9 +46,13 @@ service cloud.firestore {
     /**
      * Checks if a request is authenticated.
      */
-    // function isSignedIn() {
-    //   return request.auth != null;
-    // }
+    function isSignedIn() {
+      return request.auth != null;
+    }
+    
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
 
     /**
      * Performs minimal validation on a new booking to prevent abuse.
@@ -71,8 +75,8 @@ service cloud.firestore {
      * @principle Implements a secure 'dropbox' pattern where users can write data but cannot read or modify it afterwards, protecting PII.
      */
     match /bookings/{bookingId} {
-      allow get: if false;
-      allow list: if false;
+      allow get: if isOwner(resource.data.userId);
+      allow list: if isSignedIn();
       allow create: if hasMinimumBookingData();
       allow update: if false;
       allow delete: if false;

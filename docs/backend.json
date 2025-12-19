@@ -10,6 +10,10 @@
           "type": "string",
           "description": "Unique identifier for the booking entity."
         },
+        "userId": {
+          "type": "string",
+          "description": "The UID of the user who created the booking."
+        },
         "userName": {
           "type": "string",
           "description": "Full name of the user making the booking."
@@ -60,6 +64,7 @@
       },
       "required": [
         "bookingId",
+        "userId",
         "userName",
         "email",
         "phone",
