@@ -76,7 +76,7 @@ export default function StateGrid() {
                 <Link href={`/states/${state.slug}`} className="group block">
                   <Card
                     className={cn(
-                      'overflow-hidden relative h-72 transition-shadow',
+                      'overflow-hidden relative h-64 transition-shadow',
                       isActive && 'shadow-2xl'
                     )}
                   >
