@@ -68,18 +68,16 @@ service cloud.firestore {
 
 
     /**
-     * @description Rules for the /bookings collection, implementing a 'dropbox' model.
+     * @description Rules for the /bookings collection.
      * @path /bookings/{bookingId}
-     * @allow (create) Any user (anonymous or signed-in) submitting a booking with minimal valid data.
-     * @deny (get, list, update, delete) Any user attempting to read, list, update, or delete any booking.
-     * @principle Implements a secure 'dropbox' pattern where users can write data but cannot read or modify it afterwards, protecting PII.
+     * @allow create - Any user can submit a booking with minimal valid data.
+     * @allow read - A user can only read their own bookings.
+     * @deny update, delete - No user can update or delete bookings.
      */
     match /bookings/{bookingId} {
-      allow get: if isOwner(resource.data.userId);
-      allow list: if isSignedIn();
-      allow create: if hasMinimumBookingData();
-      allow update: if false;
-      allow delete: if false;
+      allow read: if isOwner(resource.data.userId);
+      allow create: if hasMinimumBookingData() && isOwner(request.resource.data.userId);
+      allow update, delete: if false;
     }
   }
 }
