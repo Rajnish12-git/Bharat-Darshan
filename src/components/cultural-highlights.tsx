@@ -8,7 +8,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function CulturalHighlights() {
   return (
-    <section id="glimpses" className="py-20 md:py-32">
+    <section id="glimpses" className="py-16 md:py-24">
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold font-headline">
@@ -63,7 +63,7 @@ export default function CulturalHighlights() {
                   <p className="mt-4 text-muted-foreground leading-relaxed">
                     {highlight.description}
                   </p>
-                  <Button asChild variant="outline" className="mt-6">
+                  <Button asChild variant="outline" className="mt-6 hover:bg-accent hover:text-accent-foreground">
                     <Link href={`/highlights/${highlight.slug}`}>
                       Learn More <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
