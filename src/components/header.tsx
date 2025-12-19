@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -114,9 +115,17 @@ export default function Header() {
                       {link.label}
                     </Link>
                   ))}
-                  <Link href="/cultural-passport" className="text-muted-foreground hover:text-foreground">
-                    Cultural Passport
-                  </Link>
+                  {user && !user.isAnonymous ? (
+                    <Link href="/cultural-passport" className="text-muted-foreground hover:text-foreground">
+                      Cultural Passport
+                    </Link>
+                   ) : (
+                    <LoginModal>
+                        <button className="text-lg text-left text-muted-foreground hover:text-foreground">
+                            Cultural Passport
+                        </button>
+                    </LoginModal>
+                   )}
                 </nav>
               </SheetContent>
             </Sheet>
