@@ -4,7 +4,6 @@ import { Button } from './ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { highlights } from '@/lib/highlights-data';
 import { cn } from '@/lib/utils';
-import { ArrowRight } from 'lucide-react';
 
 export default function CulturalHighlights() {
   const architecturalHighlight = highlights.find(h => h.slug === 'architectural-marvels');
@@ -40,7 +39,8 @@ export default function CulturalHighlights() {
                 key={highlight.slug}
                 className="grid md:grid-cols-2 items-center gap-12 md:gap-16"
               >
-                <div
+                <Link
+                  href={`/highlights/${highlight.slug}`}
                   className={cn(
                     'relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg group',
                     index % 2 !== 0 && 'md:order-2'
@@ -56,12 +56,7 @@ export default function CulturalHighlights() {
                     />
                   )}
                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                      <Link href={`/highlights/${highlight.slug}`}>
-                        <Button variant="secondary" size="lg">Explore {highlight.title} <ArrowRight className="ml-2 h-5 w-5"/></Button>
-                      </Link>
-                   </div>
-                </div>
+                </Link>
                 <div
                   className={cn(
                     'flex flex-col items-start',
