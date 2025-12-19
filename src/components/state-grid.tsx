@@ -12,14 +12,38 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  type CarouselApi,
 } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
+import { Landmark, UtensilsCrossed, CalendarDays, Palette } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 export default function StateGrid() {
+  const [api, setApi] = React.useState<CarouselApi>();
+  const [current, setCurrent] = React.useState(0);
+
+  React.useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    const onSelect = (api: CarouselApi) => {
+      setCurrent(api.selectedScrollSnap());
+    };
+
+    api.on('select', onSelect);
+    onSelect(api); // Set initial state
+
+    return () => {
+      api.off('select', onSelect);
+    };
+  }, [api]);
+
   return (
     <Carousel
+      setApi={setApi}
       opts={{
-        align: 'start',
+        align: 'center',
         loop: true,
       }}
       plugins={[
@@ -31,41 +55,69 @@ export default function StateGrid() {
       className="w-full"
     >
       <CarouselContent className="-ml-4">
-        {indianStates.map((state) => {
+        {indianStates.map((state, index) => {
           const image = PlaceHolderImages.find(
             (img) => img.id === state.imageId
           );
+          const isActive = index === current;
 
           return (
             <CarouselItem
               key={state.slug}
               className="pl-4 md:basis-1/2 lg:basis-1/3"
             >
-              <div className="p-1">
-                <Link
-                  href={`/states/${state.slug}`}
-                  className="group block"
-                >
-                  <Card className="overflow-hidden relative h-64">
+              <div
+                className={cn(
+                  'p-1 transition-all duration-300 ease-in-out',
+                  isActive ? 'transform scale-105' : 'transform scale-95 opacity-80'
+                )}
+              >
+                <Link href={`/states/${state.slug}`} className="group block">
+                  <Card
+                    className={cn(
+                      'overflow-hidden relative h-80 transition-shadow',
+                      isActive && 'shadow-2xl'
+                    )}
+                  >
                     <div className="relative w-full h-full">
                       {image && (
                         <Image
                           src={image.imageUrl}
                           alt={state.name}
                           fill
-                          className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-105"
+                          className="object-cover w-full h-full transition-transform duration-300 ease-in-out group-hover:scale-110"
                           data-ai-hint={image.imageHint}
                         />
                       )}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
                     </div>
-                    <div className="absolute bottom-0 left-0 p-6 text-white">
-                      <CardTitle className="font-headline text-2xl drop-shadow-md">
+                    <div className="absolute top-0 left-0 p-4 w-full">
+                       <CardTitle className="font-headline text-2xl text-white drop-shadow-md">
                         {state.name}
                       </CardTitle>
                       <CardDescription className="mt-1 line-clamp-2 text-white/90 drop-shadow-sm">
                         {state.description}
                       </CardDescription>
+                    </div>
+                    <div className="absolute bottom-0 left-0 p-4 w-full text-white">
+                      <div className="flex justify-between items-center bg-black/30 backdrop-blur-sm rounded-lg p-2 text-xs">
+                        <div className="flex items-center gap-1" title={`${state.monuments.length} Monuments`}>
+                          <Landmark className="h-4 w-4" />
+                          <span>{state.monuments.length}</span>
+                        </div>
+                         <div className="flex items-center gap-1" title={`${state.cuisine.length} Cuisine Items`}>
+                          <UtensilsCrossed className="h-4 w-4" />
+                          <span>{state.cuisine.length}</span>
+                        </div>
+                         <div className="flex items-center gap-1" title={`${state.festivals.length} Festivals`}>
+                          <CalendarDays className="h-4 w-4" />
+                          <span>{state.festivals.length}</span>
+                        </div>
+                         <div className="flex items-center gap-1" title={`${state.artForms.length} Art Forms`}>
+                          <Palette className="h-4 w-4" />
+                           <span>{state.artForms.length}</span>
+                        </div>
+                      </div>
                     </div>
                   </Card>
                 </Link>
