@@ -3,7 +3,6 @@ import HeroCarousel from '@/components/hero-carousel';
 import HistoricalTimeline from '@/components/historical-timeline';
 import Footer from '@/components/footer';
 import CulturalHighlights from '@/components/cultural-highlights';
-import ExploreNearMe from '@/components/explore-near-me';
 import StateGrid from '@/components/state-grid';
 
 export default function Home() {
@@ -12,6 +11,7 @@ export default function Home() {
       <Header />
       <main>
         <HeroCarousel />
+        <CulturalHighlights />
         <section className="py-20 md:py-32">
             <div className="container">
                 <div className="text-center mb-16">
@@ -25,8 +25,6 @@ export default function Home() {
                 <StateGrid />
             </div>
         </section>
-        <CulturalHighlights />
-        <ExploreNearMe />
         <HistoricalTimeline />
       </main>
       <Footer />
