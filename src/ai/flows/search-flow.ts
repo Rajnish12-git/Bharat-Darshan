@@ -1,35 +1,15 @@
 'use server';
 
 import { ai } from '@/ai/genkit';
-import { z } from 'genkit';
 import { indianStates } from '@/lib/states-data';
 import architecturalMarvels from '@/lib/architectural-marvels.json';
 import type { StateData, DetailItem } from '@/lib/heritage-data';
-
-export const SearchFlowInputSchema = z.object({
-  query: z.string().describe('The search query for monuments or states.'),
-});
-export type SearchFlowInput = z.infer<typeof SearchFlowInputSchema>;
-
-export const SearchFlowOutputSchema = z.object({
-  states: z.array(
-    z.object({
-      slug: z.string(),
-      name: z.string(),
-      description: z.string(),
-      imageId: z.string(),
-    })
-  ),
-  monuments: z.array(
-    z.object({
-      name: z.string(),
-      imageId: z.string(),
-      description: z.string(),
-      location: z.string().optional(),
-    })
-  ),
-});
-export type SearchFlowOutput = z.infer<typeof SearchFlowOutputSchema>;
+import {
+  SearchFlowInputSchema,
+  SearchFlowOutputSchema,
+  type SearchFlowInput,
+  type SearchFlowOutput,
+} from './search-flow-types';
 
 function searchStates(query: string): Partial<StateData>[] {
   const lowerCaseQuery = query.toLowerCase();
@@ -49,7 +29,8 @@ function searchStates(query: string): Partial<StateData>[] {
 
 function searchMonuments(query: string): Partial<DetailItem>[] {
   const lowerCaseQuery = query.toLowerCase();
-  return architecturalMarvels
+  const allMonuments: any[] = architecturalMarvels;
+  return allMonuments
     .filter(
       (marvel) =>
         marvel.name.toLowerCase().includes(lowerCaseQuery) ||
@@ -64,7 +45,7 @@ function searchMonuments(query: string): Partial<DetailItem>[] {
     }));
 }
 
-export const searchFlow = ai.defineFlow(
+const searchFlow = ai.defineFlow(
   {
     name: 'searchFlow',
     inputSchema: SearchFlowInputSchema,
@@ -80,3 +61,7 @@ export const searchFlow = ai.defineFlow(
     };
   }
 );
+
+export async function searchHeritage(input: SearchFlowInput): Promise<SearchFlowOutput> {
+    return searchFlow(input);
+}
