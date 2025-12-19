@@ -141,14 +141,18 @@
         }
       },
       {
-        "path": "/bookings/{bookingId}",
+        "path": "/users/{userId}/bookings/{bookingId}",
         "definition": {
           "entityName": "Booking",
           "schema": {
             "$ref": "#/backend/entities/Booking"
           },
-          "description": "Stores booking requests for hotels and tour guides. The 'bookingId' is used as the document ID.",
+          "description": "Stores booking requests for a specific user. The 'bookingId' is the document ID.",
           "params": [
+            {
+              "name": "userId",
+              "description": "The UID of the user."
+            },
             {
               "name": "bookingId",
               "description": "Unique identifier for each booking document."

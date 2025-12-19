@@ -17,17 +17,12 @@ service cloud.firestore {
       allow read: if true;
       // Users can only update or delete their own profile
       allow update, delete: if isOwner(userId);
-    }
 
-    match /bookings/{bookingId} {
-      // Allow creation by any authenticated user (including anonymous guests)
-      allow create: if isSignedIn();
-      
-      // Allow users to read a list of their own bookings
-      allow list: if request.auth.uid == request.query.filters.userId.string_value;
-
-      // Allow users to read, update, or delete a single one of their own bookings
-      allow get, update, delete: if isOwner(resource.data.userId);
+      // Rule for the nested bookings collection
+      match /bookings/{bookingId} {
+        // Only the owner of the user profile can read, write, update, or delete their own bookings.
+        allow read, write: if isOwner(userId);
+      }
     }
   }
 }
