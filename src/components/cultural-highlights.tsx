@@ -7,6 +7,16 @@ import { cn } from '@/lib/utils';
 import { ArrowRight } from 'lucide-react';
 
 export default function CulturalHighlights() {
+  const architecturalHighlight = highlights.find(h => h.slug === 'architectural-marvels');
+
+  if (!architecturalHighlight) {
+    return null;
+  }
+
+  const image = PlaceHolderImages.find(
+    (img) => img.id === architecturalHighlight.imageId
+  );
+
   return (
     <section id="glimpses" className="py-20 md:py-32">
       <div className="container">
