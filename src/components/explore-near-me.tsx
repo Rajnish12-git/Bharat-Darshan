@@ -20,7 +20,7 @@ import { Separator } from './ui/separator';
 import { MapPin, AlertCircle, Loader2 } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 
-const SEARCH_RADIUS_KM = 50;
+const SEARCH_RADIUS_KM = 15;
 
 export default function ExploreNearMe() {
   const [userLocation, setUserLocation] = useState<
@@ -118,10 +118,9 @@ export default function ExploreNearMe() {
             )}
             <Map
               center={mapCenter}
-              zoom={locationState === 'granted' ? 9 : 5}
+              zoom={locationState === 'granted' ? 11 : 5}
               mapId={process.env.NEXT_PUBLIC_GOOGLE_MAPS_MAP_ID}
               gestureHandling={'greedy'}
-              disableDefaultUI={true}
               className="w-full h-full"
             >
               {userLocation && locationState === 'granted' && (
