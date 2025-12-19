@@ -1,12 +1,15 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Literata } from 'next/font/google';
 import './globals.css';
 import { cn } from '@/lib/utils';
 import { Toaster } from '@/components/ui/toaster';
 import { Providers } from '@/components/providers';
 import ScrollProgress from '@/components/scroll-progress';
 
-const inter = Inter({ subsets: ['latin'] });
+const literata = Literata({
+  subsets: ['latin'],
+  variable: '--font-body',
+});
 
 export const metadata: Metadata = {
   title: 'Bharat Darshan',
@@ -20,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn('min-h-screen bg-background font-sans antialiased', inter.className)}>
+      <body className={cn('min-h-screen bg-background font-sans antialiased', literata.variable)}>
         <Providers>
           <ScrollProgress />
           <div className="relative flex min-h-dvh flex-col bg-background">

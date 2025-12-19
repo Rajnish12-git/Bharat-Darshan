@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/carousel";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import Autoplay from "embla-carousel-autoplay";
+import { cn } from "@/lib/utils";
 
 const heroImages = [
   {
@@ -52,6 +53,20 @@ const heroImages = [
 ];
 
 export default function HeroCarousel() {
+    const [api, setApi] = React.useState<any>();
+    const [current, setCurrent] = React.useState(0);
+
+    React.useEffect(() => {
+        if (!api) return;
+        
+        const onSelect = () => {
+            setCurrent(api.selectedScrollSnap());
+        };
+        
+        api.on("select", onSelect);
+        return () => api.off("select", onSelect);
+    }, [api]);
+
   const images = heroImages.map(heroImage => {
     const placeholder = PlaceHolderImages.find(p => p.id === heroImage.id);
     return {
@@ -63,6 +78,7 @@ export default function HeroCarousel() {
   return (
     <section className="relative w-full h-screen">
       <Carousel
+        setApi={setApi}
         className="w-full h-full"
         opts={{
           loop: true,
@@ -75,21 +91,26 @@ export default function HeroCarousel() {
         ]}
       >
         <CarouselContent>
-          {images.map(({ id, title, subtitle, imageUrl, description, imageHint }) => {
+          {images.map(({ id, title, subtitle, imageUrl, description, imageHint }, index) => {
             if (!imageUrl) return null;
+            const isActive = index === current;
             return (
               <CarouselItem key={id}>
-                <div className="relative w-full h-screen">
+                <div className="relative w-full h-screen overflow-hidden">
                   <Image
                     src={imageUrl}
                     alt={description || title}
                     fill
-                    className="object-cover"
+                    className={cn(
+                        "object-cover transition-transform duration-1000 ease-in-out",
+                        isActive ? "scale-105" : "scale-100"
+                    )}
                     data-ai-hint={imageHint}
+                    priority={index === 0}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
                   <div className="absolute inset-0 flex items-end text-white p-16">
-                    <div className="max-w-7xl w-full flex justify-between items-end gap-8">
+                    <div className={cn("max-w-7xl w-full flex justify-between items-end gap-8 transition-all duration-1000 ease-in-out", isActive ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4")}>
                         <div>
                             <h1 className="text-7xl font-bold font-headline drop-shadow-lg">
                                 {title}

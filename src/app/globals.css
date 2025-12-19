@@ -24,6 +24,8 @@
     --input: 35 30% 90%;
     --ring: 226 76% 58%;
     --radius: 0.8rem;
+    --font-body: __Literata_4382c3, __Literata_Fallback_4382c3;
+    --font-headline: __Literata_4382c3, __Literata_Fallback_4382c3;
   }
   .dark {
     --background: 24 10% 10%;
@@ -53,6 +55,10 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-body;
+    line-height: 1.7;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
   }
 }
