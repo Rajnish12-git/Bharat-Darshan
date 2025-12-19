@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useTransition } from 'react';
+import { useState, useTransition, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
@@ -14,12 +14,12 @@ import {
   FormItem,
   FormMessage,
 } from '@/components/ui/form';
-import { Loader, Search } from 'lucide-react';
+import { Loader, Search as SearchIcon } from 'lucide-react';
 import type { StateData, DetailItem } from '@/lib/heritage-data';
 import SearchResults from './search-results';
 
 const formSchema = z.object({
-  query: z.string().min(2, 'Search query must be at least 2 characters.'),
+  query: z.string(),
 });
 
 export default function SearchRefinement() {
@@ -28,7 +28,6 @@ export default function SearchRefinement() {
     states: StateData[];
     monuments: DetailItem[];
   } | null>(null);
-  const [searched, setSearched] = useState(false);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -37,11 +36,32 @@ export default function SearchRefinement() {
     },
   });
 
+  const query = form.watch('query');
+
+  useEffect(() => {
+    const fetchSuggestions = () => {
+      if (query.length < 2) {
+        setResults(null);
+        return;
+      }
+      startTransition(async () => {
+        const response = await search({ query });
+        setResults(response);
+      });
+    };
+
+    const debounce = setTimeout(fetchSuggestions, 300);
+    return () => clearTimeout(debounce);
+  }, [query]);
+
   const onSubmit = (values: z.infer<typeof formSchema>) => {
+    if (values.query.length < 2) {
+      setResults(null);
+      return;
+    }
     startTransition(async () => {
       const response = await search({ query: values.query });
       setResults(response);
-      setSearched(true);
     });
   };
 
@@ -56,12 +76,11 @@ export default function SearchRefinement() {
               <FormItem className="flex-1">
                 <FormControl>
                   <div className="relative">
-                    <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+                    <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
                     <Input
-                      placeholder="Search for monuments or states..."
+                      placeholder="Start typing to search for monuments or states..."
                       className="pl-10"
                       {...field}
-                      disabled={isPending}
                     />
                   </div>
                 </FormControl>
@@ -85,7 +104,7 @@ export default function SearchRefinement() {
         </div>
       )}
 
-      {!isPending && searched && (
+      {!isPending && query.length > 1 && (
         <SearchResults results={results} />
       )}
     </div>
