@@ -22,7 +22,7 @@ export default function StatePage({ params }: { params: { slug: string } }) {
     <>
       <Header />
       <article>
-        <header className="relative h-[50vh] w-full">
+        <header className="relative h-[60vh] w-full">
           {stateImage && (
             <Image
               src={stateImage.imageUrl}
@@ -30,23 +30,24 @@ export default function StatePage({ params }: { params: { slug: string } }) {
               fill
               className="object-cover"
               data-ai-hint={stateImage.imageHint}
+              priority
             />
           )}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-          <div className="absolute bottom-0 left-0 p-8 text-white">
-            <h1 className="text-6xl font-bold font-headline drop-shadow-lg">
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+          <div className="absolute bottom-0 left-0 p-8 md:p-16 text-white">
+            <h1 className="text-5xl md:text-7xl font-bold font-headline drop-shadow-lg">
               {state.name}
             </h1>
-            <p className="mt-2 max-w-2xl text-lg text-white/90 drop-shadow-md">
+            <p className="mt-4 max-w-3xl text-lg text-white/90 drop-shadow-md">
               {state.description}
             </p>
           </div>
         </header>
         
         <Tabs defaultValue="monuments" className="w-full">
-          <div className="bg-secondary/50 border-b">
+          <div className="bg-secondary/50 border-b sticky top-16 z-30 backdrop-blur-sm">
             <div className="container">
-              <TabsList className="bg-transparent p-0">
+              <TabsList className="bg-transparent p-0 -mb-px">
                 <TabsTrigger value="monuments" className="py-4 text-sm rounded-none data-[state=active]:bg-transparent data-[state=active]:text-primary data-[state=active]:shadow-[inset_0_-2px_0_0_hsl(var(--primary))]"><Landmark className="mr-2 h-4 w-4" />Monuments</TabsTrigger>
                 <TabsTrigger value="cuisine" className="py-4 text-sm rounded-none data-[state=active]:bg-transparent data-[state=active]:text-primary data-[state=active]:shadow-[inset_0_-2px_0_0_hsl(var(--primary))]"><UtensilsCrossed className="mr-2 h-4 w-4" />Cuisine</TabsTrigger>
                 <TabsTrigger value="festivals" className="py-4 text-sm rounded-none data-[state=active]:bg-transparent data-[state=active]:text-primary data-[state=active]:shadow-[inset_0_-2px_0_0_hsl(var(--primary))]"><CalendarDays className="mr-2 h-4 w-4" />Festivals</TabsTrigger>
