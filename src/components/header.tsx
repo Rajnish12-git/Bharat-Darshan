@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { Button } from './ui/button';
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
-import { Menu, Mountain, Search, User } from 'lucide-react';
+import { Menu, Search, User } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { useEffect, useState } from 'react';
@@ -45,7 +45,6 @@ export default function Header() {
             !scrolled && 'text-white'
           )}
         >
-          <Mountain className="h-6 w-6" />
           <span className="font-bold font-headline text-xl">Bharat Darshan</span>
         </Link>
 
