@@ -2,7 +2,7 @@
 'use client';
 
 import { useMemo } from 'react';
-import { useUser, useFirestore, useCollection, useMemoFirebase, getSdks } from '@/firebase';
+import { useUser, useFirestore, useCollection, useMemoFirebase, getSdks, useFirebaseApp } from '@/firebase';
 import { collection, query, where, orderBy, addDoc, serverTimestamp, getFirestore } from 'firebase/firestore';
 import { Booking, NewBookingData } from '@/lib/types';
 import { errorEmitter } from '@/firebase/error-emitter';
@@ -11,7 +11,7 @@ import { getAuth } from 'firebase/auth';
 
 
 export function useBookings() {
-  const { firestore } = getSdks(useFirebaseApp());
+  const firestore = useFirestore();
   const { user } = useUser();
 
   const bookingsQuery = useMemoFirebase(() => {
