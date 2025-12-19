@@ -79,7 +79,9 @@ export default function CulturalPassportPage() {
   const { bookings, isLoading: bookingsLoading, error } = useBookings();
 
   const handleSignOut = async () => {
-    await auth.signOut();
+    if (auth) {
+      await auth.signOut();
+    }
     router.push('/');
   };
 
