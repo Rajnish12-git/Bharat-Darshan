@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState } from 'react';
@@ -18,6 +19,7 @@ import { useToast } from '@/hooks/use-toast';
 import { useUser } from '@/firebase';
 import { addBooking } from '@/hooks/use-bookings';
 import architecturalMarvels from '@/lib/architectural-marvels.json';
+import LoginModal from './login-modal';
 
 const bookingSchema = z.object({
   monumentName: z.string({ required_error: 'Please select a monument.' }),
@@ -97,6 +99,24 @@ export default function BookingSection() {
       setIsSubmitting(false);
     }
   };
+  
+  const renderSubmitButton = () => {
+    if (!user || user.isAnonymous) {
+      return (
+        <LoginModal>
+            <Button type="button" size="lg" className="w-full md:w-1/2">
+                Sign in to Request Booking
+            </Button>
+        </LoginModal>
+      )
+    }
+    return (
+        <Button type="submit" size="lg" className="w-full md:w-1/2" disabled={isSubmitting}>
+            {isSubmitting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+            Request Booking
+        </Button>
+    )
+  }
 
   return (
     <section id="plan-visit" className="py-16 md:py-24 bg-secondary/30">
@@ -277,10 +297,7 @@ export default function BookingSection() {
 
                 <div className="pt-4 text-center">
                     <p className="text-xs text-muted-foreground mb-4">This is a booking request, not a confirmed ticket. Our team will contact you for confirmation.</p>
-                    <Button type="submit" size="lg" className="w-full md:w-1/2" disabled={isSubmitting}>
-                        {isSubmitting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-                        Request Booking
-                    </Button>
+                     {renderSubmitButton()}
                 </div>
             </div>
           </form>
@@ -289,3 +306,6 @@ export default function BookingSection() {
     </section>
   );
 }
+
+
+    
