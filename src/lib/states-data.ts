@@ -15,9 +15,22 @@ export const indianStates: StateData[] = [
       },
       {
         "name": "Borra Caves",
-        "imageId": "hero-konark-sun-temple",
+        "imageId": "marvel-ajanta-ellora",
         "description": "Limestone caves in the Ananthagiri hills, known for their stalactite and stalagmite formations."
-      }
+      },
+      { "name": "Gandikota Fort", "imageId": "marvel-gwalior-fort", "description": "A magnificent fort perched on a gorge, often called the 'Grand Canyon of India'."},
+      { "name": "Undavalli Caves", "imageId": "marvel-bhimbetka", "description": "Monolithic rock-cut caves from the 4th-5th centuries, showcasing fine examples of Indian rock-cut architecture."},
+      { "name": "Srisailam Dam", "imageId": "marvel-cst", "description": "A major hydroelectric dam on the Krishna River, surrounded by scenic beauty and ancient temples."},
+      { "name": "Lepakshi Temple", "imageId": "marvel-virupaksha-temple", "description": "Famous for its hanging pillar and exquisite Vijayanagara style sculptures and paintings."},
+      { "name": "Thotlakonda Buddhist Complex", "imageId": "marvel-sanchi-stupa", "description": "Ruins of an ancient Buddhist monastery complex overlooking the sea, with several stupas and viharas."},
+      { "name": "Amaravati Stupa", "imageId": "marvel-sanchi-stupa", "description": "A ruined Buddhist monument, once a grand center for Mahayana Buddhism, known for its intricate relief carvings."},
+      { "name": "Nagarjunakonda", "imageId": "marvel-sanchi-stupa", "description": "A historic Buddhist town, now an island museum in Nagarjuna Sagar lake, housing excavated ruins."},
+      { "name": "Kondapalli Fort", "imageId": "marvel-jaisalmer-fort", "description": "A 14th-century fort near Vijayawada, famous for the production of traditional Kondapalli wooden toys."},
+      { "name": "Chandragiri Fort", "imageId": "marvel-mehrangarh-fort", "description": "The last capital of the Vijayanagara Empire, known for its well-preserved palaces and fortifications."},
+      { "name": "Penukonda Fort", "imageId": "marvel-chittorgarh-fort", "description": "An ancient hill fort that served as the capital of the Vijayanagara Empire for a brief period."},
+      { "name": "Sri Ranganathaswamy Temple, Nellore", "imageId": "marvel-meenakshi-amman-temple", "description": "A prominent temple dedicated to Lord Vishnu, known for its tall gopuram and riverside location."},
+      { "name": "Kailasakona Waterfalls", "imageId": "monument-chitrakote-falls", "description": "A perennial waterfall with sacred significance, believed to have medicinal properties."},
+      { "name": "Prakasam Barrage", "imageId": "marvel-cst", "description": "A modern engineering marvel across the Krishna River, offering panoramic views of Vijayawada." }
     ],
     "cuisine": [
       {
@@ -27,9 +40,22 @@ export const indianStates: StateData[] = [
       },
       {
         "name": "Gongura Pachadi",
-        "imageId": "cuisine-hyderabadi-biryani",
+        "imageId": "cuisine-masor-tenga",
         "description": "A quintessential Andhra pickle made from sorrel leaves, known for its unique sour taste."
-      }
+      },
+      { "name": "Pesarattu", "imageId": "cuisine-masala-dosa", "description": "A crepe-like bread made from green gram batter, often stuffed with onions and served for breakfast."},
+      { "name": "Bobbatlu", "imageId": "cuisine-puran-poli", "description": "A sweet flatbread stuffed with a filling of lentils and jaggery, similar to Puran Poli."},
+      { "name": "Gutthi Vankaya Kura", "imageId": "cuisine-undhiyu", "description": "A flavorful curry made with small eggplants stuffed with a spicy nut and seed masala."},
+      { "name": "Royyala Veppudu", "imageId": "cuisine-goan-fish-curry", "description": "A spicy and tangy prawn fry, a popular seafood delicacy from the coastal regions."},
+      { "name": "Ulava Charu", "imageId": "cuisine-rogan-josh", "description": "A traditional and rustic thick soup made from horse gram, often served with cream and rice."},
+      { "name": "Dondakaya Fry", "imageId": "cuisine-undhiyu", "description": "A simple yet delicious stir-fry made with ivy gourd, often garnished with coconut powder."},
+      { "name": "Pootharekulu", "imageId": "cuisine-pootharekulu", "description": "A paper-thin sweet made from rice starch, coated with ghee and sugar or jaggery powder."},
+      { "name": "Kakinada Kaja", "imageId": "cuisine-ghevar", "description": "A famous sweet from Kakinada, known for its flaky texture and sugary syrup filling."},
+      { "name": "Chekkalu", "imageId": "cuisine-thekua", "description": "Crispy and savory rice flour crackers, a popular snack during festivals."},
+      { "name": "Panasa Puttu Koora", "imageId": "cuisine-undhiyu", "description": "A curry made from raw jackfruit, cooked in traditional Andhra spices."},
+      { "name": "Avakaya", "imageId": "cuisine-pulihora", "description": "The famous Andhra mango pickle, known for its fiery spice and strong flavor from mustard powder."},
+      { "name": "Ragi Sangati", "imageId": "cuisine-bajra-khichdi", "description": "A healthy and nutritious ball made from finger millet flour, a staple in the Rayalaseema region."},
+      { "name": "Bendakaya Pulusu", "imageId": "cuisine-kadhi", "description": "A tangy stew made with okra (lady's finger) in a tamarind-based gravy." }
     ],
     "festivals": [
       {
@@ -41,7 +67,20 @@ export const indianStates: StateData[] = [
         "name": "Brahmotsavam",
         "imageId": "festival-ratha-yatra",
         "description": "The grand annual festival of the Tirupati Temple, attracting millions of devotees."
-      }
+      },
+      { "name": "Sankranti", "imageId": "festival-pongal", "description": "A major harvest festival celebrated over three days with kite flying, cockfights (in some areas), and traditional sweets."},
+      { "name": "Visakha Utsav", "imageId": "festival-lokrang", "description": "An annual cultural festival organized in Visakhapatnam, showcasing the art, crafts, music, and dance of the region."},
+      { "name": "Lumbini Festival", "imageId": "festival-losar", "description": "A Buddhist festival held in Nagarjunasagar to celebrate the rich Buddhist heritage of Andhra Pradesh."},
+      { "name": "Rayalaseema Food and Dance Festival", "imageId": "festival-mewar", "description": "A festival organized to promote the unique cuisine and folk arts of the Rayalaseema region."},
+      { "name": "Vinayaka Chavithi", "imageId": "festival-ganesh-chaturthi", "description": "The festival of Ganesh Chaturthi, celebrated with great fervor, especially the 11-day event in Khairatabad, Hyderabad (historical context)."},
+      { "name": "Varalakshmi Vratam", "imageId": "festival-diwali", "description": "A festival where married women worship the goddess Lakshmi for the well-being of their families and for prosperity."},
+      { "name": "Dasara", "imageId": "festival-dasara", "description": "Celebrated with great pomp in Vijayawada at the Kanaka Durga Temple, where the goddess is adorned in different avatars."},
+      { "name": "Maha Shivaratri", "imageId": "festival-ganga-aarti", "description": "A major festival dedicated to Lord Shiva, celebrated with night-long prayers and fasting at major temples like Srisailam."},
+      { "name": "Deccan Festival", "imageId": "festival-marwar", "description": "Historically held in Hyderabad, this festival celebrated the art, craft, and cuisine of the Deccan region."},
+      { "name": "Tyagaraja Aradhana", "imageId": "festival-saga-dawa", "description": "A music festival celebrating the life and compositions of the great Carnatic music composer, Tyagaraja."},
+      { "name": "Flamingo Festival", "imageId": "festival-baisakhi", "description": "An annual festival held at Pulicat Lake to celebrate the arrival of thousands of migratory flamingoes."},
+      { "name": "Krishna Pushkaram", "imageId": "festival-kumbh-mela", "description": "A festival of river worship held once in 12 years, where pilgrims take a holy dip in the Krishna River."},
+      { "name": "Rottela Panduga", "imageId": "festival-urs", "description": "A unique 'Festival of Breads' held in Nellore, where people exchange flatbreads (rotis) to have their wishes fulfilled." }
     ],
     "artForms": [
       {
@@ -53,7 +92,20 @@ export const indianStates: StateData[] = [
         "name": "Kuchipudi",
         "imageId": "art-kuchipudi",
         "description": "A classical dance form known for its graceful movements and expressive storytelling."
-      }
+      },
+      { "name": "Tholu Bommalata", "imageId": "art-leather-puppetry", "description": "The traditional shadow puppet theatre of Andhra Pradesh, using large, colored leather puppets to narrate stories."},
+      { "name": "Kondapalli Toys", "imageId": "art-kathputli", "description": "Lightweight wooden toys made from a special soft wood, depicting scenes of rural life, deities, and animals."},
+      { "name": "Budithi Brassware", "imageId": "art-dhokra", "description": "A unique style of brass and bell metal craft from the village of Budithi, known for its elegant shapes and patterns."},
+      { "name": "Veena Manufacturing", "imageId": "art-sitar", "description": "The town of Bobbili is famous for the craftsmanship of the Saraswati Veena, a classical musical instrument."},
+      { "name": "Durgi Stone Craft", "imageId": "art-terracotta", "description": "The art of sculpting idols and decorative items from soft stone, practiced by artisans in the village of Durgi."},
+      { "name": "Mangalagiri Sarees", "imageId": "art-kanjivaram", "description": "Handwoven sarees known for their fine cotton fabric, simple designs, and a distinctive zari border."},
+      { "name": "Venkatagiri Sarees", "imageId": "art-pashmina", "description": "Another fine handloom saree, known for its Jamdani style of weaving and delicate zari motifs."},
+      { "name": "Etikoppaka Toys", "imageId": "art-kathputli", "description": "Wooden toys from the village of Etikoppaka, known for their rounded shapes and coloring with natural lacquer."},
+      { "name": "Burra Katha", "imageId": "art-yakshagana", "description": "A form of oral storytelling in which a main performer narrates a story with music and drama."},
+      { "name": "Vilasa Nrityam", "imageId": "art-mohiniyattam", "description": "A traditional female dance form that was performed by temple dancers (devadasis)."},
+      { "name": "Andhra Natyam", "imageId": "art-bharatanatyam", "description": "A classical dance form with ancient roots in the region, which has been revived in the 20th century."},
+      { "name": "Urumulu Dance", "imageId": "art-chhau", "description": "A heroic folk dance performed in praise of the goddess Durga, using a unique drum called 'urumulu'."},
+      { "name": "Tappeta Gullu", "imageId": "art-lavani", "description": "A folk dance form from the Srikakulam district, where performers hang drums around their necks and dance vigorously." }
     ]
   },
   {
@@ -71,7 +123,20 @@ export const indianStates: StateData[] = [
         "name": "Ziro Valley",
         "imageId": "state-arunachal-pradesh",
         "description": "A picturesque valley and a UNESCO World Heritage site, famous for its pine-clad hills and rice fields."
-      }
+      },
+      { "name": "Sela Pass", "imageId": "state-himachal-pradesh", "description": "A high-altitude mountain pass that connects Tawang to the rest of India, offering stunning views of the Himalayas."},
+      { "name": "Namdapha National Park", "imageId": "state-assam", "description": "One of the largest protected areas in the Eastern Himalaya, known for its incredible biodiversity, including four species of big cats."},
+      { "name": "Golden Pagoda, Namsai", "imageId": "marvel-golden-temple", "description": "A magnificent Buddhist temple with a golden dome, reflecting the Thai architectural style."},
+      { "name": "Parshuram Kund", "imageId": "monument-kurukshetra", "description": "A sacred Hindu pilgrimage site where sage Parshuram is believed to have washed away his sins."},
+      { "name": "Mechuka Valley", "imageId": "state-sikkim", "description": "A stunningly beautiful valley near the Indo-China border, known as the 'Forbidden Valley of Arunachal'."},
+      { "name": "Bomdila Monastery", "imageId": "monument-rumtek-monastery", "description": "A major center of the Lamaistic faith of Mahayana Buddhism, offering panoramic views of the town."},
+      { "name": "Ita Fort", "imageId": "marvel-gwalior-fort", "description": "An ancient fort made of bricks in Itanagar, from which the city derives its name. 'Ita' means brick in the Ahom language."},
+      { "name": "Malinithan", "imageId": "marvel-khajuraho", "description": "An archaeological site with ruins of a Hindu temple from the 14th-15th centuries, rich in intricate sculptures."},
+      { "name": "Ganga Lake (Gyakar Sinyi)", "imageId": "state-tripura", "description": "A beautiful natural lake surrounded by lush greenery, a popular picnic spot near Itanagar."},
+      { "name": "Jaswant Garh", "imageId": "monument-kohima-cemetery", "description": "A war memorial dedicated to the heroic Indian soldier, Jaswant Singh Rawat, who fought alone against the Chinese army in 1962."},
+      { "name": "Urgelling Monastery", "imageId": "monument-tawang-monastery", "description": "The birthplace of the 6th Dalai Lama, Tsangyang Gyatso. A serene and historically significant site."},
+      { "name": "Dirang Dzong", "imageId": "marvel-gwalior-fort", "description": "A fort-like settlement that was the center of administration in the region, offering a glimpse into the local history."},
+      { "name": "Madhuri Lake (Sangetsar Lake)", "imageId": "state-sikkim", "description": "A high-altitude lake formed by an earthquake, famous for its stunning scenery and its association with a Bollywood film."}
     ],
     "cuisine": [
       {
@@ -83,7 +148,20 @@ export const indianStates: StateData[] = [
         "name": "Apong",
         "imageId": "cuisine-chauk",
         "description": "A traditional rice beer, which is an integral part of the local culture and festivities."
-      }
+      },
+      { "name": "Zan", "imageId": "cuisine-bajra-khichdi", "description": "A porridge-like dish made from millet flour, often eaten with vegetables or meat."},
+      { "name": "Pika Pila", "imageId": "cuisine-eromba", "description": "A type of pickle made from bamboo shoots and pork fat, a specialty of the Apatani tribe."},
+      { "name": "Lukter", "imageId": "cuisine-chettinad-chicken", "description": "A dish of cooked dry meat roasted with chili flakes and local spices."},
+      { "name": "Pehak", "imageId": "cuisine-eromba", "description": "A chutney made from fermented soybeans and chili, adding a pungent kick to meals."},
+      { "name": "Bamboo Shoot Fry", "imageId": "cuisine-undhiyu", "description": "Tender bamboo shoots stir-fried with spices, a common and delicious side dish."},
+      { "name": "Chura Sabji", "imageId": "cuisine-kadhi", "description": "A curry made from fermented cheese (from yak or cow's milk) and vegetables."},
+      { "name": "Marua", "imageId": "cuisine-chauk", "description": "Another popular millet-based alcoholic beverage, homemade and strong."},
+      { "name": "Momos", "imageId": "cuisine-momo", "description": "Tibetan-style dumplings filled with meat or vegetables, a popular snack throughout the state."},
+      { "name": "Smoked Meat", "imageId": "cuisine-jadoh", "description": "A traditional method of preserving meat (pork, beef, mithun) by smoking it over a fire, giving it a distinct flavor."},
+      { "name": "Koat Pitha", "imageId": "cuisine-thekua", "description": "A sweet, deep-fried snack made from rice flour, bananas, and jaggery."},
+      { "name": "Gyaing", "imageId": "cuisine-bhangjeera-chutney", "description": "A ginger-based paste used to flavor various dishes, especially meat preparations."},
+      { "name": "Pasa", "imageId": "cuisine-masor-tenga", "description": "A soupy dish made from fresh raw fish, a delicacy of the Adi tribe."},
+      { "name": "Khapse", "imageId": "cuisine-thekua", "description": "A deep-fried pastry or biscuit, traditionally prepared during festivals like Losar." }
     ],
     "festivals": [
       {
@@ -95,7 +173,20 @@ export const indianStates: StateData[] = [
         "name": "Ziro Music Festival",
         "imageId": "festival-hornbill",
         "description": "A popular outdoor music festival that showcases independent artists from across the country."
-      }
+      },
+      { "name": "Solung", "imageId": "festival-bihu", "description": "A major agricultural festival of the Adi tribe, celebrated for a good harvest and prosperity."},
+      { "name": "Dree Festival", "imageId": "festival-sarhul", "description": "An agricultural festival of the Apatani tribe, involving rituals to appease the gods for a bountiful harvest."},
+      { "name": "Nyokum", "imageId": "festival-chapchar-kut", "description": "A festival of the Nyishi tribe to celebrate and collectively pray for the harmony and prosperity of the people."},
+      { "name": "Mopin Festival", "imageId": "festival-wangala", "description": "A harvest festival of the Galo tribe, celebrated to drive away evil spirits and bring prosperity."},
+      { "name": "Torgya", "imageId": "festival-hemis", "description": "A monastic festival of the Monpa tribe to ward off evil spirits and welcome a prosperous new year."},
+      { "name": "Siang River Festival", "imageId": "festival-lokrang", "description": "An annual festival to promote eco-tourism, featuring adventure sports, cultural performances, and local crafts."},
+      { "name": "Pangsau Pass Winter Festival", "imageId": "festival-desert-festival", "description": "A cross-border cultural festival celebrated by tribes from both India and Myanmar."},
+      { "name": "Chalo Loku", "imageId": "festival-aoleang", "description": "The most important festival of the Nocte tribe, a harvest festival celebrated with dance, music, and feasting."},
+      { "name": "Boori Boot", "imageId": "festival-sangai", "description": "A spring festival of the Hill Miri tribe to welcome the new season and pray for a good harvest."},
+      { "name": "Reh", "imageId": "festival-kharchi-puja", "description": "A six-day festival of the Idu Mishmi tribe, celebrated to appease the deities for prosperity and peace."},
+      { "name": "Sangken", "imageId": "festival-holi", "description": "A traditional water festival, similar to Songkran in Thailand, celebrated by the Tai communities."},
+      { "name": "Tamladu", "imageId": "festival-sarhul", "description": "A festival of the Digaru and Miju Mishmi tribes, where they offer prayers to the god of the earth and the god of water."},
+      { "name": "Donggin", "imageId": "festival-bihu", "description": "A spring festival of the Adi tribe, celebrating the beginning of a new agricultural season."}
     ],
     "artForms": [
       {
@@ -107,7 +198,20 @@ export const indianStates: StateData[] = [
         "name": "Bamboo and Cane Crafts",
         "imageId": "art-bamboo-cane",
         "description": "The state is famous for its wide variety of functional and decorative items made from bamboo and cane."
-      }
+      },
+      { "name": "Thangka Painting", "imageId": "art-thangka", "description": "Tibetan Buddhist scroll paintings on cloth, depicting deities, mandalas, and scenes from Buddhist lore."},
+      { "name": "Wooden Mask Making", "imageId": "art-chhau", "description": "Carving intricate and expressive wooden masks used in traditional dances and rituals, especially by the Monpa tribe."},
+      { "name": "Ponung Dance", "imageId": "art-bhangra", "description": "A traditional folk dance of the Adi tribe, performed by young women in a circle, led by a main singer (Miri)."},
+      { "name": "Igu Dance", "imageId": "art-yakshagana", "description": "A ritualistic dance performed by the priests of the Idu Mishmi tribe, narrating mythological stories."},
+      { "name": "Aji Lhamu Dance", "imageId": "art-manipuri-dance", "description": "A folk dance of the Monpa tribe, it is a Yak-themed performance that narrates a story."},
+      { "name": "Hiirii Khaniing Dance", "imageId": "art-lavani", "description": "A dance of the Apatani tribe that depicts the fight between good and evil spirits."},
+      { "name": "Ornament Making", "imageId": "art-thewa", "description": "Crafting beautiful ornaments from beads, feathers, bamboo, and silver, a specialty of various tribes."},
+      { "name": "Rikhampada Dance", "imageId": "art-garba", "description": "A vibrant and energetic dance of the Nyishi tribe, performed during the Nyokum festival."},
+      { "name": "Bardo Chham", "imageId": "art-chhau", "description": "A masked dance of the Sherdukpen tribe, depicting the journey of the soul after death."},
+      { "name": "Blacksmithing (Da-o)", "imageId": "art-bidriware", "description": "The traditional craft of making 'daos' (machetes) and other iron tools, an important skill among many tribes."},
+      { "name": "Pottery", "imageId": "art-blue-pottery", "description": "A traditional craft practiced by some tribes, creating earthenware pots without the use of a potter's wheel."},
+      { "name": "Buiya Dance", "imageId": "art-ghoomar", "description": "A folk dance of the Mishmi tribe, performed for entertainment and to celebrate prosperity."},
+      { "name": "Wanchoo Wood Carving", "imageId": "art-mysore-inlay", "description": "The Wanchoo tribe is known for its mastery in wood carving, creating human figures and animals with great detail." }
     ]
   },
   {
@@ -125,7 +229,20 @@ export const indianStates: StateData[] = [
         "name": "Kamakhya Temple",
         "imageId": "monument-kamakhya",
         "description": "A major Hindu pilgrimage site, dedicated to the goddess Kamakhya, known for its unique tantric rituals."
-      }
+      },
+      { "name": "Majuli Island", "imageId": "state-tripura", "description": "The world's largest river island, a center of Vaishnavite culture with numerous 'Sattras' (monasteries)."},
+      { "name": "Sivasagar (Sibsagar)", "imageId": "marvel-gwalior-fort", "description": "The historical capital of the Ahom Kingdom, with several ancient monuments like Rang Ghar and Talatal Ghar."},
+      { "name": "Rang Ghar", "imageId": "marvel-fatehpur-sikri", "description": "An 18th-century amphitheater, often called the 'Colosseum of the East', used by Ahom kings to watch games."},
+      { "name": "Talatal Ghar", "imageId": "monument-nahargarh-fort", "description": "An Ahom palace with secret underground tunnels, showcasing brilliant military architecture."},
+      { "name": "Umananda Temple", "imageId": "marvel-shore-temple", "description": "A Shiva temple located on Peacock Island in the middle of the Brahmaputra river, a serene spot in Guwahati."},
+      { "name": "Hajo", "imageId": "marvel-mahabodhi-temple", "description": "An ancient pilgrimage center for three religions: Hinduism, Buddhism, and Islam, with several temples and mosques."},
+      { "name": "Agnigarh", "imageId": "marvel-amer-fort", "description": "A fortress on a hill in Tezpur, associated with the mythological love story of Usha and Aniruddha."},
+      { "name": "Charaideo Maidams", "imageId": "marvel-sanchi-stupa", "description": "The burial mounds of Ahom kings and queens, often referred to as the 'Pyramids of Assam'."},
+      { "name": "Sualkuchi", "imageId": "art-kanjivaram", "description": "Known as the 'Manchester of Assam', it is a major center for silk production, especially Muga and Pat silk."},
+      { "name": "Digboi Oil Refinery", "imageId": "marvel-cst", "description": "Asia's first oil refinery and the second oldest in the world, with a museum showcasing its history."},
+      { "name": "Pobitora Wildlife Sanctuary", "imageId": "state-assam", "description": "Known for having the highest density of one-horned rhinos in the world."},
+      { "name": "Madan Kamdev", "imageId": "marvel-khajuraho", "description": "An archaeological site with ruins of ancient temples, often called the 'Khajuraho of Assam'."},
+      { "name": "Kareng Ghar", "imageId": "monument-hawa-mahal", "description": "A royal palace of the Ahom kings, known for its unique architectural style." }
     ],
     "cuisine": [
       {
@@ -137,7 +254,20 @@ export const indianStates: StateData[] = [
         "name": "Khar",
         "imageId": "cuisine-eromba",
         "description": "A unique dish made from a key ingredient of the same name, which is a filtered solution of water and dried banana peels."
-      }
+      },
+      { "name": "Aloo Pitika", "imageId": "cuisine-litti-chokha", "description": "A simple and comforting mash of boiled potatoes with mustard oil, onions, and chilies."},
+      { "name": "Xaak aru Bhaji", "imageId": "cuisine-undhiyu", "description": "A general term for green leafy vegetables, often lightly stir-fried with spices."},
+      { "name": "Gooror Payash", "imageId": "cuisine-mysore-pak", "description": "A rice pudding made with jaggery instead of sugar, giving it a distinct caramel flavor."},
+      { "name": "Duck Meat Curry", "imageId": "cuisine-rogan-josh", "description": "A delicacy in Assam, duck meat is often cooked with Ash Gourd (Kumura)."},
+      { "name": "Pitha", "imageId": "cuisine-pitha", "description": "A category of rice cakes, both sweet and savory, that are essential during the Bihu festival."},
+      { "name": "Ou Tenga", "imageId": "cuisine-kadhi", "description": "A sour curry made with elephant apple, a unique ingredient in Assamese cooking."},
+      { "name": "Bilahi Maas", "imageId": "cuisine-goan-fish-curry", "description": "A fish curry made with a tangy tomato-based gravy."},
+      { "name": "Silkworm Fry", "imageId": "cuisine-chettinad-chicken", "description": "An exotic tribal delicacy where silkworm pupae are stir-fried with spices."},
+      { "name": "Koldil Paro Mangxo", "imageId": "cuisine-jadoh", "description": "Pigeon meat cooked with banana flowers, a traditional and flavorful dish."},
+      { "name": "Laru", "imageId": "cuisine-thekua", "description": "Sweet balls made from coconut or sesame seeds and jaggery, a festive treat."},
+      { "name": "Doi Chira", "imageId": "cuisine-poha-jalebi", "description": "A simple breakfast or snack of flattened rice soaked in yogurt, often with jaggery."},
+      { "name": "Bora Saul", "imageId": "cuisine-bajra-khichdi", "description": "A type of sticky rice used in various traditional preparations, both sweet and savory."},
+      { "name": "Patot Diya Maas", "imageId": "cuisine-goan-fish-curry", "description": "Fish marinated in mustard paste and spices, wrapped in a banana leaf and steamed." }
     ],
     "festivals": [
       {
@@ -149,7 +279,20 @@ export const indianStates: StateData[] = [
         "name": "Ambubachi Mela",
         "imageId": "festival-kumbh-mela",
         "description": "A major tantric festival held at the Kamakhya Temple, attracting devotees and sadhus from all over India."
-      }
+      },
+      { "name": "Majuli Festival", "imageId": "festival-hornbill", "description": "A cultural festival held on the river island of Majuli, showcasing the art, craft, and culture of the region."},
+      { "name": "Baishagu", "imageId": "festival-chapchar-kut", "description": "A spring festival celebrated by the Bodo tribe, marking the new year with dance, music, and feasting."},
+      { "name": "Ali-Aye-Ligang", "imageId": "festival-sarhul", "description": "An agricultural festival of the Mising community, marking the beginning of paddy cultivation."},
+      { "name": "Dehing Patkai Festival", "imageId": "festival-lokrang", "description": "An annual festival that combines tribal fairs, tea heritage tours, and wildlife safaris."},
+      { "name": "Ras Leela", "imageId": "festival-mewar", "description": "A religious and cultural festival celebrated in the Sattras of Majuli, depicting the life of Lord Krishna through dance-dramas."},
+      { "name": "Me-Dam-Me-Phi", "imageId": "festival-kharchi-puja", "description": "An ancestor worship festival of the Ahom community, paying homage to the departed."},
+      { "name": "Karam Puja", "imageId": "festival-wangala", "description": "A harvest festival celebrated by the tea-garden tribes, where they worship the Karam tree for prosperity."},
+      { "name": "Jonbeel Mela", "imageId": "festival-pushkar-fair", "description": "A unique fair where barter system is still practiced, with communities from the hills and plains exchanging goods."},
+      { "name": "Sivaratri", "imageId": "festival-ganga-aarti", "description": "Celebrated with great fervor at the Sivasagar Sivadol, one of the tallest Shiva temples in India."},
+      { "name": "Brahmaputra Beach Festival", "imageId": "festival-goa-carnival", "description": "An open-air festival held on the sandy banks of the Brahmaputra, featuring adventure sports and cultural events."},
+      { "name": "Durga Puja", "imageId": "festival-durga-puja", "description": "While most famous in Bengal, it is also celebrated with great enthusiasm in Assam, with decorative pandals and cultural programs."},
+      { "name": "Baikho", "imageId": "festival-sarhul", "description": "A festival celebrated by the Rabha tribe to bring in an auspicious harvest season and to ward off evil spirits."},
+      { "name": "Rongker", "imageId": "festival-chithirai", "description": "An annual festival of the Karbi tribe, a community-wide prayer for peace and prosperity." }
     ],
     "artForms": [
       {
@@ -161,7 +304,20 @@ export const indianStates: StateData[] = [
         "name": "Sattriya Dance",
         "imageId": "art-sattriya",
         "description": "A classical dance form that originated in the 'Sattras' (monasteries) of Assam."
-      }
+      },
+      { "name": "Bihu Dance", "imageId": "art-bihu", "description": "The vibrant and energetic folk dance that is the soul of the Bihu festival."},
+      { "name": "Jaapi Making", "imageId": "art-pipli", "description": "The craft of making the traditional conical hat, the Jaapi, from bamboo and palm leaves. It is a symbol of Assamese culture."},
+      { "name": "Bell Metal Craft (Sarthebari)", "imageId": "art-bidriware", "description": "The town of Sarthebari is famous for its traditional bell metal utensils and artifacts, made by skilled artisans."},
+      { "name": "Xorai Making", "imageId": "art-dhokra", "description": "Crafting the Xorai, a bell-metal tray mounted on a stand, which is a key cultural symbol used for offering paan or as a decorative item."},
+      { "name": "Water Hyacinth Crafts", "imageId": "art-bamboo-cane", "description": "An eco-friendly craft of weaving bags, baskets, and other items from the dried stems of the water hyacinth plant."},
+      { "name": "Bhaona", "imageId": "art-yakshagana", "description": "A traditional form of entertainment, a dance-drama that narrates stories from Hindu mythology."},
+      { "name": "Terracotta Crafts", "imageId": "art-terracotta", "description": "A folk art of creating toys, idols, and decorative items from baked clay, centered in the Goalpara district."},
+      { "name": "Ojapali", "imageId": "art-bhangra", "description": "A traditional folk dance form that combines narration, song, and dance, considered a precursor to Bhaona."},
+      { "name": "Mask Making (Mukha Shilpa)", "imageId": "art-chhau", "description": "The craft of making elaborate masks from bamboo, cloth, and clay, used in Bhaona performances in the Sattras of Majuli."},
+      { "name": "Eri Silk Weaving", "imageId": "art-pashmina", "description": "Also known as 'Ahimsa silk', Eri silk is produced without killing the silkworm and is known for its warm, soft texture."},
+      { "name": "Jhumur Dance", "imageId": "art-lavani", "description": "A folk dance performed by the tea-garden communities, reflecting their joys and sorrows."},
+      { "name": "Deodhani Dance", "imageId": "art-mohiniyattam", "description": "A shamanistic dance form where a woman dances in a trance-like state, believed to be possessed by a goddess."},
+      { "name": "Bodo Bagurumba Dance", "imageId": "art-ghoomar", "description": "A graceful folk dance of the Bodo tribe that mimics the movements of birds and butterflies." }
     ]
   },
   {
@@ -179,7 +335,20 @@ export const indianStates: StateData[] = [
         "name": "Nalanda University Ruins",
         "imageId": "state-bihar",
         "description": "The ruins of an ancient center of higher learning, which was one of the greatest universities in the world."
-      }
+      },
+      { "name": "Vikramshila University Ruins", "imageId": "state-bihar", "description": "Ruins of another great Buddhist university, which was a major center for Tantric Buddhism."},
+      { "name": "Gaya", "imageId": "monument-kurukshetra", "description": "An ancient city and a major Hindu pilgrimage site where people perform 'pinda-daan' rituals for their ancestors."},
+      { "name": "Sher Shah Suri's Tomb", "imageId": "marvel-humayuns-tomb", "description": "An impressive mausoleum in Sasaram, located in the middle of an artificial lake, a fine example of Indo-Islamic architecture."},
+      { "name": "Barabar Caves", "imageId": "marvel-bhimbetka", "description": "The oldest surviving rock-cut caves in India, dating back to the Mauryan period, known for their polished interiors."},
+      { "name": "Vaishali", "imageId": "marvel-sanchi-stupa", "description": "An important archaeological site, believed to be the world's first republic and where Lord Buddha preached his last sermon."},
+      { "name": "Patna Museum", "imageId": "marvel-cst", "description": "A state museum housing a collection of ancient artifacts, including a famous female-figure sculpture, the Didarganj Yakshi."},
+      { "name": "Golghar", "imageId": "marvel-gol-gumbaz", "description": "A massive granary built by the British in Patna, known for its unique beehive shape and a spiral staircase on the outside."},
+      { "name": "Rajgir", "imageId": "state-arunachal-pradesh", "description": "The first capital of the Magadha kingdom, a scenic town with several Buddhist and Jain pilgrimage sites, including hot springs."},
+      { "name": "Kesaria Stupa", "imageId": "marvel-sanchi-stupa", "description": "Believed to be the tallest and largest Buddhist stupa in the world, located in East Champaran."},
+      { "name": "Takht Sri Patna Sahib", "imageId": "marvel-golden-temple", "description": "One of the five holiest sites (Takhts) in Sikhism, it is the birthplace of the tenth Sikh Guru, Guru Gobind Singh."},
+      { "name": "Munger Fort", "imageId": "marvel-gwalior-fort", "description": "A historic fort on the banks of the Ganges, with a rich history dating back to the early medieval period."},
+      { "name": "Navlakha Palace", "imageId": "marvel-umaid-bhawan", "description": "A royal palace in Rajnagar, known for its intricate carvings and architecture, although much of it was damaged in an earthquake."},
+      { "name": "Jal Mandir, Pawapuri", "imageId": "marvel-lotus-temple", "description": "A beautiful white marble temple dedicated to Lord Mahavira, situated in the middle of a lotus-filled lake."}
     ],
     "cuisine": [
       {
@@ -191,7 +360,20 @@ export const indianStates: StateData[] = [
         "name": "Thekua",
         "imageId": "cuisine-thekua",
         "description": "A sweet and crunchy biscuit-like snack, which is the main prasad for the Chhath Puja festival."
-      }
+      },
+      { "name": "Sattu Paratha", "imageId": "cuisine-chole-bhature", "description": "A nutritious flatbread stuffed with a savory filling of roasted gram flour (sattu)."},
+      { "name": "Kadhi Badi", "imageId": "cuisine-kadhi", "description": "The Bihari version of kadhi, with soft gram flour dumplings (badi) in a tangy yogurt gravy."},
+      { "name": "Chana Ghugni", "imageId": "cuisine-undhiyu", "description": "A popular snack made from black chickpeas, cooked with onions and spices."},
+      { "name": "Dal Pitha", "imageId": "cuisine-momo", "description": "Rice flour dumplings stuffed with a sweet lentil filling, similar to a savory momo."},
+      { "name": "Khaja", "imageId": "cuisine-ghevar", "description": "A layered, flaky pastry from Silao, which is deep-fried and soaked in sugar syrup."},
+      { "name": "Malpua", "imageId": "cuisine-puran-poli", "description": "A sweet pancake-like dessert made from flour and milk, deep-fried and dipped in syrup."},
+      { "name": "Laung-Latta", "imageId": "cuisine-puran-poli", "description": "A traditional sweet pastry stuffed with khoya and nuts, with a clove pierced through the center."},
+      { "name": "Balushahi", "imageId": "cuisine-ghevar", "description": "A flaky, melt-in-the-mouth sweet, similar to a glazed doughnut, very popular in Bihar."},
+      { "name": "Parwal ki Mithai", "imageId": "cuisine-chenna-poda", "description": "A unique sweet where pointed gourd (parwal) is stuffed with a sweet khoya filling."},
+      { "name": "Tilkut", "imageId": "cuisine-mysore-pak", "description": "A winter delicacy made from pounded sesame seeds and jaggery, a specialty of Gaya."},
+      { "name": "Anarsa", "imageId": "cuisine-thekua", "description": "A pastry-like sweet made from rice flour and jaggery, coated with sesame seeds."},
+      { "name": "Ram Ladoo", "imageId": "cuisine-vada-pav", "description": "Soft and spongy fritters made from moong dal, served with a tangy chutney."},
+      { "name": "Kheer Makhana", "imageId": "cuisine-bisi-bele-bath", "description": "A creamy pudding made from fox nuts (makhana), a specialty of the Mithila region." }
     ],
     "festivals": [
       {
@@ -203,7 +385,20 @@ export const indianStates: StateData[] = [
         "name": "Sonepur Cattle Fair",
         "imageId": "festival-pushkar-fair",
         "description": "One of the largest cattle fairs in Asia, held annually at the confluence of the Ganges and Gandak rivers."
-      }
+      },
+      { "name": "Sama Chakeva", "imageId": "festival-bihu", "description": "A festival celebrating the bond between brothers and sisters, especially popular in the Mithila region."},
+      { "name": "Makar Sankranti", "imageId": "festival-pongal", "description": "Celebrated with feasting on sweets made of sesame seeds and jaggery, and kite flying."},
+      { "name": "Buddha Jayanti", "imageId": "festival-losar", "description": "The birth anniversary of Lord Buddha, celebrated with great fervor in Bodh Gaya and Rajgir."},
+      { "name": "Pitrapaksha Mela", "imageId": "festival-kumbh-mela", "description": "A 15-day fair in Gaya where Hindus from all over the world come to perform 'pinda-daan' for their ancestors."},
+      { "name": "Rajgir Mahotsav", "imageId": "festival-lokrang", "description": "A colorful festival of dance and music held in the ancient city of Rajgir, promoting tourism."},
+      { "name": "Bihula", "imageId": "festival-sarhul", "description": "A festival prominent in the Bhagalpur region, where people pray to the goddess Mansa for the welfare of their families."},
+      { "name": "Madhushravani", "imageId": "festival-teej", "description": "A festival celebrated by newly married women in the Mithila region, involving prayers and rituals for a happy married life."},
+      { "name": "Saraswati Puja", "imageId": "festival-dasara", "description": "A major festival dedicated to the goddess of learning, celebrated with great enthusiasm by students."},
+      { "name": "Holi", "imageId": "festival-holi", "description": "The festival of colors is celebrated with unique folk songs (Phagua) and community feasts."},
+      { "name": "Teej", "imageId": "festival-teej", "description": "A festival celebrated by women for the well-being of their husbands and for a good monsoon."},
+      { "name": "Jitiya", "imageId": "festival-teej", "description": "A three-day festival where mothers observe a strict fast for the long life and well-being of their children."},
+      { "name": "Prakash Parv", "imageId": "festival-baisakhi", "description": "The birth anniversary of Guru Gobind Singh, celebrated with grand processions and prayers at Patna Sahib Gurudwara."},
+      { "name": "Gaya International Buddhist Conclave", "imageId": "festival-sago-dawa", "description": "An event that brings together Buddhist scholars and monks from around the world to promote Buddhist heritage." }
     ],
     "artForms": [
       {
@@ -215,1303 +410,22 @@ export const indianStates: StateData[] = [
         "name": "Sikki Grass Craft",
         "imageId": "art-bamboo-cane",
         "description": "A craft of weaving baskets, toys, and decorative items from a special golden-colored grass called Sikki."
-      }
-    ]
-  },
-  {
-    "slug": "chhattisgarh",
-    "name": "Chhattisgarh",
-    "description": "A heavily forested state known for its rich mineral wealth, tribal culture, and stunning natural beauty. From ancient caves to magnificent waterfalls, it is a land of hidden treasures.",
-    "imageId": "state-chhattisgarh",
-    "monuments": [
-      {
-        "name": "Chitrakote Falls",
-        "imageId": "monument-chitrakote-falls",
-        "description": "Often called the 'Niagara Falls of India', it is the widest waterfall in the country."
       },
-      {
-        "name": "Kailash and Kutumsar Caves",
-        "imageId": "marvel-ajanta-ellora",
-        "description": "Ancient limestone caves known for their impressive stalactite and stalagmite formations."
-      }
-    ],
-    "cuisine": [
-      {
-        "name": "Faraa",
-        "imageId": "cuisine-faraa",
-        "description": "Steamed dumplings made from rice flour, a popular snack and breakfast item."
-      },
-      {
-        "name": "Bafauri",
-        "imageId": "cuisine-vada-pav",
-        "description": "A healthy and savory snack made from chana dal paste, which is steamed instead of fried."
-      }
-    ],
-    "festivals": [
-      {
-        "name": "Bastar Dussehra",
-        "imageId": "festival-bastar-dussehra",
-        "description": "Lasting for 75 days, it is one of the longest festivals in the world, dedicated to the local deity, Goddess Danteshwari."
-      },
-      {
-        "name": "Madai Festival",
-        "imageId": "festival-hornbill",
-        "description": "A major tribal festival where various tribes gather to worship the local deity and celebrate with folk dance, music, and a fair."
-      }
-    ],
-    "artForms": [
-      {
-        "name": "Dhokra Art",
-        "imageId": "art-dhokra",
-        "description": "An ancient craft of metal casting using the lost-wax technique to create figurines of deities, animals, and people."
-      },
-      {
-        "name": "Godna Art",
-        "imageId": "art-gond-painting",
-        "description": "A form of traditional tattooing, which is now also practiced as a painting style on textiles."
-      }
-    ]
-  },
-  {
-    "slug": "goa",
-    "name": "Goa",
-    "description": "India's party capital, Goa is famous for its sun-kissed beaches, vibrant nightlife, Portuguese architecture, and laid-back atmosphere. It's a land of sun, sand, and sea.",
-    "imageId": "state-goa",
-    "monuments": [
-      {
-        "name": "Basilica of Bom Jesus",
-        "imageId": "monument-bom-jesus",
-        "description": "A UNESCO World Heritage site, this church holds the mortal remains of St. Francis Xavier."
-      },
-      {
-        "name": "Fort Aguada",
-        "imageId": "marvel-amer-fort",
-        "description": "A well-preserved 17th-century Portuguese fort overlooking the Arabian Sea."
-      }
-    ],
-    "cuisine": [
-      {
-        "name": "Goan Fish Curry",
-        "imageId": "cuisine-goan-fish-curry",
-        "description": "A tangy and spicy fish curry made with coconut, red chilies, and kokum."
-      },
-      {
-        "name": "Vindaloo",
-        "imageId": "cuisine-rogan-josh",
-        "description": "A fiery meat curry of Portuguese origin, traditionally made with pork."
-      }
-    ],
-    "festivals": [
-      {
-        "name": "Goa Carnival",
-        "imageId": "festival-goa-carnival",
-        "description": "A three-day festival of fun, music, and dance held before the 40 days of Lent."
-      },
-      {
-        "name": "Shigmo",
-        "imageId": "festival-shigmo",
-        "description": "A vibrant spring festival celebrated by the Hindu community with folk dances and parades."
-      }
-    ],
-    "artForms": [
-      {
-        "name": "Azulejos",
-        "imageId": "art-azulejos",
-        "description": "Traditional Portuguese blue and white painted tiles, found on many old buildings in Goa."
-      },
-      {
-        "name": "Seashell Craft",
-        "imageId": "art-dhokra",
-        "description": "Creating decorative items, jewelry, and souvenirs from the abundant seashells found on Goan beaches."
-      }
-    ]
-  },
-  {
-    "slug": "gujarat",
-    "name": "Gujarat",
-    "description": "The 'Jewel of Western India', Gujarat is a land of rich history, vibrant culture, and remarkable entrepreneurship. It is the birthplace of Mahatma Gandhi and is known for its colorful festivals and unique wildlife.",
-    "imageId": "state-gujarat",
-    "monuments": [
-      {
-        "name": "Rani ki Vav",
-        "imageId": "monument-rani-ki-vav",
-        "description": "An intricately constructed stepwell, a UNESCO World Heritage Site, displaying the height of Maru-Gurjara architectural style."
-      },
-      {
-        "name": "Gir National Park",
-        "imageId": "state-assam",
-        "description": "The last remaining home of the Asiatic Lion."
-      }
-    ],
-    "cuisine": [
-      {
-        "name": "Dhokla",
-        "imageId": "cuisine-dhokla",
-        "description": "A soft and spongy savory steamed cake, a quintessential Gujarati snack."
-      },
-      {
-        "name": "Undhiyu",
-        "imageId": "cuisine-undhiyu",
-        "description": "A classic mixed vegetable dish, traditionally cooked upside down underground in earthen pots."
-      }
-    ],
-    "festivals": [
-      {
-        "name": "Navaratri",
-        "imageId": "festival-navaratri",
-        "description": "A nine-night festival filled with energetic Garba and Dandiya Raas dances."
-      },
-      {
-        "name": "Rann Utsav",
-        "imageId": "state-gujarat",
-        "description": "A vibrant desert carnival celebrating the culture and beauty of the white Rann of Kutch."
-      }
-    ],
-    "artForms": [
-      {
-        "name": "Bandhani (Tie-dye)",
-        "imageId": "art-bandhani",
-        "description": "A traditional textile art of tying and dyeing fabric to create intricate patterns."
-      },
-      {
-        "name": "Lippan Art",
-        "imageId": "art-aipan",
-        "description": "A traditional mud and mirror work art form from the Kutch region, used to decorate the walls of homes."
-      }
-    ]
-  },
-  {
-    "slug": "haryana",
-    "name": "Haryana",
-    "description": "A land of ancient history and modern industry, Haryana is where the epic battle of Mahabharata was fought. It is a state with a rich agricultural heritage and a fast-growing economy.",
-    "imageId": "state-haryana",
-    "monuments": [
-      {
-        "name": "Kurukshetra",
-        "imageId": "monument-kurukshetra",
-        "description": "The ancient land where the battle of Mahabharata is said to have been fought, dotted with numerous pilgrimage sites."
-      },
-      {
-        "name": "Sheikh Chilli's Tomb",
-        "imageId": "marvel-humayuns-tomb",
-        "description": "A beautiful monument with a mix of Persian and Mughal architecture, dedicated to a Sufi saint."
-      }
-    ],
-    "cuisine": [
-      {
-        "name": "Bajra Khichdi",
-        "imageId": "cuisine-bajra-khichdi",
-        "description": "A wholesome and nutritious porridge made from pearl millet and lentils."
-      },
-      {
-        "name": "Kachri ki Sabzi",
-        "imageId": "cuisine-gatte-ki-sabzi",
-        "description": "A unique curry made from Kachri, a wild variety of cucumber found in the region."
-      }
-    ],
-    "festivals": [
-      {
-        "name": "Gugga Naumi",
-        "imageId": "festival-gugga-naumi",
-        "description": "A festival dedicated to the worship of Gugga Pir (the snake god), celebrated with processions and devotional songs."
-      },
-      {
-        "name": "Surajkund International Crafts Mela",
-        "imageId": "festival-pushkar-fair",
-        "description": "A massive annual fair that showcases the richness and diversity of handicrafts, handlooms, and cultural fabric of India."
-      }
-    ],
-    "artForms": [
-      {
-        "name": "Panja Durries",
-        "imageId": "art-panja-durries",
-        "description": "Thick, flat-woven rugs or carpets with intricate geometric patterns."
-      },
-      {
-        "name": "Haryanvi Folk Music & Dance",
-        "imageId": "art-bhangra",
-        "description": "Energetic folk dances like Saang, Chhathi, and Dhamal, which are a key part of the local culture."
-      }
-    ]
-  },
-  {
-    "slug": "himachal-pradesh",
-    "name": "Himachal Pradesh",
-    "description": "The 'Abode of Snow', Himachal Pradesh is a paradise of snow-capped mountains, lush valleys, and gushing rivers. It is a popular destination for adventure sports, trekking, and spiritual retreats.",
-    "imageId": "state-himachal-pradesh",
-    "monuments": [
-      {
-        "name": "Great Himalayan National Park",
-        "imageId": "state-himachal-pradesh",
-        "description": "A UNESCO World Heritage site, home to diverse flora and fauna, including the elusive snow leopard."
-      },
-      {
-        "name": "Hadimba Temple, Manali",
-        "imageId": "monument-hadimba-temple",
-        "description": "An ancient cave temple with a unique four-tiered pagoda-style roof, dedicated to Hidimbi Devi."
-      }
-    ],
-    "cuisine": [
-      {
-        "name": "Dham",
-        "imageId": "cuisine-dham",
-        "description": "A traditional festive meal featuring a variety of vegetarian dishes cooked in copper vessels, served on leaf plates."
-      },
-      {
-        "name": "Siddu",
-        "imageId": "cuisine-momo",
-        "description": "A type of steamed bread stuffed with a savory filling, which is a local delicacy."
-      }
-    ],
-    "festivals": [
-      {
-        "name": "Kullu Dussehra",
-        "imageId": "festival-kullu-dussehra",
-        "description": "A week-long international festival where deities from all over the valley are brought to Kullu to pay homage to Lord Raghunath."
-      },
-      {
-        "name": "Shimla Summer Festival",
-        "imageId": "festival-lokrang",
-        "description": "A vibrant festival celebrating the arrival of summer with music, dance, and cultural performances on the Ridge."
-      }
-    ],
-    "artForms": [
-      {
-        "name": "Kangra Painting",
-        "imageId": "art-kangra-painting",
-        "description": "A delicate and lyrical style of miniature painting, known for its soft colors and romantic themes."
-      },
-      {
-        "name": "Kullu Shawls",
-        "imageId": "art-naga-shawls",
-        "description": "Colorful and intricately patterned woolen shawls, a hallmark of Himachali craftsmanship."
-      }
-    ]
-  },
-  {
-    "slug": "jharkhand",
-    "name": "Jharkhand",
-    "description": "The 'Land of Forests', Jharkhand is a state rich in minerals, waterfalls, and vibrant tribal culture. It is a land of pristine natural beauty and ancient traditions.",
-    "imageId": "state-jharkhand",
-    "monuments": [
-      {
-        "name": "Baidyanath Temple, Deoghar",
-        "imageId": "monument-baidyanath",
-        "description": "One of the twelve Jyotirlingas, the most sacred abodes of Shiva."
-      },
-      {
-        "name": "Hundru Falls",
-        "imageId": "state-jharkhand",
-        "description": "A spectacular waterfall where the Subarnarekha River falls from a height of 98 meters."
-      }
-    ],
-    "cuisine": [
-      {
-        "name": "Dhuska",
-        "imageId": "cuisine-dhuska",
-        "description": "A popular deep-fried snack made from rice and lentil batter."
-      },
-      {
-        "name": "Rugra",
-        "imageId": "cuisine-undhiyu",
-        "description": "A type of edible mushroom that grows in the forests of Jharkhand, cooked into a savory dish."
-      }
-    ],
-    "festivals": [
-      {
-        "name": "Sarhul",
-        "imageId": "festival-sarhul",
-        "description": "The most important tribal festival, celebrating the beginning of the New Year and the worship of the village deity."
-      },
-      {
-        "name": "Karam",
-        "imageId": "festival-bihu",
-        "description": "A harvest festival where people worship the Karam tree for a good harvest and prosperity."
-      }
-    ],
-    "artForms": [
-      {
-        "name": "Sohrai and Khovar Painting",
-        "imageId": "art-sohrai",
-        "description": "Ritualistic mural art practiced by tribal women on the mud walls of their houses during harvest and marriage seasons."
-      },
-      {
-        "name": "Dhokra Art",
-        "imageId": "art-dhokra",
-        "description": "A traditional method of metal casting using the lost-wax technique to create unique artifacts."
-      }
-    ]
-  },
-  {
-    "slug": "karnataka",
-    "name": "Karnataka",
-    "description": "A land of ancient empires, stunning geography, and modern innovation. Karnataka is a vibrant tapestry of history, culture, nature, and technology, from the ruins of Hampi to the metropolis of Bengaluru.",
-    "imageId": "state-karnataka",
-    "monuments": [
-      {
-        "name": "Hampi",
-        "imageId": "hero-hampi",
-        "description": "The magnificent ruins of the Vijayanagara Empire, a UNESCO World Heritage site."
-      },
-      {
-        "name": "Mysore Palace",
-        "imageId": "monument-mysore-palace",
-        "description": "The opulent and grand palace of the Wodeyar dynasty, especially stunning when illuminated."
-      }
-    ],
-    "cuisine": [
-      {
-        "name": "Bisi Bele Bath",
-        "imageId": "cuisine-bisi-bele-bath",
-        "description": "A hot lentil rice dish, a flavorful one-pot meal that is a specialty of the state."
-      },
-      {
-        "name": "Mysore Pak",
-        "imageId": "cuisine-mysore-pak",
-        "description": "A rich and decadent sweet made from gram flour, ghee, and sugar."
-      }
-    ],
-    "festivals": [
-      {
-        "name": "Mysore Dasara",
-        "imageId": "festival-dasara",
-        "description": "The state festival of Karnataka, celebrated with a grand procession of elephants and a torchlight parade."
-      },
-      {
-        "name": "Kambala",
-        "imageId": "festival-jallikattu",
-        "description": "An annual buffalo race held in the coastal districts, a unique and traditional sport."
-      }
-    ],
-    "artForms": [
-      {
-        "name": "Yakshagana",
-        "imageId": "art-yakshagana",
-        "description": "A traditional folk theatre form that combines dance, music, dialogue, and elaborate costumes."
-      },
-      {
-        "name": "Mysore Painting",
-        "imageId": "art-mysore-painting",
-        "description": "A classical style of South Indian painting, known for its elegance and use of gesso and gold leaf."
-      }
-    ]
-  },
-  {
-    "slug": "kerala",
-    "name": "Kerala",
-    "description": "'God's Own Country', Kerala is a tropical paradise of serene backwaters, lush palm-fringed beaches, and rolling hills of tea plantations. It is a land of high literacy, rich culture, and delicious cuisine.",
-    "imageId": "hero-kerala-backwaters",
-    "monuments": [
-      {
-        "name": "Kerala Backwaters",
-        "imageId": "hero-kerala-backwaters",
-        "description": "A network of tranquil canals and lakes. A ride on a traditional houseboat is an unforgettable experience."
-      },
-      {
-        "name": "Mattancherry Palace",
-        "imageId": "monument-mattancherry-palace",
-        "description": "Also known as the Dutch Palace, it is famous for its stunning murals depicting scenes from Hindu epics."
-      }
-    ],
-    "cuisine": [
-      {
-        "name": "Appam and Stew",
-        "imageId": "cuisine-appam-stew",
-        "description": "Soft, lacy pancakes made from fermented rice batter, served with a mild and fragrant coconut milk-based stew."
-      },
-      {
-        "name": "Sadya",
-        "imageId": "cuisine-bisi-bele-bath",
-        "description": "A grand vegetarian feast served on a banana leaf, featuring a wide variety of dishes."
-      }
-    ],
-    "festivals": [
-      {
-        "name": "Onam",
-        "imageId": "festival-onam",
-        "description": "The state's harvest festival, celebrated with floral carpets (Pookalam), grand feasts, and snake boat races."
-      },
-      {
-        "name": "Thrissur Pooram",
-        "imageId": "festival-thrissur-pooram",
-        "description": "The most spectacular temple festival in Kerala, featuring a grand procession of caparisoned elephants and mesmerizing percussion ensembles."
-      }
-    ],
-    "artForms": [
-      {
-        "name": "Kathakali",
-        "imageId": "art-kathakali",
-        "description": "A classical dance-drama known for its elaborate makeup, grand costumes, and expressive storytelling."
-      },
-      {
-        "name": "Mohiniyattam",
-        "imageId": "art-mohiniyattam",
-        "description": "A graceful and feminine classical dance form, often called the 'dance of the enchantress'."
-      }
-    ]
-  },
-  {
-    "slug": "madhya-pradesh",
-    "name": "Madhya Pradesh",
-    "description": "The 'Heart of India', Madhya Pradesh is a state rich in history, wildlife, and natural beauty. It is home to ancient temples, majestic forts, and numerous national parks.",
-    "imageId": "state-madhya-pradesh",
-    "monuments": [
-      {
-        "name": "Khajuraho Temples",
-        "imageId": "monument-khajuraho",
-        "description": "A group of Hindu and Jain temples famous for their intricate sculptures and nagara-style architecture."
-      },
-      {
-        "name": "Sanchi Stupa",
-        "imageId": "marvel-sanchi-stupa",
-        "description": "One of the oldest stone structures in India, a Buddhist stupa commissioned by Emperor Ashoka."
-      }
-    ],
-    "cuisine": [
-      {
-        "name": "Poha Jalebi",
-        "imageId": "cuisine-poha-jalebi",
-        "description": "A classic breakfast combination from Indore, where savory flattened rice is served with sweet and crispy jalebis."
-      },
-      {
-        "name": "Bhutte ka Kees",
-        "imageId": "cuisine-bajra-khichdi",
-        "description": "A specialty of Indore, it is a savory preparation of grated corn cooked with spices and milk."
-      }
-    ],
-    "festivals": [
-      {
-        "name": "Lokrang Festival",
-        "imageId": "festival-lokrang",
-        "description": "A cultural festival held in Bhopal that showcases tribal and folk traditions, arts, and crafts from all over India."
-      },
-      {
-        "name": "Khajuraho Dance Festival",
-        "imageId": "festival-mewar",
-        "description": "A week-long festival of classical Indian dances held annually against the spectacular backdrop of the Khajuraho temples."
-      }
-    ],
-    "artForms": [
-      {
-        "name": "Gond Painting",
-        "imageId": "art-gond-painting",
-        "description": "A vibrant tribal art form where paintings are created with a pattern of intricate dots and dashes."
-      },
-      {
-        "name": "Bagh Print",
-        "imageId": "art-kalamkari",
-        "description": "A traditional hand block print technique using natural colors, practiced in the town of Bagh."
-      }
-    ]
-  },
-  {
-    "slug": "maharashtra",
-    "name": "Maharashtra",
-    "description": "A state of contrasts, Maharashtra is home to the bustling financial capital of Mumbai, ancient rock-cut caves, and a rich history of Maratha warriors. It is a land of vibrant culture, delicious food, and dynamic energy.",
-    "imageId": "state-maharashtra",
-    "monuments": [
-      {
-        "name": "Ajanta & Ellora Caves",
-        "imageId": "monument-ajanta-ellora",
-        "description": "UNESCO World Heritage sites featuring magnificent rock-cut caves with exquisite paintings and sculptures."
-      },
-      {
-        "name": "Gateway of India",
-        "imageId": "state-maharashtra",
-        "description": "An arch-monument overlooking the Arabian Sea, a symbol of the city of Mumbai."
-      }
-    ],
-    "cuisine": [
-      {
-        "name": "Vada Pav",
-        "imageId": "cuisine-vada-pav",
-        "description": "The quintessential Mumbai street food, a spiced potato patty in a bread bun."
-      },
-      {
-        "name": "Puran Poli",
-        "imageId": "cuisine-puran-poli",
-        "description": "A sweet flatbread stuffed with a lentil and jaggery filling, a festive delicacy."
-      }
-    ],
-    "festivals": [
-      {
-        "name": "Ganesh Chaturthi",
-        "imageId": "festival-ganesh-chaturthi",
-        "description": "A grand ten-day festival celebrating the birth of Lord Ganesha, especially magnificent in Mumbai."
-      },
-      {
-        "name": "Gudi Padwa",
-        "imageId": "festival-ugadi",
-        "description": "The Maharashtrian New Year, celebrated by hoisting a 'Gudi' (a decorated pole) outside the home."
-      }
-    ],
-    "artForms": [
-      {
-        "name": "Warli Painting",
-        "imageId": "art-warli-painting",
-        "description": "A tribal art form that uses basic geometric shapes to depict scenes of daily life and social rituals."
-      },
-      {
-        "name": "Paithani Saree",
-        "imageId": "art-kanjivaram",
-        "description": "A variety of saree, handwoven from fine silk, known for its peacock and flower motifs."
-      }
-    ]
-  },
-  {
-    "slug": "manipur",
-    "name": "Manipur",
-    "description": "The 'Jewel of India', Manipur is a land of enchanting beauty, with its floating islands on Loktak Lake, verdant hills, and rich cultural heritage. It is the birthplace of the sport of polo.",
-    "imageId": "state-manipur",
-    "monuments": [
-      {
-        "name": "Loktak Lake",
-        "imageId": "state-manipur",
-        "description": "The largest freshwater lake in Northeast India, famous for its 'phumdis' (floating islands)."
-      },
-      {
-        "name": "Kangla Fort",
-        "imageId": "monument-kangla-fort",
-        "description": "The ancient seat of power for the Meitei rulers of Manipur, a site of great historical and cultural importance."
-      }
-    ],
-    "cuisine": [
-      {
-        "name": "Eromba",
-        "imageId": "cuisine-eromba",
-        "description": "A pungent and spicy chutney or stew made from boiled vegetables and fermented fish."
-      },
-      {
-        "name": "Chamthong",
-        "imageId": "cuisine-thukpa",
-        "description": "A healthy and flavorful vegetable stew, popular in Manipuri households."
-      }
-    ],
-    "festivals": [
-      {
-        "name": "Sangai Festival",
-        "imageId": "festival-sangai",
-        "description": "An annual cultural festival that showcases the state's tourism potential and rich cultural heritage."
-      },
-      {
-        "name": "Lai Haraoba",
-        "imageId": "festival-hornbill",
-        "description": "An ancient festival celebrating the creation of the universe and the worship of traditional deities."
-      }
-    ],
-    "artForms": [
-      {
-        "name": "Manipuri Dance (Jagoi)",
-        "imageId": "art-manipuri-dance",
-        "description": "A graceful and lyrical classical dance form, famous for its Ras Leela performances."
-      },
-      {
-        "name": "Kauna Craft",
-        "imageId": "art-bamboo-cane",
-        "description": "The craft of weaving mats, baskets, and furniture from a type of reed that grows in the marshes."
-      }
-    ]
-  },
-  {
-    "slug": "meghalaya",
-    "name": "Meghalaya",
-    "description": "The 'Abode of Clouds', Meghalaya is a land of breathtaking landscapes, with its rolling hills, cascading waterfalls, and some of the wettest places on Earth. It is famous for its unique living root bridges.",
-    "imageId": "state-meghalaya",
-    "monuments": [
-      {
-        "name": "Living Root Bridges",
-        "imageId": "monument-living-root-bridges",
-        "description": "Unique bridges grown from the roots of rubber trees, a testament to the ingenuity of the Khasi tribe."
-      },
-      {
-        "name": "Nohkalikai Falls",
-        "imageId": "monument-chitrakote-falls",
-        "description": "The tallest plunge waterfall in India, it is a spectacular sight, especially during the monsoon."
-      }
-    ],
-    "cuisine": [
-      {
-        "name": "Jadoh",
-        "imageId": "cuisine-jadoh",
-        "description": "A flavorful rice and meat (usually pork) pilaf, a specialty of the Khasi community."
-      },
-      {
-        "name": "Doh-Khlieh",
-        "imageId": "cuisine-eromba",
-        "description": "A salad made from minced pork, onions, and chilies."
-      }
-    ],
-    "festivals": [
-      {
-        "name": "Wangala Festival",
-        "imageId": "festival-wangala",
-        "description": "A post-harvest thanksgiving festival of the Garo tribe, also known as the 'Festival of 100 Drums'."
-      },
-      {
-        "name": "Shad Suk Mynsiem",
-        "imageId": "festival-bihu",
-        "description": "The 'Dance of the Joyful Heart', a thanksgiving festival of the Khasi tribe, celebrated with traditional dance and music."
-      }
-    ],
-    "artForms": [
-      {
-        "name": "Cane and Bamboo Crafts",
-        "imageId": "art-cane-bamboo",
-        "description": "The state is known for its high-quality bamboo and cane products, including baskets, furniture, and decorative items."
-      },
-      {
-        "name": "Eri Silk Weaving",
-        "imageId": "art-muga-silk",
-        "description": "Weaving of Eri silk, which is known for its thermal qualities and is produced in a non-violent way."
-      }
-    ]
-  },
-  {
-    "slug": "mizoram",
-    "name": "Mizoram",
-    "description": "A land of rolling hills, verdant valleys, and a vibrant culture, Mizoram is one of the most picturesque states in Northeast India. The Mizo people are known for their hospitality and their love for music and dance.",
-    "imageId": "state-mizoram",
-    "monuments": [
-      {
-        "name": "Vantawng Falls",
-        "imageId": "monument-vantawng-falls",
-        "description": "The highest waterfall in Mizoram, it is a spectacular sight, cascading down from a height of 750 feet."
-      },
-      {
-        "name": "Phawngpui (Blue Mountain)",
-        "imageId": "state-himachal-pradesh",
-        "description": "The highest peak in Mizoram, it is a place of great natural beauty and is considered sacred by the locals."
-      }
-    ],
-    "cuisine": [
-      {
-        "name": "Bai",
-        "imageId": "cuisine-bai",
-        "description": "A simple and healthy stew made from a variety of vegetables, often flavored with fermented pork or fish."
-      },
-      {
-        "name": "Zu (Rice Beer)",
-        "imageId": "cuisine-chauk",
-        "description": "A traditional rice beer that is a popular beverage and an important part of Mizo social life."
-      }
-    ],
-    "festivals": [
-      {
-        "name": "Chapchar Kut",
-        "imageId": "festival-chapchar-kut",
-        "description": "The most important festival of the Mizos, it is a spring festival celebrated after the completion of jungle-clearing for cultivation."
-      },
-      {
-        "name": "Mim Kut",
-        "imageId": "festival-bihu",
-        "description": "A harvest festival celebrated with music, dance, and feasting after the maize harvest."
-      }
-    ],
-    "artForms": [
-      {
-        "name": "Puan Weaving",
-        "imageId": "art-puan-weaving",
-        "description": "The art of weaving intricate traditional textiles (Puan), with each pattern having a specific name and significance."
-      },
-      {
-        "name": "Cheraw (Bamboo Dance)",
-        "imageId": "art-bamboo-cane",
-        "description": "A lively and skillful dance where performers move between the rhythmic clapping of bamboo staves."
-      }
-    ]
-  },
-  {
-    "slug": "nagaland",
-    "name": "Nagaland",
-    "description": "The 'Land of Festivals', Nagaland is home to 16 major tribes, each with its own distinct culture, traditions, and language. It is a land of rugged mountains, vibrant festivals, and unique warrior heritage.",
-    "imageId": "state-nagaland",
-    "monuments": [
-      {
-        "name": "Dzukou Valley",
-        "imageId": "state-arunachal-pradesh",
-        "description": "A stunning valley known for its rolling hills and seasonal flowers, a paradise for trekkers."
-      },
-      {
-        "name": "Kohima War Cemetery",
-        "imageId": "monument-kohima-cemetery",
-        "description": "A memorial dedicated to the soldiers of the 2nd British Division of the Allied Forces who died in the Second World War at Kohima."
-      }
-    ],
-    "cuisine": [
-      {
-        "name": "Smoked Pork with Axone",
-        "imageId": "cuisine-jadoh",
-        "description": "A classic Naga dish where smoked pork is cooked with Axone (fermented soybean), giving it a strong, pungent flavor."
-      },
-      {
-        "name": "Galho",
-        "imageId": "cuisine-bajra-khichdi",
-        "description": "A soupy mixture of rice, vegetables, and meat, similar to a khichdi."
-      }
-    ],
-    "festivals": [
-      {
-        "name": "Hornbill Festival",
-        "imageId": "festival-hornbill",
-        "description": "A 'festival of festivals' that brings together all the Naga tribes to showcase their culture, music, and dance."
-      },
-      {
-        "name": "Moatsu Festival",
-        "imageId": "festival-sarhul",
-        "description": "A harvest festival of the Ao tribe, celebrated with feasting, dancing, and singing."
-      }
-    ],
-    "artForms": [
-      {
-        "name": "Naga Shawls",
-        "imageId": "art-naga-shawls",
-        "description": "Distinctive shawls with unique patterns and motifs that signify the tribe and social status of the wearer."
-      },
-      {
-        "name": "Wood Carving",
-        "imageId": "art-dhokra",
-        "description": "Naga tribes are known for their expert wood carving skills, creating intricate patterns on house posts, log drums, and artifacts."
-      }
-    ]
-  },
-  {
-    "slug": "odisha",
-    "name": "Odisha",
-    "description": "The 'Soul of India', Odisha is a land of ancient temples, pristine beaches, and rich cultural heritage. From the classical Odissi dance to the grand Ratha Yatra festival, it is a state steeped in art and spirituality.",
-    "imageId": "state-odisha",
-    "monuments": [
-      {
-        "name": "Konark Sun Temple",
-        "imageId": "hero-konark-sun-temple",
-        "description": "A 13th-century temple designed as a colossal stone chariot, a UNESCO World Heritage site."
-      },
-      {
-        "name": "Lingaraja Temple",
-        "imageId": "monument-lingaraja-temple",
-        "description": "An ancient and magnificent temple dedicated to Lord Shiva, a masterpiece of Kalinga architecture."
-      }
-    ],
-    "cuisine": [
-      {
-        "name": "Chhena Poda",
-        "imageId": "cuisine-chenna-poda",
-        "description": "A famous dessert made from baked cottage cheese, often called the 'Indian cheesecake'."
-      },
-      {
-        "name": "Pakhala Bhata",
-        "imageId": "cuisine-pakhala-bhata",
-        "description": "A traditional dish of fermented rice served with various side dishes, a perfect summer meal."
-      }
-    ],
-    "festivals": [
-      {
-        "name": "Ratha Yatra",
-        "imageId": "festival-ratha-yatra",
-        "description": "The grand chariot festival held in Puri, where the deities of Lord Jagannath, Balabhadra, and Subhadra are pulled on massive chariots."
-      },
-      {
-        "name": "Raja Parba",
-        "imageId": "festival-teej",
-        "description": "A three-day festival celebrating womanhood and the fertility of the earth, where women are given a break from work."
-      }
-    ],
-    "artForms": [
-      {
-        "name": "Pattachitra Painting",
-        "imageId": "art-pattachitra",
-        "description": "A traditional cloth-based scroll painting, known for its intricate details and mythological narratives."
-      },
-      {
-        "name": "Odissi Dance",
-        "imageId": "art-odissi",
-        "description": "One of the eight classical dance forms of India, known for its lyrical grace and sculpturesque poses."
-      }
-    ]
-  },
-  {
-    "slug": "punjab",
-    "name": "Punjab",
-    "description": "The 'Land of Five Rivers', Punjab is a vibrant state with a rich history, a fertile agricultural landscape, and a culture full of life and energy. It is the heart of Sikhism and is known for its delicious food and Bhangra music.",
-    "imageId": "state-punjab",
-    "monuments": [
-      {
-        "name": "Golden Temple",
-        "imageId": "hero-golden-temple",
-        "description": "The holiest shrine in Sikhism, a beautiful gurdwara with a sanctum covered in gold."
-      },
-      {
-        "name": "Jallianwala Bagh",
-        "imageId": "marvel-india-gate",
-        "description": "A public garden that houses a memorial of national importance, established in 1951 to commemorate the massacre of peaceful protestors."
-      }
-    ],
-    "cuisine": [
-      {
-        "name": "Makki di Roti & Sarson da Saag",
-        "imageId": "cuisine-makki-roti-saag",
-        "description": "The iconic winter dish of Punjab, a flatbread made from maize flour served with a curry of mustard greens."
-      },
-      {
-        "name": "Amritsari Kulcha",
-        "imageId": "cuisine-chole-bhature",
-        "description": "A crispy, layered flatbread stuffed with a spicy potato filling, a specialty of Amritsar."
-      }
-    ],
-    "festivals": [
-      {
-        "name": "Baisakhi",
-        "imageId": "festival-baisakhi",
-        "description": "The harvest festival of Punjab, celebrated with great fervor, marking the Punjabi New Year and the founding of the Khalsa."
-      },
-      {
-        "name": "Hola Mohalla",
-        "imageId": "festival-hola-mohalla",
-        "description": "A Sikh festival that takes place one day after Holi, featuring mock battles and displays of martial arts (Gatka)."
-      }
-    ],
-    "artForms": [
-      {
-        "name": "Phulkari",
-        "imageId": "art-phulkari",
-        "description": "A traditional embroidery technique, meaning 'flower work', which is an integral part of a Punjabi bride's trousseau."
-      },
-      {
-        "name": "Bhangra",
-        "imageId": "art-bhangra",
-        "description": "A high-energy folk dance and music form that celebrates the harvest and is a symbol of Punjabi joy."
-      }
-    ]
-  },
-  {
-    "slug": "rajasthan",
-    "name": "Rajasthan",
-    "description": "The 'Land of Kings', Rajasthan is a state of majestic forts, opulent palaces, and vibrant culture. From the golden sands of the Thar Desert to the lakes of Udaipur, it is a land of romance, valor, and royalty.",
-    "imageId": "state-rajasthan",
-    "monuments": [
-      {
-        "name": "Mehrangarh Fort",
-        "imageId": "monument-amer-fort",
-        "description": "A magnificent fort in Jodhpur that towers over the 'Blue City'."
-      },
-      {
-        "name": "Hawa Mahal",
-        "imageId": "monument-hawa-mahal",
-        "description": "The 'Palace of Winds' in Jaipur, with its iconic honeycomb-like facade."
-      }
-    ],
-    "cuisine": [
-      {
-        "name": "Dal Baati Churma",
-        "imageId": "cuisine-dal-baati-churma",
-        "description": "The quintessential Rajasthani dish of baked wheat balls served with lentil curry and a sweet powdered wheat mixture."
-      },
-      {
-        "name": "Ghevar",
-        "imageId": "cuisine-ghevar",
-        "description": "A disc-shaped sweet cake, specially prepared for the Teej festival."
-      }
-    ],
-    "festivals": [
-      {
-        "name": "Pushkar Camel Fair",
-        "imageId": "festival-pushkar-fair",
-        "description": "One of the world's largest livestock fairs, a vibrant spectacle of culture and trade."
-      },
-      {
-        "name": "Teej",
-        "imageId": "festival-teej",
-        "description": "A festival celebrating the monsoon, where women pray for marital bliss and swing on decorated swings."
-      }
-    ],
-    "artForms": [
-      {
-        "name": "Ghoomar Dance",
-        "imageId": "art-garba",
-        "description": "A traditional folk dance where women in swirling skirts dance in circles."
-      },
-      {
-        "name": "Blue Pottery",
-        "imageId": "art-blue-pottery",
-        "description": "A famous craft of Jaipur, known for its vibrant blue and turquoise colors on pottery."
-      }
-    ]
-  },
-  {
-    "slug": "sikkim",
-    "name": "Sikkim",
-    "description": "A jewel in the Himalayas, Sikkim is a land of pristine beauty, with its towering peaks, serene monasteries, and vibrant Buddhist culture. It is one of the most peaceful and environmentally conscious states in India.",
-    "imageId": "state-sikkim",
-    "monuments": [
-      {
-        "name": "Rumtek Monastery",
-        "imageId": "monument-rumtek-monastery",
-        "description": "A vibrant monastery that is the seat of the Karmapa, the head of the Karma Kagyu lineage of Tibetan Buddhism."
-      },
-      {
-        "name": "Gurudongmar Lake",
-        "imageId": "state-sikkim",
-        "description": "One of the highest lakes in the world, it is considered sacred by both Buddhists and Sikhs."
-      }
-    ],
-    "cuisine": [
-      {
-        "name": "Momo",
-        "imageId": "cuisine-momo",
-        "description": "Steamed dumplings filled with vegetables or meat, a popular snack across the Himalayas."
-      },
-      {
-        "name": "Phagshapa",
-        "imageId": "cuisine-jadoh",
-        "description": "A traditional dish of pork fat stewed with radishes and dried chilies."
-      }
-    ],
-    "festivals": [
-      {
-        "name": "Saga Dawa",
-        "imageId": "festival-saga-dawa",
-        "description": "The most important festival for Sikkimese Buddhists, commemorating the birth, enlightenment, and death of Lord Buddha."
-      },
-      {
-        "name": "Losar",
-        "imageId": "festival-losar",
-        "description": "The Tibetan New Year, celebrated with traditional rituals, dances, and family gatherings."
-      }
-    ],
-    "artForms": [
-      {
-        "name": "Thangka Painting",
-        "imageId": "art-thangka",
-        "description": "Tibetan Buddhist paintings on cloth scrolls, used for meditation and as religious icons."
-      },
-      {
-        "name": "Chhaupadi Dance",
-        "imageId": "art-chhau",
-        "description": "A traditional masked dance performed by monks in monasteries during festivals."
-      }
-    ]
-  },
-  {
-    "slug": "tamil-nadu",
-    "name": "Tamil Nadu",
-    "description": "The cradle of Dravidian culture, Tamil Nadu is a land of towering temples, classical traditions, and a rich literary heritage. From the bustling city of Chennai to the serene hills of the Nilgiris, it is a state of diverse landscapes and deep-rooted culture.",
-    "imageId": "state-tamil-nadu",
-    "monuments": [
-      {
-        "name": "Meenakshi Amman Temple",
-        "imageId": "monument-meenakshi-temple",
-        "description": "A historic temple in Madurai with 14 towering gopurams (gateway towers) covered in thousands of colorful stone figures."
-      },
-      {
-        "name": "Great Living Chola Temples",
-        "imageId": "marvel-brihadeeswarar-temple",
-        "description": "A group of UNESCO World Heritage sites, including the Brihadeeswarar Temple, showcasing the architectural brilliance of the Chola dynasty."
-      }
-    ],
-    "cuisine": [
-      {
-        "name": "Pongal",
-        "imageId": "cuisine-pongal",
-        "description": "A popular breakfast dish made from rice and lentils, which is also the name of the state's harvest festival."
-      },
-      {
-        "name": "Chettinad Cuisine",
-        "imageId": "cuisine-chettinad-chicken",
-        "description": "Known for its spicy and aromatic dishes, this cuisine uses a variety of complex, freshly ground spice mixes."
-      }
-    ],
-    "festivals": [
-      {
-        "name": "Pongal",
-        "imageId": "festival-pongal",
-        "description": "A four-day harvest festival where people thank the Sun God, nature, and cattle for a bountiful harvest."
-      },
-      {
-        "name": "Jallikattu",
-        "imageId": "festival-jallikattu",
-        "description": "An ancient bull-taming sport held during the Pongal festival, a test of bravery and a celebration of the region's pastoral heritage."
-      }
-    ],
-    "artForms": [
-      {
-        "name": "Bharatanatyam",
-        "imageId": "art-bharatanatyam",
-        "description": "One of India's oldest classical dance forms, known for its grace, sculptural poses, and expressive storytelling."
-      },
-      {
-        "name": "Tanjore Painting",
-        "imageId": "art-tanjore",
-        "description": "A classical painting style known for its rich colors, gold foil work, and inlaid glass beads."
-      }
-    ]
-  },
-  {
-    "slug": "telangana",
-    "name": "Telangana",
-    "description": "The youngest state in India, Telangana is a land of rich history, with a unique culture that blends influences from North and South India. From the bustling metropolis of Hyderabad to ancient forts, it is a state with a distinct identity.",
-    "imageId": "state-telangana",
-    "monuments": [
-      {
-        "name": "Charminar",
-        "imageId": "monument-charminar",
-        "description": "A 16th-century monument and mosque that has become a global icon of Hyderabad."
-      },
-      {
-        "name": "Golkonda Fort",
-        "imageId": "marvel-golconda-fort",
-        "description": "A fortified citadel known for its advanced acoustic system and for being the center of a flourishing diamond trade."
-      }
-    ],
-    "cuisine": [
-      {
-        "name": "Hyderabadi Biryani",
-        "imageId": "cuisine-hyderabadi-biryani",
-        "description": "A legendary rice dish from the kitchens of the Nizams, famous for its aroma and flavor."
-      },
-      {
-        "name": "Sarva Pindi",
-        "imageId": "cuisine-dhuska",
-        "description": "A savory pancake made from rice flour and chana dal, a popular snack in the state."
-      }
-    ],
-    "festivals": [
-      {
-        "name": "Bathukamma",
-        "imageId": "festival-bathukamma",
-        "description": "A colorful flower festival celebrated by the women of Telangana, where flowers are arranged in beautiful stacks."
-      },
-      {
-        "name": "Bonalu",
-        "imageId": "festival-bonalu",
-        "description": "A festival dedicated to the Mother Goddess, Mahakali, celebrated with offerings and vibrant processions."
-      }
-    ],
-    "artForms": [
-      {
-        "name": "Bidriware",
-        "imageId": "art-bidriware",
-        "description": "A unique metal handicraft where silver or gold is inlaid on a blackened alloy of zinc and copper."
-      },
-      {
-        "name": "Cheriyal Scroll Painting",
-        "imageId": "art-cheriyal-scroll",
-        "description": "A stylized form of narrative folk painting, used by itinerant storytellers to narrate stories from mythology."
-      }
-    ]
-  },
-  {
-    "slug": "tripura",
-    "name": "Tripura",
-    "description": "A land of ancient history and stunning natural beauty, Tripura is a state of hills, valleys, and vibrant tribal culture. It is known for its magnificent palaces and unique bamboo crafts.",
-    "imageId": "state-tripura",
-    "monuments": [
-      {
-        "name": "Ujjayanta Palace",
-        "imageId": "monument-ujjayanta-palace",
-        "description": "A former royal palace of the Tripura kingdom, this magnificent white palace now serves as the state museum."
-      },
-      {
-        "name": "Neermahal",
-        "imageId": "state-tripura",
-        "description": "A beautiful water palace built in the middle of Rudrasagar Lake, a blend of Hindu and Mughal architectural styles."
-      }
-    ],
-    "cuisine": [
-      {
-        "name": "Mui Borok",
-        "imageId": "cuisine-eromba",
-        "description": "A traditional Tripuri dish made with 'berma' (fermented fish), known for its pungent flavor."
-      },
-      {
-        "name": "Chauk",
-        "imageId": "cuisine-chauk",
-        "description": "The traditional rice beer of Tripura, an essential part of every festival and social gathering."
-      }
-    ],
-    "festivals": [
-      {
-        "name": "Kharchi Puja",
-        "imageId": "festival-kharchi-puja",
-        "description": "A week-long royal puja to worship the fourteen ancestral deities of the Tripuri people."
-      },
-      {
-        "name": "Garia Puja",
-        "imageId": "festival-sarhul",
-        "description": "A major festival of the Tripuri community, where they worship Lord Garia for a good harvest and prosperity."
-      }
-    ],
-    "artForms": [
-      {
-        "name": "Bamboo and Cane Crafts",
-        "imageId": "art-tripura-bamboo",
-        "description": "Tripura is renowned for its exceptional bamboo and cane handicrafts, creating a variety of beautiful and functional items."
-      },
-      {
-        "name": "Risa and Rignai Weaving",
-        "imageId": "art-naga-shawls",
-        "description": "The traditional attire of Tripuri women, these handwoven textiles are known for their vibrant colors and intricate patterns."
-      }
-    ]
-  },
-  {
-    "slug": "uttar-pradesh",
-    "name": "Uttar Pradesh",
-    "description": "The heartland of India, Uttar Pradesh is a state of immense historical and religious significance. It is home to the iconic Taj Mahal, the sacred city of Varanasi, and the birthplace of Lord Krishna and Lord Rama.",
-    "imageId": "state-uttar-pradesh",
-    "monuments": [
-      {
-        "name": "Taj Mahal",
-        "imageId": "hero-taj-mahal",
-        "description": "An ivory-white marble mausoleum, a UNESCO World Heritage site and a universal symbol of love."
-      },
-      {
-        "name": "Varanasi Ghats",
-        "imageId": "state-uttar-pradesh",
-        "description": "The riverfront steps leading to the banks of the River Ganges, a center of religious life and ritual."
-      }
-    ],
-    "cuisine": [
-      {
-        "name": "Awadhi Biryani",
-        "imageId": "cuisine-hyderabadi-biryani",
-        "description": "A subtle and aromatic rice dish from the city of Lucknow, cooked in the 'dum pukht' style."
-      },
-      {
-        "name": "Petha",
-        "imageId": "cuisine-petha",
-        "description": "A translucent soft candy from Agra, made from ash gourd."
-      }
-    ],
-    "festivals": [
-      {
-        "name": "Diwali in Ayodhya",
-        "imageId": "festival-diwali",
-        "description": "A spectacular celebration marking the return of Lord Rama, where millions of lamps are lit on the banks of the Saryu river."
-      },
-      {
-        "name": "Holi in Braj",
-        "imageId": "festival-holi",
-        "description": "A vibrant and playful celebration of Holi in the region associated with Lord Krishna, known for its unique traditions like Lathmar Holi."
-      }
-    ],
-    "artForms": [
-      {
-        "name": "Chikankari Embroidery",
-        "imageId": "art-chikankari",
-        "description": "A delicate and intricate form of shadow-work embroidery from Lucknow."
-      },
-      {
-        "name": "Zardozi",
-        "imageId": "art-thewa",
-        "description": "An elaborate metal embroidery using gold and silver threads, which flourished under the Mughals."
-      }
-    ]
-  },
-  {
-    "slug": "uttarakhand",
-    "name": "Uttarakhand",
-    "description": "The 'Land of the Gods', Uttarakhand is a Himalayan state known for its pristine natural beauty, revered pilgrimage sites, and thrilling adventure sports. It is home to the Char Dham pilgrimage circuit.",
-    "imageId": "state-uttarakhand",
-    "monuments": [
-      {
-        "name": "Badrinath Temple",
-        "imageId": "monument-badrinath-temple",
-        "description": "One of the four sites in India's Char Dham pilgrimage, dedicated to Lord Vishnu."
-      },
-      {
-        "name": "Valley of Flowers",
-        "imageId": "state-himachal-pradesh",
-        "description": "A national park and a UNESCO World Heritage site, known for its meadows of endemic alpine flowers."
-      }
-    ],
-    "cuisine": [
-      {
-        "name": "Kafuli",
-        "imageId": "cuisine-kafuli",
-        "description": "A thick, nutritious curry made from spinach and fenugreek leaves."
-      },
-      {
-        "name": "Bhang ki Chutney",
-        "imageId": "cuisine-bhangjeera-chutney",
-        "description": "A tangy chutney made from hemp seeds, a specialty of the Kumaon region."
-      }
-    ],
-    "festivals": [
-      {
-        "name": "Kumbh Mela in Haridwar",
-        "imageId": "festival-kumbh-mela",
-        "description": "The world's largest religious gathering, held every 12 years, where pilgrims bathe in the sacred Ganges river."
-      },
-      {
-        "name": "Nanda Devi Raj Jat Yatra",
-        "imageId": "festival-kullu-dussehra",
-        "description": "A unique and arduous pilgrimage that takes place once every twelve years, honoring the goddess Nanda Devi."
-      }
-    ],
-    "artForms": [
-      {
-        "name": "Aipan Art",
-        "imageId": "art-aipan",
-        "description": "A ritualistic folk art drawn on floors and walls to mark auspicious occasions."
-      },
-      {
-        "name": "Wood Carving",
-        "imageId": "art-dhokra",
-        "description": "Intricate wood carving is a traditional craft, seen on the doors and windows of old houses and temples."
-      }
-    ]
-  },
-  {
-    "slug": "west-bengal",
-    "name": "West Bengal",
-    "description": "The cultural capital of India, West Bengal is a land of literature, art, music, and revolutionary history. From the colonial charm of Kolkata to the mangrove forests of the Sundarbans, it is a state of immense intellectual and natural wealth.",
-    "imageId": "state-west-bengal",
-    "monuments": [
-      {
-        "name": "Victoria Memorial",
-        "imageId": "monument-victoria-memorial",
-        "description": "A large marble monument in Kolkata, dedicated to the memory of Queen Victoria."
-      },
-      {
-        "name": "Sundarbans National Park",
-        "imageId": "hero-kerala-backwaters",
-        "description": "The largest mangrove forest in the world, a UNESCO World Heritage site and home to the Royal Bengal Tiger."
-      }
-    ],
-    "cuisine": [
-      {
-        "name": "Shorshe Ilish",
-        "imageId": "cuisine-shorshe-ilish",
-        "description": "The iconic Bengali dish of Hilsa fish cooked in a pungent mustard gravy."
-      },
-      {
-        "name": "Rasgulla",
-        "imageId": "cuisine-rasgulla",
-        "description": "A world-famous sweet made from spongy cottage cheese balls soaked in sugar syrup."
-      }
-    ],
-    "festivals": [
-      {
-        "name": "Durga Puja",
-        "imageId": "festival-durga-puja",
-        "description": "The biggest festival in West Bengal, a grand ten-day celebration honoring the goddess Durga with art, culture, and devotion."
-      },
-      {
-        "name": "Poush Mela",
-        "imageId": "festival-lokrang",
-        "description": "An annual fair and festival held in Shantiniketan, celebrating the harvest season with Baul music, folk dances, and local crafts."
-      }
-    ],
-    "artForms": [
-      {
-        "name": "Kantha Embroidery",
-        "imageId": "art-kantha-embroidery",
-        "description": "A traditional embroidery style where old sarees and dhotis are repurposed into quilts with a simple running stitch."
-      },
-      {
-        "name": "Terracotta Crafts",
-        "imageId": "art-terracotta",
-        "description": "The state is famous for its terracotta temples and pottery, especially the Bankura horse."
-      }
+      { "name": "Manjusha Art", "imageId": "art-pattachitra", "description": "Also known as Angika art, it is a form of scroll painting from the Bhagalpur region, characterized by its use of only three colors."},
+      { "name": "Sujini Embroidery", "imageId": "art-kantha-embroidery", "description": "A traditional embroidery style where old clothes are stitched together, and the stitches are used to create narrative patterns."},
+      { "name": "Bhojpuri Folk Music", "imageId": "music-bhangra", "description": "A rich tradition of folk songs including genres like Sohar (for childbirth), Bidesiya (on migration), and Phagua (for Holi)."},
+      { "name": "Khatwa Appliqué Work", "imageId": "art-pipli", "description": "A craft of creating decorative textiles by cutting and stitching small pieces of cloth onto a larger base fabric."},
+      { "name": "Patna Qalam Painting", "imageId": "art-kangra-painting", "description": "A school of miniature painting that flourished in Patna in the 18th and 19th centuries, notable for its depiction of everyday life."},
+      { "name": "Bidesiya", "imageId": "art-yakshagana", "description": "A popular folk theatre form created by Bhikhari Thakur, dealing with social issues and the plight of migrant workers."},
+      { "name": "Stone Craft", "imageId": "art-terracotta", "description": "The Patharkatti region in Gaya is known for its stone carving, creating idols and artifacts from blue-black pot-stone."},
+      { "name": "Jat-Jatin Dance", "imageId": "art-lavani", "description": "A folk dance of the Mithila region, performed by a couple, depicting the story of a lover's separation and reunion."},
+      { "name": "Lacquerware", "imageId": "art-blue-pottery", "description": "The craft of creating beautiful items like bangles and boxes using lacquer, especially popular in Muzaffarpur."},
+      { "name": "Teej and Sanjhi Art", "imageId": "art-aipan", "description": "Ritualistic art made during festivals, using materials like clay, cow dung, and flowers to create murals and idols."},
+      { "name": "Maithili Folk Music", "imageId": "music-baul", "description": "A rich tradition of folk songs related to various life-cycle rituals and festivals in the Mithila region."},
+      { "name": "Bamboo Craft", "imageId": "art-bamboo-cane", "description": "Creating various functional and decorative items from bamboo, which is abundant in the state."},
+      { "name": "Jhijhiya Dance", "imageId": "art-garba", "description": "A ritualistic folk dance performed during droughts to appease the rain god, where women dance with decorated pots on their heads."}
     ]
   }
 ]
+
+    
