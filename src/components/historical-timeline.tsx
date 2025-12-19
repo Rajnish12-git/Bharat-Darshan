@@ -11,50 +11,21 @@ export default function HistoricalTimeline() {
             Major milestones in the history of Indian civilization
           </p>
         </div>
-        <div className="relative">
-          {/* The vertical line */}
-          <div className="absolute left-4 md:left-1/2 h-full w-0.5 -translate-x-1/2 bg-border"></div>
-          
-          <div className="space-y-12">
-            {timelineEvents.map((event, index) => (
-              <div
-                key={event.id}
-                className="relative flex items-center w-full"
-              >
-                {/* Desktop: Alternating layout */}
-                <div className={`hidden md:flex w-1/2 ${index % 2 === 0 ? 'pr-8 justify-end' : 'pl-8 justify-start'}`}>
-                   <div className={`w-full max-w-md p-6 rounded-lg bg-card shadow-md ${index % 2 === 0 ? 'text-right' : 'text-left'}`}>
-                    <p className="text-sm font-semibold text-primary">{event.date}</p>
-                    <h3 className="font-headline text-xl font-bold mt-1">{event.title}</h3>
-                    <p className="text-muted-foreground mt-2">{event.description}</p>
-                  </div>
-                </div>
-                
-                {/* The circle on the timeline */}
-                <div className="absolute left-4 top-1/2 md:left-1/2 z-10 flex h-5 w-5 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-primary ring-8 ring-background"></div>
-                
-                {/* Mobile: Single column layout */}
-                <div className="w-full pl-12 md:hidden">
-                   <div className="p-6 rounded-lg bg-card shadow-md">
-                    <p className="text-sm font-semibold text-primary">{event.date}</p>
-                    <h3 className="font-headline text-xl font-bold mt-1">{event.title}</h3>
-                    <p className="text-muted-foreground mt-2">{event.description}</p>
-                  </div>
-                </div>
-
-                {/* Desktop right side */}
-                {index % 2 !== 0 && (
-                   <div className="hidden md:flex w-1/2 pl-8 justify-start">
-                     <div className="w-full max-w-md p-6 rounded-lg bg-card shadow-md text-left">
-                       <p className="text-sm font-semibold text-primary">{event.date}</p>
-                       <h3 className="font-headline text-xl font-bold mt-1">{event.title}</h3>
-                       <p className="text-muted-foreground mt-2">{event.description}</p>
-                     </div>
-                   </div>
-                )}
+        <div className="relative wrap overflow-hidden p-10 h-full">
+          <div className="absolute border-opacity-20 border-border h-full border" style={{left: '50%'}}></div>
+          {timelineEvents.map((event, index) => (
+            <div key={event.id} className={`mb-8 flex justify-between items-center w-full ${index % 2 === 0 ? 'flex-row-reverse left-timeline' : 'right-timeline'}`}>
+              <div className="order-1 w-5/12"></div>
+              <div className="z-20 flex items-center order-1 bg-primary shadow-xl w-8 h-8 rounded-full">
+                <h1 className="mx-auto font-semibold text-lg text-primary-foreground">{index + 1}</h1>
               </div>
-            ))}
-          </div>
+              <div className="order-1 bg-card rounded-lg shadow-xl w-5/12 px-6 py-4">
+                <p className="text-sm font-semibold text-primary">{event.date}</p>
+                <h3 className="font-bold text-foreground text-xl">{event.title}</h3>
+                <p className="text-sm leading-snug tracking-wide text-muted-foreground text-opacity-100">{event.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
