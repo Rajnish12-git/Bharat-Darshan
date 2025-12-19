@@ -1,4 +1,3 @@
-
 'use client';
 
 import Link from 'next/link';
@@ -140,13 +139,32 @@ function HeaderActions() {
 
 export default function Header() {
   const [isClient, setIsClient] = useState(false);
-  
+  const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
+  const isLandingPage = pathname === '/';
+
   useEffect(() => {
     setIsClient(true);
-  }, []);
+
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+
+    if (isLandingPage) {
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    } else {
+      setIsScrolled(true);
+    }
+  }, [pathname, isLandingPage]);
   
   const headerClasses = cn(
-    'sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'
+    'fixed top-0 z-50 w-full transition-all duration-300',
+    (isScrolled || !isLandingPage)
+      ? 'border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'
+      : 'bg-transparent'
   );
 
   return (
@@ -155,7 +173,8 @@ export default function Header() {
         <Link
           href="/"
           className={cn(
-            'mr-6 flex items-center space-x-2 transition-colors text-foreground'
+            'mr-6 flex items-center space-x-2 transition-colors',
+            (isScrolled || !isLandingPage) ? 'text-foreground' : 'text-white'
           )}
         >
           <span className="font-bold font-headline text-xl">Bharat Darshan</span>
