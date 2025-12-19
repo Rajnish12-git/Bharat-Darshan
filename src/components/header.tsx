@@ -9,6 +9,7 @@ import { useIsMobile } from '@/hooks/use-mobile';
 import { useEffect, useState } from 'react';
 
 const navLinks = [
+  { href: '/', label: 'Home' },
   { href: '/explore', label: 'Explore' },
   { href: '/#glimpses', label: 'Glimpses' },
   { href: '/#timeline', label: 'Timeline' },
