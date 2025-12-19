@@ -34,21 +34,27 @@ export default function ExploreNearMe() {
 
   const handleLocationRequest = () => {
     setLocationState('loading');
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        setUserLocation({
-          lat: position.coords.latitude,
-          lng: position.coords.longitude,
-        });
-        setLocationState('granted');
-      },
-      (error) => {
-        console.error('Error getting user location:', error);
-        // Fallback to a default location if permission is denied
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          setUserLocation({
+            lat: position.coords.latitude,
+            lng: position.coords.longitude,
+          });
+          setLocationState('granted');
+        },
+        (error) => {
+          console.error('Error getting user location:', error);
+          // Fallback to a default location if permission is denied
+          setUserLocation({ lat: 28.6139, lng: 77.209 });
+          setLocationState('denied');
+        }
+      );
+    } else {
+        // Geolocation not supported
         setUserLocation({ lat: 28.6139, lng: 77.209 });
         setLocationState('denied');
-      }
-    );
+    }
   };
 
   useEffect(() => {
@@ -122,12 +128,17 @@ export default function ExploreNearMe() {
             )}
             <Map
               center={mapCenter}
-              zoom={5}
+              zoom={locationState === 'granted' ? 10 : 5}
               mapId={process.env.NEXT_PUBLIC_GOOGLE_MAPS_MAP_ID}
               gestureHandling={'greedy'}
               disableDefaultUI={true}
               className="w-full h-full"
             >
+              {userLocation && locationState === 'granted' && (
+                  <AdvancedMarker position={userLocation}>
+                    <div className="h-4 w-4 rounded-full bg-blue-500 border-2 border-white" />
+                  </AdvancedMarker>
+              )}
               {nearbyMonuments.map((monument, index) => (
                 <AdvancedMarker
                   key={index}
@@ -168,8 +179,8 @@ export default function ExploreNearMe() {
                   <Badge variant="secondary">
                     Style: {selectedMonument.architecture}
                   </Badge>
-                  {selectedMonument.distance && (
-                     <Badge variant="outline">~{Math.round(selectedMonument.distance)} km away</Badge>
+                  {userLocation && selectedMonument.latitude && selectedMonument.longitude && (
+                     <Badge variant="outline">~{Math.round(getDistance(userLocation.lat, userLocation.lng, selectedMonument.latitude, selectedMonument.longitude))} km away</Badge>
                   )}
                 </div>
                 <Separator />
