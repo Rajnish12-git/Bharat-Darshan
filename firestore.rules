@@ -2,9 +2,23 @@ rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
 
-    // Allow authenticated users to read/write bookings
+    function isOwner(userId) {
+      return request.auth != null && request.auth.uid == userId;
+    }
+    
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
     match /bookings/{bookingId} {
-      allow read, write: if request.auth != null;
+      // Allow creation by anyone (guests or signed-in users)
+      allow create: if true;
+      
+      // Allow users to read their own bookings
+      allow read: if isOwner(resource.data.userId);
+      
+      // Allow users to update or delete their own bookings
+      allow update, delete: if isOwner(resource.data.userId);
     }
 
   }

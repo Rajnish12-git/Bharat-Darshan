@@ -27,20 +27,20 @@ export function useBookings() {
   return { bookings, isLoading, error };
 }
 
-export async function addBooking(bookingData: NewBookingData) {
+export async function addBooking(bookingData: Omit<NewBookingData, 'id'>) {
     const auth = getAuth();
     const firestore = getFirestore();
     const user = auth.currentUser;
 
-    if (!firestore || !user) {
-        throw new Error("Firestore is not available or user is not logged in.");
+    if (!firestore) {
+        throw new Error("Firestore is not available.");
     }
     
     const bookingsCollection = collection(firestore, 'bookings');
     
-    const newBooking = {
-        ...bookingData,
-        userId: user.uid,
+    const newBooking: Omit<Booking, 'id'> = {
+        ...(bookingData as Omit<Booking, 'id' | 'status' | 'createdAt' | 'userId'>),
+        userId: user?.uid || 'guest',
         status: 'pending' as const,
         createdAt: serverTimestamp(),
     };

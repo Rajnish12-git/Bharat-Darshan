@@ -5,6 +5,7 @@ import Footer from '@/components/footer';
 import CulturalHighlights from '@/components/cultural-highlights';
 import ExploreStates from '@/components/explore-states';
 import ExploreNearMe from '@/components/explore-near-me';
+import BookingSection from '@/components/booking-section';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Header />
       <main>
         <HeroCarousel />
+        <BookingSection />
         <ExploreStates />
         <ExploreNearMe />
         <CulturalHighlights />
