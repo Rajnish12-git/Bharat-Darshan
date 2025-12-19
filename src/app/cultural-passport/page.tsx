@@ -6,7 +6,7 @@ import Footer from '@/components/footer';
 import { useBookings } from '@/hooks/use-bookings';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Loader2, Calendar, Users, Ticket } from 'lucide-react';
+import { Loader2, Calendar, Users, Ticket, Hotel, User, Languages, Clock } from 'lucide-react';
 import { format } from 'date-fns';
 
 export default function CulturalPassportPage() {
@@ -21,7 +21,7 @@ export default function CulturalPassportPage() {
             My Cultural Passport
           </h1>
           <p className="mt-4 text-lg text-muted-foreground">
-            Your saved favorites and booking requests for Bharat Darshan.
+            Your booking requests for Bharat Darshan.
           </p>
         </div>
 
@@ -56,23 +56,49 @@ export default function CulturalPassportPage() {
                             Booking ID: <span className='font-mono text-xs'>{booking.id}</span>
                         </CardDescription>
                     </div>
-                    <Badge variant={booking.status === 'pending' ? 'secondary' : 'default'}>
+                    <Badge variant={booking.status === 'pending' ? 'secondary' : 'default'} className="capitalize">
                       {booking.status}
                     </Badge>
                   </CardHeader>
-                  <CardContent className="grid sm:grid-cols-3 gap-4 text-sm">
+                  <CardContent className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-sm">
                     <div className="flex items-center gap-2 text-muted-foreground">
                         <Calendar className="h-4 w-4" />
                         <span>{format(new Date(booking.visitDate), 'PPP')}</span>
                     </div>
                     <div className="flex items-center gap-2 text-muted-foreground">
                         <Users className="h-4 w-4" />
-                        <span>{booking.visitors} Visitor(s)</span>
+                        <span>{booking.peopleCount} Person(s)</span>
                     </div>
-                    <div className="flex items-center gap-2 text-muted-foreground">
+                     <div className="flex items-center gap-2 text-muted-foreground capitalize">
                         <Ticket className="h-4 w-4" />
-                        <span>{booking.visitType}</span>
+                        <span>{booking.bookingType} Booking</span>
                     </div>
+
+                    {booking.bookingType === 'hotel' && (
+                        <>
+                            <div className="flex items-center gap-2 text-muted-foreground capitalize">
+                                <Hotel className="h-4 w-4" />
+                                <span>{booking.hotelCategory} Category</span>
+                            </div>
+                            <div className="flex items-center gap-2 text-muted-foreground">
+                                <Clock className="h-4 w-4" />
+                                <span>{booking.nights} Night(s)</span>
+                            </div>
+                        </>
+                    )}
+
+                     {booking.bookingType === 'guide' && (
+                        <>
+                            <div className="flex items-center gap-2 text-muted-foreground">
+                                <Languages className="h-4 w-4" />
+                                <span>{booking.guideLanguage}</span>
+                            </div>
+                             <div className="flex items-center gap-2 text-muted-foreground capitalize">
+                                <Clock className="h-4 w-4" />
+                                <span>{booking.tourDuration?.replace('-', ' ')}</span>
+                            </div>
+                        </>
+                    )}
                   </CardContent>
                 </Card>
               ))}
