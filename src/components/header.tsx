@@ -140,35 +140,13 @@ function HeaderActions() {
 
 export default function Header() {
   const [isClient, setIsClient] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-  const pathname = usePathname();
-  const isHomePage = pathname === '/';
-
+  
   useEffect(() => {
     setIsClient(true);
-    
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 10;
-      setScrolled(isScrolled);
-    };
-
-    if (isHomePage) {
-      window.addEventListener('scroll', handleScroll);
-      handleScroll(); // Check on initial render
-    }
-
-    return () => {
-      if (isHomePage) {
-        window.removeEventListener('scroll', handleScroll);
-      }
-    };
-  }, [isHomePage]);
+  }, []);
   
   const headerClasses = cn(
-    'sticky top-0 z-50 w-full transition-colors duration-300',
-    (isHomePage && !scrolled)
-      ? 'bg-transparent border-b border-transparent'
-      : 'border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'
+    'sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'
   );
 
   return (
@@ -177,8 +155,7 @@ export default function Header() {
         <Link
           href="/"
           className={cn(
-            'mr-6 flex items-center space-x-2 transition-colors',
-             (isHomePage && !scrolled) ? 'text-white' : 'text-foreground'
+            'mr-6 flex items-center space-x-2 transition-colors text-foreground'
           )}
         >
           <span className="font-bold font-headline text-xl">Bharat Darshan</span>
