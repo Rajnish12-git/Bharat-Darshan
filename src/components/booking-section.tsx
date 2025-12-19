@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useState } from 'react';
@@ -19,7 +18,6 @@ import { useToast } from '@/hooks/use-toast';
 import { useUser } from '@/firebase';
 import { addBooking } from '@/hooks/use-bookings';
 import architecturalMarvels from '@/lib/architectural-marvels.json';
-import LoginModal from './login-modal';
 
 const bookingSchema = z.object({
   monumentName: z.string({ required_error: 'Please select a monument.' }),
@@ -51,7 +49,7 @@ type BookingFormValues = z.infer<typeof bookingSchema>;
 
 export default function BookingSection() {
   const { toast } = useToast();
-  const { user, isLoading: userLoading } = useUser();
+  const { user } = useUser();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [selectedMonument, setSelectedMonument] = useState<{name: string, location: string} | null>(null);
 
@@ -61,8 +59,6 @@ export default function BookingSection() {
       peopleCount: 1,
     },
   });
-  
-  const isUserLoggedIn = user && !user.isAnonymous;
 
   const bookingType = form.watch('bookingType');
 
@@ -74,19 +70,10 @@ export default function BookingSection() {
   }
 
   const onSubmit = async (data: BookingFormValues) => {
-    if (!isUserLoggedIn) {
-        toast({
-            variant: "destructive",
-            title: "Please Log In",
-            description: "You need to be logged in to make a booking request."
-        })
-        return;
-    }
-
     setIsSubmitting(true);
     const bookingData = {
       ...data,
-      userId: user.uid,
+      userId: user?.uid || 'guest',
       visitDate: data.visitDate.toISOString(),
       city: selectedMonument?.location.split(',')[0].trim() || '',
       state: selectedMonument?.location.split(',')[1]?.trim() || '',
@@ -122,15 +109,7 @@ export default function BookingSection() {
         </div>
         
         <div className="bg-card p-8 rounded-xl shadow-lg border">
-          {!isUserLoggedIn && !userLoading && (
-            <div className="absolute inset-0 bg-background/80 backdrop-blur-sm flex flex-col items-center justify-center z-10 rounded-xl">
-                <p className="text-lg font-semibold text-center mb-4">Please sign in to plan your visit.</p>
-                <LoginModal>
-                    <Button>Login / Sign Up</Button>
-                </LoginModal>
-            </div>
-          )}
-          <form onSubmit={form.handleSubmit(onSubmit)} className={cn(!isUserLoggedIn && "blur-sm pointer-events-none")}>
+          <form onSubmit={form.handleSubmit(onSubmit)}>
             <div className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
