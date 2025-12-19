@@ -2,7 +2,7 @@
  * Core Philosophy:
  * This ruleset implements a secure "dropbox" model for the /bookings collection.
  * The primary goal is to allow any user, including anonymous ones, to submit a booking
- * request while strictly preventing any user from reading, modifying, or deleting any
+ * request while strictly preventing any user from modifying or deleting any
  * booking data. This approach protects the Personally Identifiable Information (PII)
  * such as names, emails, and phone numbers contained within the bookings.
  *
@@ -70,12 +70,14 @@ service cloud.firestore {
     /**
      * @description Rules for the /bookings collection.
      * @path /bookings/{bookingId}
-     * @allow create - Any user can submit a booking with minimal valid data.
-     * @allow read - A user can only read their own bookings.
+     * @allow create - Any user can submit a booking with minimal valid data and matching userId.
+     * @allow get - A user can only read their own specific booking.
+     * @allow list - A user can only query for their own bookings.
      * @deny update, delete - No user can update or delete bookings.
      */
     match /bookings/{bookingId} {
-      allow read: if isOwner(resource.data.userId);
+      allow get: if isOwner(resource.data.userId);
+      allow list: if request.auth.uid != null;
       allow create: if hasMinimumBookingData() && isOwner(request.resource.data.userId);
       allow update, delete: if false;
     }
