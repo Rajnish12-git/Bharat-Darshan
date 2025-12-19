@@ -15,36 +15,29 @@ interface SearchResultsProps {
 const MonumentCard = ({ item }: { item: DetailItem }) => {
   const image = PlaceHolderImages.find((img) => img.id === item.imageId);
   return (
-    <Link
-      href={`/highlights/architectural-marvels#${encodeURIComponent(
-        item.name
-      )}`}
-      className="group"
-    >
-      <Card className="overflow-hidden transition-shadow hover:shadow-lg h-full flex flex-col">
-        <div className="relative h-40 w-full">
-          {image ? (
-            <Image
-              src={image.imageUrl}
-              alt={item.name}
-              fill
-              className="object-cover transition-transform duration-300 group-hover:scale-105"
-              data-ai-hint={image.imageHint}
-            />
-          ) : (
-            <div className="bg-muted h-full w-full" />
-          )}
-        </div>
-        <CardContent className="p-4 flex-grow flex flex-col min-h-0">
-          <h3 className="font-bold font-headline truncate">{item.name}</h3>
-          {(item as any).location && (
-            <p className="text-sm text-muted-foreground mt-1 line-clamp-2">
-              {(item as any).location}
-            </p>
-          )}
-        </CardContent>
-      </Card>
-    </Link>
+    <Card className="overflow-hidden transition-shadow hover:shadow-lg h-full flex flex-col">
+      <div className="relative h-40 w-full">
+        {image ? (
+          <Image
+            src={image.imageUrl}
+            alt={item.name}
+            fill
+            className="object-cover"
+            data-ai-hint={image.imageHint}
+          />
+        ) : (
+          <div className="bg-muted h-full w-full" />
+        )}
+      </div>
+      <CardContent className="p-4 flex-grow flex flex-col">
+        <h3 className="font-bold font-headline truncate">{item.name}</h3>
+        {(item as any).location && (
+          <p className="text-sm text-muted-foreground mt-1 line-clamp-2">
+            {(item as any).location}
+          </p>
+        )}
+      </CardContent>
+    </Card>
   );
 };
 
@@ -66,7 +59,7 @@ const StateCard = ({ item }: { item: StateData }) => {
             <div className="bg-muted h-full w-full" />
           )}
         </div>
-        <CardContent className="p-4 flex-grow flex flex-col min-h-0">
+        <CardContent className="p-4 flex-grow flex flex-col">
           <h3 className="font-bold font-headline truncate">{item.name}</h3>
           <p className="text-sm text-muted-foreground mt-1 line-clamp-2">{item.description}</p>
         </CardContent>
