@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState } from 'react';
@@ -18,6 +19,7 @@ import { useToast } from '@/hooks/use-toast';
 import { useUser } from '@/firebase';
 import { addBooking } from '@/hooks/use-bookings';
 import architecturalMarvels from '@/lib/architectural-marvels.json';
+import LoginModal from './login-modal';
 
 const bookingSchema = z.object({
   monumentName: z.string({ required_error: 'Please select a monument.' }),
@@ -49,7 +51,7 @@ type BookingFormValues = z.infer<typeof bookingSchema>;
 
 export default function BookingSection() {
   const { toast } = useToast();
-  const { user } = useUser();
+  const { user, isLoading: userLoading } = useUser();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [selectedMonument, setSelectedMonument] = useState<{name: string, location: string} | null>(null);
 
@@ -59,6 +61,8 @@ export default function BookingSection() {
       peopleCount: 1,
     },
   });
+  
+  const isUserLoggedIn = user && !user.isAnonymous;
 
   const bookingType = form.watch('bookingType');
 
@@ -70,10 +74,19 @@ export default function BookingSection() {
   }
 
   const onSubmit = async (data: BookingFormValues) => {
+    if (!isUserLoggedIn) {
+        toast({
+            variant: "destructive",
+            title: "Please Log In",
+            description: "You need to be logged in to make a booking request."
+        })
+        return;
+    }
+
     setIsSubmitting(true);
     const bookingData = {
       ...data,
-      userId: user?.uid || 'guest',
+      userId: user.uid,
       visitDate: data.visitDate.toISOString(),
       city: selectedMonument?.location.split(',')[0].trim() || '',
       state: selectedMonument?.location.split(',')[1]?.trim() || '',
@@ -109,177 +122,187 @@ export default function BookingSection() {
         </div>
         
         <div className="bg-card p-8 rounded-xl shadow-lg border">
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-               <div className="space-y-2">
-                <Label htmlFor="monumentName">Select Monument</Label>
-                 <Controller
-                    control={form.control}
-                    name="monumentName"
-                    render={({ field }) => (
-                         <Select onValueChange={(value) => {
-                             field.onChange(value);
-                             handleMonumentChange(value);
-                         }} defaultValue={field.value}>
-                            <SelectTrigger id="monumentName">
-                                <SelectValue placeholder="Select a monument" />
-                            </SelectTrigger>
-                            <SelectContent>
-                                {architecturalMarvels.map(marvel => (
-                                    <SelectItem key={marvel.name} value={marvel.name}>{marvel.name}</SelectItem>
-                                ))}
-                            </SelectContent>
-                        </Select>
-                    )}
-                />
-                {form.formState.errors.monumentName && <p className="text-xs text-destructive">{form.formState.errors.monumentName.message}</p>}
-              </div>
-
-               <div className="space-y-2">
-                <Label htmlFor="cityState">City / State</Label>
-                <Input id="cityState" value={selectedMonument?.location || ''} disabled placeholder="Auto-filled based on monument"/>
-              </div>
+          {!isUserLoggedIn && !userLoading && (
+            <div className="absolute inset-0 bg-background/80 backdrop-blur-sm flex flex-col items-center justify-center z-10 rounded-xl">
+                <p className="text-lg font-semibold text-center mb-4">Please sign in to plan your visit.</p>
+                <LoginModal>
+                    <Button>Login / Sign Up</Button>
+                </LoginModal>
             </div>
-
-            <div className="space-y-2">
-              <Label>Booking Type</Label>
-               <Controller
-                    control={form.control}
-                    name="bookingType"
-                    render={({ field }) => (
-                        <RadioGroup onValueChange={field.onChange} defaultValue={field.value} className="flex gap-4 pt-2">
-                            <Label className="flex items-center gap-2 font-normal border p-3 rounded-md has-[:checked]:bg-primary/10 has-[:checked]:border-primary transition-colors cursor-pointer flex-1 justify-center">
-                                <RadioGroupItem value="hotel" id="hotel" /> Hotel
-                            </Label>
-                            <Label className="flex items-center gap-2 font-normal border p-3 rounded-md has-[:checked]:bg-primary/10 has-[:checked]:border-primary transition-colors cursor-pointer flex-1 justify-center">
-                                <RadioGroupItem value="guide" id="guide" /> Tour Guide
-                            </Label>
-                        </RadioGroup>
-                    )}
-                />
-              {form.formState.errors.bookingType && <p className="text-xs text-destructive">{form.formState.errors.bookingType.message}</p>}
-            </div>
-
-            {bookingType === 'hotel' && (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 border rounded-lg bg-background">
+          )}
+          <form onSubmit={form.handleSubmit(onSubmit)} className={cn(!isUserLoggedIn && "blur-sm pointer-events-none")}>
+            <div className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                    <Label>Hotel Category</Label>
+                    <Label htmlFor="monumentName">Select Monument</Label>
                     <Controller
                         control={form.control}
-                        name="hotelCategory"
+                        name="monumentName"
                         render={({ field }) => (
-                            <Select onValueChange={field.onChange} defaultValue={field.value}>
-                                <SelectTrigger>
-                                    <SelectValue placeholder="Select category" />
+                            <Select onValueChange={(value) => {
+                                field.onChange(value);
+                                handleMonumentChange(value);
+                            }} defaultValue={field.value}>
+                                <SelectTrigger id="monumentName">
+                                    <SelectValue placeholder="Select a monument" />
                                 </SelectTrigger>
                                 <SelectContent>
-                                    <SelectItem value="budget">Budget</SelectItem>
-                                    <SelectItem value="standard">Standard</SelectItem>
-                                    <SelectItem value="luxury">Luxury</SelectItem>
+                                    {architecturalMarvels.map(marvel => (
+                                        <SelectItem key={marvel.name} value={marvel.name}>{marvel.name}</SelectItem>
+                                    ))}
                                 </SelectContent>
                             </Select>
                         )}
                     />
-                    {form.formState.errors.hotelCategory && <p className="text-xs text-destructive">{form.formState.errors.hotelCategory.message}</p>}
+                    {form.formState.errors.monumentName && <p className="text-xs text-destructive">{form.formState.errors.monumentName.message}</p>}
                 </div>
-                 <div className="space-y-2">
-                    <Label htmlFor="nights">Number of Nights</Label>
-                    <Input id="nights" type="number" min="1" {...form.register('nights')} />
-                    {form.formState.errors.nights && <p className="text-xs text-destructive">{form.formState.errors.nights.message}</p>}
-                </div>
-              </div>
-            )}
-            
-            {bookingType === 'guide' && (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 border rounded-lg bg-background">
+
                 <div className="space-y-2">
-                    <Label htmlFor="guideLanguage">Language Preference</Label>
-                    <Input id="guideLanguage" placeholder="e.g., English, Hindi" {...form.register('guideLanguage')} />
-                    {form.formState.errors.guideLanguage && <p className="text-xs text-destructive">{form.formState.errors.guideLanguage.message}</p>}
+                    <Label htmlFor="cityState">City / State</Label>
+                    <Input id="cityState" value={selectedMonument?.location || ''} disabled placeholder="Auto-filled based on monument"/>
                 </div>
+                </div>
+
                 <div className="space-y-2">
-                    <Label>Tour Duration</Label>
-                    <Controller
+                <Label>Booking Type</Label>
+                <Controller
                         control={form.control}
-                        name="tourDuration"
+                        name="bookingType"
                         render={({ field }) => (
                             <RadioGroup onValueChange={field.onChange} defaultValue={field.value} className="flex gap-4 pt-2">
-                                <Label className="flex items-center gap-2 font-normal border p-2 rounded-md has-[:checked]:bg-primary/10 has-[:checked]:border-primary transition-colors cursor-pointer flex-1 justify-center text-sm">
-                                    <RadioGroupItem value="half-day" /> Half Day
+                                <Label className="flex items-center gap-2 font-normal border p-3 rounded-md has-[:checked]:bg-primary/10 has-[:checked]:border-primary transition-colors cursor-pointer flex-1 justify-center">
+                                    <RadioGroupItem value="hotel" id="hotel" /> Hotel
                                 </Label>
-                                <Label className="flex items-center gap-2 font-normal border p-2 rounded-md has-[:checked]:bg-primary/10 has-[:checked]:border-primary transition-colors cursor-pointer flex-1 justify-center text-sm">
-                                    <RadioGroupItem value="full-day" /> Full Day
+                                <Label className="flex items-center gap-2 font-normal border p-3 rounded-md has-[:checked]:bg-primary/10 has-[:checked]:border-primary transition-colors cursor-pointer flex-1 justify-center">
+                                    <RadioGroupItem value="guide" id="guide" /> Tour Guide
                                 </Label>
                             </RadioGroup>
                         )}
                     />
-                    {form.formState.errors.tourDuration && <p className="text-xs text-destructive">{form.formState.errors.tourDuration.message}</p>}
+                {form.formState.errors.bookingType && <p className="text-xs text-destructive">{form.formState.errors.bookingType.message}</p>}
                 </div>
-              </div>
-            )}
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {bookingType === 'hotel' && (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 border rounded-lg bg-background">
+                    <div className="space-y-2">
+                        <Label>Hotel Category</Label>
+                        <Controller
+                            control={form.control}
+                            name="hotelCategory"
+                            render={({ field }) => (
+                                <Select onValueChange={field.onChange} defaultValue={field.value}>
+                                    <SelectTrigger>
+                                        <SelectValue placeholder="Select category" />
+                                    </SelectTrigger>
+                                    <SelectContent>
+                                        <SelectItem value="budget">Budget</SelectItem>
+                                        <SelectItem value="standard">Standard</SelectItem>
+                                        <SelectItem value="luxury">Luxury</SelectItem>
+                                    </SelectContent>
+                                </Select>
+                            )}
+                        />
+                        {form.formState.errors.hotelCategory && <p className="text-xs text-destructive">{form.formState.errors.hotelCategory.message}</p>}
+                    </div>
+                    <div className="space-y-2">
+                        <Label htmlFor="nights">Number of Nights</Label>
+                        <Input id="nights" type="number" min="1" {...form.register('nights')} />
+                        {form.formState.errors.nights && <p className="text-xs text-destructive">{form.formState.errors.nights.message}</p>}
+                    </div>
+                </div>
+                )}
+                
+                {bookingType === 'guide' && (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-4 border rounded-lg bg-background">
+                    <div className="space-y-2">
+                        <Label htmlFor="guideLanguage">Language Preference</Label>
+                        <Input id="guideLanguage" placeholder="e.g., English, Hindi" {...form.register('guideLanguage')} />
+                        {form.formState.errors.guideLanguage && <p className="text-xs text-destructive">{form.formState.errors.guideLanguage.message}</p>}
+                    </div>
+                    <div className="space-y-2">
+                        <Label>Tour Duration</Label>
+                        <Controller
+                            control={form.control}
+                            name="tourDuration"
+                            render={({ field }) => (
+                                <RadioGroup onValueChange={field.onChange} defaultValue={field.value} className="flex gap-4 pt-2">
+                                    <Label className="flex items-center gap-2 font-normal border p-2 rounded-md has-[:checked]:bg-primary/10 has-[:checked]:border-primary transition-colors cursor-pointer flex-1 justify-center text-sm">
+                                        <RadioGroupItem value="half-day" /> Half Day
+                                    </Label>
+                                    <Label className="flex items-center gap-2 font-normal border p-2 rounded-md has-[:checked]:bg-primary/10 has-[:checked]:border-primary transition-colors cursor-pointer flex-1 justify-center text-sm">
+                                        <RadioGroupItem value="full-day" /> Full Day
+                                    </Label>
+                                </RadioGroup>
+                            )}
+                        />
+                        {form.formState.errors.tourDuration && <p className="text-xs text-destructive">{form.formState.errors.tourDuration.message}</p>}
+                    </div>
+                </div>
+                )}
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="space-y-2">
+                        <Label>Visit Date</Label>
+                        <Controller
+                            control={form.control}
+                            name="visitDate"
+                            render={({ field }) => (
+                                <Popover>
+                                    <PopoverTrigger asChild>
+                                        <Button
+                                            variant={'outline'}
+                                            className={cn('w-full justify-start text-left font-normal', !field.value && 'text-muted-foreground')}
+                                        >
+                                            <CalendarIcon className="mr-2 h-4 w-4" />
+                                            {field.value ? format(field.value, 'PPP') : <span>Pick a date</span>}
+                                        </Button>
+                                    </PopoverTrigger>
+                                    <PopoverContent className="w-auto p-0">
+                                        <Calendar
+                                            mode="single"
+                                            selected={field.value}
+                                            onSelect={field.onChange}
+                                            disabled={(date) => date < new Date()}
+                                            initialFocus
+                                        />
+                                    </PopoverContent>
+                                </Popover>
+                            )}
+                        />
+                        {form.formState.errors.visitDate && <p className="text-xs text-destructive">{form.formState.errors.visitDate.message}</p>}
+                    </div>
+                    <div className="space-y-2">
+                        <Label htmlFor="peopleCount">Number of People</Label>
+                        <Input id="peopleCount" type="number" min="1" {...form.register('peopleCount')} />
+                        {form.formState.errors.peopleCount && <p className="text-xs text-destructive">{form.formState.errors.peopleCount.message}</p>}
+                    </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="space-y-2">
-                    <Label>Visit Date</Label>
-                    <Controller
-                        control={form.control}
-                        name="visitDate"
-                        render={({ field }) => (
-                            <Popover>
-                                <PopoverTrigger asChild>
-                                    <Button
-                                        variant={'outline'}
-                                        className={cn('w-full justify-start text-left font-normal', !field.value && 'text-muted-foreground')}
-                                    >
-                                        <CalendarIcon className="mr-2 h-4 w-4" />
-                                        {field.value ? format(field.value, 'PPP') : <span>Pick a date</span>}
-                                    </Button>
-                                </PopoverTrigger>
-                                <PopoverContent className="w-auto p-0">
-                                    <Calendar
-                                        mode="single"
-                                        selected={field.value}
-                                        onSelect={field.onChange}
-                                        disabled={(date) => date < new Date()}
-                                        initialFocus
-                                    />
-                                </PopoverContent>
-                            </Popover>
-                        )}
-                    />
-                    {form.formState.errors.visitDate && <p className="text-xs text-destructive">{form.formState.errors.visitDate.message}</p>}
+                    <Label htmlFor="userName">Full Name</Label>
+                    <Input id="userName" {...form.register('userName')} placeholder="Your full name" />
+                    {form.formState.errors.userName && <p className="text-xs text-destructive">{form.formState.errors.userName.message}</p>}
                 </div>
-                 <div className="space-y-2">
-                    <Label htmlFor="peopleCount">Number of People</Label>
-                    <Input id="peopleCount" type="number" min="1" {...form.register('peopleCount')} />
-                    {form.formState.errors.peopleCount && <p className="text-xs text-destructive">{form.formState.errors.peopleCount.message}</p>}
+                <div className="space-y-2">
+                    <Label htmlFor="email">Email</Label>
+                    <Input id="email" type="email" {...form.register('email')} placeholder="your.email@example.com" />
+                    {form.formState.errors.email && <p className="text-xs text-destructive">{form.formState.errors.email.message}</p>}
                 </div>
-            </div>
+                <div className="space-y-2">
+                    <Label htmlFor="phone">Phone Number</Label>
+                    <Input id="phone" type="tel" {...form.register('phone')} placeholder="Your phone number" />
+                    {form.formState.errors.phone && <p className="text-xs text-destructive">{form.formState.errors.phone.message}</p>}
+                </div>
+                </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="space-y-2">
-                <Label htmlFor="userName">Full Name</Label>
-                <Input id="userName" {...form.register('userName')} placeholder="Your full name" />
-                {form.formState.errors.userName && <p className="text-xs text-destructive">{form.formState.errors.userName.message}</p>}
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
-                <Input id="email" type="email" {...form.register('email')} placeholder="your.email@example.com" />
-                {form.formState.errors.email && <p className="text-xs text-destructive">{form.formState.errors.email.message}</p>}
-              </div>
-               <div className="space-y-2">
-                <Label htmlFor="phone">Phone Number</Label>
-                <Input id="phone" type="tel" {...form.register('phone')} placeholder="Your phone number" />
-                {form.formState.errors.phone && <p className="text-xs text-destructive">{form.formState.errors.phone.message}</p>}
-              </div>
-            </div>
-
-             <div className="pt-4 text-center">
-                 <p className="text-xs text-muted-foreground mb-4">This is a booking request, not a confirmed ticket. Our team will contact you for confirmation.</p>
-                <Button type="submit" size="lg" className="w-full md:w-1/2" disabled={isSubmitting}>
-                    {isSubmitting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-                    Request Booking
-                </Button>
+                <div className="pt-4 text-center">
+                    <p className="text-xs text-muted-foreground mb-4">This is a booking request, not a confirmed ticket. Our team will contact you for confirmation.</p>
+                    <Button type="submit" size="lg" className="w-full md:w-1/2" disabled={isSubmitting}>
+                        {isSubmitting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+                        Request Booking
+                    </Button>
+                </div>
             </div>
           </form>
         </div>

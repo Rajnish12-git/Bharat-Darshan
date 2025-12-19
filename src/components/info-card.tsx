@@ -1,12 +1,16 @@
 
+'use client';
+
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import type { DetailItem } from '@/lib/heritage-data';
 import Link from 'next/link';
 import FavoriteButton from './favorite-button';
-import { Heart, Ticket } from 'lucide-react';
+import { Ticket } from 'lucide-react';
 import BookingModal from './booking-modal';
 import { Button } from './ui/button';
+import { useUser } from '@/firebase';
+import LoginModal from './login-modal';
 
 interface InfoCardProps {
   item: DetailItem;
@@ -15,6 +19,27 @@ interface InfoCardProps {
 
 export default function InfoCard({ item, category }: InfoCardProps) {
   const image = PlaceHolderImages.find((img) => img.id === item.imageId);
+  const { user } = useUser();
+
+  const BookingButton = () => {
+    if (user && !user.isAnonymous) {
+      return (
+        <BookingModal monumentName={item.name}>
+          <Button variant="outline" className="w-full mt-4">
+            <Ticket className="mr-2 h-4 w-4" /> Book Visit
+          </Button>
+        </BookingModal>
+      );
+    }
+    return (
+      <LoginModal>
+        <Button variant="outline" className="w-full mt-4">
+          <Ticket className="mr-2 h-4 w-4" /> Book Visit
+        </Button>
+      </LoginModal>
+    );
+  };
+
 
   return (
     <div className="group relative flex flex-col overflow-hidden rounded-xl shadow-md border bg-card transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl">
@@ -43,13 +68,7 @@ export default function InfoCard({ item, category }: InfoCardProps) {
         <p className="mt-2 text-sm text-muted-foreground line-clamp-2 flex-grow">
           {item.description}
         </p>
-        {category === 'monument' && (
-           <BookingModal monumentName={item.name}>
-            <Button variant="outline" className="w-full mt-4">
-              <Ticket className="mr-2 h-4 w-4" /> Book Visit
-            </Button>
-           </BookingModal>
-        )}
+        {category === 'monument' && <BookingButton />}
       </div>
     </div>
   );
