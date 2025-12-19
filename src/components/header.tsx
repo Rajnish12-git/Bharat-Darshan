@@ -18,10 +18,10 @@ const navLinks = [
   { href: '/#timeline', label: 'Timeline' },
 ];
 
-export default function Header() {
+function HeaderActions() {
   const isMobile = useIsMobile();
-  const [scrolled, setScrolled] = useState(false);
   const { user } = useUser();
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,12 +34,13 @@ export default function Header() {
   }, []);
 
   const UserIcon = () => (
-     <User
-        className={cn(
-          'h-5 w-5',
-          scrolled ? 'text-foreground/60' : 'text-white/80'
-        )}
-      />
+    <User
+      className={cn(
+        'h-5 w-5',
+        scrolled ? 'text-foreground/60' : 'text-white/80',
+        'hover:text-foreground'
+      )}
+    />
   );
 
   const UserButton = () => {
@@ -59,30 +60,11 @@ export default function Header() {
         </Button>
       </LoginModal>
     );
-  }
-
-  return (
-    <header
-      className={cn(
-        'fixed top-0 z-50 w-full transition-all duration-300',
-        scrolled
-          ? 'border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'
-          : 'bg-transparent border-transparent'
-      )}
-    >
-      <div className="container flex h-16 max-w-screen-2xl items-center">
-        <Link
-          href="/"
-          className={cn(
-            'mr-6 flex items-center space-x-2',
-            !scrolled && 'text-white'
-          )}
-        >
-          <span className="font-bold font-headline text-xl">Bharat Darshan</span>
-        </Link>
-
-        {isMobile ? (
-          <div className="flex flex-1 items-center justify-end space-x-2">
+  };
+  
+    if (isMobile) {
+      return (
+        <div className="flex flex-1 items-center justify-end space-x-2">
             <Button variant="ghost" size="icon" asChild>
               <Link href="/search" aria-label="Search">
                 <Search
@@ -130,39 +112,81 @@ export default function Header() {
               </SheetContent>
             </Sheet>
           </div>
-        ) : (
-          <div className="flex flex-1 items-center justify-end space-x-4">
-            <nav className="flex items-center space-x-6 text-sm font-medium">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className={cn(
-                    'transition-colors',
-                    scrolled
-                      ? 'text-foreground/60 hover:text-foreground/80'
-                      : 'text-white/80 hover:text-white'
-                  )}
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </nav>
-            <div className="flex items-center space-x-2">
-              <Button variant="ghost" size="icon" asChild>
-                <Link href="/search" aria-label="Search">
-                  <Search
-                    className={cn(
-                      'h-5 w-5',
-                      scrolled ? 'text-foreground/60' : 'text-white/80'
-                    )}
-                  />
-                </Link>
-              </Button>
-              <UserButton />
-            </div>
-          </div>
-        )}
+      );
+  }
+
+  return (
+      <div className="flex flex-1 items-center justify-end space-x-4">
+        <nav className="flex items-center space-x-6 text-sm font-medium">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={cn(
+                'transition-colors',
+                scrolled
+                  ? 'text-foreground/60 hover:text-foreground/80'
+                  : 'text-white/80 hover:text-white'
+              )}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+        <div className="flex items-center space-x-2">
+          <Button variant="ghost" size="icon" asChild>
+            <Link href="/search" aria-label="Search">
+              <Search
+                className={cn(
+                  'h-5 w-5',
+                  scrolled ? 'text-foreground/60' : 'text-white/80',
+                  'hover:text-foreground'
+                )}
+              />
+            </Link>
+          </Button>
+          <UserButton />
+        </div>
+      </div>
+  );
+
+}
+
+export default function Header() {
+  const [scrolled, setScrolled] = useState(false);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 10;
+      setScrolled(isScrolled);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  return (
+    <header
+      className={cn(
+        'fixed top-0 z-50 w-full transition-all duration-300',
+        scrolled
+          ? 'border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'
+          : 'bg-transparent border-transparent'
+      )}
+    >
+      <div className="container flex h-16 max-w-screen-2xl items-center">
+        <Link
+          href="/"
+          className={cn(
+            'mr-6 flex items-center space-x-2 transition-colors',
+            scrolled ? 'text-foreground' :'text-white'
+          )}
+        >
+          <span className="font-bold font-headline text-xl">Bharat Darshan</span>
+        </Link>
+        {isClient && <HeaderActions />}
       </div>
     </header>
   );
