@@ -16,6 +16,7 @@ import { Separator } from '@/components/ui/separator';
 import { useState } from 'react';
 import type { Booking } from '@/lib/types';
 import EditBookingModal from '@/components/edit-booking-modal';
+import EditProfileModal from '@/components/edit-profile-modal';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -112,6 +113,7 @@ export default function CulturalPassportPage() {
   const { toast } = useToast();
 
   const [editingBooking, setEditingBooking] = useState<Booking | null>(null);
+  const [editingProfile, setEditingProfile] = useState(false);
   const [deletingBookingId, setDeletingBookingId] = useState<string | null>(null);
   const [isDeleting, setIsDeleting] = useState(false);
 
@@ -168,10 +170,17 @@ export default function CulturalPassportPage() {
                         </h1>
                         <p className="text-muted-foreground">{user?.isAnonymous ? 'Sign up to save your bookings.' : user?.email}</p>
                     </div>
-                     <Button variant="outline" onClick={handleSignOut} disabled={userLoading} className="w-full sm:w-auto mt-4 sm:mt-0">
-                        <LogOut className="mr-2 h-4 w-4" />
-                        Sign Out
-                    </Button>
+                    <div className='flex items-center gap-2'>
+                        {!user?.isAnonymous && (
+                        <Button variant="outline" size="sm" onClick={() => setEditingProfile(true)}>
+                            <Edit className="mr-2 h-4 w-4" /> Edit Profile
+                        </Button>
+                        )}
+                        <Button variant="outline" onClick={handleSignOut} disabled={userLoading} className="w-full sm:w-auto">
+                            <LogOut className="mr-2 h-4 w-4" />
+                            Sign Out
+                        </Button>
+                    </div>
                 </div>
             </Card>
         </section>
@@ -243,6 +252,14 @@ export default function CulturalPassportPage() {
         )}
       </main>
       <Footer />
+
+      {editingProfile && (
+        <EditProfileModal 
+            isOpen={editingProfile}
+            onOpenChange={setEditingProfile}
+        />
+      )}
+
       {editingBooking && (
         <EditBookingModal 
             booking={editingBooking}
