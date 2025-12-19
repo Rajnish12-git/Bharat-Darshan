@@ -1,3 +1,4 @@
+
 "use client";
 
 import * as React from 'react';
@@ -16,6 +17,7 @@ import {
 } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
 import { cn } from '@/lib/utils';
+import { Landmark, Utensils, Calendar, Palette } from 'lucide-react';
 
 export default function StateGrid() {
   const [api, setApi] = React.useState<CarouselApi>();
@@ -63,7 +65,7 @@ export default function StateGrid() {
           return (
             <CarouselItem
               key={state.slug}
-              className="pl-4 md:basis-1/2 lg:basis-1/3"
+              className="pl-4 md:basis-1/3"
             >
               <div
                 className={cn(
@@ -74,7 +76,7 @@ export default function StateGrid() {
                 <Link href={`/states/${state.slug}`} className="group block">
                   <Card
                     className={cn(
-                      'overflow-hidden relative h-80 transition-shadow',
+                      'overflow-hidden relative h-72 transition-shadow',
                       isActive && 'shadow-2xl'
                     )}
                   >
