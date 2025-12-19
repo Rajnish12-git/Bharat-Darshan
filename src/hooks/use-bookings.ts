@@ -1,9 +1,8 @@
-
 'use client';
 
 import { useMemo } from 'react';
 import { useUser, useFirestore, useCollection, useMemoFirebase } from '@/firebase';
-import { collection, query, where, orderBy, addDoc, serverTimestamp, getFirestore } from 'firebase/firestore';
+import { collection, query, where, orderBy, addDoc, serverTimestamp, getFirestore, getDoc } from 'firebase/firestore';
 import type { Booking, NewBookingData } from '@/lib/types';
 import { errorEmitter } from '@/firebase/error-emitter';
 import { FirestorePermissionError } from '@/firebase/errors';
@@ -14,7 +13,7 @@ export function useBookings() {
   const firestore = useFirestore();
   const { user } = useUser();
 
-  const bookingsQuery = useMemoFirebase(() => {
+  const bookingsQuery = useMemo(() => {
     if (!firestore || !user?.uid) return null;
     return query(
       collection(firestore, 'bookings'),
