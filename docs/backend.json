@@ -1,0 +1,103 @@
+{
+  "entities": {
+    "Booking": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Booking",
+      "type": "object",
+      "description": "Represents a booking request for a monument visit.",
+      "properties": {
+        "bookingId": {
+          "type": "string",
+          "description": "Unique identifier for the booking entity."
+        },
+        "userName": {
+          "type": "string",
+          "description": "Full name of the user making the booking."
+        },
+        "email": {
+          "type": "string",
+          "description": "Email address of the user making the booking.",
+          "format": "email"
+        },
+        "phone": {
+          "type": "string",
+          "description": "Phone number of the user making the booking."
+        },
+        "state": {
+          "type": "string",
+          "description": "State of the user or the intended visit."
+        },
+        "monumentName": {
+          "type": "string",
+          "description": "Name of the monument the booking is for."
+        },
+        "visitDate": {
+          "type": "string",
+          "description": "Date of the intended visit.",
+          "format": "date-time"
+        },
+        "visitors": {
+          "type": "number",
+          "description": "Number of visitors included in the booking."
+        },
+        "visitType": {
+          "type": "string",
+          "description": "Type of visit (Self Visit or Guided Tour)."
+        },
+        "notes": {
+          "type": "string",
+          "description": "Optional notes or special requests for the booking."
+        },
+        "status": {
+          "type": "string",
+          "description": "Status of the booking (e.g., pending, approved)."
+        },
+        "createdAt": {
+          "type": "string",
+          "description": "Timestamp indicating when the booking was created.",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "bookingId",
+        "userName",
+        "email",
+        "phone",
+        "state",
+        "monumentName",
+        "visitDate",
+        "visitors",
+        "visitType",
+        "status",
+        "createdAt"
+      ]
+    }
+  },
+  "auth": {
+    "providers": [
+      "password",
+      "anonymous"
+    ]
+  },
+  "firestore": {
+    "structure": [
+      {
+        "path": "/bookings/{bookingId}",
+        "definition": {
+          "entityName": "Booking",
+          "schema": {
+            "$ref": "#/backend/entities/Booking"
+          },
+          "description": "Stores booking requests made by users. The 'bookingId' is used as the document ID.",
+          "params": [
+            {
+              "name": "bookingId",
+              "description": "Unique identifier for each booking document."
+            }
+          ]
+        }
+      }
+    ],
+    "reasoning": "To support the booking feature for Bharat Darshan, a dedicated collection `bookings` is created. This structure provides a straightforward way to store booking requests initiated by users. Each document in the `bookings` collection represents a single booking request. The fields within each booking document mirror the data captured in the booking form (userName, email, phone, state, monumentName, visitDate, visitors, visitType, notes), along with status and createdAt timestamps.\n\n**Authorization Independence:** As anonymous authentication is enabled, path-based ownership cannot be enforced. Therefore, security rules will focus on validating the structure and content of the data being written to prevent abuse. Since there are no user-specific subcollections, denormalization is not required in this scenario.\n\n**QAPs (Rules are not Filters):** The structure supports secure list operations because all bookings share the same security posture (i.e., validation based on data structure). Access control is based on the validity of the provided fields, ensuring no unauthorized data is stored. Further access control may be implemented by other services that manage these bookings, such as an admin dashboard, which is outside the scope of the structure, and will require different security considerations."
+  }
+}

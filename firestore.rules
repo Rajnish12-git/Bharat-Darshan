@@ -1,0 +1,81 @@
+/**
+ * Core Philosophy:
+ * This ruleset implements a secure "dropbox" model for the /bookings collection.
+ * The primary goal is to allow any user, including anonymous ones, to submit a booking
+ * request while strictly preventing any user from reading, modifying, or deleting any
+ * booking data. This approach protects the Personally Identifiable Information (PII)
+ * such as names, emails, and phone numbers contained within the bookings.
+ *
+ * Data Structure:
+ * All data is stored in a single, top-level collection: /bookings/{bookingId}.
+ * There are no user-specific subcollections, as the application supports anonymous
+ * users and does not associate bookings with a specific user account.
+ *
+ * Key Security Decisions:
+ * - Write-Once, Read-Never: Users can create bookings, but cannot read them back,
+ *   update them, or delete them. This is the most secure posture for a collection
+ *   containing PII from multiple unauthenticated users.
+ * - Anonymous Access: The rules explicitly allow anonymous users to create bookings
+ *   to support the core feature requirements.
+ * - Minimal Data Validation: To prevent spam or abuse, a new booking must contain
+ *   a few essential fields (userName, monumentName, visitors). However, in the spirit
+ *   of prototyping, the rules do not enforce the full data schema.
+ * - No Listing Allowed: Listing documents in the /bookings collection is strictly
+ *   forbidden to prevent exposure of all users' booking information. Any features
+ *   requiring a user to see their own booking history would require a different
+ *   data model (e.g., storing bookings under a user-specific path and enforcing
+ *   user ownership).
+ *
+ * Denormalization for Authorization:
+ * Denormalization is not required for this data structure. Since there is no concept
+ * of user ownership or shared access, all authorization decisions are made based on
+ * the operation type (i.e., allowing create, denying all else) and minimal data
+ * validation on the incoming document.
+ *
+ * Structural Segregation:
+ * This principle is not applicable as there is only one type of data (private bookings)
+ * with a uniform security requirement.
+ */
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper Functions
+    // ------------------------------------
+
+    /**
+     * Checks if a request is authenticated.
+     */
+    // function isSignedIn() {
+    //   return request.auth != null;
+    // }
+
+    /**
+     * Performs minimal validation on a new booking to prevent abuse.
+     * In prototyping mode, we only validate a few key fields to ensure the
+     * submission is not empty or malformed, without enforcing the full schema.
+     */
+    function hasMinimumBookingData() {
+      let data = request.resource.data;
+      return data.userName is string && data.userName.size() > 0 &&
+             data.monumentName is string && data.monumentName.size() > 0 &&
+             data.visitors is number && data.visitors > 0;
+    }
+
+
+    /**
+     * @description Rules for the /bookings collection, implementing a 'dropbox' model.
+     * @path /bookings/{bookingId}
+     * @allow (create) Any user (anonymous or signed-in) submitting a booking with minimal valid data.
+     * @deny (get, list, update, delete) Any user attempting to read, list, update, or delete any booking.
+     * @principle Implements a secure 'dropbox' pattern where users can write data but cannot read or modify it afterwards, protecting PII.
+     */
+    match /bookings/{bookingId} {
+      allow get: if false;
+      allow list: if false;
+      allow create: if hasMinimumBookingData();
+      allow update: if false;
+      allow delete: if false;
+    }
+  }
+}
