@@ -20,6 +20,8 @@ import { Separator } from './ui/separator';
 import { MapPin, AlertCircle, Loader2 } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
 
+const SEARCH_RADIUS_KM = 50;
+
 export default function ExploreNearMe() {
   const [userLocation, setUserLocation] = useState<
     google.maps.LatLngLiteral | undefined
@@ -69,8 +71,8 @@ export default function ExploreNearMe() {
             monument.longitude
           ),
         }))
-        .sort((a, b) => a.distance - b.distance)
-        .slice(0, 10);
+        .filter((monument) => monument.distance <= SEARCH_RADIUS_KM)
+        .sort((a, b) => a.distance - b.distance);
 
       setNearbyMonuments(monumentsWithDistance);
     }
@@ -116,7 +118,7 @@ export default function ExploreNearMe() {
             )}
             <Map
               center={mapCenter}
-              zoom={locationState === 'granted' ? 10 : 5}
+              zoom={locationState === 'granted' ? 9 : 5}
               mapId={process.env.NEXT_PUBLIC_GOOGLE_MAPS_MAP_ID}
               gestureHandling={'greedy'}
               disableDefaultUI={true}
@@ -152,7 +154,7 @@ export default function ExploreNearMe() {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold font-headline">Explore Near You</h2>
           <p className="text-lg text-muted-foreground mt-2 max-w-2xl mx-auto">
-            Discover historical marvels within a 1000km radius.
+            Discover historical marvels within a {SEARCH_RADIUS_KM}km radius.
           </p>
         </div>
         <div className="relative h-[60vh] w-full rounded-lg overflow-hidden shadow-lg border">
