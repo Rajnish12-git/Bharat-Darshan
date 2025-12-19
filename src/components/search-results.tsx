@@ -15,7 +15,7 @@ interface SearchResultsProps {
 const MonumentCard = ({ item }: { item: DetailItem }) => {
   const image = PlaceHolderImages.find((img) => img.id === item.imageId);
   return (
-    <Card className="overflow-hidden transition-shadow hover:shadow-lg h-full flex flex-col">
+    <Card className="overflow-hidden transition-shadow hover:shadow-lg h-full flex flex-col min-h-0">
       <div className="relative h-40 w-full">
         {image ? (
           <Image
@@ -31,9 +31,9 @@ const MonumentCard = ({ item }: { item: DetailItem }) => {
       </div>
       <CardContent className="p-4 flex-grow flex flex-col">
         <h3 className="font-bold font-headline truncate">{item.name}</h3>
-        {(item as any).location && (
+        {item.location && (
           <p className="text-sm text-muted-foreground mt-1 line-clamp-2">
-            {(item as any).location}
+            {item.location}
           </p>
         )}
       </CardContent>
@@ -45,7 +45,7 @@ const StateCard = ({ item }: { item: StateData }) => {
   const image = PlaceHolderImages.find((img) => img.id === item.imageId);
   return (
     <Link href={`/states/${item.slug}`} className="group">
-      <Card className="overflow-hidden transition-shadow hover:shadow-lg h-full flex flex-col">
+      <Card className="overflow-hidden transition-shadow hover:shadow-lg h-full flex flex-col min-h-0">
         <div className="relative h-40 w-full">
           {image ? (
             <Image

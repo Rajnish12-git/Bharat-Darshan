@@ -19,10 +19,10 @@ export default function HistoricalTimeline() {
             {timelineEvents.map((event, index) => (
               <div
                 key={event.id}
-                className="relative flex items-center md:w-full md:justify-normal"
+                className="relative flex items-center w-full"
               >
                 {/* Desktop: Alternating layout */}
-                <div className="hidden md:flex md:w-1/2 md:pr-8" style={{justifyContent: index % 2 === 0 ? 'flex-end' : 'flex-start'}}>
+                <div className={`hidden md:flex w-1/2 ${index % 2 === 0 ? 'pr-8 justify-end' : 'pl-8 justify-start'}`}>
                    <div className={`w-full max-w-md p-6 rounded-lg bg-card shadow-md ${index % 2 === 0 ? 'text-right' : 'text-left'}`}>
                     <p className="text-sm font-semibold text-primary">{event.date}</p>
                     <h3 className="font-headline text-xl font-bold mt-1">{event.title}</h3>
@@ -41,6 +41,17 @@ export default function HistoricalTimeline() {
                     <p className="text-muted-foreground mt-2">{event.description}</p>
                   </div>
                 </div>
+
+                {/* Desktop right side */}
+                {index % 2 !== 0 && (
+                   <div className="hidden md:flex w-1/2 pl-8 justify-start">
+                     <div className="w-full max-w-md p-6 rounded-lg bg-card shadow-md text-left">
+                       <p className="text-sm font-semibold text-primary">{event.date}</p>
+                       <h3 className="font-headline text-xl font-bold mt-1">{event.title}</h3>
+                       <p className="text-muted-foreground mt-2">{event.description}</p>
+                     </div>
+                   </div>
+                )}
               </div>
             ))}
           </div>

@@ -11,7 +11,7 @@ interface InfoCardProps {
 
 export default function InfoCard({ item, category }: InfoCardProps) {
   const image = PlaceHolderImages.find((img) => img.id === item.imageId);
-  const linkHref = `/states/${category}/${item.name.toLowerCase().replace(/ /g, '-')}`;
+  const linkHref = `/highlights/${category}/${item.name.toLowerCase().replace(/ /g, '-')}`;
 
   return (
     <div className="group relative flex flex-col overflow-hidden rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
