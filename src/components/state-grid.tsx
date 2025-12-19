@@ -15,7 +15,6 @@ import {
   type CarouselApi,
 } from '@/components/ui/carousel';
 import Autoplay from 'embla-carousel-autoplay';
-import { Landmark, UtensilsCrossed, CalendarDays, Palette } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export default function StateGrid() {
@@ -98,26 +97,6 @@ export default function StateGrid() {
                       <CardDescription className="mt-1 line-clamp-2 text-white/90 drop-shadow-sm">
                         {state.description}
                       </CardDescription>
-                    </div>
-                    <div className="absolute bottom-0 left-0 p-4 w-full text-white">
-                      <div className="flex justify-between items-center bg-black/30 backdrop-blur-sm rounded-lg p-2 text-xs">
-                        <div className="flex items-center gap-1" title={`${state.monuments.length} Monuments`}>
-                          <Landmark className="h-4 w-4" />
-                          <span>{state.monuments.length}</span>
-                        </div>
-                         <div className="flex items-center gap-1" title={`${state.cuisine.length} Cuisine Items`}>
-                          <UtensilsCrossed className="h-4 w-4" />
-                          <span>{state.cuisine.length}</span>
-                        </div>
-                         <div className="flex items-center gap-1" title={`${state.festivals.length} Festivals`}>
-                          <CalendarDays className="h-4 w-4" />
-                          <span>{state.festivals.length}</span>
-                        </div>
-                         <div className="flex items-center gap-1" title={`${state.artForms.length} Art Forms`}>
-                          <Palette className="h-4 w-4" />
-                           <span>{state.artForms.length}</span>
-                        </div>
-                      </div>
                     </div>
                   </Card>
                 </Link>
