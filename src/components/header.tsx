@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -54,12 +55,12 @@ function HeaderActions() {
           ))}
           {user && !user.isAnonymous ? (
             <Link href="/cultural-passport" className="text-muted-foreground hover:text-foreground">
-              Cultural Passport
+              My Space
             </Link>
           ) : (
             <LoginModal>
               <button className="text-lg text-left text-muted-foreground hover:text-foreground">
-                Cultural Passport
+                My Space
               </button>
             </LoginModal>
           )}
@@ -123,22 +124,26 @@ export default function Header() {
   useEffect(() => {
     setIsClient(true);
     
-    if (!isLandingPage || !headerRef.current) return;
+    if (!headerRef.current) return;
 
     const headerEl = headerRef.current;
+    
+    if (isLandingPage) {
+        const handleScroll = () => {
+          const isScrolled = window.scrollY > 10;
+          headerEl.setAttribute('data-scrolled', isScrolled.toString());
+        };
 
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 10;
-      headerEl.setAttribute('data-scrolled', isScrolled.toString());
-    };
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        handleScroll(); // Initial check
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    handleScroll(); // Initial check
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [isLandingPage]);
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+    } else {
+        headerEl.setAttribute('data-scrolled', 'true');
+    }
+  }, [isLandingPage, pathname]);
 
   return (
     <header
@@ -146,7 +151,7 @@ export default function Header() {
       data-landing={isLandingPage}
       className={cn(
         'fixed top-0 z-50 w-full transition-colors duration-300',
-        !isLandingPage && 'border-b border-border/40 bg-background text-foreground'
+        !isLandingPage && 'border-b border-border/40 bg-background/95 text-foreground backdrop-blur supports-[backdrop-filter]:bg-background/60'
       )}
     >
       <div className="container flex h-16 max-w-screen-2xl items-center">
@@ -158,3 +163,5 @@ export default function Header() {
     </header>
   );
 }
+
+    

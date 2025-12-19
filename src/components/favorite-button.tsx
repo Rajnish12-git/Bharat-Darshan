@@ -28,10 +28,10 @@ export default function FavoriteButton({ item, category }: FavoriteButtonProps) 
     setIsClicked(true); // Trigger animation
     if (isItemFavorite) {
       removeFavorite(item.imageId);
-      toast({ title: `Removed "${item.name}" from your Cultural Passport.` });
+      toast({ title: `Removed "${item.name}" from My Space.` });
     } else {
       addFavorite(item, category);
-      toast({ title: `Added "${item.name}" to your Cultural Passport.` });
+      toast({ title: `Added "${item.name}" to My Space.` });
     }
   };
   
@@ -61,7 +61,7 @@ export default function FavoriteButton({ item, category }: FavoriteButtonProps) 
                 </Button>
             </TooltipTrigger>
             <TooltipContent side="left">
-                <p>Save to your Cultural Passport</p>
+                <p>Save to My Space</p>
             </TooltipContent>
         </Tooltip>
     </TooltipProvider>
@@ -79,3 +79,5 @@ export default function FavoriteButton({ item, category }: FavoriteButtonProps) 
 // animation: {
 //   'ping-once': 'ping-once 0.5s ease-in-out',
 // },
+
+    

@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState } from 'react';
@@ -145,7 +146,7 @@ export default function LoginModal({ children }: { children: React.ReactNode }) 
       <DialogTrigger asChild>{children}</DialogTrigger>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
-          <DialogTitle className="text-2xl font-headline">Cultural Passport</DialogTitle>
+          <DialogTitle className="text-2xl font-headline">My Space</DialogTitle>
           <DialogDescription>
             Sign in or create an account to save your bookings and favorites.
           </DialogDescription>
@@ -234,3 +235,5 @@ export default function LoginModal({ children }: { children: React.ReactNode }) 
     </Dialog>
   );
 }
+
+    

@@ -166,7 +166,7 @@ export default function CulturalPassportPage() {
                     </Avatar>
                     <div className="flex-1 text-center sm:text-left">
                         <h1 className="text-2xl sm:text-3xl font-bold font-headline">
-                            {user?.isAnonymous ? 'Guest User' : (user?.displayName || 'My Cultural Passport')}
+                            {user?.isAnonymous ? 'Guest User' : (user?.displayName || 'My Space')}
                         </h1>
                         <p className="text-muted-foreground">{user?.isAnonymous ? 'Sign up to save your bookings.' : user?.email}</p>
                     </div>
@@ -188,7 +188,7 @@ export default function CulturalPassportPage() {
         {isLoading && (
           <div className="flex justify-center items-center py-16">
             <Loader2 className="h-8 w-8 animate-spin text-muted-foreground" />
-            <p className="ml-4 text-muted-foreground">Loading your passport...</p>
+            <p className="ml-4 text-muted-foreground">Loading your space...</p>
           </div>
         )}
 
@@ -292,3 +292,5 @@ export default function CulturalPassportPage() {
     </>
   );
 }
+
+    
