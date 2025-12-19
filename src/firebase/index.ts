@@ -4,8 +4,7 @@ import { firebaseConfig } from '@/firebase/config';
 import { initializeApp, getApps, getApp, FirebaseApp } from 'firebase/app';
 import { getAuth, Auth } from 'firebase/auth';
 import { getFirestore, Firestore } from 'firebase/firestore';
-import { useMemo, useState, useEffect } from 'react';
-import { useMemo as useMemoFirebase } from "react";
+import { useMemo, useState, useEffect, DependencyList } from 'react';
 
 // IMPORTANT: DO NOT MODIFY THIS FUNCTION
 function initializeFirebase() {
@@ -63,8 +62,6 @@ export function useUser() {
 
 export * from './firestore/use-collection';
 export * from './firestore/use-doc';
-// export * from './non-blocking-updates';
-// export * from './non-blocking-login';
 export * from './errors';
 export * from './error-emitter';
 
@@ -72,4 +69,21 @@ export * from './error-emitter';
 export const useAuth = (): Auth => useFirebase().auth;
 export const useFirestore = (): Firestore => useFirebase().firestore;
 export const useFirebaseApp = (): FirebaseApp => useFirebase().firebaseApp;
-export { useMemoFirebase };
+
+/**
+ * A hook that memoizes a Firestore query or reference and adds a `__memo` property
+ * to satisfy the requirements of `useCollection` and `useDoc` hooks.
+ * @param factory A function that returns a Firestore query or reference.
+ * @param deps The dependency array for the `useMemo` hook.
+ * @returns The memoized query or reference with the `__memo` property.
+ */
+export function useMemoFirebase<T>(factory: () => T, deps: DependencyList): T | undefined {
+    const memoizedValue = useMemo(() => {
+        const value = factory();
+        if (value && typeof value === 'object') {
+            (value as any).__memo = true;
+        }
+        return value;
+    }, deps);
+    return memoizedValue;
+}
