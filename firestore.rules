@@ -72,7 +72,7 @@ service cloud.firestore {
      */
     match /bookings/{bookingId} {
       allow get: if isOwner(resource.data.userId);
-      allow list: if isOwner(request.query.filters.userId);
+      allow list: if isSignedIn() && request.auth.uid == request.query.where.userId;
       allow create: if hasMinimumBookingData() && isOwner(request.resource.data.userId);
       allow update, delete: if false;
     }
