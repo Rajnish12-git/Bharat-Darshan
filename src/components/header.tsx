@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { Button } from './ui/button';
 import { Search, User } from 'lucide-react';
-import AmbientSound from './ambient-sound';
 
 export default function Header() {
   return (
@@ -11,7 +10,9 @@ export default function Header() {
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <span className="font-bold font-headline text-xl">Bharat Darshan</span>
           </Link>
-          <nav className="flex items-center space-x-6 text-sm font-medium">
+        </div>
+        <div className="flex flex-1 items-center justify-end space-x-6 text-sm font-medium">
+           <nav className="flex items-center space-x-6 text-sm font-medium">
             <Link
               href="/explore"
               className="text-foreground/80 transition-colors hover:text-foreground"
@@ -25,9 +26,6 @@ export default function Header() {
               Timeline
             </Link>
           </nav>
-        </div>
-        <div className="flex flex-1 items-center justify-end space-x-2">
-          <AmbientSound />
           <Button variant="ghost" size="icon" asChild>
             <Link href="/search" aria-label="Search">
               <Search className="h-5 w-5 text-foreground/80" />
