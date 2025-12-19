@@ -109,15 +109,15 @@ export default function HeroCarousel() {
                     priority={index === 0}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-                  <div className="absolute inset-0 flex items-end text-white p-16">
-                    <div className={cn("max-w-7xl w-full flex justify-between items-end gap-8 transition-all duration-1000 ease-in-out", isActive ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4")}>
+                  <div className="absolute inset-0 flex items-end text-white p-8 md:p-16">
+                    <div className={cn("max-w-7xl w-full flex flex-col md:flex-row md:justify-between md:items-end gap-4 md:gap-8 transition-all duration-1000 ease-in-out", isActive ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4")}>
                         <div>
-                            <h1 className="text-7xl font-bold font-headline drop-shadow-lg">
+                            <h1 className="text-5xl md:text-7xl font-bold font-headline drop-shadow-lg">
                                 {title}
                             </h1>
                             <p className="font-semibold text-primary mt-2">{subtitle}</p>
                         </div>
-                        <p className="text-lg max-w-sm text-white/90 text-right">
+                        <p className="text-base md:text-lg max-w-sm text-white/90 text-left md:text-right">
                             {description}
                         </p>
                     </div>
