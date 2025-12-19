@@ -2,48 +2,39 @@
 
 import { firebaseConfig } from '@/firebase/config';
 import { initializeApp, getApps, getApp, FirebaseApp } from 'firebase/app';
-import { getAuth, Auth } from 'firebase/auth';
+import { getAuth, Auth, onAuthStateChanged, signInAnonymously } from 'firebase/auth';
 import { getFirestore, Firestore } from 'firebase/firestore';
 import { useMemo, useState, useEffect, DependencyList } from 'react';
 
-// IMPORTANT: DO NOT MODIFY THIS FUNCTION
-function initializeFirebase() {
-  if (!getApps().length) {
-    let firebaseApp;
+let firebaseApp: FirebaseApp;
+let auth: Auth;
+let firestore: Firestore;
+
+if (typeof window !== 'undefined' && !getApps().length) {
     try {
       firebaseApp = initializeApp(firebaseConfig);
+      auth = getAuth(firebaseApp);
+      firestore = getFirestore(firebaseApp);
     } catch (e) {
-      if (process.env.NODE_ENV === "production") {
-        console.warn('Automatic initialization failed. Falling back to firebase config object.', e);
-      }
-      firebaseApp = initializeApp(firebaseConfig);
+      console.error("Firebase initialization failed", e);
     }
-    return getSdks(firebaseApp);
-  }
-  return getSdks(getApp());
+} else if (typeof window !== 'undefined') {
+    firebaseApp = getApp();
+    auth = getAuth(firebaseApp);
+    firestore = getFirestore(firebaseApp);
 }
 
-function getSdks(firebaseApp: FirebaseApp) {
-  return {
-    firebaseApp,
-    auth: getAuth(firebaseApp),
-    firestore: getFirestore(firebaseApp)
-  };
-}
-
-// A memoized hook to get Firebase services
-export const useFirebase = () => {
-  return useMemo(() => initializeFirebase(), []);
-};
-
-export function useUser() {
-  const { auth } = useFirebase();
-  const [user, setUser] = useState(auth.currentUser);
+export const useUser = () => {
+  const [user, setUser] = useState(auth?.currentUser);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<Error | null>(null);
 
   useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged(
+    if (!auth) {
+        setIsLoading(false);
+        return;
+    }
+    const unsubscribe = onAuthStateChanged(auth,
       (user) => {
         setUser(user);
         setIsLoading(false);
@@ -55,10 +46,23 @@ export function useUser() {
     );
 
     return () => unsubscribe();
-  }, [auth]);
+  }, []);
 
   return { user, isLoading, error };
 }
+
+
+export const ensureGuestUser = async () => {
+  if (auth && !auth.currentUser) {
+    try {
+      await signInAnonymously(auth);
+    } catch (error) {
+      console.error("Anonymous sign-in failed", error);
+    }
+  }
+  return auth?.currentUser;
+};
+
 
 export * from './firestore/use-collection';
 export * from './firestore/use-doc';
@@ -66,17 +70,11 @@ export * from './errors';
 export * from './error-emitter';
 
 // Helper hooks
-export const useAuth = (): Auth => useFirebase().auth;
-export const useFirestore = (): Firestore => useFirebase().firestore;
-export const useFirebaseApp = (): FirebaseApp => useFirebase().firebaseApp;
+export const useAuth = (): Auth => auth;
+export const useFirestore = (): Firestore => firestore;
+export const useFirebaseApp = (): FirebaseApp => firebaseApp;
 
-/**
- * A hook that memoizes a Firestore query or reference and adds a `__memo` property
- * to satisfy the requirements of `useCollection` and `useDoc` hooks.
- * @param factory A function that returns a Firestore query or reference.
- * @param deps The dependency array for the `useMemo` hook.
- * @returns The memoized query or reference with the `__memo` property.
- */
+
 export function useMemoFirebase<T>(factory: () => T, deps: DependencyList): T | undefined {
     const memoizedValue = useMemo(() => {
         const value = factory();

@@ -1,7 +1,7 @@
 'use client';
 
 import { useMemo } from 'react';
-import { useUser, useFirestore, useCollection, useMemoFirebase } from '@/firebase';
+import { useUser, useFirestore, useCollection, useMemoFirebase, ensureGuestUser } from '@/firebase';
 import { collection, query, where, orderBy, addDoc, serverTimestamp, getFirestore } from 'firebase/firestore';
 import type { Booking, NewBookingData } from '@/lib/types';
 import { errorEmitter } from '@/firebase/error-emitter';
@@ -30,17 +30,22 @@ export function useBookings() {
 export async function addBooking(bookingData: Omit<NewBookingData, 'id'>) {
     const auth = getAuth();
     const firestore = getFirestore();
-    const user = auth.currentUser;
+    
+    // Ensure we have a user, sign in as guest if not.
+    let user = auth.currentUser;
+    if (!user) {
+        user = await ensureGuestUser();
+    }
 
-    if (!firestore) {
-        throw new Error("Firestore is not available.");
+    if (!firestore || !user) {
+        throw new Error("Firestore or user is not available.");
     }
     
     const bookingsCollection = collection(firestore, 'bookings');
     
     const newBooking: Omit<Booking, 'id'> = {
         ...(bookingData as Omit<Booking, 'id' | 'status' | 'createdAt' | 'userId'>),
-        userId: user?.uid || 'guest',
+        userId: user.uid,
         status: 'pending' as const,
         createdAt: serverTimestamp(),
     };

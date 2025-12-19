@@ -7,6 +7,8 @@ import { Menu, Search, User } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { useEffect, useState } from 'react';
+import { useUser } from '@/firebase';
+import LoginModal from './login-modal';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -18,6 +20,7 @@ const navLinks = [
 export default function Header() {
   const isMobile = useIsMobile();
   const [scrolled, setScrolled] = useState(false);
+  const { user } = useUser();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,6 +31,34 @@ export default function Header() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const UserIcon = () => (
+     <User
+        className={cn(
+          'h-5 w-5',
+          scrolled ? 'text-foreground/60' : 'text-white/80'
+        )}
+      />
+  );
+
+  const UserButton = () => {
+    if (user && !user.isAnonymous) {
+      return (
+        <Button variant="ghost" size="icon" asChild>
+          <Link href="/cultural-passport" aria-label="User Profile">
+            <UserIcon />
+          </Link>
+        </Button>
+      );
+    }
+    return (
+      <LoginModal>
+        <Button variant="ghost" size="icon" aria-label="Login">
+          <UserIcon />
+        </Button>
+      </LoginModal>
+    );
+  }
 
   return (
     <header
@@ -119,16 +150,7 @@ export default function Header() {
                   />
                 </Link>
               </Button>
-              <Button variant="ghost" size="icon" asChild>
-                <Link href="/cultural-passport" aria-label="User Profile">
-                  <User
-                    className={cn(
-                      'h-5 w-5',
-                      scrolled ? 'text-foreground/60' : 'text-white/80'
-                    )}
-                  />
-                </Link>
-              </Button>
+              <UserButton />
             </div>
           </div>
         )}
