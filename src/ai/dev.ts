@@ -2,4 +2,4 @@
 import { config } from 'dotenv';
 config();
 
-import '@/ai/flows/monument-search-refinement.ts';
+import '@/ai/flows/search-flow.ts';

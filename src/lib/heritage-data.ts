@@ -1,9 +1,8 @@
-
-
 export interface DetailItem {
   name: string;
   imageId: string;
   description: string;
+  location?: string;
 }
 
 export interface StateData {
