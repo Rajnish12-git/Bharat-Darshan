@@ -26,7 +26,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useToast } from '@/hooks/use-toast';
 import { useUser } from '@/firebase';
-import { useBookings } from '@/hooks/use-bookings';
+import { addBooking } from '@/hooks/use-bookings';
 
 const bookingSchema = z.object({
   userName: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
@@ -50,7 +50,7 @@ export default function BookingModal({ children, monumentName }: BookingModalPro
   const [open, setOpen] = useState(false);
   const { toast } = useToast();
   const { user } = useUser();
-  const { addBooking, isWriting } = useBookings(user?.uid);
+  const [isWriting, setIsWriting] = useState(false);
 
   const form = useForm<BookingFormValues>({
     resolver: zodResolver(bookingSchema),
@@ -75,8 +75,9 @@ export default function BookingModal({ children, monumentName }: BookingModalPro
         return;
     }
     
+    setIsWriting(true);
     try {
-        await addBooking({ ...data, monumentName });
+        await addBooking({ ...data, monumentName, visitDate: data.visitDate.toISOString() });
         toast({
             title: 'Booking Request Received',
             description: "We've received your request. You will be notified upon confirmation.",
@@ -89,6 +90,8 @@ export default function BookingModal({ children, monumentName }: BookingModalPro
             title: 'Uh oh! Something went wrong.',
             description: 'There was a problem with your request. Please try again.',
         });
+    } finally {
+        setIsWriting(false);
     }
   };
 

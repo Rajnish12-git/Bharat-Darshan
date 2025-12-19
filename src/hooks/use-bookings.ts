@@ -1,18 +1,18 @@
 
 'use client';
 
-import { useMemoFirebase, useUser } from '@/firebase';
-import { collection, query, where, orderBy } from 'firebase/firestore';
-import { useFirestore, useCollection } from '@/firebase';
+import { useMemo, useState } from 'react';
+import { useUser, useFirestore, useCollection, useMemoFirebase } from '@/firebase';
+import { collection, query, where, orderBy, addDoc, serverTimestamp, getFirestore } from 'firebase/firestore';
 import type { Booking, NewBookingData } from '@/context/bookings-context';
-import { useBookingsContext } from '@/context/bookings-context';
+import { errorEmitter } from '@/firebase/error-emitter';
+import { FirestorePermissionError } from '@/firebase/errors';
 
 
 export function useBookings() {
   const firestore = useFirestore();
   const { user } = useUser();
 
-  // Memoize the query to prevent re-renders
   const bookingsQuery = useMemoFirebase(() => {
     if (!firestore || !user?.uid) return null;
     return query(
@@ -22,9 +22,39 @@ export function useBookings() {
     );
   }, [firestore, user?.uid]);
 
-  // Use the useCollection hook to get real-time updates
   const { data: bookings, isLoading, error } = useCollection<Booking>(bookingsQuery);
-  const { addBooking, isWriting } = useBookingsContext();
 
-  return { bookings, isLoading, error, addBooking, isWriting };
+  return { bookings, isLoading, error };
+}
+
+export async function addBooking(bookingData: NewBookingData) {
+    const auth = getAuth();
+    const firestore = getFirestore();
+    const user = auth.currentUser;
+
+    if (!firestore || !user) {
+        throw new Error("Firestore is not available or user is not logged in.");
+    }
+    
+    const bookingsCollection = collection(firestore, 'bookings');
+    
+    const newBooking = {
+        ...bookingData,
+        userId: user.uid,
+        status: 'pending' as const,
+        createdAt: serverTimestamp(),
+    };
+
+    try {
+        await addDoc(bookingsCollection, newBooking);
+    } catch (e: any) {
+        console.error("Error adding document: ", e);
+        const permissionError = new FirestorePermissionError({
+            path: `bookings`,
+            operation: 'create',
+            requestResourceData: newBooking,
+        });
+        errorEmitter.emit('permission-error', permissionError);
+        throw e; // Re-throw to be caught by the form handler
+    }
 }
