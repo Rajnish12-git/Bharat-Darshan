@@ -1,80 +1,11 @@
-/**
- * Core Philosophy:
- * This ruleset implements a secure "dropbox" model for the /bookings collection.
- * The primary goal is to allow any user, including anonymous ones, to submit a booking
- * request while strictly preventing any user from modifying or deleting any
- * booking data. This approach protects the Personally Identifiable Information (PII)
- * such as names, emails, and phone numbers contained within the bookings.
- *
- * Data Structure:
- * All data is stored in a single, top-level collection: /bookings/{bookingId}.
- * There are no user-specific subcollections, as the application supports anonymous
- * users and does not associate bookings with a specific user account.
- *
- * Key Security Decisions:
- * - Write-Once, Read-Limited: Users can create bookings, but can only read back their
- *   own bookings. They cannot update or delete them.
- * - Anonymous Access: The rules explicitly allow anonymous users to create bookings
- *   to support the core feature requirements.
- * - Minimal Data Validation: To prevent spam or abuse, a new booking must contain
- *   a few essential fields (userName, monumentName, visitors). However, in the spirit
- * of prototyping, the rules do not enforce the full data schema.
- * - Secure Listing: Listing documents is only allowed when the query explicitly
- *   filters for the user's own `userId`. This prevents any user from ever seeing
- *   another user's booking information in a list view.
- *
- * Denormalization for Authorization:
- * The `userId` is stored on each booking document. This denormalization is crucial
- * for writing security rules that grant read access based on ownership.
- *
- * Structural Segregation:
- * This principle is not applicable as there is only one type of data (private bookings)
- * with a uniform security requirement.
- */
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
 
-    // Helper Functions
-    // ------------------------------------
-
-    /**
-     * Checks if a request is authenticated.
-     */
-    function isSignedIn() {
-      return request.auth != null;
-    }
-    
-    function isOwner(userId) {
-      return isSignedIn() && request.auth.uid == userId;
-    }
-
-    /**
-     * Performs minimal validation on a new booking to prevent abuse.
-     * In prototyping mode, we only validate a few key fields to ensure the
-     * submission is not empty or malformed, without enforcing the full schema.
-     */
-    function hasMinimumBookingData() {
-      let data = request.resource.data;
-      return data.userName is string && data.userName.size() > 0 &&
-             data.monumentName is string && data.monumentName.size() > 0 &&
-             data.visitors is number && data.visitors > 0;
-    }
-
-
-    /**
-     * @description Rules for the /bookings collection.
-     * @path /bookings/{bookingId}
-     * @allow create - Any user can submit a booking with minimal valid data and matching userId.
-     * @allow get - A user can only read their own specific booking.
-     * @allow list - A user can only query for their own bookings by filtering on their userId.
-     * @deny update, delete - No user can update or delete bookings.
-     */
+    // Allow authenticated users to read/write bookings
     match /bookings/{bookingId} {
-      allow get: if isOwner(resource.data.userId);
-      allow list: if isSignedIn() && request.auth.uid == request.query.where.userId;
-      allow create: if hasMinimumBookingData() && isOwner(request.resource.data.userId);
-      allow update, delete: if false;
+      allow read, write: if request.auth != null;
     }
+
   }
 }
