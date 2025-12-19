@@ -17,6 +17,8 @@ import { Button } from './ui/button';
 import { ScrollArea } from './ui/scroll-area';
 import { Badge } from './ui/badge';
 import { Separator } from './ui/separator';
+import { MapPin, AlertCircle } from 'lucide-react';
+import { Card, CardContent } from './ui/card';
 
 export default function ExploreNearMe() {
   const [userLocation, setUserLocation] = useState<
@@ -26,22 +28,28 @@ export default function ExploreNearMe() {
   const [selectedMonument, setSelectedMonument] = useState<Monument | null>(
     null
   );
+  const [locationState, setLocationState] = useState<
+    'prompt' | 'loading' | 'granted' | 'denied'
+  >('prompt');
 
-  useEffect(() => {
+  const handleLocationRequest = () => {
+    setLocationState('loading');
     navigator.geolocation.getCurrentPosition(
       (position) => {
         setUserLocation({
           lat: position.coords.latitude,
           lng: position.coords.longitude,
         });
+        setLocationState('granted');
       },
       (error) => {
         console.error('Error getting user location:', error);
         // Fallback to a default location if permission is denied
         setUserLocation({ lat: 28.6139, lng: 77.209 });
+        setLocationState('denied');
       }
     );
-  }, []);
+  };
 
   useEffect(() => {
     if (userLocation) {
@@ -81,7 +89,37 @@ export default function ExploreNearMe() {
           </p>
         </div>
         <div className="relative h-[60vh] w-full rounded-lg overflow-hidden shadow-lg">
-          {userLocation ? (
+          {locationState === 'prompt' && (
+            <Card className="w-full h-full flex flex-col items-center justify-center bg-muted">
+              <CardContent className="text-center">
+                <MapPin className="mx-auto h-12 w-12 text-muted-foreground mb-4" />
+                <h3 className="text-xl font-semibold mb-2">
+                  Discover Heritage Sites Near You
+                </h3>
+                <p className="text-muted-foreground mb-6">
+                  Share your location to see historical monuments on the map.
+                </p>
+                <Button onClick={handleLocationRequest}>
+                  Allow Location Access
+                </Button>
+              </CardContent>
+            </Card>
+          )}
+
+          {locationState === 'loading' && (
+             <div className="w-full h-full bg-muted flex items-center justify-center">
+              <p className="text-muted-foreground">Loading map...</p>
+            </div>
+          )}
+
+          {(locationState === 'granted' || locationState === 'denied') && userLocation && (
+            <>
+            {locationState === 'denied' && (
+                <div className="absolute top-4 left-1/2 -translate-x-1/2 z-10 bg-background/80 backdrop-blur-sm text-foreground p-3 rounded-lg shadow-lg flex items-center gap-2 text-sm">
+                    <AlertCircle className="h-4 w-4 text-amber-500" />
+                    <p>Location access denied. Showing results near Delhi.</p>
+                </div>
+            )}
             <Map
               center={mapCenter}
               zoom={5}
@@ -104,10 +142,7 @@ export default function ExploreNearMe() {
                 </AdvancedMarker>
               ))}
             </Map>
-          ) : (
-            <div className="w-full h-full bg-muted flex items-center justify-center">
-              <p className="text-muted-foreground">Loading map...</p>
-            </div>
+            </>
           )}
         </div>
       </div>
@@ -182,4 +217,3 @@ export default function ExploreNearMe() {
     </section>
   );
 }
-
