@@ -4,18 +4,9 @@ import { Button } from './ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { highlights } from '@/lib/highlights-data';
 import { cn } from '@/lib/utils';
+import { ArrowRight } from 'lucide-react';
 
 export default function CulturalHighlights() {
-  const architecturalHighlight = highlights.find(h => h.slug === 'architectural-marvels');
-
-  if (!architecturalHighlight) {
-    return null;
-  }
-
-  const image = PlaceHolderImages.find(
-    (img) => img.id === architecturalHighlight.imageId
-  );
-
   return (
     <section id="glimpses" className="py-20 md:py-32">
       <div className="container">
@@ -72,9 +63,9 @@ export default function CulturalHighlights() {
                   <p className="mt-4 text-muted-foreground leading-relaxed">
                     {highlight.description}
                   </p>
-                  <Button variant="link" asChild className="mt-4 px-0">
+                  <Button asChild className="mt-4 bg-accent text-accent-foreground hover:bg-accent/90 transition-colors">
                     <Link href={`/highlights/${highlight.slug}`}>
-                      Learn More →
+                      Learn More <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
                 </div>
