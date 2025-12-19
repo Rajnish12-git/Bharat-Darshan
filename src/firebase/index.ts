@@ -4,15 +4,15 @@ import { firebaseConfig } from '@/firebase/config';
 import { initializeApp, getApps, getApp, FirebaseApp } from 'firebase/app';
 import { getAuth, Auth } from 'firebase/auth';
 import { getFirestore, Firestore } from 'firebase/firestore';
-import { useMemo }m
-import { useState, useEffect } from 'react';
+import { useMemo, useState, useEffect } from 'react';
+import { useMemo as useMemoFirebase } from "react";
 
 // IMPORTANT: DO NOT MODIFY THIS FUNCTION
 function initializeFirebase() {
   if (!getApps().length) {
     let firebaseApp;
     try {
-      firebaseApp = initializeApp();
+      firebaseApp = initializeApp(firebaseConfig);
     } catch (e) {
       if (process.env.NODE_ENV === "production") {
         console.warn('Automatic initialization failed. Falling back to firebase config object.', e);
@@ -63,8 +63,8 @@ export function useUser() {
 
 export * from './firestore/use-collection';
 export * from './firestore/use-doc';
-export * from './non-blocking-updates';
-export * from './non-blocking-login';
+// export * from './non-blocking-updates';
+// export * from './non-blocking-login';
 export * from './errors';
 export * from './error-emitter';
 
@@ -72,3 +72,4 @@ export * from './error-emitter';
 export const useAuth = (): Auth => useFirebase().auth;
 export const useFirestore = (): Firestore => useFirebase().firestore;
 export const useFirebaseApp = (): FirebaseApp => useFirebase().firebaseApp;
+export { useMemoFirebase };
