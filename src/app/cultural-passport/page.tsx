@@ -4,15 +4,13 @@
 import Header from '@/components/header';
 import Footer from '@/components/footer';
 import { useBookings } from '@/hooks/use-bookings';
-import { useUser } from '@/firebase';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Loader2, Calendar, Users, Ticket, Hash } from 'lucide-react';
+import { Loader2, Calendar, Users, Ticket } from 'lucide-react';
 import { format } from 'date-fns';
 
 export default function CulturalPassportPage() {
-  const { user } = useUser();
-  const { bookings, isLoading, error } = useBookings(user?.uid);
+  const { bookings, isLoading, error } = useBookings();
 
   return (
     <>
