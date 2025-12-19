@@ -63,7 +63,7 @@ export default function CulturalHighlights() {
                   <p className="mt-4 text-muted-foreground leading-relaxed">
                     {highlight.description}
                   </p>
-                  <Button asChild className="mt-4 bg-accent text-accent-foreground hover:bg-accent/90 transition-colors">
+                  <Button asChild variant="outline" className="mt-6">
                     <Link href={`/highlights/${highlight.slug}`}>
                       Learn More <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
