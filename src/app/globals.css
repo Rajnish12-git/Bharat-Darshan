@@ -58,33 +58,12 @@
     @apply bg-background text-foreground font-body;
     line-height: 1.7;
   }
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-headline;
-  }
-
-  /* For mobile view */
-  @media screen and (max-width: 768px) {
-    .wrap {
-      padding: 2.5rem 0;
-    }
-    .left-timeline, .right-timeline {
-      justify-content: flex-start;
-      flex-direction: row;
-    }
-    .right-timeline {
-      flex-direction: row-reverse;
-    }
-    .right-timeline .z-20, .left-timeline .z-20 {
-      transform: translateX(0);
-    }
-    .left-timeline .order-1, .right-timeline .order-1 {
-      width: calc(100% - 4rem);
-    }
-    .left-timeline .order-1 {
-      padding-left: 2rem;
-    }
-    .right-timeline .order-1 {
-      padding-right: 2rem;
-    }
   }
 }

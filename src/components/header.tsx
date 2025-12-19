@@ -83,8 +83,8 @@ export default function Header() {
                       {link.label}
                     </Link>
                   ))}
-                  <Link href="/login" className="text-muted-foreground hover:text-foreground">
-                    Profile
+                  <Link href="/cultural-passport" className="text-muted-foreground hover:text-foreground">
+                    Cultural Passport
                   </Link>
                 </nav>
               </SheetContent>
@@ -120,7 +120,7 @@ export default function Header() {
                 </Link>
               </Button>
               <Button variant="ghost" size="icon" asChild>
-                <Link href="/login" aria-label="User Profile">
+                <Link href="/cultural-passport" aria-label="User Profile">
                   <User
                     className={cn(
                       'h-5 w-5',

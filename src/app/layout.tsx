@@ -13,7 +13,8 @@ const literata = Literata({
 
 export const metadata: Metadata = {
   title: 'Bharat Darshan',
-  description: 'Explore the rich cultural, historical, and architectural heritage of India.',
+  description:
+    'Explore the rich cultural, historical, and architectural heritage of India.',
 };
 
 export default function RootLayout({
@@ -23,13 +24,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn('min-h-screen bg-background font-sans antialiased', literata.variable)}>
+      <body
+        className={cn(
+          'min-h-screen bg-background font-sans antialiased',
+          literata.variable
+        )}
+      >
         <Providers>
-          <ScrollProgress />
-          <div className="relative flex min-h-dvh flex-col bg-background">
-            {children}
-          </div>
-          <Toaster />
+            <ScrollProgress />
+            <div className="relative flex min-h-dvh flex-col bg-background">
+              {children}
+            </div>
+            <Toaster />
         </Providers>
       </body>
     </html>
