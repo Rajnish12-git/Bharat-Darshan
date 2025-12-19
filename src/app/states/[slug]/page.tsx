@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { indianStates } from '@/lib/states-data';
@@ -46,8 +47,8 @@ export default function StatePage({ params }: { params: { slug: string } }) {
         
         <Tabs defaultValue="monuments" className="w-full">
           <div className="bg-secondary/50 border-b sticky top-16 z-30 backdrop-blur-sm">
-            <div className="container">
-              <TabsList className="bg-transparent p-0 -mb-px">
+            <div className="container overflow-x-auto whitespace-nowrap [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+              <TabsList className="bg-transparent p-0">
                 <TabsTrigger value="monuments" className="py-4 text-sm rounded-none data-[state=active]:bg-transparent data-[state=active]:text-primary data-[state=active]:shadow-[inset_0_-2px_0_0_hsl(var(--primary))]"><Landmark className="mr-2 h-4 w-4" />Monuments</TabsTrigger>
                 <TabsTrigger value="cuisine" className="py-4 text-sm rounded-none data-[state=active]:bg-transparent data-[state=active]:text-primary data-[state=active]:shadow-[inset_0_-2px_0_0_hsl(var(--primary))]"><UtensilsCrossed className="mr-2 h-4 w-4" />Cuisine</TabsTrigger>
                 <TabsTrigger value="festivals" className="py-4 text-sm rounded-none data-[state=active]:bg-transparent data-[state=active]:text-primary data-[state=active]:shadow-[inset_0_-2px_0_0_hsl(var(--primary))]"><CalendarDays className="mr-2 h-4 w-4" />Festivals</TabsTrigger>
