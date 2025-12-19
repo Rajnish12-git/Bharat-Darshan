@@ -36,9 +36,7 @@ function HeaderActions() {
   const UserIcon = () => (
     <User
       className={cn(
-        'h-5 w-5',
-        scrolled ? 'text-foreground/60' : 'text-white/80',
-        'hover:text-foreground'
+        'h-5 w-5 text-foreground/60 hover:text-foreground'
       )}
     />
   );
@@ -69,19 +67,22 @@ function HeaderActions() {
               <Link href="/search" aria-label="Search">
                 <Search
                   className={cn(
-                    'h-5 w-5',
-                    !scrolled && 'text-white hover:text-white/80'
+                    'h-5 w-5'
                   )}
                 />
               </Link>
             </Button>
+             <LoginModal>
+                <button className="text-lg text-left text-muted-foreground hover:text-foreground">
+                    <UserIcon />
+                </button>
+            </LoginModal>
             <Sheet>
               <SheetTrigger asChild>
                 <Button
                   variant="ghost"
                   size="icon"
                   aria-label="Open menu"
-                  className={cn(!scrolled && 'text-white hover:bg-white/20 hover:text-white')}
                 >
                   <Menu className="h-5 w-5" />
                 </Button>
@@ -123,10 +124,7 @@ function HeaderActions() {
               key={link.href}
               href={link.href}
               className={cn(
-                'transition-colors',
-                scrolled
-                  ? 'text-foreground/60 hover:text-foreground/80'
-                  : 'text-white/80 hover:text-white'
+                'transition-colors text-foreground/60 hover:text-foreground/80'
               )}
             >
               {link.label}
@@ -138,9 +136,7 @@ function HeaderActions() {
             <Link href="/search" aria-label="Search">
               <Search
                 className={cn(
-                  'h-5 w-5',
-                  scrolled ? 'text-foreground/60' : 'text-white/80',
-                  'hover:text-foreground'
+                  'h-5 w-5 text-foreground/60 hover:text-foreground'
                 )}
               />
             </Link>
@@ -153,35 +149,23 @@ function HeaderActions() {
 }
 
 export default function Header() {
-  const [scrolled, setScrolled] = useState(false);
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
     setIsClient(true);
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 10;
-      setScrolled(isScrolled);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <header
       className={cn(
-        'fixed top-0 z-50 w-full transition-all duration-300',
-        scrolled
-          ? 'border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'
-          : 'bg-transparent border-transparent'
+        'sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'
       )}
     >
       <div className="container flex h-16 max-w-screen-2xl items-center">
         <Link
           href="/"
           className={cn(
-            'mr-6 flex items-center space-x-2 transition-colors',
-            scrolled ? 'text-foreground' :'text-white'
+            'mr-6 flex items-center space-x-2 transition-colors text-foreground'
           )}
         >
           <span className="font-bold font-headline text-xl">Bharat Darshan</span>
