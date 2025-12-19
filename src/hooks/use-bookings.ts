@@ -1,7 +1,7 @@
 
 'use client';
 
-import { useMemo } from 'react';
+import { useMemoFirebase } from '@/firebase';
 import { collection, query, where, orderBy } from 'firebase/firestore';
 import { useFirestore, useCollection } from '@/firebase';
 import type { Booking, NewBookingData } from '@/context/bookings-context';
@@ -12,7 +12,7 @@ export function useBookings(userId?: string) {
   const firestore = useFirestore();
 
   // Memoize the query to prevent re-renders
-  const bookingsQuery = useMemo(() => {
+  const bookingsQuery = useMemoFirebase(() => {
     if (!firestore || !userId) return null;
     return query(
       collection(firestore, 'bookings'),
