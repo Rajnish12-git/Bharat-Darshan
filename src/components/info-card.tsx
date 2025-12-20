@@ -4,13 +4,13 @@
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import type { DetailItem } from '@/lib/heritage-data';
-import Link from 'next/link';
 import FavoriteButton from './favorite-button';
-import { Ticket } from 'lucide-react';
+import { Ticket, WandSparkles } from 'lucide-react';
 import BookingModal from './booking-modal';
 import { Button } from './ui/button';
 import { useUser } from '@/firebase';
 import LoginModal from './login-modal';
+import CostEstimatorModal from './cost-estimator-modal';
 
 
 interface InfoCardProps {
@@ -26,7 +26,7 @@ export default function InfoCard({ item, category }: InfoCardProps) {
     if (!user || user.isAnonymous) {
       return (
         <LoginModal>
-            <Button variant="outline" className="w-full mt-4">
+            <Button variant="outline" className="w-full mt-4 text-sm h-9">
               <Ticket className="mr-2 h-4 w-4" /> Book Visit
             </Button>
         </LoginModal>
@@ -34,7 +34,7 @@ export default function InfoCard({ item, category }: InfoCardProps) {
     }
     return (
       <BookingModal monumentName={item.name}>
-          <Button variant="outline" className="w-full mt-4">
+          <Button variant="outline" className="w-full mt-4 text-sm h-9">
             <Ticket className="mr-2 h-4 w-4" /> Book Visit
           </Button>
       </BookingModal>
@@ -68,10 +68,17 @@ export default function InfoCard({ item, category }: InfoCardProps) {
         <p className="mt-2 text-sm text-muted-foreground line-clamp-2 flex-grow">
           {item.description}
         </p>
-        {category === 'monument' && renderBookingButton()}
+        {category === 'monument' && (
+          <div className='flex items-center gap-2'>
+            {renderBookingButton()}
+            <CostEstimatorModal destination={item.name}>
+                <Button variant="outline" className="w-full mt-4 text-sm h-9 bg-primary/10 border-primary/20 hover:bg-primary/20">
+                    <WandSparkles className="mr-2 h-4 w-4"/> Estimate Cost
+                </Button>
+            </CostEstimatorModal>
+          </div>
+        )}
       </div>
     </div>
   );
 }
-
-    

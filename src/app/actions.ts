@@ -1,9 +1,14 @@
+
 'use server';
 
 import {
   searchHeritage,
 } from '@/ai/flows/search-flow';
 import type { SearchFlowInput, SearchFlowOutput } from '@/ai/flows/search-flow-types';
+import {
+  estimateTrip,
+} from '@/ai/flows/cost-estimator-flow';
+import type { CostEstimatorInput, CostEstimatorOutput } from '@/ai/flows/cost-estimator-flow';
 
 
 export async function search(
@@ -20,3 +25,10 @@ export async function search(
     };
   }
 }
+
+export async function getCostEstimate(
+  input: CostEstimatorInput
+): Promise<CostEstimatorOutput> {
+  return await estimateTrip(input);
+}
+
