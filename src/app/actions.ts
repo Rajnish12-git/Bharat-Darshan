@@ -8,7 +8,7 @@ import type { SearchFlowInput, SearchFlowOutput } from '@/ai/flows/search-flow-t
 import {
   estimateTrip,
 } from '@/ai/flows/cost-estimator-flow';
-import type { CostEstimatorInput, CostEstimatorOutput } from '@/ai/flows/cost-estimator-flow';
+import type { CostEstimatorInput, CostEstimatorOutput } from '@/ai/flows/cost-estimator-flow-types';
 
 
 export async function search(
@@ -31,4 +31,5 @@ export async function getCostEstimate(
 ): Promise<CostEstimatorOutput> {
   return await estimateTrip(input);
 }
+
 

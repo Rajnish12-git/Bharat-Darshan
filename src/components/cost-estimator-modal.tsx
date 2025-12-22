@@ -6,7 +6,7 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { getCostEstimate } from '@/app/actions';
-import type { CostEstimatorOutput } from '@/ai/flows/cost-estimator-flow';
+import type { CostEstimatorOutput } from '@/ai/flows/cost-estimator-flow-types';
 
 import {
   Dialog,
