@@ -1,4 +1,4 @@
-🇮🇳 Bharat Darshan
+Bharat Darshan
 
 **Bharat Darshan** is a modern web platform that showcases the rich cultural heritage of India. Users can explore Indian states, monuments, festivals, cuisines, art forms, and traditions through an interactive and visually engaging experience.
 
