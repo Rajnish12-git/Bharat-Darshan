@@ -1,0 +1,137 @@
+import Image from "next/image";
+import { notFound } from "next/navigation";
+import architecturalMarvels from "@/lib/architectural-marvels.json";
+import { PlaceHolderImages } from "@/lib/placeholder-images";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { Badge } from "@/components/ui/badge";
+import { Separator } from "@/components/ui/separator";
+
+export default function ArchitecturalMarvelsPage() {
+  const highlight = {
+    title: "Architectural Marvels",
+    subtitle: "A Testament to Millennia of Engineering & Artistry",
+    description:
+      "India's architectural heritage is a breathtaking chronicle of its millennia-old history, showcasing unparalleled engineering prowess and artistic vision. From colossal rock-cut temples carved from single stones to the intricate marble latticework of grand tombs, these structures are enduring symbols of devotion, power, and a sophisticated understanding of science that has captivated the world for centuries.",
+    imageId: "marvel-hampi",
+  };
+
+  if (!architecturalMarvels) {
+    notFound();
+  }
+
+  const highlightImage = PlaceHolderImages.find(
+    (img) => img.id === highlight.imageId,
+  );
+
+  return (
+    <>
+      <Header />
+      <article>
+        <header className="relative h-[60vh] w-full">
+          {highlightImage && (
+            <Image
+              src={highlightImage.imageUrl}
+              alt={highlight.title}
+              fill
+              className="object-cover"
+              data-ai-hint={highlightImage.imageHint}
+              priority
+            />
+          )}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+          <div className="absolute bottom-0 left-0 p-4 md:p-8 lg:p-16">
+            <p className="text-primary font-semibold">{highlight.subtitle}</p>
+            <h1 className="text-4xl md:text-7xl font-bold font-headline text-white drop-shadow-lg">
+              {highlight.title}
+            </h1>
+          </div>
+        </header>
+
+        <div className="container py-12 md:py-16">
+          <div className="max-w-4xl mx-auto">
+            <p className="text-lg text-muted-foreground leading-relaxed mb-12">
+              {highlight.description}
+            </p>
+            <Accordion type="single" collapsible className="w-full">
+              {architecturalMarvels.map((marvel) => {
+                const marvelImage = PlaceHolderImages.find(
+                  (img) => img.id === marvel.imageId,
+                );
+                return (
+                  <AccordionItem value={marvel.name} key={marvel.name}>
+                    <AccordionTrigger className="text-xl font-headline hover:no-underline">
+                      <div className="flex items-center gap-4">
+                        {marvelImage && (
+                          <div className="relative h-16 w-16 rounded-md overflow-hidden flex-shrink-0">
+                            <Image
+                              src={marvelImage.imageUrl}
+                              alt={marvel.name}
+                              fill
+                              className="object-cover"
+                              data-ai-hint={marvelImage.imageHint}
+                            />
+                          </div>
+                        )}
+                        <div className="text-left">
+                          {marvel.name}
+                          <p className="text-sm font-normal text-muted-foreground">
+                            {marvel.location}
+                          </p>
+                        </div>
+                      </div>
+                    </AccordionTrigger>
+                    <AccordionContent className="p-4 bg-secondary/30 rounded-md">
+                      <div className="space-y-4">
+                        <div className="flex flex-wrap gap-2">
+                          <Badge variant="secondary">Era: {marvel.era}</Badge>
+                          <Badge variant="secondary">
+                            Style: {marvel.architecture}
+                          </Badge>
+                        </div>
+                        <Separator className="my-4" />
+                        <div>
+                          <h4 className="font-semibold mb-2 text-md">
+                            Historical Significance
+                          </h4>
+                          <p className="text-sm text-muted-foreground leading-relaxed">
+                            {marvel.description}
+                          </p>
+                        </div>
+                        <div className="pt-2">
+                          <h4 className="font-semibold mb-2 text-md">
+                            Cultural Importance
+                          </h4>
+                          <p className="text-sm text-muted-foreground leading-relaxed">
+                            {marvel.culturalSignificance}
+                          </p>
+                        </div>
+                        <div className="pt-2">
+                          <h4 className="font-semibold mb-2 text-md">
+                            Interesting Facts
+                          </h4>
+                          <ul className="list-disc pl-5 text-sm text-muted-foreground space-y-1.5 leading-relaxed">
+                            {marvel.interestingFacts.map((fact, index) => (
+                              <li key={index}>{fact}</li>
+                            ))}
+                          </ul>
+                        </div>
+                      </div>
+                    </AccordionContent>
+                  </AccordionItem>
+                );
+              })}
+            </Accordion>
+          </div>
+        </div>
+      </article>
+      <Footer />
+    </>
+  );
+}
