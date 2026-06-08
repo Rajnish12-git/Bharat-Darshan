@@ -1,4 +1,4 @@
-<img width="1913" height="867" alt="image" src="https://github.com/user-attachments/assets/312a2f38-1675-4c17-bbe6-43a92bb78c94" /># 🇮🇳 Bharat Darshan
+🇮🇳 Bharat Darshan
 
 **Bharat Darshan** is a modern web platform that showcases the rich cultural heritage of India. Users can explore Indian states, monuments, festivals, cuisines, art forms, and traditions through an interactive and visually engaging experience.
 
